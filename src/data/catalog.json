@@ -1,0 +1,565 @@
+[
+  {
+    "id": 1,
+    "title": "Nosferatu",
+    "year": 1922,
+    "type": "filme",
+    "code": "FILM_1922_001",
+    "description": "Um dos registros mais conhecidos do expressionismo alemão e do cinema de horror silencioso.",
+    "tags": [
+      "terror",
+      "mudo",
+      "expressionismo"
+    ],
+    "availability": "available",
+    "language": "Cinema mudo; intertítulos da cópia de acervo",
+    "rightsNote": "Cópia histórica em domínio público, apresentada sem trilha sonora moderna.",
+    "sources": [
+      {
+        "title": "Internet Archive — registro do acervo",
+        "url": "https://archive.org/details/Nosferatu1922"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir à cópia do acervo",
+        "kind": "video",
+        "path": "media/film_1922_001.mp4",
+        "sourceUrl": "https://archive.org/download/Nosferatu1922/Nosferatu-smaller2.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "80dfbe8e9cfd1cdb1b4b87423bd1a166"
+        },
+        "license": "Domínio público — conforme identificação da fonte; edição histórica.",
+        "language": "Cinema mudo; intertítulos da cópia de acervo",
+        "transform": {
+          "maxWidth": 640,
+          "videoBitrate": "250k",
+          "mute": true
+        }
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Metropolis",
+    "year": 1927,
+    "type": "filme",
+    "code": "FILM_1927_002",
+    "description": "Ficção científica de Fritz Lang conhecida por sua escala visual e visão futurista.",
+    "tags": [
+      "ficção científica",
+      "mudo"
+    ],
+    "availability": "available",
+    "language": "Cinema mudo; intertítulos da cópia de acervo",
+    "rightsNote": "Cópia histórica em domínio público, apresentada sem trilha sonora moderna.",
+    "sources": [
+      {
+        "title": "Internet Archive — registro do acervo",
+        "url": "https://archive.org/details/metropolis-1927_202511"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir à cópia do acervo",
+        "kind": "video",
+        "path": "media/film_1927_002.mp4",
+        "sourceUrl": "https://archive.org/download/metropolis-1927_202511/Metropolis%201927.ia.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "425b5ffbcc56dea6084c5c9c09bd3505"
+        },
+        "license": "Domínio público — conforme identificação da fonte; edição histórica.",
+        "language": "Cinema mudo; intertítulos da cópia de acervo",
+        "transform": {
+          "maxWidth": 640,
+          "videoBitrate": "250k",
+          "mute": true
+        }
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "O Gabinete do Dr. Caligari",
+    "year": 1920,
+    "type": "filme",
+    "code": "FILM_1920_003",
+    "description": "Obra central do expressionismo alemão, marcada por cenários distorcidos e atmosfera psicológica.",
+    "tags": [
+      "terror",
+      "mudo",
+      "expressionismo"
+    ],
+    "availability": "available",
+    "language": "Cinema mudo; intertítulos da cópia de acervo",
+    "rightsNote": "Cópia histórica em domínio público, apresentada sem trilha sonora moderna.",
+    "sources": [
+      {
+        "title": "Internet Archive — registro do acervo",
+        "url": "https://archive.org/details/DasKabinettdesDoktorCaligariTheCabinetofDrCaligari"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir à cópia do acervo",
+        "kind": "video",
+        "path": "media/film_1920_003.mp4",
+        "sourceUrl": "https://archive.org/download/DasKabinettdesDoktorCaligariTheCabinetofDrCaligari/The_Cabinet_of_Dr._Caligari_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "409b61092183085388a2e41da21f3547"
+        },
+        "license": "Domínio público — conforme identificação da fonte; edição histórica.",
+        "language": "Cinema mudo; intertítulos da cópia de acervo",
+        "transform": {
+          "maxWidth": 640,
+          "videoBitrate": "250k",
+          "mute": true
+        }
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Viagem à Lua",
+    "year": 1902,
+    "type": "filme",
+    "code": "FILM_1902_004",
+    "description": "Curta de Georges Méliès lembrado por efeitos visuais pioneiros e imaginação fantástica.",
+    "tags": [
+      "fantasia",
+      "curta",
+      "mudo"
+    ],
+    "availability": "available",
+    "language": "Cinema mudo",
+    "rightsNote": "Cópia histórica em domínio público, apresentada sem trilha sonora moderna.",
+    "sources": [
+      {
+        "title": "Internet Archive — registro do acervo",
+        "url": "https://archive.org/details/a-trip-to-the-moon-le-voyage-dans-la-lune-1902"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir à cópia do acervo",
+        "kind": "video",
+        "path": "media/film_1902_004.mp4",
+        "sourceUrl": "https://archive.org/download/a-trip-to-the-moon-le-voyage-dans-la-lune-1902/A%20Trip%20to%20the%20moon%20(Le%20voyage%20dans%20la%20lune)%20(1902).mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "ba71fbcaaf1651b950ce362210aac3c1"
+        },
+        "license": "Domínio público — conforme identificação da fonte; edição histórica.",
+        "language": "Cinema mudo",
+        "transform": {
+          "maxWidth": 640,
+          "videoBitrate": "250k",
+          "mute": true
+        }
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Flash Gordon Conquers the Universe",
+    "year": 1940,
+    "type": "série",
+    "code": "TV_1940_001",
+    "description": "Serial de aventura espacial. Esta seleção contém o capítulo 1, The Purple Death; não é a série completa.",
+    "tags": [
+      "ficção científica",
+      "serial",
+      "capítulo 1"
+    ],
+    "availability": "available",
+    "language": "Inglês, sem legendas",
+    "rightsNote": "Cópia histórica identificada como domínio público pela fonte.",
+    "sources": [
+      {
+        "title": "Internet Archive — registro do acervo",
+        "url": "https://archive.org/details/flash_gordon_ep1"
+      },
+      {
+        "title": "Wikimedia Commons — identificação de domínio público do capítulo",
+        "url": "https://commons.wikimedia.org/wiki/File:Flash_Gordon_Conquers_the_Univers,_Chapter_1.ogv"
+      }
+    ],
+    "media": [
+      {
+        "title": "Capítulo 1 — seleção do acervo",
+        "kind": "video",
+        "path": "media/tv_1940_001.mp4",
+        "sourceUrl": "https://archive.org/download/flash_gordon_ep1/chapter1_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "85f8ba516b3519ca1849852865580c2e"
+        },
+        "license": "Domínio público — conforme identificação da fonte; edição histórica.",
+        "language": "Inglês, sem legendas",
+        "transform": {
+          "maxWidth": 640,
+          "videoBitrate": "250k",
+          "mute": false
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "The Phantom Creeps",
+    "year": 1939,
+    "type": "série",
+    "code": "TV_1939_002",
+    "description": "Bela Lugosi interpreta um inventor obcecado pelo poder. Esta seleção contém o capítulo 1, The Menacing Power.",
+    "tags": [
+      "ficção científica",
+      "serial",
+      "capítulo 1"
+    ],
+    "availability": "available",
+    "language": "Inglês, sem legendas",
+    "rightsNote": "Cópia histórica identificada como domínio público pela fonte.",
+    "sources": [
+      {
+        "title": "Internet Archive — registro do acervo",
+        "url": "https://archive.org/details/the_phantom_creeps_ep1"
+      }
+    ],
+    "media": [
+      {
+        "title": "Capítulo 1 — seleção do acervo",
+        "kind": "video",
+        "path": "media/tv_1939_002.mp4",
+        "sourceUrl": "https://archive.org/download/the_phantom_creeps_ep1/ep1_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "f6b742c4a31343fc23b31c551f724920"
+        },
+        "license": "Domínio público — conforme identificação da fonte; edição histórica.",
+        "language": "Inglês, sem legendas",
+        "transform": {
+          "maxWidth": 640,
+          "videoBitrate": "250k",
+          "mute": false
+        }
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "The Phantom Empire",
+    "year": 1935,
+    "type": "série",
+    "code": "TV_1935_003",
+    "description": "Faroeste e ficção científica se encontram em uma aventura subterrânea. Esta seleção contém o capítulo 1, Singing Cowboy.",
+    "tags": [
+      "faroeste",
+      "ficção científica",
+      "capítulo 1"
+    ],
+    "availability": "available",
+    "language": "Inglês, sem legendas",
+    "rightsNote": "Cópia histórica identificada como domínio público pela fonte.",
+    "sources": [
+      {
+        "title": "Internet Archive — registro do acervo",
+        "url": "https://archive.org/details/phantom_empire_chapter_1"
+      }
+    ],
+    "media": [
+      {
+        "title": "Capítulo 1 — seleção do acervo",
+        "kind": "video",
+        "path": "media/tv_1935_003.mp4",
+        "sourceUrl": "https://archive.org/download/phantom_empire_chapter_1/ep1_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "16c1d7f440e60a5e3db13fca5c6c0561"
+        },
+        "license": "Domínio público — conforme identificação da fonte; edição histórica.",
+        "language": "Inglês, sem legendas",
+        "transform": {
+          "maxWidth": 640,
+          "videoBitrate": "250k",
+          "mute": false
+        }
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Undersea Kingdom",
+    "year": 1936,
+    "type": "série",
+    "code": "TV_1936_004",
+    "description": "Uma expedição encontra uma civilização sob o oceano. Esta seleção contém somente o capítulo 1 do serial.",
+    "tags": [
+      "aventura",
+      "serial",
+      "capítulo 1"
+    ],
+    "availability": "available",
+    "language": "Inglês, sem legendas",
+    "rightsNote": "Cópia histórica identificada como domínio público pela fonte.",
+    "sources": [
+      {
+        "title": "Internet Archive — registro do acervo",
+        "url": "https://archive.org/details/UnderseaKingdom1"
+      }
+    ],
+    "media": [
+      {
+        "title": "Capítulo 1 — seleção do acervo",
+        "kind": "video",
+        "path": "media/tv_1936_004.mp4",
+        "sourceUrl": "https://archive.org/download/UnderseaKingdom1/UK1.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "e17dc92213506c7ba9699566b620a232"
+        },
+        "license": "Domínio público — conforme identificação da fonte; edição histórica.",
+        "language": "Inglês, sem legendas",
+        "transform": {
+          "maxWidth": 640,
+          "videoBitrate": "250k",
+          "mute": false
+        }
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "type": "livro",
+    "title": "Frankenstein",
+    "year": 1818,
+    "code": "BOOK_1818_001",
+    "description": "Romance de Mary Shelley sobre criação, responsabilidade e os limites da ciência.",
+    "tags": [
+      "gótico",
+      "ficção científica"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Texto original em inglês de domínio público. A licença e os créditos do Project Gutenberg foram preservados no arquivo.",
+    "sources": [
+      {
+        "title": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/84"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler o livro completo — inglês",
+        "kind": "text",
+        "path": "media/book-84.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/84.txt.utf-8",
+        "license": "Project Gutenberg — texto de domínio público; licença preservada",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "2b97b7f8aad508649481d8dd4f6b54f9b965ddb3ba634e9151c815f537b49e42"
+        }
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "type": "livro",
+    "title": "Drácula",
+    "year": 1897,
+    "code": "BOOK_1897_002",
+    "description": "Romance epistolar de Bram Stoker que se tornou uma referência da literatura gótica.",
+    "tags": [
+      "gótico",
+      "terror"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Texto original em inglês de domínio público. A licença e os créditos do Project Gutenberg foram preservados no arquivo.",
+    "sources": [
+      {
+        "title": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/345"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler o livro completo — inglês",
+        "kind": "text",
+        "path": "media/book-345.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/345.txt.utf-8",
+        "license": "Project Gutenberg — texto de domínio público; licença preservada",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "96cd16eacdbfebae8fdda5591f66e0cc8ee76be18e0cd1aca02bc00615782d28"
+        }
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "type": "livro",
+    "title": "O Retrato de Dorian Gray",
+    "year": 1890,
+    "code": "BOOK_1890_003",
+    "description": "Romance de Oscar Wilde sobre beleza, moralidade, influência e decadência.",
+    "tags": [
+      "gótico",
+      "clássico"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Texto original em inglês de domínio público. A licença e os créditos do Project Gutenberg foram preservados no arquivo.",
+    "sources": [
+      {
+        "title": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/174"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler o livro completo — inglês",
+        "kind": "text",
+        "path": "media/book-174.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/174.txt.utf-8",
+        "license": "Project Gutenberg — texto de domínio público; licença preservada",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "38f36b510417177aa87a6a24c968e3ec63a447b7df36a9c1a7c5a3f2d9e51547"
+        }
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "type": "livro",
+    "title": "A Máquina do Tempo",
+    "year": 1895,
+    "code": "BOOK_1895_004",
+    "description": "Romance de H. G. Wells sobre viagem temporal, sociedade e transformação humana.",
+    "tags": [
+      "ficção científica",
+      "clássico"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Texto original em inglês de domínio público. A licença e os créditos do Project Gutenberg foram preservados no arquivo.",
+    "sources": [
+      {
+        "title": "Project Gutenberg",
+        "url": "https://www.gutenberg.org/ebooks/35"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler o livro completo — inglês",
+        "kind": "text",
+        "path": "media/book-35.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/35.txt.utf-8",
+        "license": "Project Gutenberg — texto de domínio público; licença preservada",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "2892e919000e17c83e1dac51b30f4675db50536b644d7579fe8a89bb399a9bdc"
+        }
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Frankenstein — adaptação de 1910",
+    "year": 1910,
+    "type": "lost-media",
+    "code": "LOST_1910_001",
+    "description": "Durante décadas, a primeira adaptação cinematográfica de Frankenstein foi considerada perdida. Uma cópia preservada por um colecionador permitiu sua recuperação.",
+    "tags": [
+      "recuperado",
+      "terror",
+      "mudo"
+    ],
+    "availability": "available",
+    "language": "Cinema mudo; intertítulos em inglês",
+    "rightsNote": "Cópia histórica em domínio público, apresentada sem trilha sonora moderna.",
+    "sources": [
+      {
+        "title": "Internet Archive — registro do acervo",
+        "url": "https://archive.org/details/Frankenstein_1910"
+      },
+      {
+        "title": "Library of Congress — história da recuperação",
+        "url": "https://blogs.loc.gov/loc/2018/11/the-first-film-version-of-frankenstein-newly-restored/"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir à cópia do acervo",
+        "kind": "video",
+        "path": "media/lost_1910_001.mp4",
+        "sourceUrl": "https://archive.org/download/Frankenstein_1910/Frankenstein_1910_Silent_Movie.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "8513de49c0f1270e87464c286e2f0a81"
+        },
+        "license": "Domínio público — conforme identificação da fonte; edição histórica.",
+        "language": "Cinema mudo; intertítulos em inglês",
+        "transform": {
+          "maxWidth": 640,
+          "videoBitrate": "250k",
+          "mute": true
+        }
+      }
+    ],
+    "recoveryStatus": "RECUPERADA — CÓPIA DISPONÍVEL"
+  },
+  {
+    "id": 14,
+    "title": "Le Manoir du diable",
+    "year": 1896,
+    "type": "lost-media",
+    "code": "LOST_1896_002",
+    "description": "Curta de Georges Méliès com aparições e transformações. Uma obra recuperada dos primórdios do cinema, hoje novamente acessível.",
+    "tags": [
+      "recuperado",
+      "fantasia",
+      "mudo"
+    ],
+    "availability": "available",
+    "language": "Cinema mudo",
+    "rightsNote": "Cópia histórica em domínio público, apresentada sem trilha sonora moderna.",
+    "sources": [
+      {
+        "title": "Internet Archive — registro do acervo",
+        "url": "https://archive.org/details/The_Haunted_Castle_1896"
+      },
+      {
+        "title": "New York Film Academy — história do cinema de horror",
+        "url": "https://www.nyfa.edu/student-resources/how-horror-movies-have-changed-since-their-beginning/"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir à cópia do acervo",
+        "kind": "video",
+        "path": "media/lost_1896_002.mp4",
+        "sourceUrl": "https://archive.org/download/The_Haunted_Castle_1896/The_Haunted_Castle_1896_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "fbb0d6e3e14dad034ac220af64fe5efe"
+        },
+        "license": "Domínio público — conforme identificação da fonte; edição histórica.",
+        "language": "Cinema mudo",
+        "transform": {
+          "maxWidth": 640,
+          "videoBitrate": "250k",
+          "mute": true
+        }
+      }
+    ],
+    "recoveryStatus": "RECUPERADA — CÓPIA DISPONÍVEL"
+  }
+]

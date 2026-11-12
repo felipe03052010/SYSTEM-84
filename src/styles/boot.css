@@ -1,0 +1,151 @@
+.boot-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  color: var(--green);
+  background:
+    radial-gradient(circle at center, #082116 0%, #020906 55%, #000 100%);
+  font-family: var(--font-terminal);
+}
+
+.boot-screen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      transparent 0 2px,
+      rgba(0,0,0,.28) 3px 4px
+    );
+}
+
+.boot-terminal {
+  position: relative;
+  z-index: 2;
+  width: min(900px, 100%);
+  min-height: 560px;
+  border: 2px solid var(--green);
+  background: rgba(0, 12, 7, .92);
+  box-shadow: 0 0 18px rgba(76,255,155,.3);
+}
+
+.boot-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--green);
+}
+
+.boot-start,
+.boot-process {
+  min-height: 515px;
+}
+
+.boot-start {
+  display: grid;
+  place-content: center;
+  gap: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.boot-start > span {
+  letter-spacing: 4px;
+}
+
+.boot-start h1 {
+  color: var(--green);
+  font-size: clamp(5rem, 13vw, 9rem);
+  line-height: .8;
+  font-weight: 400;
+  text-shadow: 0 0 12px rgba(76,255,155,.55);
+}
+
+.boot-start h1 em {
+  color: var(--amber);
+  font-style: normal;
+}
+
+.boot-start p {
+  color: var(--muted);
+  letter-spacing: 4px;
+}
+
+.boot-message {
+  margin-top: 35px;
+  font-size: 1.45rem;
+}
+
+.boot-start button {
+  justify-self: center;
+  padding: 12px 22px;
+  color: var(--green);
+  border: 1px solid var(--green);
+  background: transparent;
+  font-family: var(--font-terminal);
+  font-size: 1.2rem;
+}
+
+.boot-start button:hover {
+  color: var(--background);
+  background: var(--green);
+}
+
+.boot-process {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.boot-log {
+  color: var(--green);
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.boot-progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+
+.boot-progress {
+  height: 22px;
+  padding: 3px;
+  border: 1px solid var(--green);
+}
+
+.boot-progress div {
+  height: 100%;
+  background: var(--green);
+  box-shadow: 0 0 12px rgba(76,255,155,.7);
+}
+
+.boot-screen.closing {
+  animation: screenOff .65s forwards;
+}
+
+@keyframes screenOff {
+  0% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+
+  55% {
+    opacity: 1;
+    transform: scaleY(.015);
+    filter: brightness(4);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleY(0);
+    visibility: hidden;
+  }
+}

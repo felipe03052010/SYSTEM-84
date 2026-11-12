@@ -1,0 +1,23 @@
+# Dependências e arquivos gerados
+node_modules/
+dist/
+dist-ssr/
+.vite/
+coverage/
+.media-cache/
+public/media/
+work/
+
+# Configurações e registros locais
+.env
+.env.*
+!.env.example
+*.local
+*.log
+
+# Arquivos do sistema e do editor
+.DS_Store
+Thumbs.db
+.idea/
+*.suo
+*.swp

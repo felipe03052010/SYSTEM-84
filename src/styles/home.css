@@ -1,0 +1,234 @@
+.site-hidden {
+  opacity: 0;
+}
+
+.site-ready {
+  opacity: 1;
+  animation: fadeIn .7s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.home-hero {
+  min-height: calc(100vh - 74px);
+  display: flex;
+  align-items: center;
+  padding: 55px 5%;
+}
+
+.terminal-window {
+  width: min(1400px, 100%);
+  margin: auto;
+  border: 1px solid var(--green);
+  background: var(--panel);
+  box-shadow: 0 0 18px rgba(76,255,155,.12);
+}
+
+.terminal-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 13px;
+  color: var(--background);
+  background: var(--green);
+  font-size: .7rem;
+  font-weight: 700;
+}
+
+.terminal-body {
+  padding: clamp(28px, 5vw, 65px);
+}
+
+.system-log {
+  margin-bottom: 55px;
+  color: var(--muted);
+  font-family: var(--font-terminal);
+  font-size: 1.2rem;
+}
+
+.system-log .success {
+  color: var(--green-bright);
+}
+
+.home-hero h1 {
+  margin-top: 18px;
+  color: var(--green-bright);
+  font-family: var(--font-terminal);
+  font-size: clamp(4.2rem, 10vw, 9rem);
+  line-height: .74;
+  font-weight: 400;
+}
+
+.home-hero h1 span {
+  color: var(--amber);
+}
+
+.home-intro {
+  max-width: 720px;
+  margin-top: 32px;
+  color: #82c99d;
+  line-height: 1.8;
+}
+
+.home-search {
+  margin-top: 50px;
+}
+
+.home-search label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--green);
+  font-size: .7rem;
+}
+
+.home-search > div {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  border: 1px solid var(--green-dark);
+  background: #010a06;
+}
+
+.home-search span {
+  padding-left: 14px;
+  color: var(--green-dark);
+  font-family: var(--font-terminal);
+}
+
+.home-search input {
+  height: 54px;
+  padding: 0 14px;
+  color: var(--green);
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-family: var(--font-terminal);
+  font-size: 1.2rem;
+}
+
+.home-search button {
+  height: 54px;
+  padding: 0 22px;
+  color: var(--green);
+  border: 0;
+  border-left: 1px solid var(--green-dark);
+  background: transparent;
+}
+
+.home-search button:hover {
+  color: var(--background);
+  background: var(--green);
+}
+
+.home-directories {
+  padding: 100px 5%;
+  background: rgba(0,14,8,.45);
+}
+
+.directory-grid {
+  width: min(1400px, 100%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-left: 1px solid var(--green-dark);
+  border-top: 1px solid var(--green-dark);
+}
+
+.directory-grid a {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  border-right: 1px solid var(--green-dark);
+  border-bottom: 1px solid var(--green-dark);
+  background: rgba(3,17,11,.62);
+}
+
+.directory-grid a:hover {
+  background: rgba(15,60,39,.3);
+}
+
+.directory-grid a > span {
+  color: var(--green-dark);
+  font-size: .68rem;
+}
+
+.directory-grid strong {
+  margin-top: 45px;
+  color: var(--green);
+  font-family: var(--font-terminal);
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+.directory-grid p {
+  margin: 14px 0 25px;
+  color: #72ad86;
+  font-size: .82rem;
+  line-height: 1.75;
+}
+
+.directory-grid em {
+  margin-top: auto;
+  color: var(--amber);
+  font-size: .7rem;
+  font-style: normal;
+}
+
+.home-lost {
+  padding: 90px 5%;
+}
+
+.home-lost > div {
+  width: min(1400px, 100%);
+  margin: auto;
+  padding: clamp(35px, 6vw, 70px);
+  border: 1px solid var(--red);
+  background: linear-gradient(135deg, rgba(45,0,0,.3), rgba(6,5,3,.95));
+}
+
+.home-lost h2 {
+  margin: 10px 0 22px;
+  color: var(--red);
+  font-family: var(--font-terminal);
+  font-size: clamp(4rem, 9vw, 7rem);
+  font-weight: 400;
+}
+
+.home-lost p {
+  max-width: 700px;
+  color: #c68e82;
+  line-height: 1.7;
+}
+
+.home-lost a {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 12px 15px;
+  color: var(--red);
+  border: 1px solid var(--red);
+  font-size: .7rem;
+}
+
+@media (max-width: 850px) {
+  .directory-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-search > div {
+    grid-template-columns: 1fr;
+  }
+
+  .home-search span {
+    display: none;
+  }
+
+  .home-search button {
+    border-left: 0;
+    border-top: 1px solid var(--green-dark);
+  }
+}
