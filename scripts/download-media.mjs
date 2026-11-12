@@ -33,15 +33,35 @@ function safeOutput(relative) {
 }
 const filter=process.argv.find(x=>x.startsWith('--only='))?.slice(7)
 const jobs=catalog.flatMap(r=>r.media).filter(m=>!filter||m.kind===filter||m.path.includes(filter))
+
+// Single-flight download: partes de um mesmo filme compartilham o sourceKey e
+// devem baixar o arquivo-fonte apenas uma vez, nunca em paralelo.
+const inflight = new Map()
+async function ensureSource(media) {
+  const key = media.sourceKey || path.basename(media.path)
+  const source = path.join(cache, key + '.source')
+  const verified = await exists(source) && (!media.sourceChecksum || await hash(source, media.sourceChecksum.algorithm) === media.sourceChecksum.value)
+  if (verified) return source
+  if (!inflight.has(key)) {
+    inflight.set(key, (async () => {
+      console.log(`Downloading source: ${key}`)
+      await run(process.platform==='win32'?'curl.exe':'curl',['--fail','--location','--retry','4','--retry-all-errors','--connect-timeout','30','--max-time','1800','--continue-at','-','--silent','--show-error',media.sourceUrl,'--output',source])
+      if (media.sourceChecksum && await hash(source, media.sourceChecksum.algorithm) !== media.sourceChecksum.value) {
+        await fs.rm(source, { force: true })
+        throw new Error(`Source checksum mismatch: ${media.path} (${key}); cached source removed, retry to download again.`)
+      }
+      return source
+    })())
+  }
+  try { await inflight.get(key) } finally { inflight.delete(key) }
+  return source
+}
+
 async function prepare(media){
   const output=safeOutput(media.path)
   await fs.mkdir(path.dirname(output),{recursive:true})
   if(await exists(output)){console.log(`Present: ${media.path}`);return}
-  const source=path.join(cache,(media.sourceKey||path.basename(media.path))+'.source')
-  console.log(`Downloading: ${media.path}`)
-  const verifiedSource=media.sourceChecksum && await exists(source) && await hash(source,media.sourceChecksum.algorithm)===media.sourceChecksum.value
-  if(!verifiedSource)await run(process.platform==='win32'?'curl.exe':'curl',['--fail','--location','--retry','4','--retry-all-errors','--connect-timeout','30','--max-time','1800','--continue-at','-','--silent','--show-error',media.sourceUrl,'--output',source])
-  if(media.sourceChecksum && await hash(source,media.sourceChecksum.algorithm)!==media.sourceChecksum.value)throw new Error(`Source checksum mismatch: ${media.path}; inspect and remove only its .media-cache source before retrying.`)
+  const source=await ensureSource(media)
   if(media.kind==='text'){
     const text=await fs.readFile(source,'utf8')
     if(!text.includes('PROJECT GUTENBERG')||text.length<50000||/^\s*</.test(text))throw new Error(`Invalid book response: ${media.path}`)
