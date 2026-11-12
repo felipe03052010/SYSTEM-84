@@ -22,10 +22,11 @@
     ],
     "media": [
       {
-        "title": "Assistir à cópia do acervo",
+        "title": "Parte 1",
         "kind": "video",
-        "path": "media/film_1922_001.mp4",
+        "path": "media/film_1922_001-1.mp4",
         "sourceUrl": "https://archive.org/download/Nosferatu1922/Nosferatu-smaller2.mp4",
+        "sourceKey": "film_1922_001.mp4",
         "sourceChecksum": {
           "algorithm": "md5",
           "value": "80dfbe8e9cfd1cdb1b4b87423bd1a166"
@@ -33,9 +34,29 @@
         "license": "Domínio público — conforme identificação da fonte; edição histórica.",
         "language": "Cinema mudo; intertítulos da cópia de acervo",
         "transform": {
-          "maxWidth": 640,
+          "maxWidth": 320,
           "videoBitrate": "250k",
-          "mute": true
+          "mute": true,
+          "duration": 2760
+        }
+      },
+      {
+        "title": "Parte 2",
+        "kind": "video",
+        "path": "media/film_1922_001-2.mp4",
+        "sourceUrl": "https://archive.org/download/Nosferatu1922/Nosferatu-smaller2.mp4",
+        "sourceKey": "film_1922_001.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "80dfbe8e9cfd1cdb1b4b87423bd1a166"
+        },
+        "license": "Domínio público — conforme identificação da fonte; edição histórica.",
+        "language": "Cinema mudo; intertítulos da cópia de acervo",
+        "transform": {
+          "maxWidth": 320,
+          "videoBitrate": "250k",
+          "mute": true,
+          "start": 2760
         }
       }
     ]
@@ -62,10 +83,11 @@
     ],
     "media": [
       {
-        "title": "Assistir à cópia do acervo",
+        "title": "Parte 1",
         "kind": "video",
-        "path": "media/film_1927_002.mp4",
+        "path": "media/film_1927_002-1.mp4",
         "sourceUrl": "https://archive.org/download/metropolis-1927_202511/Metropolis%201927.ia.mp4",
+        "sourceKey": "film_1927_002.mp4",
         "sourceChecksum": {
           "algorithm": "md5",
           "value": "425b5ffbcc56dea6084c5c9c09bd3505"
@@ -75,7 +97,47 @@
         "transform": {
           "maxWidth": 640,
           "videoBitrate": "250k",
-          "mute": true
+          "mute": true,
+          "duration": 3000
+        }
+      },
+      {
+        "title": "Parte 2",
+        "kind": "video",
+        "path": "media/film_1927_002-2.mp4",
+        "sourceUrl": "https://archive.org/download/metropolis-1927_202511/Metropolis%201927.ia.mp4",
+        "sourceKey": "film_1927_002.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "425b5ffbcc56dea6084c5c9c09bd3505"
+        },
+        "license": "Domínio público — conforme identificação da fonte; edição histórica.",
+        "language": "Cinema mudo; intertítulos da cópia de acervo",
+        "transform": {
+          "maxWidth": 640,
+          "videoBitrate": "250k",
+          "mute": true,
+          "start": 3000,
+          "duration": 3000
+        }
+      },
+      {
+        "title": "Parte 3",
+        "kind": "video",
+        "path": "media/film_1927_002-3.mp4",
+        "sourceUrl": "https://archive.org/download/metropolis-1927_202511/Metropolis%201927.ia.mp4",
+        "sourceKey": "film_1927_002.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "425b5ffbcc56dea6084c5c9c09bd3505"
+        },
+        "license": "Domínio público — conforme identificação da fonte; edição histórica.",
+        "language": "Cinema mudo; intertítulos da cópia de acervo",
+        "transform": {
+          "maxWidth": 640,
+          "videoBitrate": "250k",
+          "mute": true,
+          "start": 6000
         }
       }
     ]
@@ -103,10 +165,11 @@
     ],
     "media": [
       {
-        "title": "Assistir à cópia do acervo",
+        "title": "Parte 1",
         "kind": "video",
-        "path": "media/film_1920_003.mp4",
+        "path": "media/film_1920_003-1.mp4",
         "sourceUrl": "https://archive.org/download/DasKabinettdesDoktorCaligariTheCabinetofDrCaligari/The_Cabinet_of_Dr._Caligari_512kb.mp4",
+        "sourceKey": "film_1920_003.mp4",
         "sourceChecksum": {
           "algorithm": "md5",
           "value": "409b61092183085388a2e41da21f3547"
@@ -114,9 +177,29 @@
         "license": "Domínio público — conforme identificação da fonte; edição histórica.",
         "language": "Cinema mudo; intertítulos da cópia de acervo",
         "transform": {
-          "maxWidth": 640,
+          "maxWidth": 480,
           "videoBitrate": "250k",
-          "mute": true
+          "mute": true,
+          "duration": 2400
+        }
+      },
+      {
+        "title": "Parte 2",
+        "kind": "video",
+        "path": "media/film_1920_003-2.mp4",
+        "sourceUrl": "https://archive.org/download/DasKabinettdesDoktorCaligariTheCabinetofDrCaligari/The_Cabinet_of_Dr._Caligari_512kb.mp4",
+        "sourceKey": "film_1920_003.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "409b61092183085388a2e41da21f3547"
+        },
+        "license": "Domínio público — conforme identificação da fonte; edição histórica.",
+        "language": "Cinema mudo; intertítulos da cópia de acervo",
+        "transform": {
+          "maxWidth": 480,
+          "videoBitrate": "250k",
+          "mute": true,
+          "start": 2400
         }
       }
     ]

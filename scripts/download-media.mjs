@@ -37,7 +37,7 @@ async function prepare(media){
   const output=safeOutput(media.path)
   await fs.mkdir(path.dirname(output),{recursive:true})
   if(await exists(output)){console.log(`Present: ${media.path}`);return}
-  const source=path.join(cache,path.basename(media.path)+'.source')
+  const source=path.join(cache,(media.sourceKey||path.basename(media.path))+'.source')
   console.log(`Downloading: ${media.path}`)
   const verifiedSource=media.sourceChecksum && await exists(source) && await hash(source,media.sourceChecksum.algorithm)===media.sourceChecksum.value
   if(!verifiedSource)await run(process.platform==='win32'?'curl.exe':'curl',['--fail','--location','--retry','4','--retry-all-errors','--connect-timeout','30','--max-time','1800','--continue-at','-','--silent','--show-error',media.sourceUrl,'--output',source])
@@ -50,9 +50,13 @@ async function prepare(media){
     const ffmpeg = process.env.FFMPEG_PATH || require('ffmpeg-static')
     console.log(`Encoding for internal player: ${media.path}`)
     const temporary=output+'.part.mp4'
-    const args=['-hide_banner','-loglevel','error','-y','-i',source,'-map','0:v:0','-vf',`scale=${media.transform.maxWidth}:-2:force_original_aspect_ratio=decrease`,'-c:v','libx264','-preset','veryfast','-b:v',media.transform.videoBitrate,'-maxrate','400k','-bufsize','800k','-pix_fmt','yuv420p','-threads','2']
-    if(media.transform.mute)args.push('-an')
+    const t=media.transform
+    const args=['-hide_banner','-loglevel','error','-y']
+    if(t.start)args.push('-ss',String(t.start))
+    args.push('-i',source,'-map','0:v:0','-vf',`scale=${t.maxWidth}:-2:force_original_aspect_ratio=decrease`,'-c:v','libx264','-preset','veryfast','-b:v',t.videoBitrate,'-maxrate','400k','-bufsize','800k','-pix_fmt','yuv420p','-threads','2')
+    if(t.mute)args.push('-an')
     else args.push('-map','0:a:0?','-c:a','aac','-b:a','48k','-ac','1')
+    if(t.duration)args.push('-t',String(t.duration))
     args.push('-movflags','+faststart',temporary)
     await run(ffmpeg,args)
     await fs.rename(temporary,output)
