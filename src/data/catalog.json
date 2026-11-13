@@ -3796,5 +3796,98 @@
         }
       }
     ]
+  },
+  {
+    "year": 2026,
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "id": 506,
+    "type": "analog-horror",
+    "code": "VHS_084_7",
+    "title": "Frequência Residual 84.7 MHz",
+    "description": "Gravação interceptada de um teste de emergência que continuou transmitindo após o fechamento da emissora.",
+    "article": [
+      "TRANSMISSÃO PIRATA / ARQUIVO RECUPERADO / 04:02. Um tom senoidal puro a 440Hz oscila por trinta segundos antes que uma voz sintetizada inicie a contagem de coordenadas geográficas inexistentes.",
+      "04:03. A voz instrui os ouvintes a não olharem pelas persianas: \"A luz verde no horizonte não é um fenômeno astronômico registrado. Permaneçam em seus postos e sintonizem o canal reserva\".",
+      "04:05. Sons de fita magnética desacelerando até parar por completo. Uma última linha de código surge na tela: FIM DA TRANSMISSÃO - SISTEMA 84 PERMANECE EM ALERTA."
+    ],
+    "tags": [
+      "ficção original",
+      "transcrição",
+      "analog-horror",
+      "CC0"
+    ]
+  },
+  {
+    "year": 2026,
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "id": 507,
+    "type": "analog-horror",
+    "code": "VHS_084_8",
+    "title": "Protocolo de Contenção de Arquivo Fantasma",
+    "description": "Diretrizes internas encontradas em fita magnética sobre arquivos que se auto-reproduzem nos terminais.",
+    "article": [
+      "MEMORANDO INTERNO / DIVISÃO DE ARQUIVO / SETOR 4. Se um arquivo catalogado alterar sua data de modificação para uma data futura, o terminal deve ser isolado imediatamente da rede.",
+      "Nunca digite a chave de restauração após a meia-noite se o cursor estiver piscando em velocidade dupla.",
+      "O operador deve assinar a lista de presença com caneta esferográfica e confirmar se a sua própria assinatura não foi apagada pelo registro digital."
+    ],
+    "tags": [
+      "ficção original",
+      "protocolo",
+      "analog-horror",
+      "CC0"
+    ]
+  },
+  {
+    "year": 2026,
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "id": 606,
+    "type": "arg",
+    "code": "ARG_084_7",
+    "title": "O cofre do operador 84",
+    "description": "Encontre o código de quatro dígitos escondido nos diários de manutenção do terminal.",
+    "article": [
+      "REGISTRO DE INCIDENTE // TERMINAL 84. O operador anotou uma charada para o código mestre do armário:",
+      "Tenho quatro dígitos. O primeiro é a quantidade de estações ativas (1). O segundo é o dobro do primeiro (2). O terceiro é a metade de oito (4). O quarto é a soma dos três primeiros (7).",
+      "Digite a combinação numérica correta para destrancar a partição protegida."
+    ],
+    "puzzle": {
+      "question": "Qual é a senha de 4 dígitos do cofre?",
+      "answer": "1247",
+      "hint": "Calcule cada dígito descrito na pista: 1, 2, 4 e a soma 1+2+4.",
+      "ending": "ACESSO AUTORIZADO. O cofre continha as matrizes de cópia da primeira transmissão do SYSTEM 84. Desafio superado com sucesso."
+    },
+    "tags": [
+      "ficção original",
+      "enigma",
+      "ARG",
+      "CC0"
+    ]
   }
 ]
