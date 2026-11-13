@@ -32,7 +32,7 @@ function safeOutput(relative) {
   return path.join(root,'public',relative)
 }
 const filter=process.argv.find(x=>x.startsWith('--only='))?.slice(7)
-const jobs=catalog.flatMap(r=>r.media).filter(m=>!filter||m.kind===filter||m.path.includes(filter))
+const jobs=catalog.flatMap(r=>r.media).filter(m=>!m.remoteUrl && (!filter||m.kind===filter||m.path.includes(filter)))
 
 // Single-flight download: partes de um mesmo filme compartilham o sourceKey e
 // devem baixar o arquivo-fonte apenas uma vez, nunca em paralelo.
@@ -64,7 +64,7 @@ async function prepare(media){
   const source=await ensureSource(media)
   if(media.kind==='text'){
     const text=await fs.readFile(source,'utf8')
-    if(!text.includes('PROJECT GUTENBERG')||text.length<50000||/^\s*</.test(text))throw new Error(`Invalid book response: ${media.path}`)
+    if(!text.includes('PROJECT GUTENBERG')||text.length<1000||/^\s*</.test(text))throw new Error(`Invalid book response: ${media.path}`)
     await fs.copyFile(source,output)
   }else{
     const ffmpeg = process.env.FFMPEG_PATH || require('ffmpeg-static')

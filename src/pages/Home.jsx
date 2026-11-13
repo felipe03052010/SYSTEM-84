@@ -7,13 +7,13 @@ import '../styles/home.css'
 
 export default function Home() {
   const [bootFinished, setBootFinished] = useState(
-    sessionStorage.getItem('system84Booted') === 'true',
+    () => { try { return sessionStorage.getItem('system84Booted') === 'true' } catch { return false } },
   )
   const [query, setQuery] = useState('')
   const navigate = useNavigate()
 
   function completeBoot() {
-    sessionStorage.setItem('system84Booted', 'true')
+    try { sessionStorage.setItem('system84Booted', 'true') } catch { /* Optional session. */ }
     setBootFinished(true)
   }
 
@@ -107,6 +107,8 @@ export default function Home() {
               <p>Literatura histórica, obras esgotadas e publicações antigas.</p>
               <em>&gt; ACESSAR DIRETÓRIO</em>
             </Link>
+            <Link to="/analog-horror"><span>[04] VHS</span><strong>ANALOG HORROR</strong><p>Transmissões impossíveis e fitas de treinamento. Ficções originais em português.</p><em>&gt; SINTONIZAR FITAS</em></Link>
+            <Link to="/arg"><span>[05] ARG</span><strong>ARQUIVOS INTERATIVOS</strong><p>Decifre pistas e desbloqueie os desfechos de seis investigações fictícias.</p><em>&gt; INICIAR INVESTIGAÇÃO</em></Link>
           </div>
         </section>
 

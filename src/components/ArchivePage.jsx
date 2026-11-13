@@ -30,15 +30,16 @@ export default function ArchivePage({
 
       const text = [
         record.title,
+        record.author || '',
         record.description,
         record.tags.join(' '),
         String(record.year),
       ]
         .join(' ')
-        .toLowerCase()
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
 
       return (
-        text.includes(query.toLowerCase()) &&
+        text.includes(query.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()) &&
         matchesPeriod(record.year, period)
       )
     })

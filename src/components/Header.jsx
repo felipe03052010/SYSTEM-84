@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { playClick } from '../utils/audio'
+import SoundControl from './SoundControl'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
@@ -39,12 +40,11 @@ export default function Header() {
         <NavLink to="/livros" onClick={closeMenu}>LIVROS</NavLink>
         <NavLink to="/pesquisa" onClick={closeMenu}>PESQUISA</NavLink>
         <NavLink to="/lost-media" onClick={closeMenu}>LOST MEDIA</NavLink>
+        <NavLink to="/analog-horror" onClick={closeMenu}>ANALOG HORROR</NavLink>
+        <NavLink to="/arg" onClick={closeMenu}>ARG</NavLink>
       </nav>
 
-      <div className="system-online">
-        <span className="online-light" />
-        SISTEMA ONLINE
-      </div>
+      <SoundControl />
     </header>
   )
 }

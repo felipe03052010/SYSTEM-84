@@ -28,17 +28,18 @@ export default function Pesquisa() {
     return records.filter((record) => {
       const text = [
         record.title,
+        record.author || '',
         record.description,
         record.tags.join(' '),
         record.type,
         String(record.year),
       ]
         .join(' ')
-        .toLowerCase()
+        .normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
 
       const queryMatch =
         !submittedQuery ||
-        text.includes(submittedQuery.toLowerCase())
+        text.includes(submittedQuery.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase())
 
       const typeMatch =
         type === 'all' || record.type === type
@@ -125,7 +126,7 @@ export default function Pesquisa() {
             <option value="all">TODOS</option>
             <option value="filme">FILMES</option>
             <option value="série">SÉRIES</option>
-            <option value="livro">LIVROS</option>
+            <option value="livro">LIVROS</option><option value="lost-media">LOST MEDIA</option><option value="analog-horror">ANALOG HORROR</option><option value="arg">ARG</option>
           </select>
 
           <label htmlFor="periodFilter">PERÍODO</label>

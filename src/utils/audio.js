@@ -1,4 +1,13 @@
 let audioContext = null
+let enabled = true
+let lastClick = 0
+let lastTyping = 0
+try { enabled = localStorage.getItem('system84-sound') !== 'off' } catch { /* Optional preference. */ }
+export const soundEnabled = () => enabled
+export function setSoundEnabled(value) {
+  enabled = value
+  try { localStorage.setItem('system84-sound', value ? 'on' : 'off') } catch { /* Optional preference. */ }
+}
 
 function getAudioContext() {
   if (!audioContext) {
@@ -8,7 +17,7 @@ function getAudioContext() {
   }
 
   if (audioContext.state === 'suspended') {
-    audioContext.resume()
+    audioContext.resume().catch(() => {})
   }
 
   return audioContext
@@ -20,7 +29,9 @@ export function beep(
   volume = 0.012,
   type = 'square',
 ) {
-  const context = getAudioContext()
+  if (!enabled) return
+  let context
+  try { context = getAudioContext() } catch { return }
   if (!context) return
 
   const oscillator = context.createOscillator()
@@ -40,13 +51,20 @@ export function beep(
 
   oscillator.start()
   oscillator.stop(context.currentTime + duration)
+  oscillator.onended = () => { oscillator.disconnect(); gain.disconnect() }
 }
 
 export function playClick() {
+  const now = performance.now()
+  if (now - lastClick < 60) return
+  lastClick = now
   beep(600, 0.035, 0.012)
 }
 
 export function playTyping() {
+  const now = performance.now()
+  if (now - lastTyping < 30) return
+  lastTyping = now
   beep(420 + Math.random() * 120, 0.02, 0.006)
 }
 

@@ -4,6 +4,7 @@ import Layout from '../components/Layout'
 import { records } from '../data/records'
 import NotFound from './NotFound'
 import '../styles/record.css'
+import ArgPuzzle from '../components/ArgPuzzle'
 
 function localMedia(path) {
   if (!/^media\/[a-zA-Z0-9/_.-]+$/.test(path) || path.includes('..')) throw new Error('Arquivo inválido')
@@ -67,7 +68,8 @@ function Player({ media }) {
     try { localStorage.setItem(`sys84-video:${media.path}`, String(video.current.currentTime)) } catch { /* Optional progress. */ }
   }
   return <section className="video-player" aria-label="Player de vídeo">
-    <video ref={video} controls playsInline preload="metadata" src={localMedia(media.path)} onLoadedMetadata={restore} onPause={save} onEnded={save} onError={() => setFailed(true)} />
+    <video ref={video} controls playsInline preload="none" src={media.remoteUrl || localMedia(media.path)} onLoadedMetadata={restore} onPause={save} onEnded={save} onError={() => setFailed(true)} />
+    {media.remoteUrl && <p>Reprodução direta do acervo de origem · requer conexão.</p>}
     {failed && <p role="alert">O vídeo não pôde ser carregado. <button onClick={() => { setFailed(false); video.current.load() }}>Tentar novamente</button></p>}
     <p>{media.title} · {media.language || 'Idioma original'}{media.silent ? ' · Filme mudo, sem trilha adicionada' : ''}</p>
   </section>
@@ -81,11 +83,12 @@ export default function Record() {
   if (!record) return <NotFound />
   const media = record.media?.[selected] || record.media?.[0]
   return <Layout><main className="record-detail">
-    <Link className="back-link" to={record.type === 'livro' ? '/livros' : record.type === 'série' ? '/series' : record.type === 'lost-media' ? '/lost-media' : '/filmes'}>← VOLTAR AO CATÁLOGO</Link>
+    <Link className="back-link" to={({ livro: '/livros', 'série': '/series', 'lost-media': '/lost-media', 'analog-horror': '/analog-horror', arg: '/arg' })[record.type] || '/filmes'}>← VOLTAR AO CATÁLOGO</Link>
     <header className="record-heading"><span className="directory">{record.code} // {record.year}</span><h1>{record.title}</h1><p>{record.description}</p></header>
     {record.recoveryStatus && <p className="recovery-note">PRESERVAÇÃO // {record.recoveryStatus}</p>}
     {record.media?.length > 1 && <label className="episode-select">ESCOLHER CAPÍTULO <select value={selected} onChange={e => setSelected(Number(e.target.value))}>{record.media.map((m, i) => <option value={i} key={m.path}>{m.title}</option>)}</select></label>}
-    {media ? media.kind === 'text' ? <Reader key={media.path} media={media} /> : <Player key={media.path} media={media} /> : <p role="status">Arquivo ainda não disponível.</p>}
-    <details className="record-provenance"><summary>Sobre esta cópia e preservação</summary><p>{record.rightsNote}</p><p>{media?.license}</p>{record.sources?.map(source => <p key={source.url}>{source.title}</p>)}</details>
+    {record.article && <article className="original-story"><h2>{record.type === 'lost-media' ? 'DOSSIÊ DE PRESERVAÇÃO' : 'FICÇÃO ORIGINAL // SYSTEM 84'}</h2>{record.article.map((p, i) => <p key={i}>{p}</p>)}{record.puzzle && <ArgPuzzle key={record.id} record={record} />}</article>}
+    {media ? media.kind === 'text' ? <Reader key={media.path} media={media} /> : <Player key={media.path} media={media} /> : !record.article && <p role="status">Arquivo ainda não disponível.</p>}
+    <details className="record-provenance"><summary>Sobre esta cópia e preservação</summary><p>{record.rightsNote}</p><p>{media?.license}</p>{record.sources?.map(source => <p key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.title} ↗</a></p>)}</details>
   </main></Layout>
 }

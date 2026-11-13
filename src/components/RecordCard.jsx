@@ -31,7 +31,7 @@ export default function RecordCard({ record }) {
         </div>
 
         <Link className="terminal-action" to={`/obra/${record.id}`} onClick={playClick}>
-          {record.type === 'livro' ? 'LER AGORA' : 'ASSISTIR'} &gt;
+          {record.type === 'arg' ? 'INVESTIGAR' : record.type === 'livro' || record.article ? 'LER AGORA' : 'ASSISTIR'} &gt;
         </Link>
       </div>
     </article>

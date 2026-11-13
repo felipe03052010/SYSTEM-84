@@ -251,7 +251,7 @@
     "year": 1940,
     "type": "série",
     "code": "TV_1940_001",
-    "description": "Serial de aventura espacial. Esta seleção contém o capítulo 1, The Purple Death; não é a série completa.",
+    "description": "Serial de aventura espacial. Capítulos disponíveis: 1, 4, 6, 7, 9, 11.",
     "tags": [
       "ficção científica",
       "serial",
@@ -259,7 +259,7 @@
     ],
     "availability": "available",
     "language": "Inglês, sem legendas",
-    "rightsNote": "Cópia histórica identificada como domínio público pela fonte.",
+    "rightsNote": "Cópia histórica identificada como domínio público pela fonte. Novos capítulos: cópias marcadas como domínio público no acervo, transmitidas sem alterações pelo site.",
     "sources": [
       {
         "title": "Internet Archive — registro do acervo",
@@ -268,6 +268,26 @@
       {
         "title": "Wikimedia Commons — identificação de domínio público do capítulo",
         "url": "https://commons.wikimedia.org/wiki/File:Flash_Gordon_Conquers_the_Univers,_Chapter_1.ogv"
+      },
+      {
+        "title": "Internet Archive — capítulo 4, fonte e direitos",
+        "url": "https://archive.org/details/flash_gordon4"
+      },
+      {
+        "title": "Internet Archive — capítulo 6, fonte e direitos",
+        "url": "https://archive.org/details/flash_gordon6"
+      },
+      {
+        "title": "Internet Archive — capítulo 7, fonte e direitos",
+        "url": "https://archive.org/details/flash_gordon_7"
+      },
+      {
+        "title": "Internet Archive — capítulo 9, fonte e direitos",
+        "url": "https://archive.org/details/flash_gordon9"
+      },
+      {
+        "title": "Internet Archive — capítulo 11, fonte e direitos",
+        "url": "https://archive.org/details/flash_gordon11"
       }
     ],
     "media": [
@@ -287,6 +307,71 @@
           "videoBitrate": "250k",
           "mute": false
         }
+      },
+      {
+        "title": "Capítulo 4 — Flash Gordon Conquers the Universe: Chapter 4",
+        "kind": "video",
+        "path": "media/serial-5-4.mp4",
+        "remoteUrl": "https://archive.org/download/flash_gordon4/flash_gordon_ep04_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/flash_gordon4/flash_gordon_ep04_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "3cff412595ca17efb666f21b659924fd"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 6 — Flash Gordon Conquers the Universe: Chapter 6",
+        "kind": "video",
+        "path": "media/serial-5-6.mp4",
+        "remoteUrl": "https://archive.org/download/flash_gordon6/chapter6_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/flash_gordon6/chapter6_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "97beb5c588e4782699ced5ecb6c56781"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 7 — Flash Gordon Conquers the Universe: Chapter 7",
+        "kind": "video",
+        "path": "media/serial-5-7.mp4",
+        "remoteUrl": "https://archive.org/download/flash_gordon_7/chapter7_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/flash_gordon_7/chapter7_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "2ea49624ab9ad7d732cd7ff631038f7c"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 9 — Flash Gordon Conquers the Universe: Chapter 9",
+        "kind": "video",
+        "path": "media/serial-5-9.mp4",
+        "remoteUrl": "https://archive.org/download/flash_gordon9/chapter9_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/flash_gordon9/chapter9_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "fc2733f43e997bdcf731cdffab80bf1a"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 11 — Flash Gordon Conquers the Universe: Chapter 11",
+        "kind": "video",
+        "path": "media/serial-5-11.mp4",
+        "remoteUrl": "https://archive.org/download/flash_gordon11/flash_gordon_ep11_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/flash_gordon11/flash_gordon_ep11_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "048c0bf220a3e34fecf284ff1f8b6e75"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
       }
     ]
   },
@@ -296,7 +381,7 @@
     "year": 1939,
     "type": "série",
     "code": "TV_1939_002",
-    "description": "Bela Lugosi interpreta um inventor obcecado pelo poder. Esta seleção contém o capítulo 1, The Menacing Power.",
+    "description": "Bela Lugosi interpreta um inventor obcecado pelo poder. Capítulos disponíveis: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12.",
     "tags": [
       "ficção científica",
       "serial",
@@ -304,11 +389,55 @@
     ],
     "availability": "available",
     "language": "Inglês, sem legendas",
-    "rightsNote": "Cópia histórica identificada como domínio público pela fonte.",
+    "rightsNote": "Cópia histórica identificada como domínio público pela fonte. Novos capítulos: cópias marcadas como domínio público no acervo, transmitidas sem alterações pelo site.",
     "sources": [
       {
         "title": "Internet Archive — registro do acervo",
         "url": "https://archive.org/details/the_phantom_creeps_ep1"
+      },
+      {
+        "title": "Internet Archive — capítulo 2, fonte e direitos",
+        "url": "https://archive.org/details/the_phantom_creeps_ep2"
+      },
+      {
+        "title": "Internet Archive — capítulo 3, fonte e direitos",
+        "url": "https://archive.org/details/the_phantom_creeps_ep3"
+      },
+      {
+        "title": "Internet Archive — capítulo 4, fonte e direitos",
+        "url": "https://archive.org/details/the_phantom_creeps_ep4"
+      },
+      {
+        "title": "Internet Archive — capítulo 5, fonte e direitos",
+        "url": "https://archive.org/details/the_phantom_creeps_ep5"
+      },
+      {
+        "title": "Internet Archive — capítulo 6, fonte e direitos",
+        "url": "https://archive.org/details/the_phantom_creeps_ep6"
+      },
+      {
+        "title": "Internet Archive — capítulo 7, fonte e direitos",
+        "url": "https://archive.org/details/the_phantom_creeps_ep7"
+      },
+      {
+        "title": "Internet Archive — capítulo 8, fonte e direitos",
+        "url": "https://archive.org/details/the_phantom_creeps_ep8"
+      },
+      {
+        "title": "Internet Archive — capítulo 9, fonte e direitos",
+        "url": "https://archive.org/details/the_phantom_creeps_ep9"
+      },
+      {
+        "title": "Internet Archive — capítulo 10, fonte e direitos",
+        "url": "https://archive.org/details/the_phantom_creeps_ep10"
+      },
+      {
+        "title": "Internet Archive — capítulo 11, fonte e direitos",
+        "url": "https://archive.org/details/the_phantom_creeps_ep11"
+      },
+      {
+        "title": "Internet Archive — capítulo 12, fonte e direitos",
+        "url": "https://archive.org/details/the_phantom_creeps_ep12"
       }
     ],
     "media": [
@@ -328,6 +457,149 @@
           "videoBitrate": "250k",
           "mute": false
         }
+      },
+      {
+        "title": "Capítulo 2 — The Phantom Creeps: Chapter 2  - Death Stalks the Highways",
+        "kind": "video",
+        "path": "media/serial-6-2.mp4",
+        "remoteUrl": "https://archive.org/download/the_phantom_creeps_ep2/ep2_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/the_phantom_creeps_ep2/ep2_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "86ac998cfc2075b8addc607f63fc1bdb"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 3 — The Phantom Creeps: Chapter 3 - Crashing Towers",
+        "kind": "video",
+        "path": "media/serial-6-3.mp4",
+        "remoteUrl": "https://archive.org/download/the_phantom_creeps_ep3/ep3_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/the_phantom_creeps_ep3/ep3_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "32db1d6293bd971b77a6b36d874ab27e"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 4 — The Phantom Creeps: Chapter 4 - Invisible Terror",
+        "kind": "video",
+        "path": "media/serial-6-4.mp4",
+        "remoteUrl": "https://archive.org/download/the_phantom_creeps_ep4/ep4_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/the_phantom_creeps_ep4/ep4_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "00963ca41ae99ff3117612dde05ff429"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 5 — The Phantom Creeps: Chapter 5 - Thundering Rails",
+        "kind": "video",
+        "path": "media/serial-6-5.mp4",
+        "remoteUrl": "https://archive.org/download/the_phantom_creeps_ep5/ep5_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/the_phantom_creeps_ep5/ep5_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "9053951c49e6cb5f45654ab1f1ea8aa7"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 6 — The Phantom Creeps: Chapter 6 - The Iron Monster",
+        "kind": "video",
+        "path": "media/serial-6-6.mp4",
+        "remoteUrl": "https://archive.org/download/the_phantom_creeps_ep6/ep6_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/the_phantom_creeps_ep6/ep6_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "b4421cc49a2c5555f9e1ab0926635ee6"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 7 — The Phantom Creeps: Chapter 7 - The Menacing Mist",
+        "kind": "video",
+        "path": "media/serial-6-7.mp4",
+        "remoteUrl": "https://archive.org/download/the_phantom_creeps_ep7/ep7_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/the_phantom_creeps_ep7/ep7_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "e70a54de70ef955903e92ec106d8aaeb"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 8 — The Phantom Creeps: Chapter 8 - Trapped in the Flames",
+        "kind": "video",
+        "path": "media/serial-6-8.mp4",
+        "remoteUrl": "https://archive.org/download/the_phantom_creeps_ep8/ep8_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/the_phantom_creeps_ep8/ep8_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "bad0e8be8199322d5002fc2ff55f3936"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 9 — The Phantom Creeps: Chapter 9 - Speeding Doom",
+        "kind": "video",
+        "path": "media/serial-6-9.mp4",
+        "remoteUrl": "https://archive.org/download/the_phantom_creeps_ep9/ep9_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/the_phantom_creeps_ep9/ep9_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "ca075d5a083eeff843c87bea6676b120"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 10 — The Phantom Creeps: Chapter 10 - Phantom Footprints",
+        "kind": "video",
+        "path": "media/serial-6-10.mp4",
+        "remoteUrl": "https://archive.org/download/the_phantom_creeps_ep10/ep10_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/the_phantom_creeps_ep10/ep10_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "22924c976717b3c45d14e35d062c803e"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 11 — The Phantom Creeps: Chapter 11 - The Blast",
+        "kind": "video",
+        "path": "media/serial-6-11.mp4",
+        "remoteUrl": "https://archive.org/download/the_phantom_creeps_ep11/ep11_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/the_phantom_creeps_ep11/ep11_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "e6f449e09cd35cb87100ae6fe987fddb"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 12 — The Phantom Creeps: Chapter 12 - To Destroy the World",
+        "kind": "video",
+        "path": "media/serial-6-12.mp4",
+        "remoteUrl": "https://archive.org/download/the_phantom_creeps_ep12/ep12_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/the_phantom_creeps_ep12/ep12_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "5a8b9f8c9dcc18530c933b52fb9316a5"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
       }
     ]
   },
@@ -337,7 +609,7 @@
     "year": 1935,
     "type": "série",
     "code": "TV_1935_003",
-    "description": "Faroeste e ficção científica se encontram em uma aventura subterrânea. Esta seleção contém o capítulo 1, Singing Cowboy.",
+    "description": "Faroeste e ficção científica se encontram em uma aventura subterrânea. Capítulos disponíveis: 1, 2, 4, 5, 7, 8, 9, 10, 11, 12.",
     "tags": [
       "faroeste",
       "ficção científica",
@@ -345,11 +617,47 @@
     ],
     "availability": "available",
     "language": "Inglês, sem legendas",
-    "rightsNote": "Cópia histórica identificada como domínio público pela fonte.",
+    "rightsNote": "Cópia histórica identificada como domínio público pela fonte. Novos capítulos: cópias marcadas como domínio público no acervo, transmitidas sem alterações pelo site.",
     "sources": [
       {
         "title": "Internet Archive — registro do acervo",
         "url": "https://archive.org/details/phantom_empire_chapter_1"
+      },
+      {
+        "title": "Internet Archive — capítulo 2, fonte e direitos",
+        "url": "https://archive.org/details/phantom_empire_chapter_2"
+      },
+      {
+        "title": "Internet Archive — capítulo 4, fonte e direitos",
+        "url": "https://archive.org/details/phantom_empire_chapter_4"
+      },
+      {
+        "title": "Internet Archive — capítulo 5, fonte e direitos",
+        "url": "https://archive.org/details/phantom_empire_chapter_5"
+      },
+      {
+        "title": "Internet Archive — capítulo 7, fonte e direitos",
+        "url": "https://archive.org/details/phantom_empire_chapter_7"
+      },
+      {
+        "title": "Internet Archive — capítulo 8, fonte e direitos",
+        "url": "https://archive.org/details/phantom_empire_chapter_8"
+      },
+      {
+        "title": "Internet Archive — capítulo 9, fonte e direitos",
+        "url": "https://archive.org/details/phantom_empire_chapter_9"
+      },
+      {
+        "title": "Internet Archive — capítulo 10, fonte e direitos",
+        "url": "https://archive.org/details/phantom_empire_chapter_10"
+      },
+      {
+        "title": "Internet Archive — capítulo 11, fonte e direitos",
+        "url": "https://archive.org/details/phantom_empire_the_chapter_11"
+      },
+      {
+        "title": "Internet Archive — capítulo 12, fonte e direitos",
+        "url": "https://archive.org/details/phantom_empire_chapter_12"
       }
     ],
     "media": [
@@ -369,6 +677,123 @@
           "videoBitrate": "250k",
           "mute": false
         }
+      },
+      {
+        "title": "Capítulo 2 — Phantom Empire - Chapter 2: Thunder Riders",
+        "kind": "video",
+        "path": "media/serial-7-2.mp4",
+        "remoteUrl": "https://archive.org/download/phantom_empire_chapter_2/ep2_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/phantom_empire_chapter_2/ep2_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "218d4485832270147f87d3ad37887f43"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 4 — Phantom Empire - Chapter 4: Phantom Broadcast",
+        "kind": "video",
+        "path": "media/serial-7-4.mp4",
+        "remoteUrl": "https://archive.org/download/phantom_empire_chapter_4/ep4_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/phantom_empire_chapter_4/ep4_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "6d37cc724fb3ad5ccd4831cf7d270b1b"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 5 — Phantom Empire - Chapter 5: Beneath the Sky",
+        "kind": "video",
+        "path": "media/serial-7-5.mp4",
+        "remoteUrl": "https://archive.org/download/phantom_empire_chapter_5/ep5_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/phantom_empire_chapter_5/ep5_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "ab49e3b827884636fec8880e2d3bdb3a"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 7 — Phantom Empire - Chapter 7: From Death to Life",
+        "kind": "video",
+        "path": "media/serial-7-7.mp4",
+        "remoteUrl": "https://archive.org/download/phantom_empire_chapter_7/ep7_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/phantom_empire_chapter_7/ep7_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "180c0b278175abd3be450aeff50b8c15"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 8 — Phantom Empire - Chapter 8: Jaws of Jeopardy",
+        "kind": "video",
+        "path": "media/serial-7-8.mp4",
+        "remoteUrl": "https://archive.org/download/phantom_empire_chapter_8/ep8_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/phantom_empire_chapter_8/ep8_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "8c657bfac2b4f0673b021eb6597075c7"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 9 — Phantom Empire - Chapter 9: Prisoners of the Ray",
+        "kind": "video",
+        "path": "media/serial-7-9.mp4",
+        "remoteUrl": "https://archive.org/download/phantom_empire_chapter_9/ep9_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/phantom_empire_chapter_9/ep9_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "4bdf19a241b9724730a7152b8ec319d7"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 10 — Phantom Empire - Chapter 10: Rebellion",
+        "kind": "video",
+        "path": "media/serial-7-10.mp4",
+        "remoteUrl": "https://archive.org/download/phantom_empire_chapter_10/ep10_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/phantom_empire_chapter_10/ep10_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "aa35963bd2fe437458373359d3799beb"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 11 — Phantom Empire - Chapter 11: Queen in Chains",
+        "kind": "video",
+        "path": "media/serial-7-11.mp4",
+        "remoteUrl": "https://archive.org/download/phantom_empire_the_chapter_11/ep11_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/phantom_empire_the_chapter_11/ep11_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "55b6b52717af4aaf71d452c5f71786d2"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 12 — Phantom Empire - Chapter 12: End of Murania",
+        "kind": "video",
+        "path": "media/serial-7-12.mp4",
+        "remoteUrl": "https://archive.org/download/phantom_empire_chapter_12/ep12_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/phantom_empire_chapter_12/ep12_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "02a30ae39aa6294e9e6af231ac46407b"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
       }
     ]
   },
@@ -378,7 +803,7 @@
     "year": 1936,
     "type": "série",
     "code": "TV_1936_004",
-    "description": "Uma expedição encontra uma civilização sob o oceano. Esta seleção contém somente o capítulo 1 do serial.",
+    "description": "Uma expedição encontra uma civilização sob o oceano. Capítulos disponíveis: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12.",
     "tags": [
       "aventura",
       "serial",
@@ -386,11 +811,55 @@
     ],
     "availability": "available",
     "language": "Inglês, sem legendas",
-    "rightsNote": "Cópia histórica identificada como domínio público pela fonte.",
+    "rightsNote": "Cópia histórica identificada como domínio público pela fonte. Novos capítulos: cópias marcadas como domínio público no acervo, transmitidas sem alterações pelo site.",
     "sources": [
       {
         "title": "Internet Archive — registro do acervo",
         "url": "https://archive.org/details/UnderseaKingdom1"
+      },
+      {
+        "title": "Internet Archive — capítulo 2, fonte e direitos",
+        "url": "https://archive.org/details/UnderseaKingdom2"
+      },
+      {
+        "title": "Internet Archive — capítulo 3, fonte e direitos",
+        "url": "https://archive.org/details/UnderseaKingdom3"
+      },
+      {
+        "title": "Internet Archive — capítulo 4, fonte e direitos",
+        "url": "https://archive.org/details/undersea_kingdom4"
+      },
+      {
+        "title": "Internet Archive — capítulo 5, fonte e direitos",
+        "url": "https://archive.org/details/undersea_kingdom5"
+      },
+      {
+        "title": "Internet Archive — capítulo 6, fonte e direitos",
+        "url": "https://archive.org/details/undersea_kingdom6"
+      },
+      {
+        "title": "Internet Archive — capítulo 7, fonte e direitos",
+        "url": "https://archive.org/details/undersea_kingdom7"
+      },
+      {
+        "title": "Internet Archive — capítulo 8, fonte e direitos",
+        "url": "https://archive.org/details/undersea_kingdom8"
+      },
+      {
+        "title": "Internet Archive — capítulo 9, fonte e direitos",
+        "url": "https://archive.org/details/undersea_kingdom9"
+      },
+      {
+        "title": "Internet Archive — capítulo 10, fonte e direitos",
+        "url": "https://archive.org/details/undersea_kingdom10"
+      },
+      {
+        "title": "Internet Archive — capítulo 11, fonte e direitos",
+        "url": "https://archive.org/details/undersea_kingdom11"
+      },
+      {
+        "title": "Internet Archive — capítulo 12, fonte e direitos",
+        "url": "https://archive.org/details/undersea_kingdom12"
       }
     ],
     "media": [
@@ -410,6 +879,149 @@
           "videoBitrate": "250k",
           "mute": false
         }
+      },
+      {
+        "title": "Capítulo 2 — Undersea Kingdom 2",
+        "kind": "video",
+        "path": "media/serial-8-2.mp4",
+        "remoteUrl": "https://archive.org/download/UnderseaKingdom2/UK2.mp4",
+        "sourceUrl": "https://archive.org/download/UnderseaKingdom2/UK2.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "ece5af96e4dfbe99ccac7a80604814fa"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 3 — Undersea Kingdom 3",
+        "kind": "video",
+        "path": "media/serial-8-3.mp4",
+        "remoteUrl": "https://archive.org/download/UnderseaKingdom3/UK3.mp4",
+        "sourceUrl": "https://archive.org/download/UnderseaKingdom3/UK3.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "ba32c69e4f1361133791df1bccf9f464"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 4 — Undersea Kingdom: Chapter 4 - Revenge of the Volkites",
+        "kind": "video",
+        "path": "media/serial-8-4.mp4",
+        "remoteUrl": "https://archive.org/download/undersea_kingdom4/uk4archive_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/undersea_kingdom4/uk4archive_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "e15499c1efbb2ab11fb5534dfa9be3b0"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 5 — Undersea Kingdom: Chapter 5 - Prisoners of Atlantis",
+        "kind": "video",
+        "path": "media/serial-8-5.mp4",
+        "remoteUrl": "https://archive.org/download/undersea_kingdom5/uk5archive_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/undersea_kingdom5/uk5archive_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "70ff6c6d4ba3d11c205e2c4ea28e70f8"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 6 — Undersea Kingdom: Chapter 6 - The Juggernaut Strikes",
+        "kind": "video",
+        "path": "media/serial-8-6.mp4",
+        "remoteUrl": "https://archive.org/download/undersea_kingdom6/uk6archive_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/undersea_kingdom6/uk6archive_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "64f81288201dc40814855060269f8276"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 7 — Undersea Kingdom: Chapter 7 - The Submarine Trap",
+        "kind": "video",
+        "path": "media/serial-8-7.mp4",
+        "remoteUrl": "https://archive.org/download/undersea_kingdom7/uk7archive_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/undersea_kingdom7/uk7archive_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "7952f7ac1636492d88fadd953b4218ea"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 8 — Undersea Kingdom: Chapter 8 - Into the Metal Tower",
+        "kind": "video",
+        "path": "media/serial-8-8.mp4",
+        "remoteUrl": "https://archive.org/download/undersea_kingdom8/uk8archive_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/undersea_kingdom8/uk8archive_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "20f429ad8afba1288b5709041fcdf3bd"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 9 — Undersea Kingdom: Chapter 9 - Death in the Air",
+        "kind": "video",
+        "path": "media/serial-8-9.mp4",
+        "remoteUrl": "https://archive.org/download/undersea_kingdom9/uk9archive_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/undersea_kingdom9/uk9archive_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "874ba001c888e33977e922284062e4f3"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 10 — Undersea Kingdom: Chapter 10 - Atlantis Destroyed",
+        "kind": "video",
+        "path": "media/serial-8-10.mp4",
+        "remoteUrl": "https://archive.org/download/undersea_kingdom10/uk10archive_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/undersea_kingdom10/uk10archive_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "83a0de07a199afa3711971838c899aaa"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 11 — Undersea Kingdom: Chapter 11 - Flaming Death",
+        "kind": "video",
+        "path": "media/serial-8-11.mp4",
+        "remoteUrl": "https://archive.org/download/undersea_kingdom11/uk11archive_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/undersea_kingdom11/uk11archive_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "4d029430a4ef2758c608c00738993c44"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
+      },
+      {
+        "title": "Capítulo 12 — Undersea Kingdom: Chapter 12 - Ascent to the Upperworld",
+        "kind": "video",
+        "path": "media/serial-8-12.mp4",
+        "remoteUrl": "https://archive.org/download/undersea_kingdom12/uk12archive_512kb.mp4",
+        "sourceUrl": "https://archive.org/download/undersea_kingdom12/uk12archive_512kb.mp4",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "bdfbd1671d9e673b5b1fc696ea3e4f74"
+        },
+        "license": "Domínio público conforme marcação de direitos da cópia no Internet Archive.",
+        "language": "Inglês, sem legendas"
       }
     ]
   },
@@ -644,5 +1256,2545 @@
       }
     ],
     "recoveryStatus": "RECUPERADA — CÓPIA DISPONÍVEL"
+  },
+  {
+    "year": 2026,
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "id": 500,
+    "type": "analog-horror",
+    "code": "VHS_084_1",
+    "title": "O canal que lembra seu nome",
+    "description": "Uma emissora fora do ar continua lendo a lista de moradores de um prédio demolido.",
+    "article": [
+      "FITA 01 / TRANSMISSÃO FICTÍCIA / 03:14. Uma tela de ajuste exibe sete barras verdes. A locutora pede que os espectadores confirmem o endereço impresso no rodapé. Não há endereço. Há o desenho de uma porta visto pelo lado de dentro.",
+      "03:15. A lista começa pelo apartamento 101. A cada nome, uma janela se apaga no prédio filmado. A câmera nunca muda de lugar. No apartamento 204, a locutora demora a respirar. Ela diz: “Se o nome estiver incorreto, não responda. Estamos atualizando o cadastro”.",
+      "03:16. O operador encontra uma etiqueta no monitor: PRÉDIO DEMOLIDO EM 1984. No vídeo, uma nova janela se acende. Não fica na fachada; aparece no reflexo da tela. A transmissão termina com um pedido educado: “Agora sabemos qual janela é a sua”."
+    ],
+    "tags": [
+      "ficção original",
+      "transcrição",
+      "CC0"
+    ]
+  },
+  {
+    "year": 2026,
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "id": 501,
+    "type": "analog-horror",
+    "code": "VHS_084_2",
+    "title": "Manual de evacuação do andar zero",
+    "description": "Uma fita de treinamento descreve um andar que não aparece no elevador.",
+    "article": [
+      "TREINAMENTO INTERNO / FICÇÃO. O instrutor sorri diante de uma planta baixa. Os andares são numerados de um a nove. Ele aponta para o espaço branco abaixo da folha e afirma que o andar zero deve permanecer vazio, mesmo durante uma evacuação.",
+      "A demonstração mostra uma funcionária entrando no elevador. Ela aperta o térreo. As portas abrem para a mesma sala, mas todos os móveis estão cobertos por lençóis. O instrutor explica que não se trata de um erro: “O prédio está praticando ficar sem vocês”.",
+      "No último quadro, a planta baixa já tem dez andares. O instrutor está atrás de uma das janelas desenhadas. A legenda recomenda fechar o manual antes que ele encontre a escada. Ao fundo, a funcionária aguarda um elevador que só possui o botão zero."
+    ],
+    "tags": [
+      "ficção original",
+      "transcrição",
+      "CC0"
+    ]
+  },
+  {
+    "year": 2026,
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "id": 502,
+    "type": "analog-horror",
+    "code": "VHS_084_3",
+    "title": "Previsão do tempo para ontem",
+    "description": "Um boletim meteorológico prevê acontecimentos que desapareceram da memória.",
+    "article": [
+      "BOLETIM FICTÍCIO 84-B. A apresentadora informa chuva moderada para ontem. No mapa, o litoral se move para longe das cidades. Uma pequena nota explica: “Áreas sem lembranças não recebem previsão”.",
+      "A câmera aproxima o município de Santa Ausência. A apresentadora pede desculpas por ter anunciado sol na semana anterior. Mostra fotografias de ruas secas, mas os moradores aparecem molhados dentro de suas próprias sombras. As imagens foram enviadas amanhã.",
+      "O boletim encerra com uma correção: a cidade nunca existiu. A apresentadora recolhe os papéis, olha para a câmera e pergunta onde deve voltar depois do expediente. Pela primeira vez, o mapa mostra uma previsão para dentro do estúdio: neblina permanente."
+    ],
+    "tags": [
+      "ficção original",
+      "transcrição",
+      "CC0"
+    ]
+  },
+  {
+    "year": 2026,
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "id": 503,
+    "type": "analog-horror",
+    "code": "VHS_084_4",
+    "title": "A fita de devolução",
+    "description": "Uma locadora recebe cópias de filmes que ainda não foram gravados.",
+    "article": [
+      "REGISTRO FICTÍCIO / LOCADORA AURORA. O funcionário encontra uma fita sem título na caixa de devolução. A gravação mostra o balcão vazio. No canto da tela aparece o horário do fechamento do dia seguinte.",
+      "O funcionário assiste até o instante em que ele mesmo entra no quadro e coloca uma fita no videocassete. O filme não mostra a televisão. Mostra somente sua expressão mudando. Ele avança a gravação e encontra um intervalo de vinte minutos de uma parede recém-pintada.",
+      "Na manhã seguinte, a caixa contém duas fitas. Uma mostra o funcionário assistindo à primeira. A outra mostra a locadora transformada em estacionamento. Todas têm a mesma etiqueta: devolver antes de assistir. Ele decide não abrir a loja, mas ouve a campainha tocar na gravação."
+    ],
+    "tags": [
+      "ficção original",
+      "transcrição",
+      "CC0"
+    ]
+  },
+  {
+    "year": 2026,
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "id": 504,
+    "type": "analog-horror",
+    "code": "VHS_084_5",
+    "title": "Teste de sirene 08:40",
+    "description": "O sinal de teste termina; o eco começa a transmitir instruções próprias.",
+    "article": [
+      "AVISO FICTÍCIO. Às 08:40, a cidade realiza seu teste de sirenes. O sinal dura dez segundos. Os microfones continuam registrando um eco por onze minutos, embora não exista nenhuma superfície grande nas proximidades.",
+      "Na segunda repetição, o eco contém uma sequência de portas se fechando. Na terceira, o operador percebe que a sequência acompanha as portas da central de monitoramento. A última porta não consta da planta. A gravação informa que ela será instalada durante a noite.",
+      "O relatório manda cancelar o teste seguinte. Às 08:40 do outro dia, o operador chega à central e encontra silêncio. Na parede há uma porta nova, com uma pequena janela. Do outro lado, ele vê a cidade inteira esperando que alguém aperte o botão."
+    ],
+    "tags": [
+      "ficção original",
+      "transcrição",
+      "CC0"
+    ]
+  },
+  {
+    "year": 2026,
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "id": 505,
+    "type": "analog-horror",
+    "code": "VHS_084_6",
+    "title": "A estação sem passageiros",
+    "description": "Uma câmera de segurança registra chegadas em uma plataforma selada.",
+    "article": [
+      "ARQUIVO FICTÍCIO / CÂMERA 06. A plataforma foi selada após o encerramento da linha. O monitor deve mostrar uma parede de tijolos. À meia-noite, os tijolos continuam visíveis, mas a sombra de um trem atravessa a imagem.",
+      "O fiscal compara três noites. A sombra estaciona no mesmo ponto e as marcas no piso aumentam, como se malas estivessem sendo arrastadas através da parede. O relógio da plataforma permanece em 23:59. O relógio do monitor avança normalmente.",
+      "Na quarta noite, uma placa aparece por trás dos tijolos: DESEMBARQUE SOMENTE COM LEMBRANÇA VÁLIDA. O fiscal reconhece a caligrafia do pai. Quando fecha o relatório, encontra um bilhete no bolso. O destino é a sala onde está sentado; a partida ocorreu trinta anos antes."
+    ],
+    "tags": [
+      "ficção original",
+      "transcrição",
+      "CC0"
+    ]
+  },
+  {
+    "year": 2026,
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "id": 600,
+    "type": "arg",
+    "code": "ARG_084_1",
+    "title": "O primeiro sinal",
+    "description": "Um bilhete de manutenção esconde o nome da estação.",
+    "article": [
+      "SISTEMA DE TRIAGEM / FICÇÃO INTERATIVA. Um operador deixou quatro instruções. O terminal pede uma palavra, não um número. A anotação na margem diz: “O começo de cada linha conhece o destino”.",
+      "Ligue a fonte reserva.\nUna os contatos partidos.\nAbra o painel sem marca.\nRetire a fita de teste.",
+      "As quatro linhas são tudo que restou. Reconstrua o nome da estação para abrir o relatório."
+    ],
+    "puzzle": {
+      "question": "Qual é o nome da estação?",
+      "answer": "LUAR",
+      "hint": "Leia a primeira letra de cada uma das quatro instruções.",
+      "ending": "LUAR era uma estação automática de observação. O relatório revela que o “sinal desconhecido” era uma mensagem guardada pelo próprio operador para ser encontrada depois do apagão. Arquivo 01 concluído."
+    },
+    "tags": [
+      "ficção original",
+      "enigma",
+      "CC0"
+    ]
+  },
+  {
+    "year": 2026,
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "id": 601,
+    "type": "arg",
+    "code": "ARG_084_2",
+    "title": "O relógio atrasado",
+    "description": "Quatro registros indicam quando a porta do arquivo abre.",
+    "article": [
+      "FICÇÃO INTERATIVA. O relógio do corredor está sempre vinte minutos atrasado. O livro de ocorrências registra a abertura da porta quando esse relógio marcava 08:20.",
+      "O sistema exige o horário real no formato HHMM. Uma nota reforça: não use o horário mostrado no relógio defeituoso."
+    ],
+    "puzzle": {
+      "question": "Digite o horário real (HHMM).",
+      "answer": "0840",
+      "hint": "Some vinte minutos a 08:20.",
+      "ending": "Às 08:40, a porta libera uma caixa de fotografias. No verso de cada imagem está escrito o mesmo horário. O defeito do relógio era a chave de verificação usada pelos antigos arquivistas."
+    },
+    "tags": [
+      "ficção original",
+      "enigma",
+      "CC0"
+    ]
+  },
+  {
+    "year": 2026,
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "id": 602,
+    "type": "arg",
+    "code": "ARG_084_3",
+    "title": "Três passos para trás",
+    "description": "Uma cifra curta protege o nome de um arquivo.",
+    "article": [
+      "FICÇÃO INTERATIVA. A fita contém a palavra VLQDO. A operadora deixou a seguinte regra: “Cada letra foi deslocada três posições para a frente no alfabeto de A a Z. Desfaça o deslocamento”.",
+      "Não há acentos, espaços ou caracteres adicionais. A palavra decifrada abre a segunda camada."
+    ],
+    "puzzle": {
+      "question": "Qual palavra foi codificada?",
+      "answer": "SINAL",
+      "hint": "V volta para S; L volta para I. Faça o mesmo com as outras letras.",
+      "ending": "SINAL desbloqueia a gravação original: uma contagem regressiva que termina em uma voz humana dizendo “a memória voltou”. O transmissor não procurava alguém; procurava sua própria gravação."
+    },
+    "tags": [
+      "ficção original",
+      "enigma",
+      "CC0"
+    ]
+  },
+  {
+    "year": 2026,
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "id": 603,
+    "type": "arg",
+    "code": "ARG_084_4",
+    "title": "A gaveta binária",
+    "description": "O número da gaveta foi salvo em cinco lâmpadas.",
+    "article": [
+      "FICÇÃO INTERATIVA. Cinco lâmpadas representam os valores 16, 8, 4, 2 e 1, nessa ordem. A sequência registrada é 1 0 1 0 1.",
+      "A regra está gravada no painel: some apenas os valores das lâmpadas acesas (1). O resultado é o número decimal da gaveta."
+    ],
+    "puzzle": {
+      "question": "Qual gaveta deve ser aberta?",
+      "answer": "21",
+      "hint": "As lâmpadas acesas valem 16, 4 e 1.",
+      "ending": "A gaveta 21 contém o mapa de uma rede de bibliotecas. Todas as linhas terminam no mesmo ponto: o terminal onde você está lendo. A rede sobreviveu como um arquivo compartilhado."
+    },
+    "tags": [
+      "ficção original",
+      "enigma",
+      "CC0"
+    ]
+  },
+  {
+    "year": 2026,
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "id": 604,
+    "type": "arg",
+    "code": "ARG_084_5",
+    "title": "As fitas fora de ordem",
+    "description": "Um inventário embaralhado guarda uma senha de quatro letras.",
+    "article": [
+      "FICÇÃO INTERATIVA. O inventário foi encontrado nesta ordem:\nFita 1984: O\nFita 1960: E\nFita 1990: S\nFita 1972: C",
+      "Organize as fitas da mais antiga para a mais recente. Leia as letras nessa ordem. O terminal aceita uma única palavra."
+    ],
+    "puzzle": {
+      "question": "Digite a senha reconstruída.",
+      "answer": "ECOS",
+      "hint": "A primeira fita é de 1960 e a última é de 1990.",
+      "ending": "ECOS abre um diário coletivo. Cada década preservou uma letra para a próxima. O protocolo era simples: ninguém precisava conhecer a senha inteira para ajudar a mantê-la viva."
+    },
+    "tags": [
+      "ficção original",
+      "enigma",
+      "CC0"
+    ]
+  },
+  {
+    "year": 2026,
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "id": 605,
+    "type": "arg",
+    "code": "ARG_084_6",
+    "title": "A mensagem espelhada",
+    "description": "Uma palavra foi gravada do fim para o começo.",
+    "article": [
+      "FICÇÃO INTERATIVA. O técnico anota que o gravador inverteu apenas a ordem das letras. A mensagem encontrada é: AIROMEM.",
+      "Leia a sequência da direita para a esquerda. Não troque letras nem acrescente números."
+    ],
+    "puzzle": {
+      "question": "Qual é a palavra original?",
+      "answer": "MEMORIA",
+      "hint": "A última letra da sequência é a primeira da resposta.",
+      "ending": "MEMÓRIA abre o último registro: a confirmação de que as seis rotinas do terminal estão operacionais. Você restaurou os arquivos sem sair do SYSTEM 84. A investigação termina aqui; o acervo permanece aberto."
+    },
+    "tags": [
+      "ficção original",
+      "enigma",
+      "CC0"
+    ]
+  },
+  {
+    "id": 400,
+    "type": "lost-media",
+    "title": "Frankenstein: a lata que atravessou um século",
+    "year": 1910,
+    "code": "DOSSIER_1910_400",
+    "description": "Como uma cópia guardada por um colecionador chegou ao laboratório da Library of Congress.",
+    "tags": [
+      "história real",
+      "preservação",
+      "terror"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado nas fontes indicadas. O texto deste dossiê pode ser reutilizado; os direitos das obras e das fontes originais não implicam autorização para reproduzi-las.",
+    "sources": [
+      {
+        "title": "Library of Congress — The First Film Version of Frankenstein, Newly Restored! (2018)",
+        "url": "https://blogs.loc.gov/now-see-hear/2018/10/frankenstein-post/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "A adaptação de Frankenstein realizada pela Edison em 1910 sobreviveu em uma cópia de nitrato adquirida pelo colecionador Alois Dettlaff nos anos 1950. Segundo a Library of Congress, ele só reconheceu sua importância quando o American Film Institute incluiu o título entre filmes desaparecidos procurados em 1980.",
+      "A biblioteca comprou a coleção em 2014; a película chegou ao Packard Campus em 2015. A equipe fez uma digitalização em 2K e trabalhou na restauração. A divulgação de 2018 mostra que encontrar uma cópia e preservá-la são etapas diferentes: um filme pode circular em transferências precárias enquanto seu suporte original continua esperando conservação."
+    ],
+    "recoveryStatus": "RECUPERADA — HISTÓRIA DA RESTAURAÇÃO DE 2018"
+  },
+  {
+    "id": 401,
+    "type": "lost-media",
+    "title": "Sherlock Holmes: o detetive reaparece no arquivo",
+    "year": 1916,
+    "code": "DOSSIER_1916_401",
+    "description": "Um negativo francês devolveu ao público o Holmes de William Gillette.",
+    "tags": [
+      "história real",
+      "cinema mudo",
+      "investigação"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado nas fontes indicadas. O texto deste dossiê pode ser reutilizado; os direitos das obras e das fontes originais não implicam autorização para reproduzi-las.",
+    "sources": [
+      {
+        "title": "BFI — Cinémathèque Française discovers 1916 Sherlock Holmes film (2014)",
+        "url": "https://www.bfi.org.uk/news/cinematheque-francaise-discovers-1916-sherlock-holmes-film"
+      }
+    ],
+    "media": [],
+    "article": [
+      "William Gillette ajudou a definir Sherlock Holmes no palco. Seu filme de 1916, dirigido por Arthur Berthelet, permaneceu considerado perdido durante décadas. Em 2014, foi anunciada a descoberta de um negativo duplicado em nitrato nos depósitos da Cinémathèque Française.",
+      "Preparado para distribuição francesa, o material conservava intertítulos em francês e indicações de cores. Dividido em pequenos rolos, foi digitalizado em 4K no projeto conjunto da cinemateca e do San Francisco Silent Film Festival. A descoberta preserva uma atuação que fotografias e relatos escritos só permitiam imaginar."
+    ],
+    "recoveryStatus": "RECUPERADA — DESCOBERTA ANUNCIADA EM 2014"
+  },
+  {
+    "id": 402,
+    "type": "lost-media",
+    "title": "Dawson City: cinema debaixo da terra",
+    "year": 1978,
+    "code": "DOSSIER_1978_402",
+    "description": "Uma obra de construção encontrou centenas de rolos preservados pelo solo congelado.",
+    "tags": [
+      "história real",
+      "arquivo",
+      "Canadá"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado nas fontes indicadas. O texto deste dossiê pode ser reutilizado; os direitos das obras e das fontes originais não implicam autorização para reproduzi-las.",
+    "sources": [
+      {
+        "title": "Canadian Association for Conservation — relato técnico de Michael S. Gates (1980)",
+        "url": "https://www.cac-accr.ca/publications/the-dawson-city-film-find-a-major-cooperative-film-conservation-project/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "No verão de 1978, escavações em Dawson City revelaram centenas de filmes de nitrato enterrados havia cerca de meio século. As condições de permafrost ajudaram a conservar esse material do período silencioso, incluindo registros que os conservadores consideravam possivelmente únicos.",
+      "A descoberta exigiu um resgate urgente: havia uma construção em andamento e a película era altamente inflamável. O relato técnico publicado por Michael S. Gates em 1980 documenta os desafios da operação. O caso mostra como o patrimônio audiovisual pode sobreviver fora de instituições e depender de uma resposta rápida quando reaparece."
+    ],
+    "recoveryStatus": "ACERVO RECUPERADO — RESGATE EM 1978"
+  },
+  {
+    "id": 403,
+    "type": "lost-media",
+    "title": "The White Shadow: três rolos, muitas pistas",
+    "year": 1924,
+    "code": "DOSSIER_1924_403",
+    "description": "A recuperação parcial de um filme de Graham Cutts com participação do jovem Hitchcock.",
+    "tags": [
+      "história real",
+      "recuperação parcial",
+      "Nova Zelândia"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado nas fontes indicadas. O texto deste dossiê pode ser reutilizado; os direitos das obras e das fontes originais não implicam autorização para reproduzi-las.",
+    "sources": [
+      {
+        "title": "National Film Preservation Foundation — Lost Hitchcock Film Discovered in New Zealand",
+        "url": "https://www.filmpreservation.org/preserved-films/lost-hitchcock-film"
+      },
+      {
+        "title": "BFI — ficha de The White Shadow",
+        "url": "https://www.bfi.org.uk/film/6fe9a810-1208-5f6b-b7e8-28b0c7f5d5b3/the-white-shadow"
+      }
+    ],
+    "media": [],
+    "article": [
+      "The White Shadow foi dirigido por Graham Cutts e contou com Alfred Hitchcock em funções de produção antes de sua carreira como diretor. Durante a pesquisa de filmes antigos no New Zealand Film Archive, foram identificados os três primeiros rolos de uma cópia com tingimento.",
+      "O anúncio da National Film Preservation Foundation deixa claro o limite da descoberta: o filme tinha seis rolos, e o material recuperado era incompleto. Mesmo assim, as imagens de Betty Compson interpretando irmãs gêmeas oferecem evidência visual de uma produção que havia desaparecido. Recuperar uma parte já permite novas pesquisas sem transformar fragmentos em uma falsa versão integral."
+    ],
+    "recoveryStatus": "RECUPERAÇÃO PARCIAL — TRÊS PRIMEIROS ROLOS NO ACHADO DOCUMENTADO"
+  },
+  {
+    "id": 404,
+    "type": "lost-media",
+    "title": "Love, Life and Laughter: latas de um cinema fechado",
+    "year": 1923,
+    "code": "DOSSIER_1923_404",
+    "description": "Uma versão holandesa devolveu parte da atuação de Betty Balfour ao cinema.",
+    "tags": [
+      "história real",
+      "recuperação parcial",
+      "restauração"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado nas fontes indicadas. O texto deste dossiê pode ser reutilizado; os direitos das obras e das fontes originais não implicam autorização para reproduzi-las.",
+    "sources": [
+      {
+        "title": "BFI — Love, Life and Laughter no London Film Festival (2019)",
+        "url": "https://www.bfi.org.uk/news/lost-nearly-century-love-life-laughter-screens-bfi-lff-s-archive"
+      }
+    ],
+    "media": [],
+    "article": [
+      "Love, Life and Laughter, de George Pearson, figurava na lista de filmes procurados pelo BFI. Uma cópia com intertítulos holandeses foi identificada no Eye Filmmuseum após a chegada de uma coleção em 2012. As latas vinham de um antigo cinema da cidade de Hattem.",
+      "O material preservado era incompleto, mas permitiu restaurar imagens e reconstruir intertítulos em inglês. O BFI anunciou a apresentação da restauração no festival de Londres de 2019. A história destaca o valor de catalogar coleções aparentemente comuns: a identidade de uma obra pode continuar desconhecida mesmo quando suas latas sobreviveram."
+    ],
+    "recoveryStatus": "RECUPERAÇÃO PARCIAL — RESTAURAÇÃO APRESENTADA EM 2019"
+  },
+  {
+    "id": 405,
+    "type": "lost-media",
+    "title": "Sleigh Bells: Oswald volta à tela",
+    "year": 1928,
+    "code": "DOSSIER_1928_405",
+    "description": "Um curta de animação reencontrado no acervo do BFI.",
+    "tags": [
+      "história real",
+      "animação",
+      "Oswald"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado nas fontes indicadas. O texto deste dossiê pode ser reutilizado; os direitos das obras e das fontes originais não implicam autorização para reproduzi-las.",
+    "sources": [
+      {
+        "title": "BFI — Lost Disney film found in the BFI National Archive (2015)",
+        "url": "https://www.bfi.org.uk/news/lost-disney-film-found-bfi-national-archive"
+      }
+    ],
+    "media": [],
+    "article": [
+      "Em novembro de 2015, o BFI anunciou a redescoberta de Sleigh Bells, curta de 1928 com Oswald the Lucky Rabbit. O personagem pertence à fase da animação de Walt Disney anterior ao sucesso de Mickey Mouse. Uma cópia do curta havia sido preservada nas coleções do arquivo britânico.",
+      "A Walt Disney Animation Studios realizou uma restauração apresentada no BFI Southbank em dezembro de 2015. O caso demonstra a diferença entre um filme existir em um acervo e estar identificado e disponível para o público: reconhecer uma película pode ser tão decisivo quanto encontrar uma lata perdida. Este dossiê apresenta a história da recuperação, não uma reprodução da restauração."
+    ],
+    "recoveryStatus": "RECUPERADA — REDESCOBERTA ANUNCIADA EM 2015"
+  },
+  {
+    "id": 406,
+    "type": "lost-media",
+    "title": "Metropolis: os planos que voltaram de Buenos Aires",
+    "year": 1927,
+    "code": "DOSSIER_1927_406",
+    "description": "Uma cópia danificada permitiu recuperar cenas ausentes do clássico de Fritz Lang.",
+    "tags": [
+      "história real",
+      "ficção científica",
+      "restauração"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado nas fontes indicadas. O texto deste dossiê pode ser reutilizado; os direitos das obras e das fontes originais não implicam autorização para reproduzi-las.",
+    "sources": [
+      {
+        "title": "Friedrich-Wilhelm-Murnau-Stiftung — Projekt: Metropolis 27/10",
+        "url": "https://murnau-stiftung.de/stiftung/projekte/projekt-metropolis-2710"
+      }
+    ],
+    "media": [],
+    "article": [
+      "Metropolis nunca desapareceu por completo, mas muitas cenas de sua montagem inicial foram consideradas perdidas. Em 2008, um achado em Buenos Aires revelou material em 16 mm com planos que faltavam às reconstruções conhecidas. A película estava bastante danificada.",
+      "A Murnau-Stiftung coordenou uma nova reconstrução e restauração, apresentada simultaneamente em Frankfurt e Berlim em 12 de fevereiro de 2010. Esse caso lembra que lost media também pode significar uma versão ou sequência desaparecida de uma obra famosa. Recuperar cenas modifica a compreensão do filme mesmo quando outras cópias já circulam."
+    ],
+    "recoveryStatus": "CENAS RECUPERADAS — RECONSTRUÇÃO DE 2010"
+  },
+  {
+    "id": 407,
+    "type": "lost-media",
+    "title": "A conexão Nova Zelândia: filmes que viajaram longe",
+    "year": 2010,
+    "code": "DOSSIER_2010_407",
+    "description": "A cooperação entre arquivos recuperou obras americanas conservadas no outro lado do mundo.",
+    "tags": [
+      "história real",
+      "cooperação",
+      "cinema mudo"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado nas fontes indicadas. O texto deste dossiê pode ser reutilizado; os direitos das obras e das fontes originais não implicam autorização para reproduzi-las.",
+    "sources": [
+      {
+        "title": "National Film Preservation Foundation — Lost and Found: New Zealand",
+        "url": "https://www.filmpreservation.org/preserved-films/lost-and-found-new-zealand"
+      },
+      {
+        "title": "National Film Preservation Foundation — relatório anual de 2011",
+        "url": "https://www.filmpreservation.org/userfiles/image/PDFs/nfpf_ar2011.pdf"
+      }
+    ],
+    "media": [],
+    "article": [
+      "Em 2010, o New Zealand Film Archive e a National Film Preservation Foundation anunciaram a identificação de um conjunto de filmes americanos do período silencioso. Entre os títulos estavam Upstream, de John Ford, Maytime, com Clara Bow, e Won in a Closet, dirigido e estrelado por Mabel Normand.",
+      "A colaboração envolveu arquivos americanos especializados em nitrato e continuou durante vários anos. Além de produções de nomes conhecidos, recuperou filmes industriais, registros de viagens e obras de realizadores menos lembrados. A circulação internacional das cópias acabou criando caminhos inesperados para a sobrevivência da memória cinematográfica."
+    ],
+    "recoveryStatus": "ACERVO RECUPERADO — PROJETO DE COOPERAÇÃO DOCUMENTADO"
+  },
+  {
+    "id": 100,
+    "type": "livro",
+    "title": "Alice no País das Maravilhas",
+    "year": 1865,
+    "code": "BOOK_PG_11",
+    "description": "Uma menina atravessa um mundo em que linguagem, tamanho e lógica mudam a cada encontro.",
+    "tags": [
+      "fantasia",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Alice's Adventures in Wonderland by Lewis Carroll",
+        "url": "https://www.gutenberg.org/ebooks/11"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-11.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/11.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "01b38ea4c710a84bc18d0bd41271a5a1a92b94e97b2812f4dece97d4a694725e"
+        }
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "type": "livro",
+    "title": "Através do Espelho",
+    "year": 1871,
+    "code": "BOOK_PG_12",
+    "description": "Alice entra em um tabuleiro de xadrez vivo, entre jogos de palavras e criaturas impossíveis.",
+    "tags": [
+      "fantasia",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Through the Looking-Glass by Lewis Carroll",
+        "url": "https://www.gutenberg.org/ebooks/12"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-12.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/12.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "e40a38f5da841f9fb6acc557355c447b7c2ccb56a208caf5fcf2b05081f14d42"
+        }
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "type": "livro",
+    "title": "Orgulho e Preconceito",
+    "year": 1813,
+    "code": "BOOK_PG_1342",
+    "description": "Elizabeth Bennet confronta expectativas sociais e primeiras impressões.",
+    "tags": [
+      "romance",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Pride and Prejudice by Jane Austen",
+        "url": "https://www.gutenberg.org/ebooks/1342"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-1342.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/1342.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "3f6bb9d6f78e0293b56acd4714dd68cb7d6d1d293402031ce9d5a216bcaf9d75"
+        }
+      }
+    ]
+  },
+  {
+    "id": 103,
+    "type": "livro",
+    "title": "Moby Dick",
+    "year": 1851,
+    "code": "BOOK_PG_2701",
+    "description": "A obsessão do capitão Ahab conduz um navio baleeiro a uma viagem extrema.",
+    "tags": [
+      "aventura",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Moby Dick; Or, The Whale by Herman Melville",
+        "url": "https://www.gutenberg.org/ebooks/2701"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-2701.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/2701.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "b5e88b71a1cda068e9ab1d94344c9d932338ba6da1a66def97a1aecd9cfcc87d"
+        }
+      }
+    ]
+  },
+  {
+    "id": 104,
+    "type": "livro",
+    "title": "As Aventuras de Sherlock Holmes",
+    "year": 1892,
+    "code": "BOOK_PG_1661",
+    "description": "Doze investigações exploram pistas, disfarces e o método do detetive de Baker Street.",
+    "tags": [
+      "mistério",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "The Adventures of Sherlock Holmes by Arthur Conan Doyle",
+        "url": "https://www.gutenberg.org/ebooks/1661"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-1661.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/1661.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "922e2a12ccb43a4c9544c260b2166c6ad2097aeb5957faeee113f173bb857cd0"
+        }
+      }
+    ]
+  },
+  {
+    "id": 105,
+    "type": "livro",
+    "title": "Um Conto de Duas Cidades",
+    "year": 1859,
+    "code": "BOOK_PG_98",
+    "description": "Destinos se cruzam entre Londres e Paris durante a Revolução Francesa.",
+    "tags": [
+      "histórico",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "A Tale of Two Cities by Charles Dickens",
+        "url": "https://www.gutenberg.org/ebooks/98"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-98.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/98.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "d54c2b80d40a40b982cd88852c6180bb944d95acdb028af3d0e01a1750681784"
+        }
+      }
+    ]
+  },
+  {
+    "id": 106,
+    "type": "livro",
+    "title": "As Aventuras de Tom Sawyer",
+    "year": 1876,
+    "code": "BOOK_PG_74",
+    "description": "Travessuras e descobertas acompanham a infância às margens do Mississippi.",
+    "tags": [
+      "aventura",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "The Adventures of Tom Sawyer, Complete by Mark Twain",
+        "url": "https://www.gutenberg.org/ebooks/74"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-74.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/74.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "74d77384b123a6360db9ab58463cff8b38df8525fbdc6000c81ee388e1f3cf10"
+        }
+      }
+    ]
+  },
+  {
+    "id": 107,
+    "type": "livro",
+    "title": "As Aventuras de Huckleberry Finn",
+    "year": 1884,
+    "code": "BOOK_PG_76",
+    "description": "Uma viagem de jangada coloca liberdade e convenções sociais em conflito.",
+    "tags": [
+      "aventura",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Adventures of Huckleberry Finn by Mark Twain",
+        "url": "https://www.gutenberg.org/ebooks/76"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-76.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/76.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "d617a37aa7ae1e1a93dcde2634db2bccb86824e31e29a55230bdbf77d6872d59"
+        }
+      }
+    ]
+  },
+  {
+    "id": 108,
+    "type": "livro",
+    "title": "Grandes Esperanças",
+    "year": 1861,
+    "code": "BOOK_PG_1400",
+    "description": "Pip tenta compreender a origem de sua fortuna e o preço de suas ambições.",
+    "tags": [
+      "romance",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Great Expectations by Charles Dickens",
+        "url": "https://www.gutenberg.org/ebooks/1400"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-1400.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/1400.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "9a637118af8e953e9764ec603d9b0a032883384d465acac2e27966a80cf1c6f8"
+        }
+      }
+    ]
+  },
+  {
+    "id": 109,
+    "type": "livro",
+    "title": "A Ilha do Tesouro",
+    "year": 1883,
+    "code": "BOOK_PG_120",
+    "description": "Um mapa leva Jim Hawkins a uma expedição entre piratas e lealdades incertas.",
+    "tags": [
+      "aventura",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Treasure Island by Robert Louis Stevenson",
+        "url": "https://www.gutenberg.org/ebooks/120"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-120.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/120.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "5bc08275eacea8640b1aa185c645283bb8c564d7b23df6b03437d229b4fc6ebd"
+        }
+      }
+    ]
+  },
+  {
+    "id": 110,
+    "type": "livro",
+    "title": "O Príncipe",
+    "year": 1532,
+    "code": "BOOK_PG_1232",
+    "description": "Reflexões de Maquiavel sobre poder, governo e a conservação dos Estados.",
+    "tags": [
+      "filosofia",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "The Prince by Niccolò Machiavelli",
+        "url": "https://www.gutenberg.org/ebooks/1232"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-1232.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/1232.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "33496a305f7a4b933784fb5aec95f920fbc3d4687794817e4cc444aa6578d2e4"
+        }
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "type": "livro",
+    "title": "Contos dos Irmãos Grimm",
+    "year": 1812,
+    "code": "BOOK_PG_2591",
+    "description": "Narrativas populares com florestas, encantamentos e provas de coragem.",
+    "tags": [
+      "contos",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Grimms' Fairy Tales by Jacob Grimm and Wilhelm Grimm",
+        "url": "https://www.gutenberg.org/ebooks/2591"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-2591.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/2591.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "377ebb8ca06cd8bc0b1015ddb54766c44f50dece731c53bb030f1cc00f54092a"
+        }
+      }
+    ]
+  },
+  {
+    "id": 112,
+    "type": "livro",
+    "title": "O Médico e o Monstro",
+    "year": 1886,
+    "code": "BOOK_PG_43",
+    "description": "Um advogado investiga a estranha ligação entre o doutor Jekyll e o senhor Hyde.",
+    "tags": [
+      "terror",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "The strange case of Dr. Jekyll and Mr. Hyde by Robert Louis Stevenson",
+        "url": "https://www.gutenberg.org/ebooks/43"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-43.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/43.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "b43448a88391591f9cf82b25553df00faf47a2752a873185fcdd1156eebdb990"
+        }
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "type": "livro",
+    "title": "Um Conto de Natal",
+    "year": 1843,
+    "code": "BOOK_PG_46",
+    "description": "Visitas sobrenaturais obrigam Scrooge a revisitar escolhas e consequências.",
+    "tags": [
+      "fantasia",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "A Christmas Carol in Prose; Being a Ghost Story of Christmas by Charles Dickens",
+        "url": "https://www.gutenberg.org/ebooks/46"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-46.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/46.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "8c36b93723d454982df045ec0efdf2664e5a48e6b5e2f670e883575f75ad0cc8"
+        }
+      }
+    ]
+  },
+  {
+    "id": 114,
+    "type": "livro",
+    "title": "O Maravilhoso Mágico de Oz",
+    "year": 1900,
+    "code": "BOOK_PG_55",
+    "description": "Dorothy procura o caminho de casa com companheiros que também desejam se transformar.",
+    "tags": [
+      "fantasia",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "The Wonderful Wizard of Oz by L. Frank Baum",
+        "url": "https://www.gutenberg.org/ebooks/55"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-55.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/55.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "969bffab7740d4d8a0bac332d78bd0152ad4a40a2efc52f06c74a9bb6120be75"
+        }
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "type": "livro",
+    "title": "Uma Modesta Proposta",
+    "year": 1729,
+    "code": "BOOK_PG_1080",
+    "description": "Ensaio satírico de Jonathan Swift que expõe a crueldade de tratar pessoas como números.",
+    "tags": [
+      "sátira",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "A Modest Proposal by Jonathan Swift",
+        "url": "https://www.gutenberg.org/ebooks/1080"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-1080.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/1080.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "331340f2ada84a7f79d756a344f6ce7d78026cd1d2359d33f79ca4a13d9f1519"
+        }
+      }
+    ]
+  },
+  {
+    "id": 116,
+    "type": "livro",
+    "title": "O Coração das Trevas",
+    "year": 1899,
+    "code": "BOOK_PG_219",
+    "description": "Marlow narra uma viagem que revela a violência da exploração colonial.",
+    "tags": [
+      "romance",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Heart of Darkness by Joseph Conrad",
+        "url": "https://www.gutenberg.org/ebooks/219"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-219.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/219.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "1bcdf0a1ac611dd6b70a20d100a07085754da4e90a949d6031717b86cd6d020a"
+        }
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "type": "livro",
+    "title": "A Guerra dos Mundos",
+    "year": 1898,
+    "code": "BOOK_PG_36",
+    "description": "Uma invasão de Marte abala a confiança humana no domínio do planeta.",
+    "tags": [
+      "ficção científica",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "The war of the worlds by H. G. Wells",
+        "url": "https://www.gutenberg.org/ebooks/36"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-36.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/36.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "8417469e3ab664749f7b36ebb85799075818207b0380b54c27d07d592a44117d"
+        }
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "type": "livro",
+    "title": "O Homem Invisível",
+    "year": 1897,
+    "code": "BOOK_PG_5230",
+    "description": "Um experimento de invisibilidade transforma seu criador em uma presença ameaçadora.",
+    "tags": [
+      "ficção científica",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "The Invisible Man: A Grotesque Romance by H. G. Wells",
+        "url": "https://www.gutenberg.org/ebooks/5230"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-5230.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/5230.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "28c70e3809ce945efbe5f8681532916a2c4253fee5cca6e1a191707af22280d3"
+        }
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "type": "livro",
+    "title": "A Ilha do Doutor Moreau",
+    "year": 1896,
+    "code": "BOOK_PG_159",
+    "description": "Um náufrago descobre experiências perturbadoras em uma ilha isolada.",
+    "tags": [
+      "ficção científica",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "The island of Doctor Moreau by H. G. Wells",
+        "url": "https://www.gutenberg.org/ebooks/159"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-159.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/159.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "6085aef7b293dc0935974736f71e84c86952d5cb4cbad977fde942ffeba98a31"
+        }
+      }
+    ]
+  },
+  {
+    "id": 120,
+    "type": "livro",
+    "title": "Uma Princesa de Marte",
+    "year": 1912,
+    "code": "BOOK_PG_62",
+    "description": "John Carter encontra sociedades e conflitos em um planeta desconhecido.",
+    "tags": [
+      "ficção científica",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "A princess of Mars by Edgar Rice Burroughs",
+        "url": "https://www.gutenberg.org/ebooks/62"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-62.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/62.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "d35d09d2b9b7691822909636085c6a01903bae375e51ee10b45377021b122b66"
+        }
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "type": "livro",
+    "title": "Vinte Mil Léguas Submarinas",
+    "year": 1870,
+    "code": "BOOK_PG_164",
+    "description": "A bordo do Nautilus, viajantes exploram o oceano sob o comando do capitão Nemo.",
+    "tags": [
+      "aventura",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Twenty Thousand Leagues under the Sea by Jules Verne",
+        "url": "https://www.gutenberg.org/ebooks/164"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-164.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/164.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "3562e063ad9027725d1feb2f945e86a0a90804a8ab19f8cb272884c436ebc34f"
+        }
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "type": "livro",
+    "title": "O Chamado da Selva",
+    "year": 1903,
+    "code": "BOOK_PG_215",
+    "description": "Buck enfrenta mudanças brutais e descobre novos instintos nas paisagens do norte.",
+    "tags": [
+      "aventura",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "The call of the wild by Jack London",
+        "url": "https://www.gutenberg.org/ebooks/215"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-215.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/215.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "30f569c5671bba7bbc4a92ab6d8ee01a0d3be00f994819c77da62c28041eb8a2"
+        }
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "type": "livro",
+    "title": "A Volta do Parafuso",
+    "year": 1898,
+    "code": "BOOK_PG_209",
+    "description": "Uma governanta tenta proteger duas crianças de presenças cuja natureza permanece incerta.",
+    "tags": [
+      "terror",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "The Turn of the Screw by Henry James",
+        "url": "https://www.gutenberg.org/ebooks/209"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-209.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/209.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "171afa184a54b6004194e02047f5d01cf216d8bc519ddfb671a1e41d80bbdf65"
+        }
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "type": "livro",
+    "title": "O Morro dos Ventos Uivantes",
+    "year": 1847,
+    "code": "BOOK_PG_768",
+    "description": "Laços familiares e ressentimentos atravessam gerações numa paisagem isolada.",
+    "tags": [
+      "gótico",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Wuthering Heights by Emily Brontë",
+        "url": "https://www.gutenberg.org/ebooks/768"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-768.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/768.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "e533fe750589f0421d5d744576315f5c2b9b0d69e981179ea0551bbf134c5e02"
+        }
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "type": "livro",
+    "title": "Jane Eyre",
+    "year": 1847,
+    "code": "BOOK_PG_1260",
+    "description": "Uma jovem busca autonomia enquanto enfrenta os segredos de uma casa e de seu proprietário.",
+    "tags": [
+      "gótico",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Jane Eyre: An Autobiography by Charlotte Brontë",
+        "url": "https://www.gutenberg.org/ebooks/1260"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-1260.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/1260.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "13414dee2951c3ee731d76d2ffd822016b2479c892162760c5d0eb2aa5fa7631"
+        }
+      }
+    ]
+  },
+  {
+    "id": 126,
+    "type": "livro",
+    "title": "A Abadia de Northanger",
+    "year": 1817,
+    "code": "BOOK_PG_121",
+    "description": "A imaginação de uma leitora de romances góticos interfere na percepção das pessoas ao redor.",
+    "tags": [
+      "romance",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Northanger Abbey by Jane Austen",
+        "url": "https://www.gutenberg.org/ebooks/121"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-121.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/121.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "273d7d35f8cc0286812bdb26ccc17f362b4f2d0d69a2ec96ca403fac8505b709"
+        }
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "type": "livro",
+    "title": "Razão e Sensibilidade",
+    "year": 1811,
+    "code": "BOOK_PG_161",
+    "description": "As irmãs Dashwood lidam de formas diferentes com perdas, afeto e expectativas sociais.",
+    "tags": [
+      "romance",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Sense and Sensibility by Jane Austen",
+        "url": "https://www.gutenberg.org/ebooks/161"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-161.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/161.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "7bcd77c45cb32fb8d9f89402561270cc6a911c0a4e20667176d5be779fc3974a"
+        }
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "type": "livro",
+    "title": "Persuasão",
+    "year": 1817,
+    "code": "BOOK_PG_105",
+    "description": "Um reencontro permite a Anne Elliot reconsiderar uma decisão antiga.",
+    "tags": [
+      "romance",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Persuasion by Jane Austen",
+        "url": "https://www.gutenberg.org/ebooks/105"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-105.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/105.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "7365e47089a3d63c64b011342bd00e2375cc51ee642dcf9af5aaba75cfd771bc"
+        }
+      }
+    ]
+  },
+  {
+    "id": 129,
+    "type": "livro",
+    "title": "Emma",
+    "year": 1815,
+    "code": "BOOK_PG_158",
+    "description": "Tentativas de organizar a vida amorosa alheia revelam equívocos de uma jovem confiante.",
+    "tags": [
+      "romance",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Emma by Jane Austen",
+        "url": "https://www.gutenberg.org/ebooks/158"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-158.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/158.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "532b122b4e6a76cc556d6fdcd729b5892f5c4ce4a1b7060b9f832adfad8680dc"
+        }
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "type": "livro",
+    "title": "Obras Completas de William Shakespeare",
+    "year": 1623,
+    "code": "BOOK_PG_100",
+    "description": "Coletânea de peças e poemas em inglês, reunindo tragédias, comédias e dramas históricos.",
+    "tags": [
+      "teatro",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "The Complete Works of William Shakespeare by William Shakespeare",
+        "url": "https://www.gutenberg.org/ebooks/100"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-100.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/100.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "eb61e33cab23dbe712ad57091ded6c7292ba91ac3bb2764f51a3223ec0068fe5"
+        }
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "type": "livro",
+    "title": "A Odisseia",
+    "year": -700,
+    "code": "BOOK_PG_1727",
+    "description": "Odisseu enfrenta obstáculos e tenta retornar a Ítaca após a guerra de Troia.",
+    "tags": [
+      "épico",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "The Odyssey by Homer",
+        "url": "https://www.gutenberg.org/ebooks/1727"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-1727.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/1727.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "b167ce5e348bf805dfe4355dff2eae5c2e522b11cce003a6f98bb65a753bbc69"
+        }
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "type": "livro",
+    "title": "Guerra e Paz",
+    "year": 1869,
+    "code": "BOOK_PG_2600",
+    "description": "Famílias e exércitos atravessam os conflitos napoleônicos na Rússia.",
+    "tags": [
+      "histórico",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "War and Peace by graf Leo Tolstoy",
+        "url": "https://www.gutenberg.org/ebooks/2600"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-2600.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/2600.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "2d5bb2ad5f422765e714617e21fa31bbaf8958aa79682c86fca6660fcc5d1b2b"
+        }
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "type": "livro",
+    "title": "Ulysses",
+    "year": 1922,
+    "code": "BOOK_PG_4300",
+    "description": "Vozes e pensamentos acompanham um dia em Dublin em uma experiência literária modernista.",
+    "tags": [
+      "romance",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Ulysses by James Joyce",
+        "url": "https://www.gutenberg.org/ebooks/4300"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-4300.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/4300.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "e03094626f9528cf3fc287a49d6edbdbf47cd40483cb13ceb301e74e15ebbf9e"
+        }
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "type": "livro",
+    "title": "A Vida e as Aventuras de Papai Noel",
+    "year": 1902,
+    "code": "BOOK_PG_520",
+    "description": "L. Frank Baum imagina a origem lendária do personagem e de sua missão.",
+    "tags": [
+      "fantasia",
+      "domínio público",
+      "inglês"
+    ],
+    "availability": "available",
+    "language": "Inglês",
+    "rightsNote": "Edição em inglês identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "The Life and Adventures of Santa Claus by L. Frank Baum",
+        "url": "https://www.gutenberg.org/ebooks/520"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Inglês",
+        "kind": "text",
+        "path": "media/book-520.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/520.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "8e33fdafbae73db5586e4bb6ec40a082a0b33b744aed99bbd79cafab9935f677"
+        }
+      }
+    ]
+  },
+  {
+    "id": 135,
+    "type": "livro",
+    "title": "Dom Casmurro",
+    "year": 1899,
+    "code": "BOOK_PG_55752",
+    "description": "Bentinho revisita a própria vida e oferece ao leitor uma memória marcada por ciúmes e dúvidas.",
+    "tags": [
+      "clássico brasileiro",
+      "domínio público",
+      "português"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Edição em português identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Dom Casmurro by Machado de Assis",
+        "url": "https://www.gutenberg.org/ebooks/55752"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Português",
+        "kind": "text",
+        "path": "media/book-55752.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/55752.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Português",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "0fc3dbf384544d81d87e5a731e67b7976ac3a57acb378f0f354d12a3b52bd0c7"
+        }
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "type": "livro",
+    "title": "Memórias Póstumas de Brás Cubas",
+    "year": 1881,
+    "code": "BOOK_PG_54829",
+    "description": "Um narrador defunto conta sua vida com ironia e desafia a ordem convencional do romance.",
+    "tags": [
+      "clássico brasileiro",
+      "domínio público",
+      "português"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Edição em português identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Memorias Posthumas de Braz Cubas by Machado de Assis",
+        "url": "https://www.gutenberg.org/ebooks/54829"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Português",
+        "kind": "text",
+        "path": "media/book-54829.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/54829.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Português",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "edfe4370698ed5716a9692b980a8d6ee77b4ff8116503bb2e08675f1d10d303a"
+        }
+      }
+    ]
+  },
+  {
+    "id": 137,
+    "type": "livro",
+    "title": "Os Fidalgos da Casa Mourisca",
+    "year": 1871,
+    "code": "BOOK_PG_16428",
+    "description": "Júlio Dinis acompanha uma família aristocrática em transformação.",
+    "tags": [
+      "clássico português",
+      "domínio público",
+      "português"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Edição em português identificada pelo Project Gutenberg como domínio público nos EUA. Créditos, tradução e licença do acervo preservados no texto; direitos territoriais podem variar. O título em português é apenas a identificação no catálogo.",
+    "sources": [
+      {
+        "title": "Os fidalgos da Casa Mourisca by Júlio Dinis",
+        "url": "https://www.gutenberg.org/ebooks/16428"
+      }
+    ],
+    "media": [
+      {
+        "title": "Ler texto integral — Português",
+        "kind": "text",
+        "path": "media/book-16428.txt",
+        "sourceUrl": "https://www.gutenberg.org/ebooks/16428.txt.utf-8",
+        "license": "Project Gutenberg — Public domain in the USA; créditos e licença preservados.",
+        "language": "Português",
+        "sourceChecksum": {
+          "algorithm": "sha256",
+          "value": "2cc3d4a21403ecaae9a9fc059d525be09c8a8c010adcaa91b85c8ff0edccea11"
+        }
+      }
+    ]
+  },
+  {
+    "id": 200,
+    "type": "filme",
+    "title": "Big Buck Bunny",
+    "year": 2008,
+    "code": "OPEN_FILM_200",
+    "description": "Um coelho enfrenta três pequenos provocadores.",
+    "tags": [
+      "animação",
+      "curta",
+      "creative commons"
+    ],
+    "availability": "available",
+    "language": "Sem diálogos",
+    "rightsNote": "© 2008 Blender Foundation. Direção: Sacha Goedegebure. CC BY 3.0. Cópia de acervo, sem edição pelo SYSTEM 84; reprodução remota no player interno.",
+    "sources": [
+      {
+        "title": "Projeto original e créditos",
+        "url": "https://peach.blender.org/about/"
+      },
+      {
+        "title": "Licença CC BY 3.0",
+        "url": "https://creativecommons.org/licenses/by/3.0/"
+      },
+      {
+        "title": "Política de conteúdo Blender Studio",
+        "url": "https://studio.blender.org/terms-and-conditions/"
+      },
+      {
+        "title": "Cópia de preservação no Internet Archive",
+        "url": "https://archive.org/details/BigBuckBunny_328"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir ao curta completo",
+        "kind": "video",
+        "path": "media/open-film-200.mp4",
+        "sourceUrl": "https://archive.org/download/BigBuckBunny_328/BigBuckBunny_512kb.mp4",
+        "remoteUrl": "https://archive.org/download/BigBuckBunny_328/BigBuckBunny_512kb.mp4",
+        "license": "Creative Commons Atribuição 3.0 (CC BY 3.0) — https://creativecommons.org/licenses/by/3.0/",
+        "language": "Idioma original",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "54673faa68059667f58edb0f96a70d9d"
+        }
+      }
+    ]
+  },
+  {
+    "id": 201,
+    "type": "filme",
+    "title": "Sintel",
+    "year": 2010,
+    "code": "OPEN_FILM_201",
+    "description": "Uma viajante procura o dragão que resgatou.",
+    "tags": [
+      "animação",
+      "curta",
+      "creative commons"
+    ],
+    "availability": "available",
+    "language": "Idioma original",
+    "rightsNote": "© 2010 Blender Foundation. Direção: Colin Levy. CC BY 3.0. Cópia de acervo, sem edição pelo SYSTEM 84; reprodução remota no player interno.",
+    "sources": [
+      {
+        "title": "Projeto original e créditos",
+        "url": "https://durian.blender.org/about/"
+      },
+      {
+        "title": "Licença CC BY 3.0",
+        "url": "https://creativecommons.org/licenses/by/3.0/"
+      },
+      {
+        "title": "Política de conteúdo Blender Studio",
+        "url": "https://studio.blender.org/terms-and-conditions/"
+      },
+      {
+        "title": "Cópia de preservação no Internet Archive",
+        "url": "https://archive.org/details/Sintel"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir ao curta completo",
+        "kind": "video",
+        "path": "media/open-film-201.mp4",
+        "sourceUrl": "https://archive.org/download/Sintel/sintel-2048-stereo_512kb.mp4",
+        "remoteUrl": "https://archive.org/download/Sintel/sintel-2048-stereo_512kb.mp4",
+        "license": "Creative Commons Atribuição 3.0 (CC BY 3.0) — https://creativecommons.org/licenses/by/3.0/",
+        "language": "Idioma original",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "a85c735099876c82ca804d8c44196b09"
+        }
+      }
+    ]
+  },
+  {
+    "id": 202,
+    "type": "filme",
+    "title": "Tears of Steel",
+    "year": 2012,
+    "code": "OPEN_FILM_202",
+    "description": "Uma equipe tenta impedir um futuro dominado por máquinas.",
+    "tags": [
+      "animação",
+      "curta",
+      "creative commons"
+    ],
+    "availability": "available",
+    "language": "Idioma original",
+    "rightsNote": "© 2012 Blender Foundation. Direção: Ian Hubert. CC BY 3.0. Cópia de acervo, sem edição pelo SYSTEM 84; reprodução remota no player interno.",
+    "sources": [
+      {
+        "title": "Projeto original e créditos",
+        "url": "https://mango.blender.org/about/"
+      },
+      {
+        "title": "Licença CC BY 3.0",
+        "url": "https://creativecommons.org/licenses/by/3.0/"
+      },
+      {
+        "title": "Política de conteúdo Blender Studio",
+        "url": "https://studio.blender.org/terms-and-conditions/"
+      },
+      {
+        "title": "Cópia de preservação no Internet Archive",
+        "url": "https://archive.org/details/Tears-of-Steel"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir ao curta completo",
+        "kind": "video",
+        "path": "media/open-film-202.mp4",
+        "sourceUrl": "https://archive.org/download/Tears-of-Steel/tears_of_steel_1080p.mp4",
+        "remoteUrl": "https://archive.org/download/Tears-of-Steel/tears_of_steel_1080p.mp4",
+        "license": "Creative Commons Atribuição 3.0 (CC BY 3.0) — https://creativecommons.org/licenses/by/3.0/",
+        "language": "Idioma original",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "182e6ad2fd34312407ba97343e063a41"
+        }
+      }
+    ]
+  },
+  {
+    "id": 203,
+    "type": "filme",
+    "title": "Elephants Dream",
+    "year": 2006,
+    "code": "OPEN_FILM_203",
+    "description": "Dois personagens exploram uma máquina de limites incertos.",
+    "tags": [
+      "animação",
+      "curta",
+      "creative commons"
+    ],
+    "availability": "available",
+    "language": "Idioma original",
+    "rightsNote": "© 2006 Blender Foundation / Netherlands Media Art Institute. Direção: Bassam Kurdali. CC BY 2.5. Cópia de acervo, sem edição pelo SYSTEM 84; reprodução remota no player interno.",
+    "sources": [
+      {
+        "title": "Projeto original e créditos",
+        "url": "https://orange.blender.org/press/"
+      },
+      {
+        "title": "Licença CC BY 2.5",
+        "url": "https://creativecommons.org/licenses/by/2.5/"
+      },
+      {
+        "title": "Política de conteúdo Blender Studio",
+        "url": "https://studio.blender.org/terms-and-conditions/"
+      },
+      {
+        "title": "Cópia de preservação no Internet Archive",
+        "url": "https://archive.org/details/ElephantsDream"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir ao curta completo",
+        "kind": "video",
+        "path": "media/open-film-203.mp4",
+        "sourceUrl": "https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4",
+        "remoteUrl": "https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4",
+        "license": "Creative Commons Atribuição 2.5 (CC BY 2.5) — https://creativecommons.org/licenses/by/2.5/",
+        "language": "Idioma original",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "841fdeef3a2bb80b34cf5a25d990a96e"
+        }
+      }
+    ]
+  },
+  {
+    "id": 204,
+    "type": "filme",
+    "title": "Cosmos Laundromat: First Cycle",
+    "year": 2015,
+    "code": "OPEN_FILM_204",
+    "description": "Uma proposta misteriosa altera o destino de uma ovelha.",
+    "tags": [
+      "animação",
+      "curta",
+      "creative commons"
+    ],
+    "availability": "available",
+    "language": "Idioma original",
+    "rightsNote": "© 2015 Blender Foundation. Direção: Mathieu Auvray. CC BY 3.0. Cópia de acervo, sem edição pelo SYSTEM 84; reprodução remota no player interno.",
+    "sources": [
+      {
+        "title": "Projeto original e créditos",
+        "url": "https://gooseberry.blender.org/sharing/"
+      },
+      {
+        "title": "Licença CC BY 3.0",
+        "url": "https://creativecommons.org/licenses/by/3.0/"
+      },
+      {
+        "title": "Política de conteúdo Blender Studio",
+        "url": "https://studio.blender.org/terms-and-conditions/"
+      },
+      {
+        "title": "Cópia de preservação no Internet Archive",
+        "url": "https://archive.org/details/cosmos-laundromat"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir ao curta completo",
+        "kind": "video",
+        "path": "media/open-film-204.mp4",
+        "sourceUrl": "https://archive.org/download/cosmos-laundromat/Cosmos%20Laundromat.mp4",
+        "remoteUrl": "https://archive.org/download/cosmos-laundromat/Cosmos%20Laundromat.mp4",
+        "license": "Creative Commons Atribuição 3.0 (CC BY 3.0) — https://creativecommons.org/licenses/by/3.0/",
+        "language": "Idioma original",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "916e568c82ada8138da5880bcadfa526"
+        }
+      }
+    ]
+  },
+  {
+    "id": 205,
+    "type": "filme",
+    "title": "Spring",
+    "year": 2019,
+    "code": "OPEN_FILM_205",
+    "description": "Uma pastora e seu cão despertam forças da floresta.",
+    "tags": [
+      "animação",
+      "curta",
+      "creative commons"
+    ],
+    "availability": "available",
+    "language": "Sem diálogos",
+    "rightsNote": "© 2019 Blender Foundation. Direção: Andy Goralczyk. CC BY 4.0. Cópia de acervo, sem edição pelo SYSTEM 84; reprodução remota no player interno.",
+    "sources": [
+      {
+        "title": "Projeto original e créditos",
+        "url": "https://studio.blender.org/projects/spring/pages/about/"
+      },
+      {
+        "title": "Licença CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "title": "Política de conteúdo Blender Studio",
+        "url": "https://studio.blender.org/terms-and-conditions/"
+      },
+      {
+        "title": "Cópia de preservação no Internet Archive",
+        "url": "https://archive.org/details/spring_blenderopenmovie"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir ao curta completo",
+        "kind": "video",
+        "path": "media/open-film-205.mp4",
+        "sourceUrl": "https://archive.org/download/spring_blenderopenmovie/Spring%20-%20Blender%20Open%20Movie%20-%20YouTube.mp4",
+        "remoteUrl": "https://archive.org/download/spring_blenderopenmovie/Spring%20-%20Blender%20Open%20Movie%20-%20YouTube.mp4",
+        "license": "Creative Commons Atribuição 4.0 (CC BY 4.0) — https://creativecommons.org/licenses/by/4.0/",
+        "language": "Idioma original",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "591a2ed3da9cd7492e9a72e4f8d70bc2"
+        }
+      }
+    ]
+  },
+  {
+    "id": 206,
+    "type": "filme",
+    "title": "Sprite Fright",
+    "year": 2021,
+    "code": "OPEN_FILM_206",
+    "description": "Uma excursão encontra criaturas que defendem sua floresta. Horror com violência estilizada.",
+    "tags": [
+      "animação",
+      "curta",
+      "creative commons"
+    ],
+    "availability": "available",
+    "language": "Idioma original",
+    "rightsNote": "© 2021 Blender Foundation. Direção: Matthew Luhn. CC BY 4.0. Cópia de acervo, sem edição pelo SYSTEM 84; reprodução remota no player interno.",
+    "sources": [
+      {
+        "title": "Projeto original e créditos",
+        "url": "https://studio.blender.org/films/sprite-fright/"
+      },
+      {
+        "title": "Licença CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "title": "Política de conteúdo Blender Studio",
+        "url": "https://studio.blender.org/terms-and-conditions/"
+      },
+      {
+        "title": "Cópia de preservação no Internet Archive",
+        "url": "https://archive.org/details/sprite-fright"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir ao curta completo",
+        "kind": "video",
+        "path": "media/open-film-206.mp4",
+        "sourceUrl": "https://archive.org/download/sprite-fright/Sprite%20Fright%20-%20Open%20Movie%20by%20Blender%20Studio-804p.mp4",
+        "remoteUrl": "https://archive.org/download/sprite-fright/Sprite%20Fright%20-%20Open%20Movie%20by%20Blender%20Studio-804p.mp4",
+        "license": "Creative Commons Atribuição 4.0 (CC BY 4.0) — https://creativecommons.org/licenses/by/4.0/",
+        "language": "Idioma original",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "7fa0c1f646dabfc339b4c916284278df"
+        }
+      }
+    ]
+  },
+  {
+    "id": 207,
+    "type": "filme",
+    "title": "Charge",
+    "year": 2022,
+    "code": "OPEN_FILM_207",
+    "description": "Um homem procura energia em um ambiente industrial hostil.",
+    "tags": [
+      "animação",
+      "curta",
+      "creative commons"
+    ],
+    "availability": "available",
+    "language": "Idioma original",
+    "rightsNote": "© 2022 Blender Foundation. Direção: Hjalti Hjálmarsson. CC BY 4.0. Cópia de acervo, sem edição pelo SYSTEM 84; reprodução remota no player interno.",
+    "sources": [
+      {
+        "title": "Projeto original e créditos",
+        "url": "https://studio.blender.org/films/charge/"
+      },
+      {
+        "title": "Licença CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "title": "Política de conteúdo Blender Studio",
+        "url": "https://studio.blender.org/terms-and-conditions/"
+      },
+      {
+        "title": "Cópia de preservação no Internet Archive",
+        "url": "https://archive.org/details/charge-blender-open-movie-1608p"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir ao curta completo",
+        "kind": "video",
+        "path": "media/open-film-207.mp4",
+        "sourceUrl": "https://archive.org/download/charge-blender-open-movie-1608p/Charge%20-%20Blender%20Open%20Movie%201608p.mp4",
+        "remoteUrl": "https://archive.org/download/charge-blender-open-movie-1608p/Charge%20-%20Blender%20Open%20Movie%201608p.mp4",
+        "license": "Creative Commons Atribuição 4.0 (CC BY 4.0) — https://creativecommons.org/licenses/by/4.0/",
+        "language": "Idioma original",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "f8019fde4c21fcfd482a1b9e0ae7dbde"
+        }
+      }
+    ]
+  },
+  {
+    "id": 208,
+    "type": "filme",
+    "title": "Wing It!",
+    "year": 2023,
+    "code": "OPEN_FILM_208",
+    "description": "Um inventor e seu parceiro embarcam numa fuga improvável.",
+    "tags": [
+      "animação",
+      "curta",
+      "creative commons"
+    ],
+    "availability": "available",
+    "language": "Idioma original",
+    "rightsNote": "© 2023 Blender Foundation. Direção: Rik Schutte. CC BY 4.0. Cópia de acervo, sem edição pelo SYSTEM 84; reprodução remota no player interno.",
+    "sources": [
+      {
+        "title": "Projeto original e créditos",
+        "url": "https://studio.blender.org/films/wing-it/"
+      },
+      {
+        "title": "Licença CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "title": "Política de conteúdo Blender Studio",
+        "url": "https://studio.blender.org/terms-and-conditions/"
+      },
+      {
+        "title": "Cópia de preservação no Internet Archive",
+        "url": "https://archive.org/details/wing_it"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir ao curta completo",
+        "kind": "video",
+        "path": "media/open-film-208.mp4",
+        "sourceUrl": "https://archive.org/download/wing_it/wing_it.ia.mp4",
+        "remoteUrl": "https://archive.org/download/wing_it/wing_it.ia.mp4",
+        "license": "Creative Commons Atribuição 4.0 (CC BY 4.0) — https://creativecommons.org/licenses/by/4.0/",
+        "language": "Idioma original",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "dc85a0f186b89e35a8b72ee0dfbb2b92"
+        }
+      }
+    ]
+  },
+  {
+    "id": 209,
+    "type": "filme",
+    "title": "Hero",
+    "year": 2018,
+    "code": "OPEN_FILM_209",
+    "description": "Um herói animado atravessa obstáculos e mudanças de cenário.",
+    "tags": [
+      "animação",
+      "curta",
+      "creative commons"
+    ],
+    "availability": "available",
+    "language": "Sem diálogos",
+    "rightsNote": "© 2018 Blender Foundation. Direção: Daniel Martínez Lara. CC BY 4.0. Cópia de acervo, sem edição pelo SYSTEM 84; reprodução remota no player interno.",
+    "sources": [
+      {
+        "title": "Projeto original e créditos",
+        "url": "https://studio.blender.org/films/hero/"
+      },
+      {
+        "title": "Licença CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "title": "Política de conteúdo Blender Studio",
+        "url": "https://studio.blender.org/terms-and-conditions/"
+      },
+      {
+        "title": "Cópia de preservação no Internet Archive",
+        "url": "https://archive.org/details/hero_20260106"
+      }
+    ],
+    "media": [
+      {
+        "title": "Assistir ao curta completo",
+        "kind": "video",
+        "path": "media/open-film-209.mp4",
+        "sourceUrl": "https://archive.org/download/hero_20260106/hero.ia.mp4",
+        "remoteUrl": "https://archive.org/download/hero_20260106/hero.ia.mp4",
+        "license": "Creative Commons Atribuição 4.0 (CC BY 4.0) — https://creativecommons.org/licenses/by/4.0/",
+        "language": "Idioma original",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "2ecdb9e0c6f1bfcbbc1333e36eafcba3"
+        }
+      }
+    ]
+  },
+  {
+    "id": 220,
+    "type": "série",
+    "title": "Caminandes — trilogia",
+    "year": 2013,
+    "code": "OPEN_SERIES_220",
+    "description": "Três curtas acompanham a lhama Koro em pequenas aventuras na Patagônia: Llama Drama, Gran Dillama e Llamigos.",
+    "tags": [
+      "animação",
+      "curtas",
+      "creative commons"
+    ],
+    "availability": "available",
+    "language": "Sem diálogos",
+    "rightsNote": "Caminandes, de Pablo Vázquez e colaboradores / Blender Foundation. Episódios 1 e 2: CC BY 3.0. Episódio 3: CC BY 4.0, Blender Studio. Três episódios completos; sem edição pelo SYSTEM 84.",
+    "sources": [
+      {
+        "title": "Caminandes 1 — créditos e licença",
+        "url": "https://archive.org/details/Caminandes1LlamaDrama"
+      },
+      {
+        "title": "Caminandes 2 — créditos e licença",
+        "url": "https://archive.org/details/Caminandes2GranDillama"
+      },
+      {
+        "title": "Caminandes 3 — créditos e licença",
+        "url": "https://archive.org/details/CaminandesLlamigos"
+      },
+      {
+        "title": "Licença CC BY 3.0",
+        "url": "https://creativecommons.org/licenses/by/3.0/"
+      },
+      {
+        "title": "Blender Studio — licença do conteúdo",
+        "url": "https://studio.blender.org/terms-and-conditions/"
+      },
+      {
+        "title": "Licença CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "media": [
+      {
+        "title": "01 · Llama Drama (2013)",
+        "kind": "video",
+        "path": "media/open-film-220.mp4",
+        "sourceUrl": "https://archive.org/download/Caminandes1LlamaDrama/01_llama_drama_1080p.mp4",
+        "remoteUrl": "https://archive.org/download/Caminandes1LlamaDrama/01_llama_drama_1080p.mp4",
+        "license": "Creative Commons Atribuição 3.0 (CC BY 3.0) — https://creativecommons.org/licenses/by/3.0/",
+        "language": "Idioma original",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "7d7690280e1fe13ba855946392da50d5"
+        }
+      },
+      {
+        "title": "02 · Gran Dillama (2013)",
+        "kind": "video",
+        "path": "media/open-film-221.mp4",
+        "sourceUrl": "https://archive.org/download/Caminandes2GranDillama/02_gran_dillama_1080p.mp4",
+        "remoteUrl": "https://archive.org/download/Caminandes2GranDillama/02_gran_dillama_1080p.mp4",
+        "license": "Creative Commons Atribuição 3.0 (CC BY 3.0) — https://creativecommons.org/licenses/by/3.0/",
+        "language": "Idioma original",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "f1482eeb2d9bc3b306e3cf6d4e6a584c"
+        }
+      },
+      {
+        "title": "03 · Llamigos (2016)",
+        "kind": "video",
+        "path": "media/open-film-222.mp4",
+        "sourceUrl": "https://archive.org/download/CaminandesLlamigos/Caminandes_%20Llamigos-1080p.mp4",
+        "remoteUrl": "https://archive.org/download/CaminandesLlamigos/Caminandes_%20Llamigos-1080p.mp4",
+        "license": "Creative Commons Atribuição 4.0 (CC BY 4.0) — https://creativecommons.org/licenses/by/4.0/",
+        "language": "Idioma original",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "4f2beaf26b945d2a7f35be1278a5d5ec"
+        }
+      }
+    ]
   }
 ]

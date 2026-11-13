@@ -6,11 +6,17 @@ const files = new Set(), ids = new Set()
 let bytes = 0
 for (const record of catalog) {
   assert(!ids.has(record.id), 'ID duplicado'); ids.add(record.id)
-  assert(record.title && record.code && record.media.length, 'Obra sem arquivo')
+  assert(record.title && record.code && (record.media.length || record.article?.length), 'Obra sem arquivo')
   for (const media of record.media) {
     assert(/^media\/[a-z0-9_.-]+\.(mp4|txt)$/.test(media.path), 'A mídia deve estar no site')
     assert(['video', 'text'].includes(media.kind))
     assert(media.license && media.sourceUrl.startsWith('https://'), 'Mídia sem procedência')
+    if (media.remoteUrl) {
+      const url = new URL(media.remoteUrl)
+      assert(url.protocol === 'https:' && ['archive.org', 'download.blender.org'].includes(url.hostname), 'Origem remota não permitida')
+      assert(media.kind === 'video' && record.sources?.length, 'Vídeo remoto sem fontes')
+      continue
+    }
     if (process.argv.includes('--files') && !files.has(media.path)) {
       const file = new URL('../public/' + media.path, import.meta.url)
       const stat = await fs.stat(file); assert(stat.size > 1000, 'Arquivo vazio'); bytes += stat.size

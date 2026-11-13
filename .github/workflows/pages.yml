@@ -19,10 +19,13 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci
+      - run: npm run check
+      - run: npm test
       - uses: actions/cache@v4
         with:
           path: public/media
           key: media-v1-${{ runner.os }}-${{ hashFiles('src/data/catalog.json', 'scripts/download-media.mjs') }}
+          restore-keys: media-v1-${{ runner.os }}-
       - name: Preparar cópias para o leitor e player internos
         run: npm run media:download
       - run: npm run check:media
