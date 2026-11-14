@@ -4206,5 +4206,384 @@
       "Atualmente, apenas cerca de 40 segundos do filme foram recuperados e preservados no arquivo do Museu de Arte Moderna (MoMA) e no British Film Institute, montados ao lado de ensaios fotográficos da época."
     ],
     "recoveryStatus": "RECUPERADO PARCIALMENTE — FRAGMENTOS NO MOMA E BFI"
+  },
+  {
+    "id": 512,
+    "type": "analog-horror",
+    "title": "Protocolo de Calibração: O Monitor que Ouve",
+    "year": 2026,
+    "code": "VHS_084_13",
+    "description": "Instruções técnicas para sintonizadores de frequência baixa que respondem a sussurros no recinto.",
+    "tags": [
+      "ficção original",
+      "transcrição",
+      "analog-horror",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "REGISTRO DE LABORATÓRIO // 01:17. O tubo de raios catódicos começa a pulsar em sincronia com a respiração do técnico de plantão.",
+      "A tela preta projeta em letras brancas trêmulas: \"FALE MAIS BAIXO. OS CIRCUITOS DE VIDRO SÃO SENSÍVEIS DEMAIS À SUA MEMÓRIA\".",
+      "Quando o técnico tenta desconectar o cabo de alimentação da tomada, a imagem não apaga. Ela apenas amplia o foco para o reflexo do próprio operador sentado diante do terminal."
+    ]
+  },
+  {
+    "id": 513,
+    "type": "analog-horror",
+    "title": "Aviso de Desocupação: Bloco Residencial Subnível 8",
+    "year": 2026,
+    "code": "VHS_084_14",
+    "description": "Transmissão automática de alerta civil informando o encerramento do fornecimento de ar e luz no quadrante subterrâneo.",
+    "tags": [
+      "ficção original",
+      "alerta de emergência",
+      "analog-horror",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "ALERTA DO SISTEMA DE SEGURANÇA INTEGRADA. \"Atenção moradores do Bloco 8. A partir das 04:00, os elevadores não responderão a chamadas manuais.\"",
+      "\"Favor recolher seus documentos magnéticos e posicionar-se de frente para as câmeras de vigilância do corredor central.\"",
+      "\"Lembramos que ruídos de passos no teto entre 03:00 e 05:00 são reflexos acústicos normais da tubulação desativada. Não olhem pelas grelhas de ventilação.\""
+    ]
+  },
+  {
+    "id": 514,
+    "type": "analog-horror",
+    "title": "Fita Não Catalogada: Teste de Padrão Cromático 09",
+    "year": 2026,
+    "code": "VHS_084_15",
+    "description": "Padrão de barras coloridas NTSC que se distorce revelando contornos de uma sala fechada.",
+    "tags": [
+      "ficção original",
+      "transcrição",
+      "analog-horror",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "ARQUIVO DE TRANSMISSÃO // TESTE DE SINAL. Sete barras de cor padrão SMPTE preenchem a tela acompanhadas de um bipe contínuo de 1 kHz.",
+      "Aos três minutos de gravação, a barra magenta começa a tremer e deslizar para baixo, revelando uma abertura retangular escura.",
+      "Uma legenda rústica surge no gerador de caracteres: \"SE VOCÊ ESTÁ ENXERGANDO A NONA BARRA, DESLIGUE O RECEPTOR E NÃO PERMANEÇA NO ESCURO\"."
+    ]
+  },
+  {
+    "id": 515,
+    "type": "analog-horror",
+    "title": "Diário de Bordo: Operador da Repetidora da Serra",
+    "year": 2026,
+    "code": "VHS_084_16",
+    "description": "Transcrição das últimas comunicações de rádio da torre de retransmissão de sinal analógico isolada na serra.",
+    "tags": [
+      "ficção original",
+      "relato",
+      "analog-horror",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "22 DE OUTUBRO / 23:45. \"A neve começou a cobrir as parábolas da torre 2. O sinal do canal 4 continua chegando, mas não é a nossa programação.\"",
+      "01:10. \"Eles estão transmitindo gravações da minha infância. Reconheço a sala da casa dos meus avós, mas a câmera está posicionada dentro do armário.\"",
+      "03:30. \"O gerador parou. A luz do monitor CRT continua acesa com a imagem da estrada lá fora. Alguém acabou de estacionar um carro sem faróis na portaria.\""
+    ]
+  },
+  {
+    "id": 516,
+    "type": "analog-horror",
+    "title": "Manual de Sobrevivência em Ambientes de Fita Magnética",
+    "year": 2026,
+    "code": "VHS_084_17",
+    "description": "Instruções para conservadores de acervo que operam em câmaras frias com mais de 100.000 rolos de fita.",
+    "tags": [
+      "ficção original",
+      "documento",
+      "analog-horror",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "DIRETRIZ GERAL DE ARQUIVO. \"Ao entrar no cofre climatizado de fitas magnéticas, mantenha sempre um cronômetro mecânico em mãos.\"",
+      "\"Se ao rebobinar uma fita de 60 minutos você notar que o carretel da esquerda não acumula fita, solte o cabeçote e afaste-se do rack.\"",
+      "\"Nunca tente rebobinar memórias que você não se lembra de ter gravado.\""
+    ]
+  },
+  {
+    "id": 610,
+    "type": "arg",
+    "title": "A cifra de substituição do terminal 84",
+    "year": 2026,
+    "code": "ARG_084_11",
+    "description": "Decifre a mensagem encriptada com deslocamento de caracteres César deixada no buffer.",
+    "tags": [
+      "ficção original",
+      "enigma",
+      "criptografia",
+      "ARG",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "REGISTRO CRIPTOGRÁFICO // TERMINAL 84. O operador utilizou a Cifra de César com deslocamento de +1 letra (A vira B, B vira C).",
+      "Mensagem cifrada encontrada no registro de log: \"NFNPRIBS\"",
+      "Descubra a palavra original subtraindo 1 posição de cada letra no alfabeto."
+    ],
+    "puzzle": {
+      "question": "Qual é a palavra decifrada de \"NFNPRIBS\" (-1 letra por caractere)?",
+      "answer": "MEMORIAS",
+      "hint": "N->M, F->E, N->M, P->O, R->Q... espere: N(-1)=M, F(-1)=E, N(-1)=M, P(-1)=O, R(-1)=Q? Na ordem correta: N-1=M, F-1=E, N-1=M, P-1=O, S-1=R, J-1=I, B-1=A, T-1=S -> MEMORIAS.",
+      "ending": "ACESSO AUTORIZADO. O banco de memória cultural preserva todas as vozes registradas."
+    }
+  },
+  {
+    "id": 611,
+    "type": "arg",
+    "title": "A equação de frequência de ressonância",
+    "year": 2026,
+    "code": "ARG_084_12",
+    "description": "Calcule o valor de sintonia do oscilador de quartzo do transmissor central.",
+    "tags": [
+      "ficção original",
+      "enigma",
+      "lógica",
+      "ARG",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "ESQUEMA ELÉTRICO DE EMERGÊNCIA. A sintonia da estação principal depende da seguinte equação de calibração:",
+      "Frequência = (Ano de Fundação do SYSTEM / 23.619) arredondado para o inteiro mais próximo.",
+      "Dica do manual: O sistema é o 84. Qual é o número do canal mestre?"
+    ],
+    "puzzle": {
+      "question": "Qual é o número identificador do canal mestre?",
+      "answer": "84",
+      "hint": "O número clássico da estação: oito quatro.",
+      "ending": "SINAL ESTABILIZADO EM 84 MHz. A portadora de rádio cobre todo o perímetro de segurança."
+    }
+  },
+  {
+    "id": 612,
+    "type": "arg",
+    "title": "O protocolo de parada de emergência",
+    "year": 2026,
+    "code": "ARG_084_13",
+    "description": "Identifique o comando de três letras em inglês para interromper o ciclo infinito de gravação.",
+    "tags": [
+      "ficção original",
+      "enigma",
+      "terminais",
+      "ARG",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "REGISTRO DO PROMPT DE COMANDO. O loop de gravação em fita contínua precisa ser congelado.",
+      "A instrução gravada no painel diz: \"Para congelar o cabeçote de leitura em computadores PDP-11, envie a instrução clássica de parada imediata: HALT ou STOP?\"",
+      "O manual especifica: a palavra de 4 letras que significa interromper em inglês."
+    ],
+    "puzzle": {
+      "question": "Digite o comando de parada de 4 letras (STOP ou HALT):",
+      "answer": "STOP",
+      "hint": "Palavra universal de 4 letras usada para parar gravações.",
+      "ending": "ROTOR DESATIVADO. As fitas descansam em seus suportes metálicos."
+    }
+  },
+  {
+    "id": 613,
+    "type": "arg",
+    "title": "As coordenadas da estação Sunset",
+    "year": 2026,
+    "code": "ARG_084_14",
+    "description": "Encontre o identificador numérico da equipe de robótica fundadora nos registros.",
+    "tags": [
+      "ficção original",
+      "enigma",
+      "robótica",
+      "ARG",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "RELATÓRIO DE TELEMETRIA. A equipe pioneira da aliança Sunset possui um número de inscrição histórico na FIRST Tech Challenge.",
+      "O número aparece gravado na placa de alumínio do chassi do robô.",
+      "Digite o número de 5 dígitos da equipe Unity Sunset."
+    ],
+    "puzzle": {
+      "question": "Qual é o número de 5 dígitos da equipe Unity Sunset no FTC?",
+      "answer": "22660",
+      "hint": "O número oficial da equipe #22660.",
+      "ending": "ALIANÇA HOMOLOGADA. Parceria tecnológica registrada entre o Instituto Sunset e o SYSTEM 84."
+    }
+  },
+  {
+    "id": 411,
+    "type": "lost-media",
+    "title": "A Garota de Fogo (1924): o épico perdido do cinema nacional",
+    "year": 1924,
+    "code": "DOSSIER_1924_411",
+    "description": "A ambiciosa produção silenciosa brasileira consumida pela instabilidade do nitrato de celulose.",
+    "tags": [
+      "história real",
+      "preservação",
+      "cinema brasileiro",
+      "cinema mudo"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado em fontes históricas da Cinemateca Brasileira.",
+    "sources": [
+      {
+        "title": "Cinemateca Brasileira — Acervo e Dossiês de Preservação",
+        "url": "https://www.cinemateca.org.br/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "Durante a era de ouro do cinema mudo brasileiro nos anos 1920, realizadores pioneiros produziram dezenas de longas-metragens de ficção em película de 35mm.",
+      "A falta de depósitos climatizados e a umidade tropical aceleraram a decomposição química do nitrato, transformando matrizes inteiras em pó ou gelatina inflamável.",
+      "Filmes como \"A Garota de Fogo\" (1924) sobrevivem hoje apenas em matérias de jornais de época, críticas cinematográficas e cartazes raros, exemplificando a urgência da conservação de acervos nacionais."
+    ],
+    "recoveryStatus": "PERDIDO — PRESERVADO EM REGISTROS DOCUMENTAIS DA IMPRENSA"
+  },
+  {
+    "id": 412,
+    "type": "lost-media",
+    "title": "The Mountain Eagle (1926): o segundo filme perdido de Alfred Hitchcock",
+    "year": 1926,
+    "code": "DOSSIER_1926_412",
+    "description": "O melodrama silencioso de Hitchcock rodado nos Alpes austríacos cuja cópia jamais foi encontrada.",
+    "tags": [
+      "história real",
+      "preservação",
+      "suspense",
+      "cinema mudo"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado nas pesquisas do British Film Institute (BFI).",
+    "sources": [
+      {
+        "title": "British Film Institute — BFI Most Wanted: The Mountain Eagle",
+        "url": "https://www.bfi.org.uk/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "Após estrear com \"The Pleasure Garden\", o jovem Alfred Hitchcock dirigiu \"The Mountain Eagle\" (1926), uma produção filmada na Alemanha e nos Alpes de Tirol.",
+      "O próprio cineasta se referia ao trabalho com bom humor e desdém, mas historiadores consideram a obra essencial para entender a gênese de sua assinatura visual e montagem psicológica.",
+      "O BFI mantém \"The Mountain Eagle\" no topo absoluto de sua lista de filmes mais procurados em todo o planeta, oferecendo reconhecimento internacional para qualquer pista que leve a latas sobreviventes."
+    ],
+    "recoveryStatus": "PERDIDO — LISTADO NO BFI MOST WANTED"
+  },
+  {
+    "id": 413,
+    "type": "lost-media",
+    "title": "Humpty Dumpty Circus (1898): a primeira animação stop-motion",
+    "year": 1898,
+    "code": "DOSSIER_1898_413",
+    "description": "O curta pioneiro de J. Stuart Blackton e Albert E. Smith com brinquedos articulados de madeira.",
+    "tags": [
+      "história real",
+      "preservação",
+      "stop-motion",
+      "pioneiros"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado na literatura histórica de animação.",
+    "sources": [
+      {
+        "title": "Library of Congress — Early Animation Registry",
+        "url": "https://www.loc.gov/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "Em 1898, nos primórdios da cinematografia, Albert E. Smith e J. Stuart Blackton pegaram o circo de brinquedos de madeira da filha de Smith e animaram acrobatas e animais quadro a quadro.",
+      "O resultado foi considerado o marco inaugural da técnica de animação stop-motion em todo o mundo.",
+      "Nenhuma cópia em película resistiu aos desgastes do tempo, sobrevivendo apenas algumas fotografias estáticas dos bonecos de madeira e o relato escrito de Smith em suas memórias de estúdio."
+    ],
+    "recoveryStatus": "PERDIDO — RECONHECIDO HISTORICAMENTE POR FOTOGRAFIAS E DEPOIMENTOS"
   }
 ]

@@ -127,35 +127,6 @@ button {
   letter-spacing: 2px;
 }
 
-.crt-overlay {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  pointer-events: none;
-}
-
-.crt-overlay::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    repeating-linear-gradient(
-      to bottom,
-      rgba(255,255,255,.015) 0,
-      rgba(255,255,255,.015) 1px,
-      rgba(0,0,0,.1) 2px,
-      rgba(0,0,0,.1) 4px
-    );
-}
-
-.crt-overlay::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse at center, transparent 55%, rgba(0,0,0,.48));
-}
-
 .site-shell {
   min-height: 100vh;
 }
@@ -164,15 +135,62 @@ button {
   position: sticky;
   top: 0;
   z-index: 100;
-  min-height: 74px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 30px;
-  padding: 0 5%;
-  border-bottom: 1px solid var(--green-dark);
-  background: rgba(2, 8, 6, .95);
-  backdrop-filter: blur(8px);
+  padding: 0 4%;
+  border-bottom: 1px solid rgba(56, 239, 125, 0.2);
+  background: rgba(1, 8, 5, 0.88);
+  backdrop-filter: blur(14px) saturate(140%);
+  -webkit-backdrop-filter: blur(14px) saturate(140%);
+  transition: border-color 0.3s ease;
+}
+
+.main-header:hover {
+  border-bottom-color: rgba(56, 239, 125, 0.4);
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.main-navigation a {
+  font-size: 0.78rem;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  position: relative;
+  padding: 4px 0;
+  font-family: var(--font-interface);
+  font-weight: 500;
+  transition: color 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.main-navigation a::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background: var(--green);
+  box-shadow: 0 0 6px var(--green);
+  transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.main-navigation a:hover {
+  color: var(--green-bright);
+}
+
+.main-navigation a:hover::after,
+.main-navigation a.active::after {
+  width: 100%;
+}
+
+.main-navigation a.active {
+  color: var(--green-bright);
 }
 
 .logo {
@@ -282,36 +300,42 @@ button {
 
 .records-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 28px;
 }
 
 .record-card {
-  border: 1px solid var(--green-dark);
-  background: rgba(2, 12, 8, .92);
-  transition: all .25s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+  border: 1px solid rgba(56, 239, 125, 0.18);
+  background: rgba(2, 10, 7, 0.92);
+  border-radius: 2px;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .record-card::before {
   content: "";
   position: absolute;
-  top: 0; left: -100%; width: 100%; height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(76,255,155,0.06), transparent);
-  transition: left 0.5s ease;
+  top: 0; left: -150%; width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(56, 239, 125, 0.08), transparent);
+  transition: left 0.7s cubic-bezier(0.16, 1, 0.3, 1);
   pointer-events: none;
+  z-index: 2;
 }
 
 .record-card:hover::before {
-  left: 100%;
+  left: 150%;
 }
 
 .record-card:hover {
-  transform: translateY(-6px) scale(1.01);
+  transform: translateY(-8px) scale(1.015);
   border-color: var(--green);
-  box-shadow: 0 0 16px var(--green-glow), 0 10px 25px rgba(0,0,0,0.8);
+  box-shadow: 0 0 25px rgba(56, 239, 125, 0.22), 0 16px 36px rgba(0, 0, 0, 0.85);
 }
 
 .record-cover {
