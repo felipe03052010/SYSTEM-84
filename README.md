@@ -85,3 +85,5 @@ Para desenvolvimento Node local, copie `server/.env.example` para `server/.env.l
 Validações: `npm test`, `npm run test:access`, `npm run check`, `npm run build:hosted`. A publicação do GitHub usa `npm run build:pages` para gerar a página de encaminhamento, preservando a mídia.
 
 O monitor foi criado com ImageGen a partir de um briefing de fotografia frontal de CRT bege envelhecido; a imagem enviada pelo usuário foi referência estética. As fontes são Space Grotesk e IBM Plex Mono. Os formulários e o logotipo permanecem nativos do site.
+
+Atualização visual: as imagens e carcaças de computadores foram retiradas da interface. O tema global agora simula a própria tela CRT, com fósforo verde, tipografia monoespaçada, linhas de varredura estáticas e vinheta discreta. A BIOS mantém os sons de inicialização.

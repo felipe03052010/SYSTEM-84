@@ -13,3 +13,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 )
 import './styles/station.css'
 import './styles/entrance.css'
+import './styles/crt-screen.css'
