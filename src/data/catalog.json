@@ -3889,5 +3889,322 @@
       "ARG",
       "CC0"
     ]
+  },
+  {
+    "id": 508,
+    "type": "analog-horror",
+    "title": "O Boletim Meteorológico da Zona Proibida",
+    "year": 2026,
+    "code": "VHS_084_9",
+    "description": "Relatório do tempo que prevê precipitações de poeira magnética e alterações na gravidade local.",
+    "tags": [
+      "ficção original",
+      "transcrição",
+      "analog-horror",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "TRANSMISSÃO DE SERVIÇO / 02:40. O mapa de satélite na tela estremece com artefatos de fita VHS. A voz pausada do apresentador anuncia: \"Nas próximas 24 horas, rajadas de vento estático cobrirão o Vale Central. Não deixem fitas gravadas perto de janelas abertas\".",
+      "02:42. A temperatura prevista para a meia-noite é de -4°C com sensação térmica de \"espaço vazio\". O radar meteorológico projeta uma mancha escura girando no sentido anti-horário, com uma legenda pulsando: ZONA SEM ECO.",
+      "02:45. O áudio corta para um ruído de chuva torrencial, mas a imagem mostra um campo ensolarado e estático gravado em loop infinito. A locução finaliza: \"Amanhecer cancelado até nova ordem do comitê\"."
+    ]
+  },
+  {
+    "id": 509,
+    "type": "analog-horror",
+    "title": "Fita de Treinamento: Operação de Monitores CRT Subterrâneos",
+    "year": 2026,
+    "code": "VHS_084_10",
+    "description": "Manual de segurança em vídeo para operadores de consoles fósforo verde em bunkers de dados.",
+    "tags": [
+      "ficção original",
+      "manual",
+      "analog-horror",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "MÓDULO DE INSTRUÇÃO 04 / NÍVEL SUBTERRÂNEO 3. \"Bem-vindo ao turno das 22h às 06h. Seu monitor exibe 1.024 linhas de fósforo P31. Se o feixe de elétrons continuar aceso após desligar a chave geral, não encare o centro do vidro\".",
+      "REGRA 2: \"Se caracteres desconhecidos surgirem na terceira linha do prompt sem comandos no teclado, digite imediatamente ESC três vezes e cubra a tela com a capa de chumbo\".",
+      "REGRA 3: \"Nunca tente responder perguntas que comecem com ‘QUEM ESTÁ AÍ?’. O arquivo é passivo. Qualquer interação bidirecional anula a garantia de resgate da equipe externa\"."
+    ]
+  },
+  {
+    "id": 510,
+    "type": "analog-horror",
+    "title": "Transmissão Pirata: O Último Noticiário da TV Cultura 1984",
+    "year": 2026,
+    "code": "VHS_084_11",
+    "description": "Sinal de canal UHF capturado em antena caseira contendo edições misteriosas de jornais antigos.",
+    "tags": [
+      "ficção original",
+      "mídia perdida",
+      "analog-horror",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "RECORTE UHF CANAL 32 / ARQUIVO DOMÉSTICO. A fita Betamax foi rotulada como \"Festival de Desenhos 1984\", mas a reprodução revela o bancada de um telejornal com iluminação azulada e estática pesada.",
+      "O âncora lê as manchetes sem pestanejar: \"População de três bairros foi realocada para o arquivo de backup. Familiares devem procurar os números de série no verso de suas carteiras de identidade\".",
+      "No canto superior direito, o relógio digital corre para trás a cada cinco segundos. A vinheta de encerramento toca uma melodia de teclado Casio desacelerada antes do corte abrupto para ruído branco puro."
+    ]
+  },
+  {
+    "id": 511,
+    "type": "analog-horror",
+    "title": "Guia do Morador: A Cidade que Desapareceu da Carta Topográfica",
+    "year": 2026,
+    "code": "VHS_084_12",
+    "description": "Vídeo institucional entregue aos cidadãos da cidade satélite antes de sua remoção dos registros oficiais.",
+    "tags": [
+      "ficção original",
+      "documentário",
+      "analog-horror",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "ORIENTAÇÃO MUNICIPAL // SETOR 84. Uma trilha sonora orquestral em mono acompanha fotos aéreas com granulação evidente de uma cidade cercada por névoa densa.",
+      "\"Caro cidadão, a partir da próxima segunda-feira sua cidade não constará mais nos atlas rodoviários do estado. Isso não significa que sua rotina deva mudar. Continue enviando suas cartas para a Caixa Postal 000\".",
+      "No minuto final, o narrador alerta: \"Se viajantes na rodovia perguntarem o nome deste município, diga que é apenas uma área de preservação ambiental. Eles não têm autorização para ler nossos relatórios\"."
+    ]
+  },
+  {
+    "id": 607,
+    "type": "arg",
+    "title": "A frequência do farol",
+    "year": 2026,
+    "code": "ARG_084_8",
+    "description": "Decodifique o sinal telegráfico transmitido pelo farol abandonado na costa norte.",
+    "tags": [
+      "ficção original",
+      "enigma",
+      "código morse",
+      "ARG",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "REGISTRO RADIOFAROL // COSTA NORTE. A lâmpada de mercúrio do farol pisca em intervalos cronometrados:",
+      "... --- ... / ... ..- -. ... . -",
+      "O operador registrou a sequência em código Morse clássico antes do mastro colapsar. Encontre a palavra-chave que segue o pedido de socorro (a segunda palavra decodificada)."
+    ],
+    "puzzle": {
+      "question": "Qual é a segunda palavra transmitida pelo sinal Morse (... ..- -. ... . -)?",
+      "answer": "SUNSET",
+      "hint": "Converta as letras em Morse: ... (S), ..- (U), -. (N), ... (S), . (E), - (T).",
+      "ending": "TRANSMISSÃO CONFIRMADA. O sinal pertencia ao transmissor histórico da estação Sunset. Registro catalogado no arquivo permanente."
+    }
+  },
+  {
+    "id": 608,
+    "type": "arg",
+    "title": "A matriz de transposição de bits",
+    "year": 2026,
+    "code": "ARG_084_9",
+    "description": "Reorganize os blocos da fita magnética para reconstruir o comando mestre do mainframe.",
+    "tags": [
+      "ficção original",
+      "enigma",
+      "computação retrô",
+      "ARG",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "TERMINAL TTY-84 // ROTINA DE REINICIALIZAÇÃO. O comando de emergência foi quebrado em fragmentos invertidos no diário de bordo:",
+      "Fragmento 1: \"TEM\"",
+      "Fragmento 2: \"SYS\"",
+      "Fragmento 3: \"-84\"",
+      "O protocolo dita a ordem de junção: Bloco 2 + Bloco 1 + Bloco 3."
+    ],
+    "puzzle": {
+      "question": "Qual é a string final do comando de emergência?",
+      "answer": "SYSTEM-84",
+      "hint": "Junte SYS com TEM e depois -84.",
+      "ending": "ACESSO ROOT CONCEDIDO. O kernel do SYSTEM 84 foi reiniciado em modo seguro de arquivamento cultural."
+    }
+  },
+  {
+    "id": 609,
+    "type": "arg",
+    "title": "O cofre do observatório",
+    "year": 2026,
+    "code": "ARG_084_10",
+    "description": "Descubra a combinação de 3 dígitos deixada pelo astrônomo-chefe.",
+    "tags": [
+      "ficção original",
+      "enigma",
+      "lógica",
+      "ARG",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — dedicação ao domínio público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "REGISTRO DO OBSERVATÓRIO ASTRONÔMICO. Na parede do telescópio refrator, três enigmas indicam os três números da trava:",
+      "1º número: Quantidade de luas da Terra (1).",
+      "2º número: Planeta onde estamos (Mercúrio=1, Vênus=2, Terra=3).",
+      "3º número: O total de luas de Marte (2)."
+    ],
+    "puzzle": {
+      "question": "Qual é o código numérico de 3 dígitos do observatório?",
+      "answer": "132",
+      "hint": "Primeiro dígito: 1. Segundo: 3 (Terra). Terceiro: 2 (Fobos e Deimos).",
+      "ending": "GAVETA DESTRANCADA. As anotações do astrônomo continham as coordenadas exatas da antena pirata do SYSTEM 84."
+    }
+  },
+  {
+    "id": 408,
+    "type": "lost-media",
+    "title": "London After Midnight: o Santo Graal do cinema de horror",
+    "year": 1927,
+    "code": "DOSSIER_1927_408",
+    "description": "A trajetória e as buscas pela lendária obra perdida estrelada por Lon Chaney.",
+    "tags": [
+      "história real",
+      "preservação",
+      "terror",
+      "cinema mudo"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado nas fontes indicadas. Dossiê de preservação histórica.",
+    "sources": [
+      {
+        "title": "Library of Congress — Silent Era Lost Films List",
+        "url": "https://www.loc.gov/programs/national-film-preservation-board/film-registries/lost-films/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "Dirigido por Tod Browning e estrelado por Lon Chaney em uma caracterização inesquecível com dentes serrilhados e cartola alta, London After Midnight (1927) é amplamente considerado o filme mudo perdido mais procurado da história.",
+      "A última cópia conhecida foi destruída no trágico incêndio do cofre 7 da Metro-Goldwyn-Mayer em 1965. Desde então, cineastas, arquivistas e historiadores vasculham cinematecas e coleções particulares na esperança de encontrar um rolo esquecido.",
+      "Em 2002, Rick Schmidlin reuniu fotografias de cena sobreviventes e o roteiro original para produzir uma reconstrução fotográfica de 45 minutos transmitida pela TCM, mantendo viva a memória de uma obra visualmente revolucionária."
+    ],
+    "recoveryStatus": "PERDIDO — RECONSTRUÇÃO EM FOTOGRAMAS SOBREVIVENTES"
+  },
+  {
+    "id": 409,
+    "type": "lost-media",
+    "title": "O Apóstolo: o primeiro longa-metragem de animação do mundo",
+    "year": 1917,
+    "code": "DOSSIER_1917_409",
+    "description": "A histórica animação argentina de Quirino Cristiani desaparecida em incêndios de película.",
+    "tags": [
+      "história real",
+      "preservação",
+      "animação",
+      "cinema mudo"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado nas fontes indicadas. Dossiê de preservação histórica.",
+    "sources": [
+      {
+        "title": "Internet Archive — Quirino Cristiani Historical Records",
+        "url": "https://archive.org/details/quirino-cristiani-animation-history"
+      }
+    ],
+    "media": [],
+    "article": [
+      "Muitos atribuem os primeiros passos dos longas de animação aos estúdios norte-americanos, mas em 1917 o desenhista ítalo-argentino Quirino Cristiani realizou \"El Apóstol\", uma sátira política recortada de 70 minutos em Buenos Aires.",
+      "Cristiani utilizou mais de 58.000 quadros desenhados à mão, com modelos e maquetes artesanais. Tragicamente, as únicas matrizes existentes foram consumidas em dois incêndios sucessivos no cofre do produtor em 1926 e nos estúdios em 1957.",
+      "Hoje restam apenas artigos de jornal da época, esboços de produção e fotografias de Cristiani operando sua mesa de luz. É um dos testemunhos mais potentes sobre a fragilidade dos primeiros suportes de nitrato."
+    ],
+    "recoveryStatus": "PERDIDO — DOCUMENTADO POR REGISTROS DA IMPRENSA E ESBOÇOS"
+  },
+  {
+    "id": 410,
+    "type": "lost-media",
+    "title": "Cleópatra (1917): a superprodução silenciosa de Theda Bara",
+    "year": 1917,
+    "code": "DOSSIER_1917_410",
+    "description": "Um dos maiores espetáculos de cenografia da Era Muda reduzido a poucos segundos de película.",
+    "tags": [
+      "história real",
+      "preservação",
+      "épico",
+      "cinema mudo"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado nas fontes indicadas. Dossiê de preservação histórica.",
+    "sources": [
+      {
+        "title": "National Film Preservation Foundation — Cleopatra (1917) fragment notes",
+        "url": "https://www.filmpreservation.org/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "Com um orçamento sem precedentes para a década de 1910 e dezenas de figurinos deslumbrantes confeccionados para a atriz Theda Bara, Cleópatra (1917) foi um estrondoso sucesso de bilheteria da Fox Film Corporation.",
+      "O incêndio dos depósitos de nitrato da Fox em Little Ferry em 1937 destruiu a quase totalidade das matrizes de filmes silenciosos do estúdio, incluindo as cópias de Cleópatra.",
+      "Atualmente, apenas cerca de 40 segundos do filme foram recuperados e preservados no arquivo do Museu de Arte Moderna (MoMA) e no British Film Institute, montados ao lado de ensaios fotográficos da época."
+    ],
+    "recoveryStatus": "RECUPERADO PARCIALMENTE — FRAGMENTOS NO MOMA E BFI"
   }
 ]
