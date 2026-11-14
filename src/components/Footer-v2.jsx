@@ -1,10 +1,10 @@
+import Logo from './Logo'
 export default function Footer() {
   return (
     <footer className="main-footer">
       <div>
         <strong>
-          <span className="logo-mark">84</span>
-          SYSTEM 84
+          <Logo compact />
         </strong>
         <span>Arquivo de memória cultural</span>
         <span>Preservando cultura · conectando memórias</span>

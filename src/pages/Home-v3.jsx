@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import BootScreen from '../components/BootScreen'
 import Layout from '../components/Layout'
+import SoundControl from '../components/SoundControl'
 import { records } from '../data/records'
 import { playClick, playTyping } from '../utils/audio'
 import '../styles/home.css'
@@ -55,6 +56,12 @@ const wall = [
     label: 'SYS84 · TERMINAL',
     className: 'monitor monitor-main',
     screen: 'main',
+  },
+  {
+    id: 'tower',
+    label: 'MONITOR 02 / DESLIGADO',
+    className: 'monitor monitor-tower monitor-off',
+    screen: 'off',
   },
   {
     id: 'log',
@@ -158,6 +165,8 @@ export default function Home() {
           {/* Parede de monitores CRT: a sala do arquivo */}
           <div className="crt-wall" role="group" aria-label="Parede de monitores do arquivo">
             <div className="wall-cables" aria-hidden="true" />
+            <span className="wall-lamp" aria-hidden="true" />
+            <span className="wall-dust" aria-hidden="true" />
 
             {wall.map((unit) => (
               <button
@@ -190,6 +199,12 @@ export default function Home() {
                             TERMINAL DE <em>PRESERVAÇÃO</em>
                           </span>
                         </>
+                      )}
+
+                      {unit.screen === 'off' && (
+                        <span className="glass-off">
+                          <span>SEM SINAL</span>
+                        </span>
                       )}
 
                       {unit.screen === 'log' && (
@@ -251,19 +266,23 @@ export default function Home() {
             <form className="wall-console" onSubmit={search}>
               <label htmlFor="homeSearch">&gt; pesquisar no arquivo</label>
 
-              <div className="wall-console-field">
-                <span>&gt;</span>
-                <input
-                  id="homeSearch"
-                  type="search"
-                  value={query}
-                  placeholder="título, autor ou ano..."
-                  onChange={(event) => {
-                    setQuery(event.target.value)
-                    playTyping()
-                  }}
-                />
-                <button type="submit">buscar</button>
+              <div className="wall-console-row">
+                <div className="wall-console-field">
+                  <span>&gt;</span>
+                  <input
+                    id="homeSearch"
+                    type="search"
+                    value={query}
+                    placeholder="título, autor ou ano..."
+                    onChange={(event) => {
+                      setQuery(event.target.value)
+                      playTyping()
+                    }}
+                  />
+                  <button type="submit">buscar</button>
+                </div>
+
+                <SoundControl />
               </div>
             </form>
           </div>

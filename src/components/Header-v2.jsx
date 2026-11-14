@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { playClick } from '../utils/audio'
 import SoundControl from './SoundControl'
+import { LogoLink } from './Logo'
 import { useAuth, PASSWORDS } from '../utils/auth'
 
 export default function Header() {
@@ -37,10 +38,7 @@ export default function Header() {
   return (
     <>
       <header className="main-header">
-        <NavLink to="/" className="logo" onClick={closeMenu}>
-          <span className="logo-mark">84</span>
-          SYSTEM <span>84</span>
-        </NavLink>
+        <LogoLink onClick={closeMenu} />
 
         <button
           className="menu-button"
