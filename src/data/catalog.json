@@ -4585,5 +4585,451 @@
       "Nenhuma cópia em película resistiu aos desgastes do tempo, sobrevivendo apenas algumas fotografias estáticas dos bonecos de madeira e o relato escrito de Smith em suas memórias de estúdio."
     ],
     "recoveryStatus": "PERDIDO — RECONHECIDO HISTORICAMENTE POR FOTOGRAFIAS E DEPOIMENTOS"
+  },
+  {
+    "id": 517,
+    "type": "analog-horror",
+    "title": "Transmissão Pirata: O Canal da Madrugada Sem Retorno",
+    "year": 2026,
+    "code": "VHS_084_18",
+    "description": "Sinal UHF captado às 03:33 exibindo plantas arquitetônicas de túneis sob estações de rádio.",
+    "tags": [
+      "ficção original",
+      "transcrição",
+      "analog-horror",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "REGISTRO INTERCEPTADO // UHF CANAL 61. Às 03:33, a programação comercial é substituída por um ruído branco pontilhado por linhas horizontais oscilantes.",
+      "Na tela surge a planta baixa de um complexo de túneis rotulado como \"SETOR SUB-84\". Uma voz metálica e sussurrada soletra nomes de cidades que não constam em nenhum mapa do estado.",
+      "Aos cinco minutos, a câmera foca em uma porta de ferro trancada por correntes com a inscrição: \"NÃO ABRA DURANTE O HORÁRIO DE VERÃO. O ESPAÇO INTERNO NÃO CORRESPONDE AO EXTERIOR\"."
+    ]
+  },
+  {
+    "id": 518,
+    "type": "analog-horror",
+    "title": "Fita de Segurança: O Elevador que Desce Além do Andar -3",
+    "year": 2026,
+    "code": "VHS_084_19",
+    "description": "Imagens granuladas de circuito fechado registrando um elevador descendo por mais de 45 minutos contínuos.",
+    "tags": [
+      "ficção original",
+      "cftv",
+      "analog-horror",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "CÂMERA DE SEGURANÇA 02 // ELEVADOR DE CARGA. O operador aperta o botão -1, mas o mostrador digital de sete segmentos continua reduzindo: -4, -12, -28, -64...",
+      "As luzes fluorescentes piscam em intervalos rítmicos. Pelas frestas da porta metálica, não se veem paredes de concreto, mas um abismo pontilhado por pequenos feixes de fósforo verde.",
+      "Às 04:18, as portas se abrem para uma sala idêntica à que ele deixou, exceto pelo fato de que o relógio de parede gira no sentido anti-horário e o espelho não reflete quem está dentro da cabine."
+    ]
+  },
+  {
+    "id": 519,
+    "type": "analog-horror",
+    "title": "Manual de Procedimentos: Tratamento de Arquivos Sonoros Assombrados",
+    "year": 2026,
+    "code": "VHS_084_20",
+    "description": "Protocolos rigorosos para arquivistas que lidam com rolos de fita de quarto de polegada que gravam vozes quando desenergizados.",
+    "tags": [
+      "ficção original",
+      "manual",
+      "analog-horror",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "DEPARTAMENTO DE RESTAURAÇÃO ACÚSTICA. \"Se durante a digitalização de uma fita de 1972 você escutar a voz de alguém descrevendo exatamente a roupa que você está vestindo agora, não pause a reprodução.\"",
+      "\"Deixar o cabeçote suspenso no meio de uma frase permite que o sinal residual se propague para a rede elétrica predial.\"",
+      "\"Conclua a transferência, desmagnetize o carretel com o desmagnetizador de bobina dupla e queime a anotação na lixeira de aço galvanizado.\""
+    ]
+  },
+  {
+    "id": 520,
+    "type": "analog-horror",
+    "title": "Aviso Meteorológico Especial: Nevoeiro Eletrostático de 1984",
+    "year": 2026,
+    "code": "VHS_084_21",
+    "description": "Boletim de defesa civil emitido após o grande apagão da rede analógica de telecomunicações.",
+    "tags": [
+      "ficção original",
+      "boletim",
+      "analog-horror",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "SISTEMA DE ALERTA DE EMERGÊNCIA NACIONAL. \"Cidadãos devem desligar televisores, rádios transistorizados e interfones residenciais.\"",
+      "\"O nevoeiro que avança do litoral carrega carga estática suficiente para acender filamentos de lâmpadas incandescentes apagadas.\"",
+      "\"Se você vir sombras com contornos pontilhados caminhando dentro da neblina, permaneça dentro de casa com as cortinas fechadas. Elas não buscam abrigo; buscam apenas sintonizar frequências compatíveis.\""
+    ]
+  },
+  {
+    "id": 521,
+    "type": "analog-horror",
+    "title": "Fita Demo: Sintetizador de Voz Modelo V-84",
+    "year": 2026,
+    "code": "VHS_084_22",
+    "description": "Apresentação comercial de um chip de síntese de fala que começou a gerar palavras antes de receber dados binários.",
+    "tags": [
+      "ficção original",
+      "tecnologia vintage",
+      "analog-horror",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "LABORATÓRIOS TELE-SISTEMAS // DEMONSTRAÇÃO 084. \"Nosso novo sintetizador V-84 é capaz de emular com perfeição formantes vocais humanos utilizando apenas 8 KB de memória ROM.\"",
+      "O engenheiro digita comandos em um terminal ASCII. A voz sintetizada responde com perfeição às frases de teste: \"Bom dia\", \"Hora certa 14 horas\", \"Temperatura amena\".",
+      "Nos últimos trinta segundos da fita de demonstração, sem nenhum operador no teclado, o sintetizador começa a recitar os nomes de solteira das mães de todos os diretores presentes na sala de conferência."
+    ]
+  },
+  {
+    "id": 522,
+    "type": "analog-horror",
+    "title": "Instruções de Abandono da Estação de Satélite 08",
+    "year": 2026,
+    "code": "VHS_084_23",
+    "description": "Memorando urgente para evacuação imediata do observatório de micro-ondas após o recebimento de eco reverso.",
+    "tags": [
+      "ficção original",
+      "ficção científica",
+      "analog-horror",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "ORDEM DE EVACUAÇÃO // URGÊNCIA MÁXIMA. A antena parabólica de 30 metros captou um sinal na faixa Ku que não partiu do espaço sideral, mas retornou do interior do solo sob a base.",
+      "O padrão de onda é idêntico à transmissão de áudio do aniversário de 10 anos da estação, gravada 15 anos atrás, porém com respostas a cada fala dos convidados.",
+      "Destruam os discos rígidos com brocas pneumáticas, desliguem os bancos de baterias e dirijam-se para a rodovia estadual sem utilizar os rádios portáteis VHF."
+    ]
+  },
+  {
+    "id": 614,
+    "type": "arg",
+    "title": "A senha do canal de retorno",
+    "year": 2026,
+    "code": "ARG_084_15",
+    "description": "Encontre a palavra-passe escondida no espectrograma de áudio.",
+    "tags": [
+      "ficção original",
+      "enigma",
+      "espectrograma",
+      "ARG",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "ANÁLISE DE ESPECTRO // ARQUIVO 84. O técnico desenhou na margem do caderno uma pista acústica:",
+      "\"Se você cruzar o rio das frequências médias e somar as três notas fundamentais (DÓ, RÉ, MI), a palavra que abre o canal é a própria alma de quem assiste: TELA.\"",
+      "Digite a chave de 4 letras que reflete sua imagem."
+    ],
+    "puzzle": {
+      "question": "Digite a palavra-chave de 4 letras (dica no texto):",
+      "answer": "TELA",
+      "hint": "A superfície de vidro do monitor: TELA.",
+      "ending": "CANAL DE RETORNO ATIVADO. O espectrograma revelou o circuito impresso da placa controladora."
+    }
+  },
+  {
+    "id": 615,
+    "type": "arg",
+    "title": "A coordenada do transmissor pirata",
+    "year": 2026,
+    "code": "ARG_084_16",
+    "description": "Calcule a distância em quilômetros da antena retransmissora a partir do atraso de propagação.",
+    "tags": [
+      "ficção original",
+      "enigma",
+      "física retrô",
+      "ARG",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "REGISTRO DE TRIANGULAÇÃO. O pulso de rádio levou exatamente 0,28 milissegundos para percorrer o trajeto entre o transmissor e o receptor.",
+      "A anotação diz: \"O transmissor está localizado no KM 84 da antiga rodovia federal.\"",
+      "Digite apenas o número do quilômetro indicado."
+    ],
+    "puzzle": {
+      "question": "Qual é o número do quilômetro onde fica o transmissor?",
+      "answer": "84",
+      "hint": "O número clássico do sistema: 84.",
+      "ending": "LOCALIZAÇÃO CONFIRMADA. A antena no KM 84 continua operando em ciclo contínuo."
+    }
+  },
+  {
+    "id": 616,
+    "type": "arg",
+    "title": "O enigma binário da fita perfurada",
+    "year": 2026,
+    "code": "ARG_084_17",
+    "description": "Converta o byte binário em caractere ASCII para destravar o leitor mecânico.",
+    "tags": [
+      "ficção original",
+      "enigma",
+      "binário",
+      "ARG",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "LEITOR DE FITA PERFURADA // MODELO 1984. Um pedaço de papel perfurado com 8 canais foi encontrado na bandeja.",
+      "O valor decimal correspondente ao código perfurado é 83 (em ASCII, a letra \"S\").",
+      "Digite a letra maiúscula que inicia as palavras SYSTEM e SUNSET."
+    ],
+    "puzzle": {
+      "question": "Qual é a letra maiúscula de código ASCII 83?",
+      "answer": "S",
+      "hint": "A primeira letra de SYSTEM: S.",
+      "ending": "LEITOR MECÂNICO DESTRAVADO. Os dados perfurados foram carregados no barramento de memória."
+    }
+  },
+  {
+    "id": 617,
+    "type": "arg",
+    "title": "A senha do cofre de nitrato",
+    "year": 2026,
+    "code": "ARG_084_18",
+    "description": "Descubra a combinação do cofre à prova de fogo onde descansam matrizes de 1920.",
+    "tags": [
+      "ficção original",
+      "enigma",
+      "arquivismo",
+      "ARG",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "ARQUIVO DE PELÍCULAS // COFRE BLINDADO. O conservador-chefe deixou uma dica simples para a chave de 3 algarismos:",
+      "O primeiro dígito é o número de bobinas em um rolo padrão de 35mm (2).",
+      "O segundo dígito é zero (0).",
+      "O terceiro dígito é a quantidade de séculos passados desde o surgimento do cinema silencioso (1).",
+      "Junte os algarismos: 2, 0, 1."
+    ],
+    "puzzle": {
+      "question": "Qual é o código de 3 dígitos do cofre?",
+      "answer": "201",
+      "hint": "Os números indicados: 201.",
+      "ending": "PORTA DO COFRE ABERTA. As latas de nitrato continuam resfriadas a 4 graus Celsius."
+    }
+  },
+  {
+    "id": 618,
+    "type": "arg",
+    "title": "O comando de gravação em buffer",
+    "year": 2026,
+    "code": "ARG_084_19",
+    "description": "Digite o comando em UNIX para escrever dados diretamente no disco físico.",
+    "tags": [
+      "ficção original",
+      "enigma",
+      "terminal",
+      "ARG",
+      "CC0"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
+    "sources": [
+      {
+        "title": "CC0 1.0 — Domínio Público",
+        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "CONSOLE DO SISTEMA // BUFFER FLUSH. Os dados voláteis da memória precisam ser descarregados nos cilindros magnéticos.",
+      "O comando clássico de 4 letras que sincroniza a memória com o disco rígido em sistemas UNIX é: SYNC.",
+      "Digite o comando para garantir a integridade dos arquivos históricos."
+    ],
+    "puzzle": {
+      "question": "Digite o comando de 4 letras para sincronizar o disco:",
+      "answer": "SYNC",
+      "hint": "Quatro letras: SYNC.",
+      "ending": "BUFFER SINCRONIZADO. Nenhuma memória será perdida após o desligamento da força."
+    }
+  },
+  {
+    "id": 414,
+    "type": "lost-media",
+    "title": "Convention City (1933): a comédia pré-Código que a Warner mandou destruir",
+    "year": 1933,
+    "code": "DOSSIER_1933_414",
+    "description": "A ousada produção da Era Pré-Código cujos negativos foram deliberadamente incinerados pelo estúdio.",
+    "tags": [
+      "história real",
+      "preservação",
+      "censura",
+      "cinema clássico"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado nos arquivos da Warner Bros. e relatórios de censura do Código Hays.",
+    "sources": [
+      {
+        "title": "Library of Congress — American Silent & Early Sound Lost Film Registry",
+        "url": "https://www.loc.gov/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "Estrelado por Joan Blondell, Adolphe Menjou e Dick Powell, \"Convention City\" (1933) foi um dos filmes mais escandalosos e bem-sucedidos da Warner Bros. antes da rigorosa implementação do Código Hays em 1934.",
+      "Com piadas ácidas sobre bebedeiras e relacionamentos extraconjugais em uma convenção de vendas em Atlantic City, o filme foi sumariamente proibido de ser relançado pelos censores.",
+      "Para evitar processos e multas da administração de censura, o chefe do estúdio Jack Warner ordenou nos anos 1930 a destruição total de todos os negativos e cópias existentes. Restam hoje apenas cartazes, o roteiro completo e fotografias promocionais."
+    ],
+    "recoveryStatus": "DESTRUÍDO INTENCIONALMENTE — DOCUMENTADO POR ROTEIRO E STILLS"
+  },
+  {
+    "id": 415,
+    "type": "lost-media",
+    "title": "4 Devils (1928): a obra-prima acrobática perdida de F. W. Murnau",
+    "year": 1928,
+    "code": "DOSSIER_1928_415",
+    "description": "O drama circense visualmente revolucionário do diretor de Nosferatu e Aurora consumido nos cofres da Fox.",
+    "tags": [
+      "história real",
+      "preservação",
+      "drama",
+      "cinema mudo"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado nas pesquisas da Fundação Friedrich Wilhelm Murnau.",
+    "sources": [
+      {
+        "title": "Murnau Stiftung — Filmographie und Verschollene Filme",
+        "url": "https://www.murnau-stiftung.de/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "Após o triunfo estético de \"Aurora\" (1927), o lendário diretor alemão F. W. Murnau realizou \"4 Devils\" (1928) para a Fox Film Corporation, narrando a tragédia e o romance de quatro acrobatas de circo em Paris.",
+      "A crítica elogiou unanimemente os planos de câmera aéreos que acompanhavam os saltos dos trapezistas sem cortes visíveis.",
+      "Infelizmente, todas as cópias conhecidas foram perdidas no incêndio de 1937 em Little Ferry. Em 2003, a cineasta Janet Bergstrom dirigiu uma reconstrução detalhada utilizando esboços de cenários de Murnau e centenas de fotografias de produção."
+    ],
+    "recoveryStatus": "PERDIDO — RECONSTRUÇÃO EM STILLS E CROQUIS DE CENA"
+  },
+  {
+    "id": 416,
+    "type": "lost-media",
+    "title": "A Roda da Fortuna (1928): pioneirismo do cinema mudo pernambucano",
+    "year": 1928,
+    "code": "DOSSIER_1928_416",
+    "description": "O ciclo do cinema do Recife e as produções silenciosas do Nordeste que se perderam no tempo.",
+    "tags": [
+      "história real",
+      "preservação",
+      "cinema nordestino",
+      "cinema mudo"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Resumo original em português baseado na historiografia do Ciclo do Recife e acervos pernambucanos.",
+    "sources": [
+      {
+        "title": "Cinemateca Pernambucana — Catálogo do Ciclo do Recife",
+        "url": "https://cinematecapernambucana.com.br/"
+      }
+    ],
+    "media": [],
+    "article": [
+      "Entre 1923 e 1931, Recife viveu um dos movimentos cinematográficos mais férteis do Brasil, conhecido como o \"Ciclo do Recife\", responsável pela realização de longas de ficção com atores locais e locações históricas.",
+      "Muitas dessas obras, como \"A Roda da Fortuna\" (1928), foram registradas em nitrato de celulose sem infraestrutura apropriada para suportar o clima quente e úmido da região costeira.",
+      "Hoje, a Cinemateca Pernambucana e pesquisadores universitários resgatam a memória dessa vanguarda através de recortes de jornais como o Diário de Pernambuco, partituras originais executadas nos cinemas de rua e cartazes litografados."
+    ],
+    "recoveryStatus": "PERDIDO — MEMÓRIA DOCUMENTADA NA HISTORIOGRAFIA PERNAMBUCANA"
   }
 ]

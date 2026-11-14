@@ -399,39 +399,52 @@ button {
 }
 
 .record-content p {
-  min-height: 88px;
-  color: #72ad86;
+  min-height: 84px;
+  color: #7ab992;
   font-size: .8rem;
   line-height: 1.7;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .record-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
-  margin: 18px 0;
+  margin: 14px 0;
 }
 
 .record-tags span {
-  padding: 4px 7px;
-  color: var(--green-dark);
-  border: 1px solid var(--green-dark);
-  font-size: .6rem;
+  padding: 3px 8px;
+  color: var(--muted);
+  border: 1px solid rgba(56, 239, 125, 0.2);
+  background: rgba(15, 82, 53, 0.2);
+  border-radius: 2px;
+  font-size: .62rem;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .terminal-action {
-  padding: 9px 12px;
+  display: block;
+  text-align: center;
+  padding: 10px 14px;
   color: var(--green);
-  background: transparent;
-  border: 1px solid var(--green-dark);
-  font-size: .68rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(56, 239, 125, 0.3);
+  font-size: .72rem;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.terminal-action:hover {
-  color: var(--background);
+.record-card:hover .terminal-action {
+  color: #020704;
   border-color: var(--green);
   background: var(--green);
+  box-shadow: 0 0 16px var(--green-glow);
 }
 
 .empty-state {
