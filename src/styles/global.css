@@ -1,3 +1,5 @@
+@import "./theme.css";
+
 :root {
   --background: #010604;
   --background-light: #041009;
@@ -563,4 +565,80 @@ button {
   .main-footer p {
     text-align: left;
   }
+}
+
+/* ==========================================================================
+   SYSTEM 84 — camada final
+   Carregada por último: garante que o tema terror retrofuturista vença as
+   regras antigas de página que continuam nos arquivos históricos.
+   ========================================================================== */
+
+/* Diretórios e pesquisa */
+.archive-hero {
+  width: 100%;
+  margin: 0;
+  padding: clamp(52px, 8vw, 96px) clamp(16px, 5vw, 68px) clamp(34px, 5vw, 56px);
+  grid-template-columns: 1.5fr 0.5fr;
+  gap: 32px;
+  align-items: end;
+}
+
+.archive-hero h1,
+.archive-header h1,
+.search-hero h1 {
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 7vw, 5.2rem);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.05em;
+}
+
+.archive-hero > div > p:last-child,
+.search-hero > p {
+  color: var(--text-dim);
+}
+
+.diagnostic-panel strong {
+  color: var(--phosphor);
+}
+
+.filter-bar,
+.global-search {
+  border-radius: var(--radius-m);
+  background: rgba(5, 16, 21, 0.85);
+}
+
+/* Lost media */
+.lost-hero {
+  width: min(1240px, 92%);
+  margin: clamp(36px, 6vw, 68px) auto clamp(48px, 7vw, 84px);
+}
+
+.lost-hero h1 {
+  color: var(--alarm-soft);
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 9vw, 6rem);
+  font-weight: 800;
+  line-height: 0.86;
+  letter-spacing: -0.05em;
+}
+
+.status-grid h3,
+.case-list strong {
+  font-family: var(--font-display);
+}
+
+/* Registro */
+.record-heading h1 {
+  color: var(--text);
+  font-family: var(--font-display);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+/* Listas de diretório antigas */
+.directory-grid a,
+.status-grid article {
+  border-color: var(--line);
 }

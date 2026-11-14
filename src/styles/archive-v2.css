@@ -1,0 +1,296 @@
+@import "./theme.css";
+
+/* ==========================================================================
+   SYSTEM 84 — diretórios, pesquisa e páginas internas
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   Heróis de diretório
+   -------------------------------------------------------------------------- */
+
+.archive-hero,
+.archive-header,
+.search-hero {
+  position: relative;
+  padding: clamp(52px, 8vw, 96px) clamp(16px, 5vw, 68px) clamp(34px, 5vw, 56px);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.archive-hero::before,
+.archive-header::before,
+.search-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse 60% 70% at 85% 0%, rgba(125, 255, 196, 0.12), transparent 62%),
+    radial-gradient(ellipse 50% 60% at 0% 100%, rgba(255, 59, 78, 0.1), transparent 68%),
+    linear-gradient(180deg, rgba(6, 18, 23, 0.85), rgba(3, 9, 12, 0.6));
+}
+
+.archive-hero {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  gap: 32px;
+  align-items: end;
+}
+
+.archive-hero > div,
+.search-hero > *,
+.archive-header > * {
+  width: min(1240px, 100%);
+}
+
+.archive-hero > div {
+  width: 100%;
+}
+
+.archive-hero h1,
+.archive-header h1,
+.search-hero h1 {
+  margin-top: 10px;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 7vw, 5.2rem);
+  font-weight: 800;
+  line-height: 0.92;
+  letter-spacing: -0.05em;
+  text-shadow: 0 0 50px rgba(125, 255, 196, 0.25);
+}
+
+.archive-hero h1 .blink,
+.search-hero h1 .blink {
+  color: var(--phosphor);
+}
+
+.archive-hero > div > p:last-child,
+.search-hero > p,
+.archive-header > p {
+  max-width: 72ch;
+  margin-top: 18px;
+  color: var(--text-dim);
+  font-size: 0.96rem;
+  line-height: 1.75;
+}
+
+.terminal-line {
+  margin-top: 12px;
+}
+
+.diagnostic-panel {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  background: rgba(4, 13, 17, 0.85);
+  font-family: var(--font-mono);
+}
+
+.diagnostic-panel > span,
+.diagnostic-panel p {
+  color: var(--text-faint);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.diagnostic-panel strong {
+  display: block;
+  margin: 6px 0 12px;
+  color: var(--phosphor);
+  font-family: var(--font-pixel);
+  font-size: 1.05rem;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 20px rgba(125, 255, 196, 0.6);
+}
+
+.diagnostic-panel p {
+  padding: 3px 0;
+  border-top: 1px dashed rgba(125, 255, 196, 0.16);
+}
+
+/* --------------------------------------------------------------------------
+   Navegador de registros
+   -------------------------------------------------------------------------- */
+
+.archive-browser {
+  padding: clamp(28px, 5vw, 48px) clamp(16px, 5vw, 68px) clamp(64px, 8vw, 104px);
+}
+
+.filter-bar,
+.global-search {
+  width: min(1240px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  background: rgba(5, 16, 21, 0.85);
+}
+
+.global-search {
+  grid-template-columns: 1fr;
+  margin-top: 28px;
+}
+
+.filter-bar > div,
+.global-search > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.filter-bar label,
+.global-search label {
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.filter-bar input,
+.filter-bar select,
+.global-search input,
+.global-search > div > div {
+  min-height: 44px;
+  padding: 0 12px;
+  color: var(--phosphor-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-s);
+  outline: 0;
+  background: rgba(2, 8, 11, 0.9);
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.filter-bar input:focus,
+.global-search input:focus {
+  border-color: var(--phosphor);
+  box-shadow: 0 0 0 3px rgba(125, 255, 196, 0.1);
+}
+
+.result-line {
+  width: min(1240px, 100%);
+  margin: 14px auto 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.archive-browser .records-grid,
+.archive-browser .empty-state,
+.search-results .records-grid {
+  width: min(1240px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --------------------------------------------------------------------------
+   Pesquisa
+   -------------------------------------------------------------------------- */
+
+.search-hero h1 {
+  font-size: clamp(2.2rem, 6.4vw, 4.6rem);
+}
+
+.search-workspace {
+  width: min(1240px, 92%);
+  margin: clamp(28px, 5vw, 48px) auto clamp(64px, 8vw, 104px);
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.search-filters {
+  position: sticky;
+  top: 84px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  background: rgba(5, 16, 21, 0.9);
+}
+
+.filter-title {
+  margin: -18px -18px 12px;
+  padding: 10px 14px;
+  color: var(--phosphor);
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-pixel);
+  font-size: 0.54rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.search-filters label {
+  margin-top: 8px;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.search-filters select,
+.search-filters button {
+  min-height: 40px;
+  padding: 0 10px;
+  color: var(--phosphor-soft);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-s);
+  background: rgba(2, 8, 11, 0.9);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+}
+
+.search-filters button:hover {
+  color: var(--on-accent);
+  background: var(--phosphor);
+}
+
+.search-results .result-line {
+  width: 100%;
+  margin: 0 0 18px;
+}
+
+/* --------------------------------------------------------------------------
+   Responsivo
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 1000px) {
+  .archive-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .search-workspace {
+    grid-template-columns: 1fr;
+  }
+
+  .search-filters {
+    position: static;
+  }
+}
+
+@media (max-width: 680px) {
+  .filter-bar,
+  .global-search {
+    grid-template-columns: 1fr;
+  }
+
+  .result-line {
+    flex-direction: column;
+    gap: 4px;
+  }
+}

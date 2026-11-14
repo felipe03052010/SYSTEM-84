@@ -1,0 +1,253 @@
+@import "./theme.css";
+
+/* ==========================================================================
+   SYSTEM 84 — abertura (boot) e transições
+   ========================================================================== */
+
+.boot-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  color: var(--phosphor);
+  background:
+    radial-gradient(ellipse at 50% 40%, rgba(125, 255, 196, 0.12), transparent 55%),
+    radial-gradient(circle at center, #061418 0%, #020709 58%, #000 100%);
+  font-family: var(--font-mono);
+}
+
+.boot-screen::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(to bottom, transparent 0 2px, rgba(0, 0, 0, 0.34) 3px 4px),
+    radial-gradient(ellipse at center, transparent 45%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.boot-terminal {
+  position: relative;
+  z-index: 2;
+  width: min(880px, 100%);
+  min-height: 540px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius-m);
+  background: rgba(3, 11, 14, 0.94);
+  box-shadow:
+    0 0 90px -30px rgba(125, 255, 196, 0.55),
+    inset 0 0 90px -50px rgba(125, 255, 196, 0.6);
+}
+
+.boot-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  color: var(--phosphor-dim);
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-pixel);
+  font-size: 0.52rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.boot-start,
+.boot-process {
+  min-height: 496px;
+}
+
+.boot-start {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 16px;
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.boot-start > span {
+  color: var(--alarm-soft);
+  font-family: var(--font-pixel);
+  font-size: 0.54rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.boot-start h1 {
+  color: var(--phosphor-soft);
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 10vw, 6rem);
+  font-weight: 800;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  text-shadow: 0 0 50px rgba(125, 255, 196, 0.55);
+}
+
+.boot-start h1 em {
+  color: var(--amber);
+  font-style: normal;
+  text-shadow: 0 0 40px rgba(255, 180, 84, 0.5);
+}
+
+.boot-start p {
+  color: var(--text-dim);
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+
+.boot-message {
+  margin-top: 24px;
+  color: var(--phosphor);
+  font-family: var(--font-pixel);
+  font-size: 0.58rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.boot-start button {
+  margin-top: 8px;
+  padding: 11px 20px;
+  color: var(--on-accent);
+  border-radius: 4px;
+  background: var(--phosphor);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  box-shadow: 0 0 34px -12px rgba(125, 255, 196, 0.95);
+  transition: transform 0.2s var(--ease), box-shadow 0.2s var(--ease);
+}
+
+.boot-start button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 44px -10px rgba(125, 255, 196, 1);
+}
+
+.boot-process {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px;
+}
+
+.boot-log {
+  color: var(--phosphor-dim);
+  font-size: 0.72rem;
+  line-height: 1.55;
+  text-shadow: 0 0 14px rgba(125, 255, 196, 0.35);
+}
+
+.boot-log p:last-child {
+  color: var(--phosphor-soft);
+}
+
+.boot-progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  color: var(--text-faint);
+  font-family: var(--font-pixel);
+  font-size: 0.5rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.boot-progress {
+  height: 16px;
+  padding: 3px;
+  border: 1px solid var(--line-strong);
+  border-radius: 3px;
+  background: rgba(2, 8, 10, 0.9);
+}
+
+.boot-progress div {
+  height: 100%;
+  border-radius: 1px;
+  background: linear-gradient(90deg, var(--phosphor-dim), var(--phosphor));
+  box-shadow: 0 0 16px rgba(125, 255, 196, 0.85);
+  transition: width 0.18s var(--ease);
+}
+
+.boot-screen.closing {
+  animation: screenOff 0.65s forwards;
+}
+
+@keyframes screenOff {
+  0% { opacity: 1; transform: scaleY(1); }
+  55% { opacity: 1; transform: scaleY(0.015); filter: brightness(4); }
+  100% { opacity: 0; transform: scaleY(0); visibility: hidden; }
+}
+
+/* --------------------------------------------------------------------------
+   Transições de rota
+   -------------------------------------------------------------------------- */
+
+.route-content.waiting { visibility: hidden; }
+.route-content.ready { animation: terminal-enter 150ms ease-out; }
+.route-loader {
+  min-height: 60vh;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 20px;
+  color: var(--phosphor);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.route-loader + .waiting { position: absolute; width: 100%; }
+.loader-art {
+  display: flex;
+  width: 230px;
+  height: 44px;
+  gap: 5px;
+  padding: 7px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  overflow: hidden;
+  background: rgba(2, 8, 10, 0.8);
+}
+.loader-art i {
+  flex: 1;
+  background: var(--phosphor);
+  box-shadow: 0 0 14px rgba(125, 255, 196, 0.6);
+  animation: load-bar var(--load-time) ease-in-out both;
+}
+.loader-art i:nth-child(2) { animation-delay: 30ms; }
+.loader-art i:nth-child(3) { animation-delay: 60ms; }
+.loader-art i:nth-child(4) { animation-delay: 90ms; }
+.mode-film .loader-art { border-style: dashed; transform: rotate(-2deg); }
+.mode-film i { animation-name: frames; }
+.mode-series i { animation-name: channel; }
+.mode-book i { transform-origin: left; animation-name: pages; }
+.mode-search i { animation-name: scan; }
+.mode-lost i { animation-name: fragments; background: var(--alarm); }
+.mode-analog i { animation-name: tracking; background: var(--amber); }
+.mode-arg i { animation-name: decode; }
+.mode-record i { animation-name: frames; }
+@keyframes load-bar { from { transform: scaleY(.1); } to { transform: scaleY(1); } }
+@keyframes frames { from { transform: translateX(-250px); } to { transform: translateX(0); } }
+@keyframes channel { from { transform: scaleY(.1); opacity: .3; } 60% { transform: scaleY(.8); } to { transform: scaleY(.4); } }
+@keyframes pages { from { transform: perspective(100px) rotateY(90deg); } to { transform: perspective(100px) rotateY(0); } }
+@keyframes scan { from { transform: translateX(-160px) scaleX(.1); } to { transform: translateX(0) scaleX(1); } }
+@keyframes fragments { from { transform: translateY(50px) rotate(30deg); opacity: 0; } to { transform: none; opacity: 1; } }
+@keyframes tracking { from { transform: skewX(25deg) translateY(-30px); } 50% { transform: skewX(-15deg); } to { transform: none; } }
+@keyframes decode { from { transform: rotateX(180deg); opacity: .2; } to { transform: rotateX(0); opacity: 1; } }
+@keyframes terminal-enter { from { opacity: .5; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+
+button,
+.terminal-action,
+.main-navigation a,
+.directory-card {
+  transition: transform 120ms cubic-bezier(0.2, 0.8, 0.4, 1),
+    background-color 150ms ease,
+    box-shadow 150ms ease,
+    border-color 150ms ease;
+}

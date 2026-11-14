@@ -1,3 +1,5 @@
+@import "./boot-v2.css";
+
 .boot-screen {
   position: fixed;
   inset: 0;

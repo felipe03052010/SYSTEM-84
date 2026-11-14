@@ -1,4 +1,4 @@
-export default function Footer() {
+function FooterLegacy() {
   return (
     <footer className="main-footer">
       <div>
@@ -19,3 +19,5 @@ export default function Footer() {
     </footer>
   )
 }
+
+export { default } from './Footer-v2.jsx'

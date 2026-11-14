@@ -1,7 +1,7 @@
 import { playClick } from '../utils/audio'
 import { Link } from 'react-router-dom'
 
-export default function RecordCard({ record }) {
+function RecordCardLegacy({ record }) {
   return (
     <article className="record-card">
       <div className="record-cover">
@@ -42,3 +42,5 @@ export default function RecordCard({ record }) {
     </article>
   )
 }
+
+export { default } from './RecordCard-v2.jsx'

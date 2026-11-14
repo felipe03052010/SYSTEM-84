@@ -4,7 +4,7 @@ import { playClick } from '../utils/audio'
 import SoundControl from './SoundControl'
 import { useAuth, PASSWORDS } from '../utils/auth'
 
-export default function Header() {
+function HeaderLegacy() {
   const [open, setOpen] = useState(false)
   const [showAuthModal, setShowAuthModal] = useState(false)
   const [inputPass, setInputPass] = useState('')
@@ -205,3 +205,5 @@ export default function Header() {
     </>
   )
 }
+
+export { default } from './Header-v2.jsx'

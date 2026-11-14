@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 import { playClick, playTyping } from '../utils/audio'
 import '../styles/home.css'
 
-export default function Home() {
+function HomeLegacy() {
   const [bootFinished, setBootFinished] = useState(
     () => { try { return sessionStorage.getItem('system84Booted') === 'true' } catch { return false } },
   )
@@ -129,3 +129,6 @@ export default function Home() {
     </>
   )
 }
+
+
+export { default } from './Home-v2.jsx'

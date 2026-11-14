@@ -1,3 +1,5 @@
+@import "./boot-v2.css";
+
 .route-content.waiting { visibility: hidden; }
 .route-content.ready { animation: terminal-enter 150ms ease-out; }
 .route-loader { min-height: 60vh; display: grid; align-content: center; justify-items: center; gap: 24px; color: var(--green); font-size: .8rem; }

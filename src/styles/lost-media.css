@@ -1,3 +1,5 @@
+@import "./lost-v2.css";
+
 .lost-page {
   background:
     radial-gradient(circle at 10% 0%, rgba(255,79,79,.08), transparent 30%),

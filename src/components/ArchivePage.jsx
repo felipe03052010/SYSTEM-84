@@ -14,7 +14,7 @@ function matchesPeriod(year, period) {
   return true
 }
 
-export default function ArchivePage({
+function ArchivePageLegacy({
   type,
   title,
   directory,
@@ -122,3 +122,5 @@ export default function ArchivePage({
     </Layout>
   )
 }
+
+export { default } from './ArchivePage-v2.jsx'
