@@ -49,7 +49,7 @@ const directories = [
   },
 ]
 
-export default function Home() {
+function HomeV2Legacy() {
   const [bootFinished, setBootFinished] = useState(
     () => {
       try {
@@ -244,3 +244,5 @@ export default function Home() {
     </>
   )
 }
+
+export { default } from './Home-v3.jsx'

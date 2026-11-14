@@ -1,0 +1,457 @@
+/* ==========================================================================
+   SYSTEM 84 — parede de monitores CRT (capa realista)
+   Três monitores sobre uma mesa, com plástico bege sujo, moldura funda,
+   vidro curvo, reflexo, scanlines, poeira e cabos. A tela principal repete
+   o log do arquivo; as laterais mostram o log e um deck VHS.
+   ========================================================================== */
+
+.home-hero {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+}
+
+.crt-wall {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.62fr);
+  grid-template-rows: auto auto auto;
+  gap: clamp(10px, 1.6vw, 22px);
+  padding: clamp(18px, 3vw, 34px) clamp(14px, 2.4vw, 28px) clamp(26px, 4vw, 44px);
+  border-radius: 10px;
+  background:
+    radial-gradient(ellipse 70% 60% at 50% 0%, rgba(255, 214, 160, 0.14), transparent 62%),
+    linear-gradient(180deg, #14100c 0%, #0b0907 55%, #060504 100%);
+  box-shadow:
+    inset 0 0 90px -30px rgba(0, 0, 0, 0.95),
+    0 40px 90px -60px rgba(0, 0, 0, 0.95);
+}
+
+/* Madeira da mesa sob os monitores */
+.crt-wall::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 34%;
+  z-index: -1;
+  border-radius: 0 0 10px 10px;
+  background:
+    repeating-linear-gradient(92deg, rgba(255, 255, 255, 0.03) 0 2px, transparent 2px 9px),
+    linear-gradient(180deg, #241a12 0%, #150f0a 60%, #0a0705 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 214, 160, 0.12);
+}
+
+.wall-cables {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: 26%;
+  height: 46px;
+  z-index: 0;
+  pointer-events: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.65);
+  border-radius: 0 0 40% 40%;
+  background:
+    radial-gradient(ellipse 40% 100% at 22% 0%, transparent 60%, rgba(0, 0, 0, 0.5) 61%),
+    radial-gradient(ellipse 40% 100% at 72% 0%, transparent 60%, rgba(0, 0, 0, 0.45) 61%);
+  filter: blur(0.4px);
+}
+
+/* --------------------------------------------------------------------------
+   Um monitor
+   -------------------------------------------------------------------------- */
+
+.monitor {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  background: none;
+  border: 0;
+  text-align: left;
+  transition: transform 0.35s var(--ease), filter 0.35s var(--ease);
+  filter: saturate(0.92) brightness(0.9);
+}
+
+.monitor:hover {
+  transform: translateY(-3px);
+  filter: saturate(1) brightness(1);
+}
+
+.monitor.is-active {
+  filter: saturate(1.05) brightness(1.05);
+}
+
+.monitor-main {
+  grid-row: 1 / span 2;
+}
+
+.monitor-log {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.monitor-vhs {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.monitor-shell {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+/* Plástico bege sujo do gabinete */
+.monitor-bezel {
+  position: relative;
+  display: block;
+  padding: clamp(12px, 1.8vw, 20px) clamp(12px, 1.8vw, 20px) clamp(6px, 1vw, 10px);
+  border-radius: 16px 16px 8px 8px;
+  background:
+    linear-gradient(180deg, #cfc2a2 0%, #b9ab8c 42%, #9a8d72 100%);
+  box-shadow:
+    inset 0 2px 0 rgba(255, 250, 232, 0.55),
+    inset 0 -6px 12px rgba(0, 0, 0, 0.35),
+    inset 6px 0 10px rgba(0, 0, 0, 0.14),
+    inset -6px 0 10px rgba(0, 0, 0, 0.18),
+    0 18px 30px -18px rgba(0, 0, 0, 0.9);
+}
+
+/* Poeira e desgaste do plástico */
+.monitor-bezel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0.5;
+  background-image:
+    radial-gradient(circle at 18% 22%, rgba(70, 55, 30, 0.28), transparent 38%),
+    radial-gradient(circle at 82% 88%, rgba(70, 55, 30, 0.22), transparent 42%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='90' height='90'%3E%3Cfilter id='d'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='90' height='90' filter='url(%23d)' opacity='0.22'/%3E%3C/svg%3E");
+  mix-blend-mode: multiply;
+}
+
+/* Vidro fundo, afundado na moldura */
+.monitor-glass {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: clamp(190px, 22vw, 270px);
+  padding: clamp(12px, 1.6vw, 18px);
+  overflow: hidden;
+  border-radius: 12px;
+  color: var(--phosphor-soft);
+  background:
+    radial-gradient(ellipse at 50% 0%, #1a5c43 0%, #0c3327 52%, #04120e 100%);
+  box-shadow:
+    inset 0 0 0 3px #2b2b23,
+    inset 0 0 22px 6px rgba(0, 0, 0, 0.9),
+    inset 0 0 90px -10px rgba(125, 255, 196, 0.4),
+    0 1px 0 rgba(255, 250, 232, 0.3);
+  font-family: var(--font-pixel-data);
+  font-size: clamp(0.56rem, 0.78vw, 0.72rem);
+  line-height: 1.55;
+  text-shadow: 0 0 6px rgba(125, 255, 196, 0.55);
+}
+
+.monitor-log .monitor-glass {
+  min-height: clamp(96px, 11vw, 132px);
+  font-size: clamp(0.5rem, 0.62vw, 0.6rem);
+}
+
+.monitor-vhs .monitor-glass {
+  min-height: clamp(104px, 12vw, 140px);
+  background:
+    radial-gradient(ellipse at 50% 20%, #173c46 0%, #0a2229 55%, #040f12 100%);
+  color: #b8e6f2;
+  text-shadow: 0 0 6px rgba(150, 220, 240, 0.55);
+}
+
+/* Scanlines e curvatura */
+.glass-scan {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background:
+    repeating-linear-gradient(180deg, rgba(0, 0, 0, 0.34) 0 1px, transparent 1px 3px),
+    radial-gradient(ellipse at 50% 50%, transparent 52%, rgba(0, 0, 0, 0.72) 100%);
+  opacity: 0.85;
+}
+
+/* Reflexo do vidro */
+.glass-glare {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background:
+    linear-gradient(118deg, rgba(255, 255, 255, 0.16) 0%, transparent 26%, transparent 70%, rgba(255, 255, 255, 0.07) 100%),
+    radial-gradient(ellipse 60% 34% at 26% 8%, rgba(255, 255, 255, 0.22), transparent 70%);
+  mix-blend-mode: screen;
+}
+
+.glass-head,
+.glass-log {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.glass-head {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+  margin-bottom: 4px;
+  border-bottom: 1px dashed rgba(125, 255, 196, 0.34);
+  font-family: var(--font-pixel-title);
+  font-size: 0.82em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.glass-led {
+  color: var(--amber);
+  animation: ledPulse 2.4s ease-in-out infinite;
+}
+
+.glass-ok {
+  color: var(--phosphor-soft);
+}
+
+.glass-title {
+  position: relative;
+  z-index: 1;
+  margin-top: auto;
+  padding-top: 8px;
+  color: var(--phosphor-soft);
+  font-family: var(--font-pixel-title);
+  font-size: 1.05em;
+  line-height: 1.25;
+  letter-spacing: 0.04em;
+}
+
+.glass-title em {
+  color: var(--amber);
+  font-style: normal;
+}
+
+/* Tela do deck VHS */
+.glass-vhs {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 6px;
+  margin: 4px 0;
+}
+
+.vhs-bars {
+  display: block;
+  height: 26px;
+  border-radius: 2px;
+  background: linear-gradient(
+    90deg,
+    #d8d8c8 0 14%,
+    #d8c33a 14% 28%,
+    #33b3a8 28% 42%,
+    #3a8c3a 42% 56%,
+    #b3459a 56% 70%,
+    #b83a3a 70% 84%,
+    #2f4bb3 84% 100%
+  );
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+  filter: saturate(0.85);
+}
+
+.vhs-text {
+  font-family: var(--font-pixel-title);
+  font-size: 0.82em;
+  letter-spacing: 0.1em;
+}
+
+/* Marca e botões do gabinete */
+.monitor-brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: clamp(6px, 0.9vw, 10px);
+  padding: 0 4px;
+  color: #4b4231;
+  font-family: var(--font-pixel-title);
+  font-size: 0.62rem;
+  letter-spacing: 0.14em;
+  text-shadow: 0 1px 0 rgba(255, 250, 232, 0.45);
+}
+
+.monitor-knobs {
+  display: inline-flex;
+  gap: 5px;
+}
+
+.monitor-knobs i {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 28%, #6e6350, #2c271e);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 250, 232, 0.4);
+}
+
+.monitor-knobs i:first-child {
+  background: radial-gradient(circle at 32% 28%, #6fd39c, #1e5f40);
+  box-shadow: 0 0 8px rgba(125, 255, 196, 0.85);
+}
+
+/* Pedestal */
+.monitor-stand {
+  display: block;
+  width: 34%;
+  height: clamp(10px, 1.4vw, 16px);
+  margin: 0 auto;
+  background: linear-gradient(180deg, #a2957a, #6d6350);
+  box-shadow: inset 0 1px 0 rgba(255, 250, 232, 0.35);
+}
+
+.monitor-foot {
+  display: block;
+  width: 62%;
+  height: clamp(7px, 1vw, 11px);
+  margin: 0 auto;
+  border-radius: 0 0 6px 6px;
+  background: linear-gradient(180deg, #8f8470, #4d4536);
+  box-shadow: 0 12px 18px -10px rgba(0, 0, 0, 0.95);
+}
+
+.monitor-label {
+  color: rgba(232, 226, 212, 0.42);
+  font-family: var(--font-pixel-title);
+  font-size: 0.52rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.monitor.is-active .monitor-label {
+  color: var(--phosphor);
+}
+
+/* --------------------------------------------------------------------------
+   Console de pesquisa da parede
+   -------------------------------------------------------------------------- */
+
+.wall-console {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin-top: 6px;
+  padding: 14px;
+  border: 1px solid rgba(232, 226, 212, 0.16);
+  border-radius: 6px;
+  background:
+    linear-gradient(180deg, rgba(24, 20, 15, 0.95), rgba(10, 8, 6, 0.98));
+  box-shadow: inset 0 1px 0 rgba(255, 214, 160, 0.14);
+}
+
+.wall-console label {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--amber);
+  font-family: var(--font-pixel-title);
+  font-size: 0.54rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.wall-console-field {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 4px 0 10px;
+  border: 1px solid rgba(125, 255, 196, 0.28);
+  border-radius: 3px;
+  background: rgba(2, 10, 8, 0.9);
+}
+
+.wall-console-field > span {
+  color: var(--phosphor-dim);
+  font-family: var(--font-pixel-data);
+  font-size: 0.8rem;
+}
+
+.wall-console-field input {
+  flex: 1;
+  min-width: 0;
+  height: 38px;
+  color: var(--phosphor-soft);
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font-family: var(--font-pixel-data);
+  font-size: 0.86rem;
+}
+
+.wall-console-field input::placeholder {
+  color: rgba(125, 255, 196, 0.38);
+}
+
+.wall-console-field button {
+  height: 28px;
+  padding: 0 12px;
+  border-radius: 2px;
+  color: var(--on-accent);
+  background: var(--phosphor);
+  font-family: var(--font-pixel-title);
+  font-size: 0.52rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.wall-console-field button:hover {
+  background: var(--phosphor-soft);
+}
+
+/* --------------------------------------------------------------------------
+   Responsivo
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 1080px) {
+  .home-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .crt-wall {
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 620px) {
+  .crt-wall {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    padding: 14px 12px 22px;
+  }
+
+  .monitor-main,
+  .monitor-log,
+  .monitor-vhs {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  .monitor-glass {
+    min-height: 170px;
+    font-size: 0.7rem;
+  }
+
+  .monitor-log .monitor-glass,
+  .monitor-vhs .monitor-glass {
+    min-height: 118px;
+  }
+}

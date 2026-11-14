@@ -1,0 +1,145 @@
+/* ==========================================================================
+   SYSTEM 84 — fonte pixel de verdade
+   A página inteira é tipografada em pixel font. Para ficar "bastante
+   pixelado", nenhuma fonte é suavizada: renderização dura, sem antialias,
+   e o corpo usa a fonte de 8px do terminal escalada em múltiplos exatos.
+   ========================================================================== */
+
+:root {
+  --font-pixel-text: "Pixelify Sans", "VT323", monospace;
+  --font-pixel-title: "Silkscreen", "Pixelify Sans", monospace;
+  --font-pixel-data: "Pixelify Sans", "VT323", monospace;
+  --pixel-stroke: 2px;
+}
+
+html {
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+  text-rendering: geometricPrecision;
+}
+
+body,
+body * {
+  font-synthesis: none;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.02em;
+}
+
+/* Todas as famílias do site apontam para as pixel fonts */
+:root {
+  --font-display: var(--font-pixel-title);
+  --font-body: var(--font-pixel-text);
+  --font-mono: var(--font-pixel-data);
+  --font-pixel: var(--font-pixel-title);
+  --font-terminal: var(--font-pixel-title);
+  --font-interface: var(--font-pixel-text);
+}
+
+body {
+  font-family: var(--font-pixel-text);
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.015em;
+  text-shadow: 0 0 1px currentColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+strong,
+.logo,
+.logo-mark,
+.directory,
+.hero-tag,
+.record-meta,
+.record-code,
+.cover-placeholder span,
+.cover-placeholder small,
+.screen-head,
+.screen-search label,
+.screen-hint,
+.handheld-top,
+.handheld-caption,
+.dir-index,
+.main-footer span,
+.diagnostic-panel strong,
+.filter-title,
+.boot-header,
+.boot-message,
+.boot-start > span,
+.boot-progress-info,
+.auth-card::before,
+.directory-card em,
+.record-tags span,
+.terminal-action,
+.hero-primary,
+.hero-secondary,
+.ghost-button,
+.pill-button,
+.main-navigation a,
+.sound-control,
+.menu-button,
+.back-link,
+.case-list article > span,
+.lost-warning,
+.terminal-line {
+  font-family: var(--font-pixel-title);
+  letter-spacing: 0.06em;
+}
+
+p,
+li,
+input,
+select,
+textarea,
+button,
+.hero-copy > p,
+.record-content p,
+.directory-card p,
+.status-grid p,
+.case-list p,
+.book-paper,
+.reader-tools,
+.record-provenance {
+  font-family: var(--font-pixel-text);
+}
+
+/* Títulos: silkscreen fica melhor em caixa alta e com passo pequeno */
+h1,
+h2,
+h3 {
+  text-transform: none;
+  line-height: 1.02;
+  letter-spacing: -0.01em;
+}
+
+/* O texto de leitura do livro também é pixel, mas com entrelinha maior */
+.book-paper {
+  font-family: var(--font-pixel-text);
+  font-size: 19px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+  text-shadow: none;
+}
+
+/* Números e códigos com dígitos de largura fixa */
+.record-code,
+.screen-log,
+.record-meta,
+.boot-log,
+.handheld-caption,
+.result-line,
+.diagnostic-panel p,
+.hero-stat span {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Imagens e bordas também duras, sem interpolação suave */
+img,
+video,
+canvas {
+  image-rendering: pixelated;
+}

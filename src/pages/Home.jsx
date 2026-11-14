@@ -131,4 +131,4 @@ function HomeLegacy() {
 }
 
 
-export { default } from './Home-v2.jsx'
+export { default } from './Home-v3.jsx'
