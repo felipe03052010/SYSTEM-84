@@ -47,7 +47,7 @@ export default function Home() {
 
               <span className="directory">SYS84 // ARQUIVO CULTURAL</span>
 
-              <h1>
+              <h1 className="glitch-text">
                 ALGUMAS HISTÓRIAS<br />
                 NÃO DEVEM SER<br />
                 <span>ESQUECIDAS.</span>

@@ -1,14 +1,16 @@
 :root {
-  --background: #020806;
-  --background-light: #06110d;
-  --panel: rgba(1, 15, 10, 0.94);
-  --green: #4cff9b;
-  --green-bright: #7dffb6;
-  --green-dark: #176b48;
-  --amber: #ffad42;
-  --red: #ff4f4f;
-  --text: #a7ffc8;
-  --muted: #62a97d;
+  --background: #020704;
+  --background-light: #05130b;
+  --panel: rgba(2, 14, 9, 0.96);
+  --green: #38ef7d;
+  --green-bright: #68ff9e;
+  --green-dark: #0f5235;
+  --green-glow: rgba(56, 239, 125, 0.25);
+  --amber: #ff9f1a;
+  --red: #ff3333;
+  --red-blood: #880000;
+  --text: #aef8cb;
+  --muted: #4e9c70;
   --font-terminal: "VT323", monospace;
   --font-interface: "IBM Plex Mono", monospace;
 }
@@ -21,14 +23,74 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #010403;
 }
 
 body {
   min-height: 100vh;
   color: var(--text);
   background:
-    radial-gradient(circle at center, #071811 0%, #020806 55%, #000 100%);
+    radial-gradient(circle at 50% 50%, #06190f 0%, #020905 60%, #000000 100%);
   font-family: var(--font-interface);
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* HORROR RETROFUTURISTA: Scanlines dinâmicas e flicker de monitor antigo */
+.crt-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  background: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.65) 90%);
+}
+
+.crt-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.35) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 3px, 4px 100%;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.crt-overlay::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 100%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(56, 239, 125, 0.04) 50%, transparent 100%);
+  opacity: 0.7;
+  animation: crtScanline 8s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes crtScanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(1000%); }
+}
+
+/* Efeito Glitch e Sombras de Fósforo Verde */
+.glitch-text {
+  text-shadow: 2px 0 var(--red-blood), -2px 0 var(--green);
+  animation: subtleGlitch 4s infinite alternate;
+}
+
+@keyframes subtleGlitch {
+  0% { text-shadow: 2px 0 rgba(255, 50, 50, 0.5), -2px 0 rgba(56, 239, 125, 0.5); }
+  92% { text-shadow: 2px 0 rgba(255, 50, 50, 0.5), -2px 0 rgba(56, 239, 125, 0.5); }
+  93% { text-shadow: 4px 1px #ff0055, -4px -1px #00ffaa; transform: skewX(-2deg); }
+  95% { text-shadow: -2px 0 #ff0055, 2px 0 #00ffaa; transform: skewX(1deg); }
+  97% { text-shadow: 2px 0 rgba(255, 50, 50, 0.5), -2px 0 rgba(56, 239, 125, 0.5); transform: none; }
+  100% { text-shadow: 2px 0 rgba(255, 50, 50, 0.5), -2px 0 rgba(56, 239, 125, 0.5); }
 }
 
 a {
@@ -226,13 +288,30 @@ button {
 
 .record-card {
   border: 1px solid var(--green-dark);
-  background: rgba(1, 11, 7, .84);
-  transition: .2s ease;
+  background: rgba(2, 12, 8, .92);
+  transition: all .25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.6);
+  position: relative;
+  overflow: hidden;
+}
+
+.record-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: -100%; width: 100%; height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(76,255,155,0.06), transparent);
+  transition: left 0.5s ease;
+  pointer-events: none;
+}
+
+.record-card:hover::before {
+  left: 100%;
 }
 
 .record-card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-6px) scale(1.01);
   border-color: var(--green);
+  box-shadow: 0 0 16px var(--green-glow), 0 10px 25px rgba(0,0,0,0.8);
 }
 
 .record-cover {

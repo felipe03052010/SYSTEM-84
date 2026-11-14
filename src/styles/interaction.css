@@ -22,9 +22,19 @@
 @keyframes tracking { from { transform: skewX(25deg) translateY(-30px); } 50% { transform: skewX(-15deg); } to { transform: none; } }
 @keyframes decode { from { transform: rotateX(180deg); opacity: .2; } to { transform: rotateX(0); opacity: 1; } }
 @keyframes terminal-enter { from { opacity: .5; transform: translateY(4px); } to { opacity: 1; transform: none; } }
-button, .terminal-action, .main-navigation a, .directory-grid a { transition: transform 100ms ease, background-color 120ms ease, box-shadow 120ms ease; }
-button:hover, .terminal-action:hover { box-shadow: 3px 3px 0 var(--green-dark); transform: translate(-1px,-1px); }
-button:active, .terminal-action:active, .directory-grid a:active { transform: translate(1px,2px); box-shadow: none; }
+button, .terminal-action, .main-navigation a, .directory-grid a { 
+  transition: transform 120ms cubic-bezier(0.2, 0.8, 0.4, 1), background-color 150ms ease, box-shadow 150ms ease, border-color 150ms ease; 
+  position: relative;
+}
+button:hover, .terminal-action:hover { 
+  box-shadow: 0 0 12px var(--green-glow), 3px 3px 0 var(--green-dark); 
+  transform: translate(-2px,-2px); 
+  border-color: var(--green-bright);
+}
+button:active, .terminal-action:active, .directory-grid a:active { 
+  transform: translate(1px,2px); 
+  box-shadow: none; 
+}
 :focus-visible { outline: 2px solid var(--amber); outline-offset: 4px; }
 button:disabled { opacity: .4; transform: none; cursor: not-allowed; }
 .sound-control { padding: 8px; color: var(--green); background: #06110d; border: 1px solid var(--green-dark); font-size: .65rem; }
