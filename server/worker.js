@@ -7,7 +7,7 @@ export default {async fetch(request,env){
  if(url.pathname.startsWith('/media/')){
   if(!await allowedMedia(request,env))return Response.json({error:'Assinatura necessária ou vencida.'},{status:402,headers:{'Cache-Control':'no-store'}})
   if(!/^\/media\/[a-zA-Z0-9/_.-]+$/.test(url.pathname)||url.pathname.includes('..'))return new Response('Not found',{status:404})
-  const headers={};if(request.headers.get('Range'))headers.Range=request.headers.get('Range')
+  const headers={"Accept-Encoding":"identity"};if(request.headers.get('Range'))headers.Range=request.headers.get('Range')
   const response=await fetch(`https://felipe03052010.github.io/SYSTEM-84${url.pathname}`,{headers})
   const outgoing=new Headers(response.headers);outgoing.set('Cache-Control','private, no-store');outgoing.delete('set-cookie')
   return new Response(request.method==='HEAD'?null:response.body,{status:response.status,headers:outgoing})
