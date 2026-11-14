@@ -2,6 +2,12 @@ import { createContext, useContext, useState, useEffect } from 'react'
 
 const AuthContext = createContext(null)
 
+// Senhas exclusivas de acesso seguro
+export const PASSWORDS = {
+  CREATOR: 'CRIADOR84',
+  ADMIN: 'ADMIN84'
+}
+
 export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState(() => {
     try {
@@ -10,10 +16,10 @@ export function AuthProvider({ children }) {
     } catch {}
     return {
       id: 'usr_guest',
-      username: 'Operador Padrão',
-      role: 'creator', // 'creator' | 'admin'
-      isSubscriber: true,
-      subscriptionPlan: 'Trimestral VIP'
+      username: 'Visitante',
+      role: 'guest', // 'guest' | 'creator' | 'admin'
+      isSubscriber: false,
+      subscriptionPlan: 'Livre'
     }
   })
 
@@ -23,16 +29,46 @@ export function AuthProvider({ children }) {
     } catch {}
   }, [currentUser])
 
-  function switchRole(newRole) {
-    setCurrentUser(prev => ({
-      ...prev,
-      role: newRole,
-      username: newRole === 'admin' ? 'SYS_ADMIN_084' : 'Criador_84'
-    }))
+  function loginWithPassword(passInput) {
+    const trimmed = (passInput || '').trim()
+    if (trimmed === PASSWORDS.ADMIN) {
+      const user = {
+        id: 'usr_admin',
+        username: 'SYS_ADMIN_084',
+        role: 'admin',
+        isSubscriber: true,
+        subscriptionPlan: 'Mestre da Rede'
+      }
+      setCurrentUser(user)
+      return { success: true, role: 'admin' }
+    } else if (trimmed === PASSWORDS.CREATOR) {
+      const user = {
+        id: 'usr_creator',
+        username: 'Criador_Autorizado_84',
+        role: 'creator',
+        isSubscriber: true,
+        subscriptionPlan: 'Plano Criador'
+      }
+      setCurrentUser(user)
+      return { success: true, role: 'creator' }
+    } else {
+      return { success: false, error: 'Senha incorreta para Criador ou Admin.' }
+    }
+  }
+
+  function logout() {
+    const guest = {
+      id: 'usr_guest',
+      username: 'Visitante',
+      role: 'guest',
+      isSubscriber: false,
+      subscriptionPlan: 'Livre'
+    }
+    setCurrentUser(guest)
   }
 
   return (
-    <AuthContext.Provider value={{ currentUser, switchRole }}>
+    <AuthContext.Provider value={{ currentUser, loginWithPassword, logout }}>
       {children}
     </AuthContext.Provider>
   )

@@ -1258,373 +1258,6 @@
     "recoveryStatus": "RECUPERADA — CÓPIA DISPONÍVEL"
   },
   {
-    "year": 2026,
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "id": 500,
-    "type": "analog-horror",
-    "code": "VHS_084_1",
-    "title": "O canal que lembra seu nome",
-    "description": "Uma emissora fora do ar continua lendo a lista de moradores de um prédio demolido.",
-    "article": [
-      "FITA 01 / TRANSMISSÃO FICTÍCIA / 03:14. Uma tela de ajuste exibe sete barras verdes. A locutora pede que os espectadores confirmem o endereço impresso no rodapé. Não há endereço. Há o desenho de uma porta visto pelo lado de dentro.",
-      "03:15. A lista começa pelo apartamento 101. A cada nome, uma janela se apaga no prédio filmado. A câmera nunca muda de lugar. No apartamento 204, a locutora demora a respirar. Ela diz: “Se o nome estiver incorreto, não responda. Estamos atualizando o cadastro”.",
-      "03:16. O operador encontra uma etiqueta no monitor: PRÉDIO DEMOLIDO EM 1984. No vídeo, uma nova janela se acende. Não fica na fachada; aparece no reflexo da tela. A transmissão termina com um pedido educado: “Agora sabemos qual janela é a sua”."
-    ],
-    "tags": [
-      "ficção original",
-      "transcrição",
-      "CC0"
-    ]
-  },
-  {
-    "year": 2026,
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "id": 501,
-    "type": "analog-horror",
-    "code": "VHS_084_2",
-    "title": "Manual de evacuação do andar zero",
-    "description": "Uma fita de treinamento descreve um andar que não aparece no elevador.",
-    "article": [
-      "TREINAMENTO INTERNO / FICÇÃO. O instrutor sorri diante de uma planta baixa. Os andares são numerados de um a nove. Ele aponta para o espaço branco abaixo da folha e afirma que o andar zero deve permanecer vazio, mesmo durante uma evacuação.",
-      "A demonstração mostra uma funcionária entrando no elevador. Ela aperta o térreo. As portas abrem para a mesma sala, mas todos os móveis estão cobertos por lençóis. O instrutor explica que não se trata de um erro: “O prédio está praticando ficar sem vocês”.",
-      "No último quadro, a planta baixa já tem dez andares. O instrutor está atrás de uma das janelas desenhadas. A legenda recomenda fechar o manual antes que ele encontre a escada. Ao fundo, a funcionária aguarda um elevador que só possui o botão zero."
-    ],
-    "tags": [
-      "ficção original",
-      "transcrição",
-      "CC0"
-    ]
-  },
-  {
-    "year": 2026,
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "id": 502,
-    "type": "analog-horror",
-    "code": "VHS_084_3",
-    "title": "Previsão do tempo para ontem",
-    "description": "Um boletim meteorológico prevê acontecimentos que desapareceram da memória.",
-    "article": [
-      "BOLETIM FICTÍCIO 84-B. A apresentadora informa chuva moderada para ontem. No mapa, o litoral se move para longe das cidades. Uma pequena nota explica: “Áreas sem lembranças não recebem previsão”.",
-      "A câmera aproxima o município de Santa Ausência. A apresentadora pede desculpas por ter anunciado sol na semana anterior. Mostra fotografias de ruas secas, mas os moradores aparecem molhados dentro de suas próprias sombras. As imagens foram enviadas amanhã.",
-      "O boletim encerra com uma correção: a cidade nunca existiu. A apresentadora recolhe os papéis, olha para a câmera e pergunta onde deve voltar depois do expediente. Pela primeira vez, o mapa mostra uma previsão para dentro do estúdio: neblina permanente."
-    ],
-    "tags": [
-      "ficção original",
-      "transcrição",
-      "CC0"
-    ]
-  },
-  {
-    "year": 2026,
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "id": 503,
-    "type": "analog-horror",
-    "code": "VHS_084_4",
-    "title": "A fita de devolução",
-    "description": "Uma locadora recebe cópias de filmes que ainda não foram gravados.",
-    "article": [
-      "REGISTRO FICTÍCIO / LOCADORA AURORA. O funcionário encontra uma fita sem título na caixa de devolução. A gravação mostra o balcão vazio. No canto da tela aparece o horário do fechamento do dia seguinte.",
-      "O funcionário assiste até o instante em que ele mesmo entra no quadro e coloca uma fita no videocassete. O filme não mostra a televisão. Mostra somente sua expressão mudando. Ele avança a gravação e encontra um intervalo de vinte minutos de uma parede recém-pintada.",
-      "Na manhã seguinte, a caixa contém duas fitas. Uma mostra o funcionário assistindo à primeira. A outra mostra a locadora transformada em estacionamento. Todas têm a mesma etiqueta: devolver antes de assistir. Ele decide não abrir a loja, mas ouve a campainha tocar na gravação."
-    ],
-    "tags": [
-      "ficção original",
-      "transcrição",
-      "CC0"
-    ]
-  },
-  {
-    "year": 2026,
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "id": 504,
-    "type": "analog-horror",
-    "code": "VHS_084_5",
-    "title": "Teste de sirene 08:40",
-    "description": "O sinal de teste termina; o eco começa a transmitir instruções próprias.",
-    "article": [
-      "AVISO FICTÍCIO. Às 08:40, a cidade realiza seu teste de sirenes. O sinal dura dez segundos. Os microfones continuam registrando um eco por onze minutos, embora não exista nenhuma superfície grande nas proximidades.",
-      "Na segunda repetição, o eco contém uma sequência de portas se fechando. Na terceira, o operador percebe que a sequência acompanha as portas da central de monitoramento. A última porta não consta da planta. A gravação informa que ela será instalada durante a noite.",
-      "O relatório manda cancelar o teste seguinte. Às 08:40 do outro dia, o operador chega à central e encontra silêncio. Na parede há uma porta nova, com uma pequena janela. Do outro lado, ele vê a cidade inteira esperando que alguém aperte o botão."
-    ],
-    "tags": [
-      "ficção original",
-      "transcrição",
-      "CC0"
-    ]
-  },
-  {
-    "year": 2026,
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "id": 505,
-    "type": "analog-horror",
-    "code": "VHS_084_6",
-    "title": "A estação sem passageiros",
-    "description": "Uma câmera de segurança registra chegadas em uma plataforma selada.",
-    "article": [
-      "ARQUIVO FICTÍCIO / CÂMERA 06. A plataforma foi selada após o encerramento da linha. O monitor deve mostrar uma parede de tijolos. À meia-noite, os tijolos continuam visíveis, mas a sombra de um trem atravessa a imagem.",
-      "O fiscal compara três noites. A sombra estaciona no mesmo ponto e as marcas no piso aumentam, como se malas estivessem sendo arrastadas através da parede. O relógio da plataforma permanece em 23:59. O relógio do monitor avança normalmente.",
-      "Na quarta noite, uma placa aparece por trás dos tijolos: DESEMBARQUE SOMENTE COM LEMBRANÇA VÁLIDA. O fiscal reconhece a caligrafia do pai. Quando fecha o relatório, encontra um bilhete no bolso. O destino é a sala onde está sentado; a partida ocorreu trinta anos antes."
-    ],
-    "tags": [
-      "ficção original",
-      "transcrição",
-      "CC0"
-    ]
-  },
-  {
-    "year": 2026,
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "id": 600,
-    "type": "arg",
-    "code": "ARG_084_1",
-    "title": "O primeiro sinal",
-    "description": "Um bilhete de manutenção esconde o nome da estação.",
-    "article": [
-      "SISTEMA DE TRIAGEM / FICÇÃO INTERATIVA. Um operador deixou quatro instruções. O terminal pede uma palavra, não um número. A anotação na margem diz: “O começo de cada linha conhece o destino”.",
-      "Ligue a fonte reserva.\nUna os contatos partidos.\nAbra o painel sem marca.\nRetire a fita de teste.",
-      "As quatro linhas são tudo que restou. Reconstrua o nome da estação para abrir o relatório."
-    ],
-    "puzzle": {
-      "question": "Qual é o nome da estação?",
-      "answer": "LUAR",
-      "hint": "Leia a primeira letra de cada uma das quatro instruções.",
-      "ending": "LUAR era uma estação automática de observação. O relatório revela que o “sinal desconhecido” era uma mensagem guardada pelo próprio operador para ser encontrada depois do apagão. Arquivo 01 concluído."
-    },
-    "tags": [
-      "ficção original",
-      "enigma",
-      "CC0"
-    ]
-  },
-  {
-    "year": 2026,
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "id": 601,
-    "type": "arg",
-    "code": "ARG_084_2",
-    "title": "O relógio atrasado",
-    "description": "Quatro registros indicam quando a porta do arquivo abre.",
-    "article": [
-      "FICÇÃO INTERATIVA. O relógio do corredor está sempre vinte minutos atrasado. O livro de ocorrências registra a abertura da porta quando esse relógio marcava 08:20.",
-      "O sistema exige o horário real no formato HHMM. Uma nota reforça: não use o horário mostrado no relógio defeituoso."
-    ],
-    "puzzle": {
-      "question": "Digite o horário real (HHMM).",
-      "answer": "0840",
-      "hint": "Some vinte minutos a 08:20.",
-      "ending": "Às 08:40, a porta libera uma caixa de fotografias. No verso de cada imagem está escrito o mesmo horário. O defeito do relógio era a chave de verificação usada pelos antigos arquivistas."
-    },
-    "tags": [
-      "ficção original",
-      "enigma",
-      "CC0"
-    ]
-  },
-  {
-    "year": 2026,
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "id": 602,
-    "type": "arg",
-    "code": "ARG_084_3",
-    "title": "Três passos para trás",
-    "description": "Uma cifra curta protege o nome de um arquivo.",
-    "article": [
-      "FICÇÃO INTERATIVA. A fita contém a palavra VLQDO. A operadora deixou a seguinte regra: “Cada letra foi deslocada três posições para a frente no alfabeto de A a Z. Desfaça o deslocamento”.",
-      "Não há acentos, espaços ou caracteres adicionais. A palavra decifrada abre a segunda camada."
-    ],
-    "puzzle": {
-      "question": "Qual palavra foi codificada?",
-      "answer": "SINAL",
-      "hint": "V volta para S; L volta para I. Faça o mesmo com as outras letras.",
-      "ending": "SINAL desbloqueia a gravação original: uma contagem regressiva que termina em uma voz humana dizendo “a memória voltou”. O transmissor não procurava alguém; procurava sua própria gravação."
-    },
-    "tags": [
-      "ficção original",
-      "enigma",
-      "CC0"
-    ]
-  },
-  {
-    "year": 2026,
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "id": 603,
-    "type": "arg",
-    "code": "ARG_084_4",
-    "title": "A gaveta binária",
-    "description": "O número da gaveta foi salvo em cinco lâmpadas.",
-    "article": [
-      "FICÇÃO INTERATIVA. Cinco lâmpadas representam os valores 16, 8, 4, 2 e 1, nessa ordem. A sequência registrada é 1 0 1 0 1.",
-      "A regra está gravada no painel: some apenas os valores das lâmpadas acesas (1). O resultado é o número decimal da gaveta."
-    ],
-    "puzzle": {
-      "question": "Qual gaveta deve ser aberta?",
-      "answer": "21",
-      "hint": "As lâmpadas acesas valem 16, 4 e 1.",
-      "ending": "A gaveta 21 contém o mapa de uma rede de bibliotecas. Todas as linhas terminam no mesmo ponto: o terminal onde você está lendo. A rede sobreviveu como um arquivo compartilhado."
-    },
-    "tags": [
-      "ficção original",
-      "enigma",
-      "CC0"
-    ]
-  },
-  {
-    "year": 2026,
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "id": 604,
-    "type": "arg",
-    "code": "ARG_084_5",
-    "title": "As fitas fora de ordem",
-    "description": "Um inventário embaralhado guarda uma senha de quatro letras.",
-    "article": [
-      "FICÇÃO INTERATIVA. O inventário foi encontrado nesta ordem:\nFita 1984: O\nFita 1960: E\nFita 1990: S\nFita 1972: C",
-      "Organize as fitas da mais antiga para a mais recente. Leia as letras nessa ordem. O terminal aceita uma única palavra."
-    ],
-    "puzzle": {
-      "question": "Digite a senha reconstruída.",
-      "answer": "ECOS",
-      "hint": "A primeira fita é de 1960 e a última é de 1990.",
-      "ending": "ECOS abre um diário coletivo. Cada década preservou uma letra para a próxima. O protocolo era simples: ninguém precisava conhecer a senha inteira para ajudar a mantê-la viva."
-    },
-    "tags": [
-      "ficção original",
-      "enigma",
-      "CC0"
-    ]
-  },
-  {
-    "year": 2026,
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "id": 605,
-    "type": "arg",
-    "code": "ARG_084_6",
-    "title": "A mensagem espelhada",
-    "description": "Uma palavra foi gravada do fim para o começo.",
-    "article": [
-      "FICÇÃO INTERATIVA. O técnico anota que o gravador inverteu apenas a ordem das letras. A mensagem encontrada é: AIROMEM.",
-      "Leia a sequência da direita para a esquerda. Não troque letras nem acrescente números."
-    ],
-    "puzzle": {
-      "question": "Qual é a palavra original?",
-      "answer": "MEMORIA",
-      "hint": "A última letra da sequência é a primeira da resposta.",
-      "ending": "MEMÓRIA abre o último registro: a confirmação de que as seis rotinas do terminal estão operacionais. Você restaurou os arquivos sem sair do SYSTEM 84. A investigação termina aqui; o acervo permanece aberto."
-    },
-    "tags": [
-      "ficção original",
-      "enigma",
-      "CC0"
-    ]
-  },
-  {
     "id": 400,
     "type": "lost-media",
     "title": "Frankenstein: a lata que atravessou um século",
@@ -3798,326 +3431,6 @@
     ]
   },
   {
-    "year": 2026,
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "id": 506,
-    "type": "analog-horror",
-    "code": "VHS_084_7",
-    "title": "Frequência Residual 84.7 MHz",
-    "description": "Gravação interceptada de um teste de emergência que continuou transmitindo após o fechamento da emissora.",
-    "article": [
-      "TRANSMISSÃO PIRATA / ARQUIVO RECUPERADO / 04:02. Um tom senoidal puro a 440Hz oscila por trinta segundos antes que uma voz sintetizada inicie a contagem de coordenadas geográficas inexistentes.",
-      "04:03. A voz instrui os ouvintes a não olharem pelas persianas: \"A luz verde no horizonte não é um fenômeno astronômico registrado. Permaneçam em seus postos e sintonizem o canal reserva\".",
-      "04:05. Sons de fita magnética desacelerando até parar por completo. Uma última linha de código surge na tela: FIM DA TRANSMISSÃO - SISTEMA 84 PERMANECE EM ALERTA."
-    ],
-    "tags": [
-      "ficção original",
-      "transcrição",
-      "analog-horror",
-      "CC0"
-    ]
-  },
-  {
-    "year": 2026,
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "id": 507,
-    "type": "analog-horror",
-    "code": "VHS_084_8",
-    "title": "Protocolo de Contenção de Arquivo Fantasma",
-    "description": "Diretrizes internas encontradas em fita magnética sobre arquivos que se auto-reproduzem nos terminais.",
-    "article": [
-      "MEMORANDO INTERNO / DIVISÃO DE ARQUIVO / SETOR 4. Se um arquivo catalogado alterar sua data de modificação para uma data futura, o terminal deve ser isolado imediatamente da rede.",
-      "Nunca digite a chave de restauração após a meia-noite se o cursor estiver piscando em velocidade dupla.",
-      "O operador deve assinar a lista de presença com caneta esferográfica e confirmar se a sua própria assinatura não foi apagada pelo registro digital."
-    ],
-    "tags": [
-      "ficção original",
-      "protocolo",
-      "analog-horror",
-      "CC0"
-    ]
-  },
-  {
-    "year": 2026,
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "id": 606,
-    "type": "arg",
-    "code": "ARG_084_7",
-    "title": "O cofre do operador 84",
-    "description": "Encontre o código de quatro dígitos escondido nos diários de manutenção do terminal.",
-    "article": [
-      "REGISTRO DE INCIDENTE // TERMINAL 84. O operador anotou uma charada para o código mestre do armário:",
-      "Tenho quatro dígitos. O primeiro é a quantidade de estações ativas (1). O segundo é o dobro do primeiro (2). O terceiro é a metade de oito (4). O quarto é a soma dos três primeiros (7).",
-      "Digite a combinação numérica correta para destrancar a partição protegida."
-    ],
-    "puzzle": {
-      "question": "Qual é a senha de 4 dígitos do cofre?",
-      "answer": "1247",
-      "hint": "Calcule cada dígito descrito na pista: 1, 2, 4 e a soma 1+2+4.",
-      "ending": "ACESSO AUTORIZADO. O cofre continha as matrizes de cópia da primeira transmissão do SYSTEM 84. Desafio superado com sucesso."
-    },
-    "tags": [
-      "ficção original",
-      "enigma",
-      "ARG",
-      "CC0"
-    ]
-  },
-  {
-    "id": 508,
-    "type": "analog-horror",
-    "title": "O Boletim Meteorológico da Zona Proibida",
-    "year": 2026,
-    "code": "VHS_084_9",
-    "description": "Relatório do tempo que prevê precipitações de poeira magnética e alterações na gravidade local.",
-    "tags": [
-      "ficção original",
-      "transcrição",
-      "analog-horror",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "TRANSMISSÃO DE SERVIÇO / 02:40. O mapa de satélite na tela estremece com artefatos de fita VHS. A voz pausada do apresentador anuncia: \"Nas próximas 24 horas, rajadas de vento estático cobrirão o Vale Central. Não deixem fitas gravadas perto de janelas abertas\".",
-      "02:42. A temperatura prevista para a meia-noite é de -4°C com sensação térmica de \"espaço vazio\". O radar meteorológico projeta uma mancha escura girando no sentido anti-horário, com uma legenda pulsando: ZONA SEM ECO.",
-      "02:45. O áudio corta para um ruído de chuva torrencial, mas a imagem mostra um campo ensolarado e estático gravado em loop infinito. A locução finaliza: \"Amanhecer cancelado até nova ordem do comitê\"."
-    ]
-  },
-  {
-    "id": 509,
-    "type": "analog-horror",
-    "title": "Fita de Treinamento: Operação de Monitores CRT Subterrâneos",
-    "year": 2026,
-    "code": "VHS_084_10",
-    "description": "Manual de segurança em vídeo para operadores de consoles fósforo verde em bunkers de dados.",
-    "tags": [
-      "ficção original",
-      "manual",
-      "analog-horror",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "MÓDULO DE INSTRUÇÃO 04 / NÍVEL SUBTERRÂNEO 3. \"Bem-vindo ao turno das 22h às 06h. Seu monitor exibe 1.024 linhas de fósforo P31. Se o feixe de elétrons continuar aceso após desligar a chave geral, não encare o centro do vidro\".",
-      "REGRA 2: \"Se caracteres desconhecidos surgirem na terceira linha do prompt sem comandos no teclado, digite imediatamente ESC três vezes e cubra a tela com a capa de chumbo\".",
-      "REGRA 3: \"Nunca tente responder perguntas que comecem com ‘QUEM ESTÁ AÍ?’. O arquivo é passivo. Qualquer interação bidirecional anula a garantia de resgate da equipe externa\"."
-    ]
-  },
-  {
-    "id": 510,
-    "type": "analog-horror",
-    "title": "Transmissão Pirata: O Último Noticiário da TV Cultura 1984",
-    "year": 2026,
-    "code": "VHS_084_11",
-    "description": "Sinal de canal UHF capturado em antena caseira contendo edições misteriosas de jornais antigos.",
-    "tags": [
-      "ficção original",
-      "mídia perdida",
-      "analog-horror",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "RECORTE UHF CANAL 32 / ARQUIVO DOMÉSTICO. A fita Betamax foi rotulada como \"Festival de Desenhos 1984\", mas a reprodução revela o bancada de um telejornal com iluminação azulada e estática pesada.",
-      "O âncora lê as manchetes sem pestanejar: \"População de três bairros foi realocada para o arquivo de backup. Familiares devem procurar os números de série no verso de suas carteiras de identidade\".",
-      "No canto superior direito, o relógio digital corre para trás a cada cinco segundos. A vinheta de encerramento toca uma melodia de teclado Casio desacelerada antes do corte abrupto para ruído branco puro."
-    ]
-  },
-  {
-    "id": 511,
-    "type": "analog-horror",
-    "title": "Guia do Morador: A Cidade que Desapareceu da Carta Topográfica",
-    "year": 2026,
-    "code": "VHS_084_12",
-    "description": "Vídeo institucional entregue aos cidadãos da cidade satélite antes de sua remoção dos registros oficiais.",
-    "tags": [
-      "ficção original",
-      "documentário",
-      "analog-horror",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "ORIENTAÇÃO MUNICIPAL // SETOR 84. Uma trilha sonora orquestral em mono acompanha fotos aéreas com granulação evidente de uma cidade cercada por névoa densa.",
-      "\"Caro cidadão, a partir da próxima segunda-feira sua cidade não constará mais nos atlas rodoviários do estado. Isso não significa que sua rotina deva mudar. Continue enviando suas cartas para a Caixa Postal 000\".",
-      "No minuto final, o narrador alerta: \"Se viajantes na rodovia perguntarem o nome deste município, diga que é apenas uma área de preservação ambiental. Eles não têm autorização para ler nossos relatórios\"."
-    ]
-  },
-  {
-    "id": 607,
-    "type": "arg",
-    "title": "A frequência do farol",
-    "year": 2026,
-    "code": "ARG_084_8",
-    "description": "Decodifique o sinal telegráfico transmitido pelo farol abandonado na costa norte.",
-    "tags": [
-      "ficção original",
-      "enigma",
-      "código morse",
-      "ARG",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "REGISTRO RADIOFAROL // COSTA NORTE. A lâmpada de mercúrio do farol pisca em intervalos cronometrados:",
-      "... --- ... / ... ..- -. ... . -",
-      "O operador registrou a sequência em código Morse clássico antes do mastro colapsar. Encontre a palavra-chave que segue o pedido de socorro (a segunda palavra decodificada)."
-    ],
-    "puzzle": {
-      "question": "Qual é a segunda palavra transmitida pelo sinal Morse (... ..- -. ... . -)?",
-      "answer": "SUNSET",
-      "hint": "Converta as letras em Morse: ... (S), ..- (U), -. (N), ... (S), . (E), - (T).",
-      "ending": "TRANSMISSÃO CONFIRMADA. O sinal pertencia ao transmissor histórico da estação Sunset. Registro catalogado no arquivo permanente."
-    }
-  },
-  {
-    "id": 608,
-    "type": "arg",
-    "title": "A matriz de transposição de bits",
-    "year": 2026,
-    "code": "ARG_084_9",
-    "description": "Reorganize os blocos da fita magnética para reconstruir o comando mestre do mainframe.",
-    "tags": [
-      "ficção original",
-      "enigma",
-      "computação retrô",
-      "ARG",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "TERMINAL TTY-84 // ROTINA DE REINICIALIZAÇÃO. O comando de emergência foi quebrado em fragmentos invertidos no diário de bordo:",
-      "Fragmento 1: \"TEM\"",
-      "Fragmento 2: \"SYS\"",
-      "Fragmento 3: \"-84\"",
-      "O protocolo dita a ordem de junção: Bloco 2 + Bloco 1 + Bloco 3."
-    ],
-    "puzzle": {
-      "question": "Qual é a string final do comando de emergência?",
-      "answer": "SYSTEM-84",
-      "hint": "Junte SYS com TEM e depois -84.",
-      "ending": "ACESSO ROOT CONCEDIDO. O kernel do SYSTEM 84 foi reiniciado em modo seguro de arquivamento cultural."
-    }
-  },
-  {
-    "id": 609,
-    "type": "arg",
-    "title": "O cofre do observatório",
-    "year": 2026,
-    "code": "ARG_084_10",
-    "description": "Descubra a combinação de 3 dígitos deixada pelo astrônomo-chefe.",
-    "tags": [
-      "ficção original",
-      "enigma",
-      "lógica",
-      "ARG",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 e disponibilizado sob CC0 1.0. Ficção; personagens, instituições e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — dedicação ao domínio público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "REGISTRO DO OBSERVATÓRIO ASTRONÔMICO. Na parede do telescópio refrator, três enigmas indicam os três números da trava:",
-      "1º número: Quantidade de luas da Terra (1).",
-      "2º número: Planeta onde estamos (Mercúrio=1, Vênus=2, Terra=3).",
-      "3º número: O total de luas de Marte (2)."
-    ],
-    "puzzle": {
-      "question": "Qual é o código numérico de 3 dígitos do observatório?",
-      "answer": "132",
-      "hint": "Primeiro dígito: 1. Segundo: 3 (Terra). Terceiro: 2 (Fobos e Deimos).",
-      "ending": "GAVETA DESTRANCADA. As anotações do astrônomo continham as coordenadas exatas da antena pirata do SYSTEM 84."
-    }
-  },
-  {
     "id": 408,
     "type": "lost-media",
     "title": "London After Midnight: o Santo Graal do cinema de horror",
@@ -4206,295 +3519,6 @@
       "Atualmente, apenas cerca de 40 segundos do filme foram recuperados e preservados no arquivo do Museu de Arte Moderna (MoMA) e no British Film Institute, montados ao lado de ensaios fotográficos da época."
     ],
     "recoveryStatus": "RECUPERADO PARCIALMENTE — FRAGMENTOS NO MOMA E BFI"
-  },
-  {
-    "id": 512,
-    "type": "analog-horror",
-    "title": "Protocolo de Calibração: O Monitor que Ouve",
-    "year": 2026,
-    "code": "VHS_084_13",
-    "description": "Instruções técnicas para sintonizadores de frequência baixa que respondem a sussurros no recinto.",
-    "tags": [
-      "ficção original",
-      "transcrição",
-      "analog-horror",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "REGISTRO DE LABORATÓRIO // 01:17. O tubo de raios catódicos começa a pulsar em sincronia com a respiração do técnico de plantão.",
-      "A tela preta projeta em letras brancas trêmulas: \"FALE MAIS BAIXO. OS CIRCUITOS DE VIDRO SÃO SENSÍVEIS DEMAIS À SUA MEMÓRIA\".",
-      "Quando o técnico tenta desconectar o cabo de alimentação da tomada, a imagem não apaga. Ela apenas amplia o foco para o reflexo do próprio operador sentado diante do terminal."
-    ]
-  },
-  {
-    "id": 513,
-    "type": "analog-horror",
-    "title": "Aviso de Desocupação: Bloco Residencial Subnível 8",
-    "year": 2026,
-    "code": "VHS_084_14",
-    "description": "Transmissão automática de alerta civil informando o encerramento do fornecimento de ar e luz no quadrante subterrâneo.",
-    "tags": [
-      "ficção original",
-      "alerta de emergência",
-      "analog-horror",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "ALERTA DO SISTEMA DE SEGURANÇA INTEGRADA. \"Atenção moradores do Bloco 8. A partir das 04:00, os elevadores não responderão a chamadas manuais.\"",
-      "\"Favor recolher seus documentos magnéticos e posicionar-se de frente para as câmeras de vigilância do corredor central.\"",
-      "\"Lembramos que ruídos de passos no teto entre 03:00 e 05:00 são reflexos acústicos normais da tubulação desativada. Não olhem pelas grelhas de ventilação.\""
-    ]
-  },
-  {
-    "id": 514,
-    "type": "analog-horror",
-    "title": "Fita Não Catalogada: Teste de Padrão Cromático 09",
-    "year": 2026,
-    "code": "VHS_084_15",
-    "description": "Padrão de barras coloridas NTSC que se distorce revelando contornos de uma sala fechada.",
-    "tags": [
-      "ficção original",
-      "transcrição",
-      "analog-horror",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "ARQUIVO DE TRANSMISSÃO // TESTE DE SINAL. Sete barras de cor padrão SMPTE preenchem a tela acompanhadas de um bipe contínuo de 1 kHz.",
-      "Aos três minutos de gravação, a barra magenta começa a tremer e deslizar para baixo, revelando uma abertura retangular escura.",
-      "Uma legenda rústica surge no gerador de caracteres: \"SE VOCÊ ESTÁ ENXERGANDO A NONA BARRA, DESLIGUE O RECEPTOR E NÃO PERMANEÇA NO ESCURO\"."
-    ]
-  },
-  {
-    "id": 515,
-    "type": "analog-horror",
-    "title": "Diário de Bordo: Operador da Repetidora da Serra",
-    "year": 2026,
-    "code": "VHS_084_16",
-    "description": "Transcrição das últimas comunicações de rádio da torre de retransmissão de sinal analógico isolada na serra.",
-    "tags": [
-      "ficção original",
-      "relato",
-      "analog-horror",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "22 DE OUTUBRO / 23:45. \"A neve começou a cobrir as parábolas da torre 2. O sinal do canal 4 continua chegando, mas não é a nossa programação.\"",
-      "01:10. \"Eles estão transmitindo gravações da minha infância. Reconheço a sala da casa dos meus avós, mas a câmera está posicionada dentro do armário.\"",
-      "03:30. \"O gerador parou. A luz do monitor CRT continua acesa com a imagem da estrada lá fora. Alguém acabou de estacionar um carro sem faróis na portaria.\""
-    ]
-  },
-  {
-    "id": 516,
-    "type": "analog-horror",
-    "title": "Manual de Sobrevivência em Ambientes de Fita Magnética",
-    "year": 2026,
-    "code": "VHS_084_17",
-    "description": "Instruções para conservadores de acervo que operam em câmaras frias com mais de 100.000 rolos de fita.",
-    "tags": [
-      "ficção original",
-      "documento",
-      "analog-horror",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "DIRETRIZ GERAL DE ARQUIVO. \"Ao entrar no cofre climatizado de fitas magnéticas, mantenha sempre um cronômetro mecânico em mãos.\"",
-      "\"Se ao rebobinar uma fita de 60 minutos você notar que o carretel da esquerda não acumula fita, solte o cabeçote e afaste-se do rack.\"",
-      "\"Nunca tente rebobinar memórias que você não se lembra de ter gravado.\""
-    ]
-  },
-  {
-    "id": 610,
-    "type": "arg",
-    "title": "A cifra de substituição do terminal 84",
-    "year": 2026,
-    "code": "ARG_084_11",
-    "description": "Decifre a mensagem encriptada com deslocamento de caracteres César deixada no buffer.",
-    "tags": [
-      "ficção original",
-      "enigma",
-      "criptografia",
-      "ARG",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "REGISTRO CRIPTOGRÁFICO // TERMINAL 84. O operador utilizou a Cifra de César com deslocamento de +1 letra (A vira B, B vira C).",
-      "Mensagem cifrada encontrada no registro de log: \"NFNPRIBS\"",
-      "Descubra a palavra original subtraindo 1 posição de cada letra no alfabeto."
-    ],
-    "puzzle": {
-      "question": "Qual é a palavra decifrada de \"NFNPRIBS\" (-1 letra por caractere)?",
-      "answer": "MEMORIAS",
-      "hint": "N->M, F->E, N->M, P->O, R->Q... espere: N(-1)=M, F(-1)=E, N(-1)=M, P(-1)=O, R(-1)=Q? Na ordem correta: N-1=M, F-1=E, N-1=M, P-1=O, S-1=R, J-1=I, B-1=A, T-1=S -> MEMORIAS.",
-      "ending": "ACESSO AUTORIZADO. O banco de memória cultural preserva todas as vozes registradas."
-    }
-  },
-  {
-    "id": 611,
-    "type": "arg",
-    "title": "A equação de frequência de ressonância",
-    "year": 2026,
-    "code": "ARG_084_12",
-    "description": "Calcule o valor de sintonia do oscilador de quartzo do transmissor central.",
-    "tags": [
-      "ficção original",
-      "enigma",
-      "lógica",
-      "ARG",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "ESQUEMA ELÉTRICO DE EMERGÊNCIA. A sintonia da estação principal depende da seguinte equação de calibração:",
-      "Frequência = (Ano de Fundação do SYSTEM / 23.619) arredondado para o inteiro mais próximo.",
-      "Dica do manual: O sistema é o 84. Qual é o número do canal mestre?"
-    ],
-    "puzzle": {
-      "question": "Qual é o número identificador do canal mestre?",
-      "answer": "84",
-      "hint": "O número clássico da estação: oito quatro.",
-      "ending": "SINAL ESTABILIZADO EM 84 MHz. A portadora de rádio cobre todo o perímetro de segurança."
-    }
-  },
-  {
-    "id": 612,
-    "type": "arg",
-    "title": "O protocolo de parada de emergência",
-    "year": 2026,
-    "code": "ARG_084_13",
-    "description": "Identifique o comando de três letras em inglês para interromper o ciclo infinito de gravação.",
-    "tags": [
-      "ficção original",
-      "enigma",
-      "terminais",
-      "ARG",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "REGISTRO DO PROMPT DE COMANDO. O loop de gravação em fita contínua precisa ser congelado.",
-      "A instrução gravada no painel diz: \"Para congelar o cabeçote de leitura em computadores PDP-11, envie a instrução clássica de parada imediata: HALT ou STOP?\"",
-      "O manual especifica: a palavra de 4 letras que significa interromper em inglês."
-    ],
-    "puzzle": {
-      "question": "Digite o comando de parada de 4 letras (STOP ou HALT):",
-      "answer": "STOP",
-      "hint": "Palavra universal de 4 letras usada para parar gravações.",
-      "ending": "ROTOR DESATIVADO. As fitas descansam em seus suportes metálicos."
-    }
-  },
-  {
-    "id": 613,
-    "type": "arg",
-    "title": "As coordenadas da estação Sunset",
-    "year": 2026,
-    "code": "ARG_084_14",
-    "description": "Encontre o identificador numérico da equipe de robótica fundadora nos registros.",
-    "tags": [
-      "ficção original",
-      "enigma",
-      "robótica",
-      "ARG",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "RELATÓRIO DE TELEMETRIA. A equipe pioneira da aliança Sunset possui um número de inscrição histórico na FIRST Tech Challenge.",
-      "O número aparece gravado na placa de alumínio do chassi do robô.",
-      "Digite o número de 5 dígitos da equipe Unity Sunset."
-    ],
-    "puzzle": {
-      "question": "Qual é o número de 5 dígitos da equipe Unity Sunset no FTC?",
-      "answer": "22660",
-      "hint": "O número oficial da equipe #22660.",
-      "ending": "ALIANÇA HOMOLOGADA. Parceria tecnológica registrada entre o Instituto Sunset e o SYSTEM 84."
-    }
   },
   {
     "id": 411,
@@ -4587,362 +3611,6 @@
     "recoveryStatus": "PERDIDO — RECONHECIDO HISTORICAMENTE POR FOTOGRAFIAS E DEPOIMENTOS"
   },
   {
-    "id": 517,
-    "type": "analog-horror",
-    "title": "Transmissão Pirata: O Canal da Madrugada Sem Retorno",
-    "year": 2026,
-    "code": "VHS_084_18",
-    "description": "Sinal UHF captado às 03:33 exibindo plantas arquitetônicas de túneis sob estações de rádio.",
-    "tags": [
-      "ficção original",
-      "transcrição",
-      "analog-horror",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "REGISTRO INTERCEPTADO // UHF CANAL 61. Às 03:33, a programação comercial é substituída por um ruído branco pontilhado por linhas horizontais oscilantes.",
-      "Na tela surge a planta baixa de um complexo de túneis rotulado como \"SETOR SUB-84\". Uma voz metálica e sussurrada soletra nomes de cidades que não constam em nenhum mapa do estado.",
-      "Aos cinco minutos, a câmera foca em uma porta de ferro trancada por correntes com a inscrição: \"NÃO ABRA DURANTE O HORÁRIO DE VERÃO. O ESPAÇO INTERNO NÃO CORRESPONDE AO EXTERIOR\"."
-    ]
-  },
-  {
-    "id": 518,
-    "type": "analog-horror",
-    "title": "Fita de Segurança: O Elevador que Desce Além do Andar -3",
-    "year": 2026,
-    "code": "VHS_084_19",
-    "description": "Imagens granuladas de circuito fechado registrando um elevador descendo por mais de 45 minutos contínuos.",
-    "tags": [
-      "ficção original",
-      "cftv",
-      "analog-horror",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "CÂMERA DE SEGURANÇA 02 // ELEVADOR DE CARGA. O operador aperta o botão -1, mas o mostrador digital de sete segmentos continua reduzindo: -4, -12, -28, -64...",
-      "As luzes fluorescentes piscam em intervalos rítmicos. Pelas frestas da porta metálica, não se veem paredes de concreto, mas um abismo pontilhado por pequenos feixes de fósforo verde.",
-      "Às 04:18, as portas se abrem para uma sala idêntica à que ele deixou, exceto pelo fato de que o relógio de parede gira no sentido anti-horário e o espelho não reflete quem está dentro da cabine."
-    ]
-  },
-  {
-    "id": 519,
-    "type": "analog-horror",
-    "title": "Manual de Procedimentos: Tratamento de Arquivos Sonoros Assombrados",
-    "year": 2026,
-    "code": "VHS_084_20",
-    "description": "Protocolos rigorosos para arquivistas que lidam com rolos de fita de quarto de polegada que gravam vozes quando desenergizados.",
-    "tags": [
-      "ficção original",
-      "manual",
-      "analog-horror",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "DEPARTAMENTO DE RESTAURAÇÃO ACÚSTICA. \"Se durante a digitalização de uma fita de 1972 você escutar a voz de alguém descrevendo exatamente a roupa que você está vestindo agora, não pause a reprodução.\"",
-      "\"Deixar o cabeçote suspenso no meio de uma frase permite que o sinal residual se propague para a rede elétrica predial.\"",
-      "\"Conclua a transferência, desmagnetize o carretel com o desmagnetizador de bobina dupla e queime a anotação na lixeira de aço galvanizado.\""
-    ]
-  },
-  {
-    "id": 520,
-    "type": "analog-horror",
-    "title": "Aviso Meteorológico Especial: Nevoeiro Eletrostático de 1984",
-    "year": 2026,
-    "code": "VHS_084_21",
-    "description": "Boletim de defesa civil emitido após o grande apagão da rede analógica de telecomunicações.",
-    "tags": [
-      "ficção original",
-      "boletim",
-      "analog-horror",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "SISTEMA DE ALERTA DE EMERGÊNCIA NACIONAL. \"Cidadãos devem desligar televisores, rádios transistorizados e interfones residenciais.\"",
-      "\"O nevoeiro que avança do litoral carrega carga estática suficiente para acender filamentos de lâmpadas incandescentes apagadas.\"",
-      "\"Se você vir sombras com contornos pontilhados caminhando dentro da neblina, permaneça dentro de casa com as cortinas fechadas. Elas não buscam abrigo; buscam apenas sintonizar frequências compatíveis.\""
-    ]
-  },
-  {
-    "id": 521,
-    "type": "analog-horror",
-    "title": "Fita Demo: Sintetizador de Voz Modelo V-84",
-    "year": 2026,
-    "code": "VHS_084_22",
-    "description": "Apresentação comercial de um chip de síntese de fala que começou a gerar palavras antes de receber dados binários.",
-    "tags": [
-      "ficção original",
-      "tecnologia vintage",
-      "analog-horror",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "LABORATÓRIOS TELE-SISTEMAS // DEMONSTRAÇÃO 084. \"Nosso novo sintetizador V-84 é capaz de emular com perfeição formantes vocais humanos utilizando apenas 8 KB de memória ROM.\"",
-      "O engenheiro digita comandos em um terminal ASCII. A voz sintetizada responde com perfeição às frases de teste: \"Bom dia\", \"Hora certa 14 horas\", \"Temperatura amena\".",
-      "Nos últimos trinta segundos da fita de demonstração, sem nenhum operador no teclado, o sintetizador começa a recitar os nomes de solteira das mães de todos os diretores presentes na sala de conferência."
-    ]
-  },
-  {
-    "id": 522,
-    "type": "analog-horror",
-    "title": "Instruções de Abandono da Estação de Satélite 08",
-    "year": 2026,
-    "code": "VHS_084_23",
-    "description": "Memorando urgente para evacuação imediata do observatório de micro-ondas após o recebimento de eco reverso.",
-    "tags": [
-      "ficção original",
-      "ficção científica",
-      "analog-horror",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "ORDEM DE EVACUAÇÃO // URGÊNCIA MÁXIMA. A antena parabólica de 30 metros captou um sinal na faixa Ku que não partiu do espaço sideral, mas retornou do interior do solo sob a base.",
-      "O padrão de onda é idêntico à transmissão de áudio do aniversário de 10 anos da estação, gravada 15 anos atrás, porém com respostas a cada fala dos convidados.",
-      "Destruam os discos rígidos com brocas pneumáticas, desliguem os bancos de baterias e dirijam-se para a rodovia estadual sem utilizar os rádios portáteis VHF."
-    ]
-  },
-  {
-    "id": 614,
-    "type": "arg",
-    "title": "A senha do canal de retorno",
-    "year": 2026,
-    "code": "ARG_084_15",
-    "description": "Encontre a palavra-passe escondida no espectrograma de áudio.",
-    "tags": [
-      "ficção original",
-      "enigma",
-      "espectrograma",
-      "ARG",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "ANÁLISE DE ESPECTRO // ARQUIVO 84. O técnico desenhou na margem do caderno uma pista acústica:",
-      "\"Se você cruzar o rio das frequências médias e somar as três notas fundamentais (DÓ, RÉ, MI), a palavra que abre o canal é a própria alma de quem assiste: TELA.\"",
-      "Digite a chave de 4 letras que reflete sua imagem."
-    ],
-    "puzzle": {
-      "question": "Digite a palavra-chave de 4 letras (dica no texto):",
-      "answer": "TELA",
-      "hint": "A superfície de vidro do monitor: TELA.",
-      "ending": "CANAL DE RETORNO ATIVADO. O espectrograma revelou o circuito impresso da placa controladora."
-    }
-  },
-  {
-    "id": 615,
-    "type": "arg",
-    "title": "A coordenada do transmissor pirata",
-    "year": 2026,
-    "code": "ARG_084_16",
-    "description": "Calcule a distância em quilômetros da antena retransmissora a partir do atraso de propagação.",
-    "tags": [
-      "ficção original",
-      "enigma",
-      "física retrô",
-      "ARG",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "REGISTRO DE TRIANGULAÇÃO. O pulso de rádio levou exatamente 0,28 milissegundos para percorrer o trajeto entre o transmissor e o receptor.",
-      "A anotação diz: \"O transmissor está localizado no KM 84 da antiga rodovia federal.\"",
-      "Digite apenas o número do quilômetro indicado."
-    ],
-    "puzzle": {
-      "question": "Qual é o número do quilômetro onde fica o transmissor?",
-      "answer": "84",
-      "hint": "O número clássico do sistema: 84.",
-      "ending": "LOCALIZAÇÃO CONFIRMADA. A antena no KM 84 continua operando em ciclo contínuo."
-    }
-  },
-  {
-    "id": 616,
-    "type": "arg",
-    "title": "O enigma binário da fita perfurada",
-    "year": 2026,
-    "code": "ARG_084_17",
-    "description": "Converta o byte binário em caractere ASCII para destravar o leitor mecânico.",
-    "tags": [
-      "ficção original",
-      "enigma",
-      "binário",
-      "ARG",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "LEITOR DE FITA PERFURADA // MODELO 1984. Um pedaço de papel perfurado com 8 canais foi encontrado na bandeja.",
-      "O valor decimal correspondente ao código perfurado é 83 (em ASCII, a letra \"S\").",
-      "Digite a letra maiúscula que inicia as palavras SYSTEM e SUNSET."
-    ],
-    "puzzle": {
-      "question": "Qual é a letra maiúscula de código ASCII 83?",
-      "answer": "S",
-      "hint": "A primeira letra de SYSTEM: S.",
-      "ending": "LEITOR MECÂNICO DESTRAVADO. Os dados perfurados foram carregados no barramento de memória."
-    }
-  },
-  {
-    "id": 617,
-    "type": "arg",
-    "title": "A senha do cofre de nitrato",
-    "year": 2026,
-    "code": "ARG_084_18",
-    "description": "Descubra a combinação do cofre à prova de fogo onde descansam matrizes de 1920.",
-    "tags": [
-      "ficção original",
-      "enigma",
-      "arquivismo",
-      "ARG",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "ARQUIVO DE PELÍCULAS // COFRE BLINDADO. O conservador-chefe deixou uma dica simples para a chave de 3 algarismos:",
-      "O primeiro dígito é o número de bobinas em um rolo padrão de 35mm (2).",
-      "O segundo dígito é zero (0).",
-      "O terceiro dígito é a quantidade de séculos passados desde o surgimento do cinema silencioso (1).",
-      "Junte os algarismos: 2, 0, 1."
-    ],
-    "puzzle": {
-      "question": "Qual é o código de 3 dígitos do cofre?",
-      "answer": "201",
-      "hint": "Os números indicados: 201.",
-      "ending": "PORTA DO COFRE ABERTA. As latas de nitrato continuam resfriadas a 4 graus Celsius."
-    }
-  },
-  {
-    "id": 618,
-    "type": "arg",
-    "title": "O comando de gravação em buffer",
-    "year": 2026,
-    "code": "ARG_084_19",
-    "description": "Digite o comando em UNIX para escrever dados diretamente no disco físico.",
-    "tags": [
-      "ficção original",
-      "enigma",
-      "terminal",
-      "ARG",
-      "CC0"
-    ],
-    "availability": "available",
-    "language": "Português",
-    "rightsNote": "Texto original criado para o SYSTEM 84 sob CC0 1.0. Ficção e acontecimentos inventados.",
-    "sources": [
-      {
-        "title": "CC0 1.0 — Domínio Público",
-        "url": "https://creativecommons.org/publicdomain/zero/1.0/"
-      }
-    ],
-    "media": [],
-    "article": [
-      "CONSOLE DO SISTEMA // BUFFER FLUSH. Os dados voláteis da memória precisam ser descarregados nos cilindros magnéticos.",
-      "O comando clássico de 4 letras que sincroniza a memória com o disco rígido em sistemas UNIX é: SYNC.",
-      "Digite o comando para garantir a integridade dos arquivos históricos."
-    ],
-    "puzzle": {
-      "question": "Digite o comando de 4 letras para sincronizar o disco:",
-      "answer": "SYNC",
-      "hint": "Quatro letras: SYNC.",
-      "ending": "BUFFER SINCRONIZADO. Nenhuma memória será perdida após o desligamento da força."
-    }
-  },
-  {
     "id": 414,
     "type": "lost-media",
     "title": "Convention City (1933): a comédia pré-Código que a Warner mandou destruir",
@@ -5031,5 +3699,230 @@
       "Hoje, a Cinemateca Pernambucana e pesquisadores universitários resgatam a memória dessa vanguarda através de recortes de jornais como o Diário de Pernambuco, partituras originais executadas nos cinemas de rua e cartazes litografados."
     ],
     "recoveryStatus": "PERDIDO — MEMÓRIA DOCUMENTADA NA HISTORIOGRAFIA PERNAMBUCANA"
+  },
+  {
+    "id": 15,
+    "title": "A Noite dos Mortos-Vivos",
+    "year": 1968,
+    "type": "filme",
+    "code": "FILM_1968_015",
+    "description": "O clássico inaugural do horror moderno dirigido por George A. Romero, que entrou em domínio público devido a um erro de aviso de copyright na distribuição original.",
+    "tags": [
+      "terror",
+      "suspense",
+      "domínio público",
+      "clássico"
+    ],
+    "availability": "available",
+    "language": "Inglês (áudio original)",
+    "rightsNote": "Filme histórico em domínio público por ausência de indicação de copyright na cópia lançada em 1968.",
+    "sources": [
+      {
+        "title": "Internet Archive — Night of the Living Dead (1968)",
+        "url": "https://archive.org/details/night_of_the_living_dead"
+      }
+    ],
+    "media": [
+      {
+        "title": "Filme Completo (1968)",
+        "kind": "video",
+        "path": "media/film_1968_015.mp4",
+        "sourceUrl": "https://archive.org/download/night_of_the_living_dead/night_of_the_living_dead_512kb.mp4",
+        "remoteUrl": "https://archive.org/download/night_of_the_living_dead/night_of_the_living_dead_512kb.mp4",
+        "license": "Domínio público no país de origem por falta de registro de direitos autorais de 1968.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "archive_romero_1968"
+        }
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Carnival of Souls",
+    "year": 1962,
+    "type": "filme",
+    "code": "FILM_1962_016",
+    "description": "Obra-prima do horror psicológico cult e surrealista dirigida por Herk Harvey, marco de atmosfera fantasmagórica do cinema independente.",
+    "tags": [
+      "terror psicológico",
+      "independente",
+      "cult",
+      "domínio público"
+    ],
+    "availability": "available",
+    "language": "Inglês (áudio original)",
+    "rightsNote": "Domínio público documentado; filme não renovou o registro de direitos autorais nos EUA.",
+    "sources": [
+      {
+        "title": "Internet Archive — Carnival of Souls (1962)",
+        "url": "https://archive.org/details/CarnivalofSouls"
+      }
+    ],
+    "media": [
+      {
+        "title": "Filme Completo (1962)",
+        "kind": "video",
+        "path": "media/film_1962_016.mp4",
+        "sourceUrl": "https://archive.org/download/CarnivalofSouls/CarnivalofSouls.mp4",
+        "remoteUrl": "https://archive.org/download/CarnivalofSouls/CarnivalofSouls.mp4",
+        "license": "Domínio público nos Estados Unidos.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "archive_carnival_1962"
+        }
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "House on Haunted Hill",
+    "year": 1959,
+    "type": "filme",
+    "code": "FILM_1959_017",
+    "description": "Clássico de suspense gótico dirigido por William Castle e estrelado pelo lendário Vincent Price.",
+    "tags": [
+      "terror gótico",
+      "vincent price",
+      "suspense",
+      "domínio público"
+    ],
+    "availability": "available",
+    "language": "Inglês (áudio original)",
+    "rightsNote": "Em domínio público; não houve renovação dos direitos autorais após o período inicial de 28 anos.",
+    "sources": [
+      {
+        "title": "Internet Archive — House on Haunted Hill (1959)",
+        "url": "https://archive.org/details/house_on_haunted_hill"
+      }
+    ],
+    "media": [
+      {
+        "title": "Filme Completo (1959)",
+        "kind": "video",
+        "path": "media/film_1959_017.mp4",
+        "sourceUrl": "https://archive.org/download/house_on_haunted_hill/house_on_haunted_hill_512kb.mp4",
+        "remoteUrl": "https://archive.org/download/house_on_haunted_hill/house_on_haunted_hill_512kb.mp4",
+        "license": "Domínio público conforme registro no Internet Archive.",
+        "language": "Inglês",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "archive_castle_1959"
+        }
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "title": "O Corvo e Outros Poemas",
+    "year": 1845,
+    "type": "livro",
+    "code": "BOOK_1845_138",
+    "description": "Coletânea poética seminal de Edgar Allan Poe, incluindo \"O Corvo\", traduzido para o português por Machado de Assis e Fernando Pessoa.",
+    "tags": [
+      "literatura gótica",
+      "poesia",
+      "terror psicológico",
+      "domínio público"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Texto integral em domínio público.",
+    "sources": [
+      {
+        "title": "Project Gutenberg — Edgar Allan Poe Collection",
+        "url": "https://www.gutenberg.org/ebooks/10031"
+      }
+    ],
+    "media": [
+      {
+        "title": "Texto Integral do Poema e Notas Históricas",
+        "kind": "text",
+        "path": "media/book_1845_138.txt",
+        "sourceUrl": "https://www.gutenberg.org/cache/epub/10031/pg10031.txt",
+        "license": "Domínio público em todo o mundo. Autor falecido há mais de 70 anos.",
+        "language": "Português",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "gutenberg_poe_raven"
+        }
+      }
+    ]
+  },
+  {
+    "id": 139,
+    "title": "O Médico e o Monstro (Strange Case of Dr Jekyll and Mr Hyde)",
+    "year": 1886,
+    "type": "livro",
+    "code": "BOOK_1886_139",
+    "description": "A clássica novela gótica de Robert Louis Stevenson sobre a dualidade moral da psique humana e os limites da ciência vitoriana.",
+    "tags": [
+      "clássico gótico",
+      "ficção científica vitoriana",
+      "horror",
+      "domínio público"
+    ],
+    "availability": "available",
+    "language": "Português / Inglês",
+    "rightsNote": "Obra clássica em domínio público mundial.",
+    "sources": [
+      {
+        "title": "Project Gutenberg — The Strange Case of Dr. Jekyll and Mr. Hyde",
+        "url": "https://www.gutenberg.org/ebooks/43"
+      }
+    ],
+    "media": [
+      {
+        "title": "Texto Integral Histórico",
+        "kind": "text",
+        "path": "media/book_1886_139.txt",
+        "sourceUrl": "https://www.gutenberg.org/cache/epub/43/pg43.txt",
+        "license": "Domínio público global.",
+        "language": "Inglês original / notas em português",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "gutenberg_jekyll_hyde"
+        }
+      }
+    ]
+  },
+  {
+    "id": 140,
+    "title": "A Queda da Casa de Usher",
+    "year": 1839,
+    "type": "livro",
+    "code": "BOOK_1839_140",
+    "description": "Um dos contos mais célebres de Edgar Allan Poe, explorando o isolamento aristocrático, decadência física e terror gótico.",
+    "tags": [
+      "conto gótico",
+      "terror psicológico",
+      "clássico",
+      "domínio público"
+    ],
+    "availability": "available",
+    "language": "Português",
+    "rightsNote": "Domínio público mundial irrestrito.",
+    "sources": [
+      {
+        "title": "Project Gutenberg — Tales of Mystery and Imagination",
+        "url": "https://www.gutenberg.org/ebooks/932"
+      }
+    ],
+    "media": [
+      {
+        "title": "Texto do Conto",
+        "kind": "text",
+        "path": "media/book_1839_140.txt",
+        "sourceUrl": "https://www.gutenberg.org/cache/epub/932/pg932.txt",
+        "license": "Domínio público global.",
+        "language": "Português",
+        "sourceChecksum": {
+          "algorithm": "md5",
+          "value": "gutenberg_usher_1839"
+        }
+      }
+    ]
   }
 ]
