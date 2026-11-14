@@ -37,16 +37,24 @@ const jobs=catalog.flatMap(r=>r.media).filter(m=>!m.remoteUrl && (!filter||m.kin
 // Single-flight download: partes de um mesmo filme compartilham o sourceKey e
 // devem baixar o arquivo-fonte apenas uma vez, nunca em paralelo.
 const inflight = new Map()
+// Um checksum só é conferível quando é um digest hexadecimal do tamanho certo
+// para o algoritmo. Os códigos simbólicos do catálogo (archive_*, gutenberg_*)
+// são apenas etiquetas de origem, não digests: servem de identidade do arquivo.
+function hasDigest(checksum) {
+  if (!checksum?.value) return false
+  const size = { md5: 32, sha1: 40, sha256: 64 }[checksum.algorithm]
+  return Boolean(size) && checksum.value.length === size && /^[0-9a-f]+$/.test(checksum.value)
+}
 async function ensureSource(media) {
   const key = media.sourceKey || path.basename(media.path)
   const source = path.join(cache, key + '.source')
-  const verified = await exists(source) && (!media.sourceChecksum || await hash(source, media.sourceChecksum.algorithm) === media.sourceChecksum.value)
+  const verified = await exists(source) && (!hasDigest(media.sourceChecksum) || await hash(source, media.sourceChecksum.algorithm) === media.sourceChecksum.value)
   if (verified) return source
   if (!inflight.has(key)) {
     inflight.set(key, (async () => {
       console.log(`Downloading source: ${key}`)
       await run(process.platform==='win32'?'curl.exe':'curl',['--fail','--location','--retry','4','--retry-all-errors','--connect-timeout','30','--max-time','1800','--continue-at','-','--silent','--show-error',media.sourceUrl,'--output',source])
-      if (media.sourceChecksum && await hash(source, media.sourceChecksum.algorithm) !== media.sourceChecksum.value) {
+      if (hasDigest(media.sourceChecksum) && await hash(source, media.sourceChecksum.algorithm) !== media.sourceChecksum.value) {
         await fs.rm(source, { force: true })
         throw new Error(`Source checksum mismatch: ${media.path} (${key}); cached source removed, retry to download again.`)
       }
