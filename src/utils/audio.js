@@ -81,3 +81,14 @@ export function playSuccess() {
   setTimeout(() => beep(720, 0.07, 0.02), 90)
   setTimeout(() => beep(960, 0.13, 0.02), 180)
 }
+
+// Call from a user gesture: browsers may deny sound before the first interaction.
+export async function resumeAudio() {
+  if (!enabled) return null
+  try {
+    const context = getAudioContext()
+    if (!context) return null
+    if (context.state === 'suspended') await context.resume()
+    return context.state === 'running' ? context : null
+  } catch { return null }
+}
