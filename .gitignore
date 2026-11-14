@@ -21,3 +21,5 @@ Thumbs.db
 .idea/
 *.suo
 *.swp
+server/data/
+public/images/crt-monitor.png

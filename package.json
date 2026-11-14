@@ -13,7 +13,12 @@
     "db:seed": "node scripts/db-seed.mjs",
     "db:export": "node scripts/db-export.mjs",
     "db:check": "node scripts/db-check.mjs",
-    "test": "node scripts/test.mjs"
+    "test": "node scripts/test.mjs",
+    "test:access": "node scripts/check-access-server.mjs",
+    "start:access": "node --env-file=server/.env.local server/index.mjs",
+    "build:paid": "node scripts/build-paid.mjs",
+    "build:pages": "node scripts/build-pages.mjs",
+    "build:hosted": "node scripts/build-hosted.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.0.4",

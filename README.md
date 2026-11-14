@@ -63,8 +63,25 @@ O deploy é automático: qualquer push em `main` publica em https://felipe030520
 - Filmes mudos são apresentados sem trilha sonora moderna; os seriados mantêm o áudio original.
 - A cópia pública de cada obra indica a fonte (Internet Archive / Project Gutenberg) e a licença.
 
-## Identidade visual / Optical Memory
 
-A interface combina as referências do painel [ideias oc](https://www.pinterest.com/felipegabrielpessoa82/ideias-oc/) (olho, wireframe e interfaces de sinal) com a navegação por aparelho retrô de [sadok.mx](https://sadok.mx/). As ilustrações do terminal e a marca são vetores originais, sem reproduzir os Pins.
+## Optical Memory / acesso e assinatura
 
-A página inicial usa um receptor CRT com cinco canais, controles de sintonia e repouso. Fora de campos e controles, as setas escolhem o canal e Enter abre o diretório. O acervo também pode ser acessado pelo menu e pela lista abaixo do terminal. A identidade compartilhada usa Space Grotesk nos títulos, IBM Plex Mono na interface e a marca do olho com cantos de enquadramento no cabeçalho, rodapé e favicon. Animações respeitam movimento reduzido.
+A home é editorial, sem computador. Antes dela, uma inicialização BIOS dá acesso a uma sala com três monitores CRT fotorealistas: Criador, Administrador e Assinar o arquivo. Os campos são HTML interativo dentro das telas; movimento reduzido é respeitado.
+
+O site completo está em https://system84-optical-memory.felipegabrielpessoa8.chatgpt.site . O endereço do GitHub Pages redireciona para ele. A hospedagem integrada usa um Worker e um banco D1; o Pages mantém os arquivos históricos usados pelo proxy autenticado de mídia. Filmes remotos e suas fontes institucionais continuam sendo públicos na origem.
+
+- Contas são validadas no servidor. Senhas pessoais usam PBKDF2; sessões usam cookie HttpOnly, Secure em HTTPS e SameSite Strict.
+- Criador e administrador precisam de senhas de convite separadas, configuradas como secrets. Elas não aparecem no bundle nem neste repositório. Cada pessoa cria a própria senha pessoal.
+- Assinantes pagam R$ 15 por mês diretamente à chave Nubank configurada no servidor. O aviso de pagamento fica pendente e não libera o acervo.
+- O admin confere o crédito de R$ 15 no app Nubank e informa o identificador bancário único para liberar um mês. A mesma transação não pode ser reutilizada. O vencimento é calculado pelo servidor, incluindo meses curtos.
+- No vencimento, as rotas do aplicativo voltam à entrada e o proxy de mídia nega acesso. Alterar localStorage não concede função administrativa nem assinatura.
+
+### Hospedagem
+
+`.openai/hosting.json` identifica o Site existente; reutilize esse ID. `server/api.js` contém a API portátil e `server/worker.js` é o Worker hospedado. O build `npm run build:hosted` embute os assets e produz `dist/server/index.js`. O esquema inicial está em `server/schema.sql`; as migrações hospedadas ficam na cópia de fonte do Sites. O Worker recebe a conexão D1 como `DB` e as variáveis secretas `ADMIN_INVITE_CODE`, `CREATOR_INVITE_CODE`, `PIX_KEY`.
+
+Para desenvolvimento Node local, copie `server/.env.example` para `server/.env.local`, configure os convites e a chave Pix, rode `npm run build:paid` e `npm run start:access`. O SQLite local fica em `server/data/` e não vai para o Git. O Vite estático sozinho permite apenas a prévia visual e não processa pagamentos.
+
+Validações: `npm test`, `npm run test:access`, `npm run check`, `npm run build:hosted`. A publicação do GitHub usa `npm run build:pages` para gerar a página de encaminhamento, preservando a mídia.
+
+O monitor foi criado com ImageGen a partir de um briefing de fotografia frontal de CRT bege envelhecido; a imagem enviada pelo usuário foi referência estética. As fontes são Space Grotesk e IBM Plex Mono. Os formulários e o logotipo permanecem nativos do site.

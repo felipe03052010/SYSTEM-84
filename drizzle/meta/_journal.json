@@ -1,0 +1,13 @@
+{
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "breakpoints": true,
+      "tag": "0000_access",
+      "when": 1794657600000,
+      "version": "6",
+      "idx": 0
+    }
+  ],
+  "version": "7"
+}

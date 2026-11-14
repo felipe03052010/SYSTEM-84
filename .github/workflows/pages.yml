@@ -21,6 +21,7 @@ jobs:
       - run: npm ci
       - run: npm run check
       - run: npm test
+      - run: npm run test:access
       - uses: actions/cache@v4
         with:
           path: public/media
@@ -29,7 +30,7 @@ jobs:
       - name: Preparar cópias para o leitor e player internos
         run: npm run media:download
       - run: npm run check:media
-      - run: npm run build
+      - run: npm run build:pages
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

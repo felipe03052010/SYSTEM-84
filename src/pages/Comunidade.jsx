@@ -31,7 +31,7 @@ const INITIAL_POSTS = [
 ]
 
 export default function Comunidade() {
-  const { currentUser, switchRole } = useAuth()
+  const { currentUser } = useAuth()
   const [posts, setPosts] = useState(() => {
     try {
       const saved = localStorage.getItem('system84_community_posts')
@@ -56,7 +56,7 @@ export default function Comunidade() {
       id: Date.now(),
       author: currentUser.username,
       role: currentUser.role,
-      badge: currentUser.role === 'admin' ? 'ADMIN' : 'CRIADOR',
+      badge: currentUser.role === 'admin' ? 'ADMIN' : currentUser.role === 'creator' ? 'CRIADOR' : 'ASSINANTE',
       timestamp: new Date().toLocaleString('pt-BR'),
       content: newMessage.trim()
     }
@@ -80,14 +80,8 @@ export default function Comunidade() {
         <p>Espaço aberto para criadores e operadores compartilharem descobertas, teorias e registros.</p>
 
         <div style={{ marginTop: '1rem', padding: '0.8rem', border: '1px solid var(--border, #33ff33)', display: 'inline-block' }}>
-          <span>PERFIL ATUAL: <strong>{currentUser.username}</strong> ({currentUser.role === 'admin' ? 'ADMINISTRADOR' : 'CRIADOR'})</span>
-          <button
-            type="button"
-            style={{ marginLeft: '1rem', padding: '0.2rem 0.6rem', cursor: 'pointer' }}
-            onClick={() => switchRole(currentUser.role === 'admin' ? 'creator' : 'admin')}
-          >
-            MUDAR PARA {currentUser.role === 'admin' ? 'MODO CRIADOR' : 'MODO ADMIN'}
-          </button>
+          <span>PERFIL ATUAL: <strong>{currentUser.username}</strong> ({currentUser.role === 'admin' ? 'ADMINISTRADOR' : currentUser.role === 'creator' ? 'CRIADOR' : 'ASSINANTE'})</span>
+
         </div>
       </section>
 

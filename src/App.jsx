@@ -5,6 +5,8 @@ import { playClick } from './utils/audio'
 import { AuthProvider } from './utils/auth'
 
 import Home from './pages/Station'
+import AccessFlow from './components/AccessFlow'
+import Entrance from './pages/Entrance'
 import Filmes from './pages/Filmes'
 import Series from './pages/Series'
 import Livros from './pages/Livros'
@@ -26,7 +28,7 @@ export default function App() {
     <AuthProvider>
       <div className="crt-overlay" aria-hidden="true" />
 
-      <RouteTransition><Routes>
+      <AccessFlow renderEntrance={onEnter => <Entrance onEnter={onEnter}/>}><RouteTransition><Routes>
         <Route path="/" element={<Home />} />
         <Route path="/filmes" element={<Filmes />} />
         <Route path="/series" element={<Series />} />
@@ -37,7 +39,7 @@ export default function App() {
         <Route path="/admin-financeiro" element={<AdminFinanceiro />} />
         <Route path="/obra/:id" element={<Record />} />
         <Route path="*" element={<NotFound />} />
-      </Routes></RouteTransition>
+      </Routes></RouteTransition></AccessFlow>
     </AuthProvider>
   )
 }

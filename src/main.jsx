@@ -12,3 +12,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 import './styles/station.css'
+import './styles/entrance.css'
