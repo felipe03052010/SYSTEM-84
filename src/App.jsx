@@ -4,7 +4,7 @@ import RouteTransition from './components/RouteTransition'
 import { playClick } from './utils/audio'
 import { AuthProvider } from './utils/auth'
 
-import Home from './pages/Home'
+import Home from './pages/Station'
 import Filmes from './pages/Filmes'
 import Series from './pages/Series'
 import Livros from './pages/Livros'

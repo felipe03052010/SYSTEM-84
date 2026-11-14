@@ -62,3 +62,9 @@ O deploy é automático: qualquer push em `main` publica em https://felipe030520
 
 - Filmes mudos são apresentados sem trilha sonora moderna; os seriados mantêm o áudio original.
 - A cópia pública de cada obra indica a fonte (Internet Archive / Project Gutenberg) e a licença.
+
+## Identidade visual / Optical Memory
+
+A interface combina as referências do painel [ideias oc](https://www.pinterest.com/felipegabrielpessoa82/ideias-oc/) (olho, wireframe e interfaces de sinal) com a navegação por aparelho retrô de [sadok.mx](https://sadok.mx/). As ilustrações do terminal e a marca são vetores originais, sem reproduzir os Pins.
+
+A página inicial usa um receptor CRT com cinco canais, controles de sintonia e repouso. Fora de campos e controles, as setas escolhem o canal e Enter abre o diretório. O acervo também pode ser acessado pelo menu e pela lista abaixo do terminal. A identidade compartilhada usa Space Grotesk nos títulos, IBM Plex Mono na interface e a marca do olho com cantos de enquadramento no cabeçalho, rodapé e favicon. Animações respeitam movimento reduzido.
