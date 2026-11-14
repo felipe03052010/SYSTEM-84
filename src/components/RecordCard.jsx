@@ -6,12 +6,17 @@ export default function RecordCard({ record }) {
     <article className="record-card">
       <div className="record-cover">
         <span className="record-code">{record.code}</span>
+        {record.type === 'lost-media' && (
+          <span className="classified-stamp" style={{ position: 'absolute', top: '10px', right: '10px', zIndex: 3 }}>
+            TOP SECRET
+          </span>
+        )}
 
         <div className="cover-placeholder">
-          <span>ARQUIVO VISUAL</span>
+          <span>ARQUIVO // DOSSIÊ</span>
           <strong>{record.title}</strong>
           <small>
-            {record.type.toUpperCase()} // {record.year}
+            {record.type.toUpperCase()} &bull; {record.year}
           </small>
         </div>
       </div>

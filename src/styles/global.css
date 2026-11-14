@@ -1,16 +1,20 @@
 :root {
-  --background: #020704;
-  --background-light: #05130b;
-  --panel: rgba(2, 14, 9, 0.96);
-  --green: #38ef7d;
-  --green-bright: #68ff9e;
-  --green-dark: #0f5235;
-  --green-glow: rgba(56, 239, 125, 0.25);
-  --amber: #ff9f1a;
-  --red: #ff3333;
-  --red-blood: #880000;
-  --text: #aef8cb;
-  --muted: #4e9c70;
+  --background: #010604;
+  --background-light: #041009;
+  --panel: rgba(1, 11, 7, 0.95);
+  --panel-card: rgba(2, 14, 9, 0.92);
+  --green: #2ee677;
+  --green-bright: #62ff9d;
+  --green-dark: #093f27;
+  --green-glow: rgba(46, 230, 119, 0.35);
+  --green-faint: rgba(46, 230, 119, 0.08);
+  --amber: #fca311;
+  --amber-glow: rgba(252, 163, 17, 0.25);
+  --red-classified: #d90429;
+  --red-blood: #6b0505;
+  --text: #b8fcd4;
+  --muted: #529f74;
+  --paper-stamp: #d4a373;
   --font-terminal: "VT323", monospace;
   --font-interface: "IBM Plex Mono", monospace;
 }
@@ -23,17 +27,46 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #010403;
+  background-color: #000402;
 }
 
 body {
   min-height: 100vh;
   color: var(--text);
   background:
-    radial-gradient(circle at 50% 50%, #06190f 0%, #020905 60%, #000000 100%);
+    radial-gradient(circle at 50% 40%, #04160c 0%, #010804 55%, #000201 100%);
   font-family: var(--font-interface);
   position: relative;
   overflow-x: hidden;
+}
+
+/* X-FILES / RETRO-HORROR: Efeito de Grade Retrô e Ruído Estático Sutil de CRT */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(46, 230, 119, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(46, 230, 119, 0.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* CARIMBO CLASSIFICADO ESTILO DOSSIÊ X-FILES */
+.classified-stamp {
+  display: inline-block;
+  padding: 2px 8px;
+  font-family: var(--font-terminal);
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--red-classified);
+  border: 2px solid var(--red-classified);
+  text-transform: uppercase;
+  transform: rotate(-3deg);
+  opacity: 0.88;
+  box-shadow: 0 0 8px rgba(217, 4, 41, 0.3);
 }
 
 /* HORROR RETROFUTURISTA: Scanlines dinâmicas e flicker de monitor antigo */
