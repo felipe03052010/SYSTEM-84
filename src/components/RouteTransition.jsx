@@ -89,14 +89,25 @@ function ScreenArt({ kind }) {
   }
 }
 
+/* Com ?loader=0 a tela de carregamento não aparece: serve para quem quer ver o
+   site direto, e para o gerador do catálogo visual em PDF. */
+function loaderDisabled() {
+  if (typeof window === 'undefined') return false
+  const search = window.location.search || window.location.hash.split('?')[1] || ''
+  const value = new URLSearchParams(search).get('loader')
+  return value === '0' || value === 'off'
+}
+
 export default function RouteTransition({ children }) {
   const { pathname } = useLocation()
   const [readyPath, setReadyPath] = useState(null)
   const lastSound = useRef(0)
   const screen = SCREENS[pathname] || DEFAULT_SCREEN
-  const busy = readyPath !== pathname
+  const skipLoader = loaderDisabled()
+  const busy = readyPath !== pathname && !skipLoader
 
   useEffect(() => {
+    if (loaderDisabled()) { setReadyPath(pathname); return undefined }
     const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
     const duration = reduced ? 0 : screen.ms
     const timer = setTimeout(() => setReadyPath(pathname), duration)

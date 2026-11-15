@@ -45,12 +45,20 @@ function matchesPeriod(year, period) {
   return true
 }
 
+/* Modo de vídeo inicial, vindo do endereço: ?modo=ambar|papel|vhs|fosforo */
+function initialDisplay() {
+  if (typeof window === 'undefined') return 'fosforo'
+  const search = window.location.search || window.location.hash.split('?')[1] || ''
+  const value = new URLSearchParams(search).get('modo')
+  return ['fosforo', 'ambar', 'papel', 'vhs'].includes(value) ? value : 'fosforo'
+}
+
 export default function ArchivePage({ type, title, directory, command, description }) {
   const [query, setQuery] = useState('')
   const [period, setPeriod] = useState('all')
   const [decade, setDecade] = useState('all')
   const [sort, setSort] = useState('year')
-  const [display, setDisplay] = useState('fosforo')
+  const [display, setDisplay] = useState(initialDisplay)
   const [effects, setEffects] = useState(DEFAULT_EFFECTS)
   const [onlyOpen, setOnlyOpen] = useState(false)
   const [extreme, setExtreme] = useState(false)
@@ -131,7 +139,7 @@ export default function ArchivePage({ type, title, directory, command, descripti
         </aside>
       </section>
 
-      <section className={`archive-browser display-${display} ${effects.map((id) => `fx-${id}`).join(' ')}`}>
+      <section id={`${type}-browser`} className={`archive-browser display-${display} ${effects.map((id) => `fx-${id}`).join(' ')}`}>
         <div className="filter-bar">
           <div>
             <label htmlFor={`${type}-query`}>&gt; Filtrar diretório</label>

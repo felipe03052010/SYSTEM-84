@@ -197,6 +197,7 @@ button[type="submit"] {
   background: var(--fig-paper);
   border-color: var(--fig-paper);
   color: var(--fig-void);
+  -webkit-text-fill-color: var(--fig-void);
   box-shadow: none;
 }
 
@@ -550,9 +551,31 @@ button[type="submit"] {
   text-decoration: none;
 }
 
+.category-tape a,
+.category-tape a:link,
+.category-tape a:visited,
+.category-tape a:hover,
+.category-tape a:focus {
+  color: var(--fig-void);
+  -webkit-text-fill-color: var(--fig-void);
+}
+
 .category-tape a:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+/* Chips de filtro: texto sempre legível sobre o próprio fundo */
+.filter-chips button.is-active,
+.filter-chips button.is-active:hover {
+  color: var(--fig-void);
+  -webkit-text-fill-color: var(--fig-void);
+}
+
+.filter-chips button.boost-filter.is-active,
+.filter-chips button.boost-filter.is-active:hover {
+  color: var(--fig-void);
+  -webkit-text-fill-color: var(--fig-void);
 }
 
 /* --------------------------------------------------------------------------
