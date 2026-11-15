@@ -1,5 +1,7 @@
 import { playClick } from '../utils/audio'
+import { ItemGlyph, MetaPills, StatusSeal, typeLabel, yearOf } from './Chassis'
 import { Link } from 'react-router-dom'
+import '../styles/dossie.css'
 
 export default function RecordCard({ record }) {
   const actionLabel =
@@ -11,39 +13,27 @@ export default function RecordCard({ record }) {
 
   return (
     <article className="record-card">
-      <div className="record-cover">
-        <span className="record-code">{record.code}</span>
-        {record.type === 'lost-media' && (
-          <span className="classified-stamp">Top secret</span>
-        )}
+      <span className="rc-top">
+        <span className="rc-code">{typeLabel(record)} / {yearOf(record)}</span>
+        <span className="rc-dot" aria-hidden="true" />
+      </span>
 
-        <div className="cover-placeholder">
-          <span>Arquivo // dossiê</span>
-          <strong>{record.title}</strong>
-          <small>
-            {record.type.toUpperCase()} &bull; {record.year}
-          </small>
-        </div>
-      </div>
+      <span className="rc-art">
+        <ItemGlyph record={record} size={78} />
+      </span>
 
-      <div className="record-content">
-        <span className="record-meta">
-          {record.type.toUpperCase()} // {record.year}
-        </span>
+      <strong className="rc-title">{record.title}</strong>
+      {record.author && <span className="rc-author">{record.author}</span>}
+      <span className="rc-description">{record.description}</span>
 
-        <h3>{record.title}</h3>
-        <p>{record.description}</p>
+      <span className="rc-foot">
+        <MetaPills items={[['TIPO', typeLabel(record)], ['ANO', yearOf(record)]]} />
+        <StatusSeal status={record.availability === 'available' ? 'disponível' : record.recoveryStatus || 'parcial'} />
+      </span>
 
-        <div className="record-tags">
-          {record.tags.map((tag) => (
-            <span key={tag}>{tag}</span>
-          ))}
-        </div>
-
-        <Link className="terminal-action" to={`/obra/${record.id}`} onClick={playClick}>
-          {actionLabel} &gt;
-        </Link>
-      </div>
+      <Link className="terminal-action" to={`/obra/${record.id}`} onClick={playClick}>
+        {actionLabel} ↗
+      </Link>
     </article>
   )
 }

@@ -4,7 +4,18 @@ import Layout from '../components/Layout'
 import RecordCard from '../components/RecordCard'
 import { records } from '../data/records'
 import { playClick, playTyping } from '../utils/audio'
+import {
+  DossierFooter,
+  DossierMasthead,
+  FrameMarks,
+  SectionMark,
+  UiIcon,
+  WireGlobe,
+  pad2,
+} from '../components/Chassis'
 import '../styles/search.css'
+import '../styles/figma.css'
+import '../styles/dossie.css'
 
 function matchesPeriod(year, period) {
   if (period === 'all') return true
@@ -74,88 +85,93 @@ export default function Pesquisa() {
   }
 
   return (
-    <Layout>
-      <section className="search-hero">
-        <span className="directory">TERMINAL / PESQUISA GLOBAL</span>
+    <Layout className="dossie-page">
+      <div className="dossier-frame">
+        <DossierMasthead />
 
-        <h1>
-          PESQUISAR NO ARQUIVO
-          <span className="blink">_</span>
-        </h1>
+        <section className="prancha prancha-search">
+          <div className="search-grid">
+            <div className="search-copy">
+              <h1>PESQUISAR<br />NO ARQUIVO<span className="blink">_</span></h1>
+              <p className="hero-lead">
+                Consulte simultaneamente os registros de filmes, séries, livros e
+                dossiês de preservação armazenados no SYSTEM 84.
+              </p>
 
-        <p>
-          Consulte simultaneamente os registros de filmes,
-          séries e livros armazenados no SYSTEM 84.
-        </p>
+              <form className="dossier-search" onSubmit={submit}>
+                <label htmlFor="globalSearch">
+                  <UiIcon name="search" size={16} />
+                  INSIRA UMA CONSULTA
+                </label>
+                <div className="dossier-search-field">
+                  <span aria-hidden="true">C:\SYSTEM84\SEARCH&gt;</span>
+                  <input
+                    id="globalSearch"
+                    type="search"
+                    value={query}
+                    placeholder="título, categoria, ano ou palavra-chave..."
+                    onChange={(event) => {
+                      setQuery(event.target.value)
+                      playTyping()
+                    }}
+                  />
+                  <button type="submit">EXECUTAR</button>
+                </div>
+              </form>
 
-        <form className="global-search" onSubmit={submit}>
-          <label htmlFor="globalSearch">&gt; INSIRA UMA CONSULTA</label>
+              <div className="search-filters">
+                <label htmlFor="typeFilter">TIPO DE ARQUIVO</label>
+                <select
+                  id="typeFilter"
+                  value={type}
+                  onChange={(event) => {
+                    setType(event.target.value)
+                    playClick()
+                  }}
+                >
+                  <option value="all">TODOS</option>
+                  <option value="filme">FILMES</option>
+                  <option value="série">SÉRIES</option>
+                  <option value="livro">LIVROS</option>
+                  <option value="lost-media">LOST MEDIA</option>
+                  <option value="analog-horror">ANALOG HORROR</option>
+                  <option value="arg">ARG</option>
+                </select>
 
-          <div>
-            <span>C:\SYSTEM84\SEARCH&gt;</span>
+                <label htmlFor="periodFilter">PERÍODO</label>
+                <select
+                  id="periodFilter"
+                  value={period}
+                  onChange={(event) => {
+                    setPeriod(event.target.value)
+                    playClick()
+                  }}
+                >
+                  <option value="all">TODOS</option>
+                  <option value="1800">1800–1899</option>
+                  <option value="1900">1900–1949</option>
+                  <option value="1950">1950–1999</option>
+                  <option value="2000">2000+</option>
+                </select>
 
-            <input
-              id="globalSearch"
-              type="search"
-              value={query}
-              placeholder="Título, categoria, ano ou palavra-chave..."
-              onChange={(event) => {
-                setQuery(event.target.value)
-                playTyping()
-              }}
-            />
+                <button type="button" onClick={clear}>LIMPAR FILTROS</button>
+              </div>
+            </div>
 
-            <button type="submit">EXECUTAR</button>
+            <figure className="search-figure">
+              <FrameMarks />
+              <WireGlobe />
+              <figcaption>FIG. 084 — BUSCA NO ACERVO</figcaption>
+            </figure>
           </div>
-        </form>
-      </section>
+        </section>
 
-      <section className="search-workspace">
-        <aside className="search-filters">
-          <div className="filter-title">FILTROS.SYS</div>
+        <section className="prancha prancha-results">
+          <SectionMark>RESULTADOS / CONSULTA EM TEMPO REAL</SectionMark>
 
-          <label htmlFor="typeFilter">TIPO DE ARQUIVO</label>
-          <select
-            id="typeFilter"
-            value={type}
-            onChange={(event) => {
-              setType(event.target.value)
-              playClick()
-            }}
-          >
-            <option value="all">TODOS</option>
-            <option value="filme">FILMES</option>
-            <option value="série">SÉRIES</option>
-            <option value="livro">LIVROS</option><option value="lost-media">LOST MEDIA</option><option value="analog-horror">ANALOG HORROR</option><option value="arg">ARG</option>
-          </select>
-
-          <label htmlFor="periodFilter">PERÍODO</label>
-          <select
-            id="periodFilter"
-            value={period}
-            onChange={(event) => {
-              setPeriod(event.target.value)
-              playClick()
-            }}
-          >
-            <option value="all">TODOS</option>
-            <option value="1800">1800–1899</option>
-            <option value="1900">1900–1949</option>
-            <option value="1950">1950–1999</option>
-            <option value="2000">2000+</option>
-          </select>
-
-          <button type="button" onClick={clear}>
-            LIMPAR FILTROS
-          </button>
-        </aside>
-
-        <div className="search-results">
           <div className="result-line">
-            <span>
-              CONSULTA FINALIZADA // {filtered.length} REGISTRO(S)
-            </span>
-            <span>DATABASE: SYS84_MASTER</span>
+            <span>CONSULTA FINALIZADA // {pad2(filtered.length)} REGISTRO(S)</span>
+            <span>BASE: SYS84_MASTER</span>
           </div>
 
           {filtered.length > 0 ? (
@@ -169,8 +185,10 @@ export default function Pesquisa() {
               &gt; NENHUM REGISTRO COMPATÍVEL FOI LOCALIZADO.
             </p>
           )}
-        </div>
-      </section>
+        </section>
+
+        <DossierFooter page={10} total={13} />
+      </div>
     </Layout>
   )
 }

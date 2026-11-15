@@ -3,6 +3,23 @@ import { Link, useParams } from 'react-router-dom'
 import Layout from '../components/Layout'
 import { records } from '../data/records'
 import NotFound from './NotFound'
+import { playClick } from '../utils/audio'
+import {
+  DossierFooter,
+  DossierMasthead,
+  FrameMarks,
+  ItemGlyph,
+  MetaPills,
+  Panel,
+  SectionMark,
+  StatusSeal,
+  UiIcon,
+  collectionOf,
+  typeLabel,
+  yearOf,
+} from '../components/Chassis'
+import '../styles/figma.css'
+import '../styles/dossie.css'
 import '../styles/record.css'
 import ArgPuzzle from '../components/ArgPuzzle'
 
@@ -19,6 +36,13 @@ function mediaSource(media) {
   if (media.remoteUrl) return media.remoteUrl
   if (media.sourceUrl && media.sourceUrl.startsWith('https://')) return media.sourceUrl
   return localMedia(media.path)
+}
+
+function glyphLabel(record) {
+  if (record.type === 'lost-media') return 'dossiê de preservação'
+  if (record.type === 'livro') return 'sistema de leitura'
+  if (record.type === 'série') return 'sistema de séries'
+  return 'sistema de cinema'
 }
 
 function isExternal(media) {
@@ -96,13 +120,86 @@ export default function Record() {
   useEffect(() => { setSelected(0); window.scrollTo(0, 0) }, [id])
   if (!record) return <NotFound />
   const media = record.media?.[selected] || record.media?.[0]
-  return <Layout><main className="record-detail">
-    <Link className="back-link" to={({ livro: '/livros', 'série': '/series', 'lost-media': '/lost-media', 'analog-horror': '/analog-horror', arg: '/arg' })[record.type] || '/filmes'}>← VOLTAR AO CATÁLOGO</Link>
-    <header className="record-heading"><span className="directory">{record.code} // {record.year}</span><h1>{record.title}</h1><p>{record.description}</p></header>
-    {record.recoveryStatus && <p className="recovery-note">PRESERVAÇÃO // {record.recoveryStatus}</p>}
-    {record.media?.length > 1 && <label className="episode-select">ESCOLHER CAPÍTULO <select value={selected} onChange={e => setSelected(Number(e.target.value))}>{record.media.map((m, i) => <option value={i} key={m.path}>{m.title}</option>)}</select></label>}
-    {record.article && <article className="original-story"><h2>{record.type === 'lost-media' ? 'DOSSIÊ DE PRESERVAÇÃO' : 'FICÇÃO ORIGINAL // SYSTEM 84'}</h2>{record.article.map((p, i) => <p key={i}>{p}</p>)}{record.puzzle && <ArgPuzzle key={record.id} record={record} />}</article>}
-    {media ? media.kind === 'text' ? <Reader key={media.path} media={media} /> : <Player key={media.path} media={media} /> : !record.article && <p role="status">Arquivo ainda não disponível.</p>}
-    <details className="record-provenance"><summary>Sobre esta cópia e preservação</summary><p>{record.rightsNote}</p><p>{media?.license}</p>{record.sources?.map(source => <p key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.title} ↗</a></p>)}</details>
-  </main></Layout>
+  const backTo = collectionOf(record)
+  const chapters = record.media?.length || 0
+  const hasText = (record.media || []).some((item) => item.kind === 'text')
+
+  return <Layout className="dossie-page">
+    <div className="dossier-frame">
+      <DossierMasthead />
+
+      <section className="prancha prancha-record">
+        <Link className="back-link" to={backTo} onClick={playClick}>← VOLTAR AO CATÁLOGO</Link>
+
+        <div className="record-grid">
+          <header className="record-copy">
+            <SectionMark>{`${record.code} / ${typeLabel(record)} DE ${yearOf(record)}`}</SectionMark>
+            <h1>{record.title}</h1>
+            {record.author && <p className="record-author">{record.author}</p>}
+            <p className="hero-lead">{record.description}</p>
+
+            <MetaPills items={[
+              ['TIPO', typeLabel(record)],
+              ['ANO', yearOf(record)],
+              record.author && ['AUTORIA', record.author],
+              chapters > 1 && ['PARTES', String(chapters)],
+              record.availability === 'available' ? ['ESTADO', 'DISPONÍVEL'] : ['ESTADO', record.recoveryStatus || 'EM RECUPERAÇÃO'],
+            ]} />
+
+            {record.tags?.length > 0 && (
+              <div className="record-tags">
+                {record.tags.map((tag) => <span key={tag}>{tag}</span>)}
+              </div>
+            )}
+
+            {record.recoveryStatus && (
+              <p className="recovery-note"><StatusSeal status={record.recoveryStatus}>PRESERVAÇÃO</StatusSeal> {record.recoveryStatus}</p>
+            )}
+          </header>
+
+          <figure className="record-figure">
+            <FrameMarks />
+            <ItemGlyph record={record} size={190} tone={record.type === 'lost-media' ? 'ember' : 'acid'} />
+            <figcaption>FIG. 084 — {String(glyphLabel(record)).toUpperCase()}</figcaption>
+          </figure>
+
+          <aside className="record-aside">
+            <Panel title="FICHA DO REGISTRO" tone="acid">
+              <div className="ficha-rows">
+                <div><span>CÓDIGO</span><b>{record.code}</b></div>
+                <div><span>COLEÇÃO</span><b>{backTo.replace('/', '').toUpperCase()}</b></div>
+                <div><span>ANO</span><b>{yearOf(record)}</b></div>
+                <div><span>IDIOMA</span><b>{record.language || 'Idioma original'}</b></div>
+                <div><span>DIREITOS</span><b>{record.rightsNote ? 'Domínio público / livre' : 'Consultar fonte'}</b></div>
+              </div>
+            </Panel>
+
+            <Panel title="ACESSO" tone="ember" className="panel-access">
+              <ul className="system-list">
+                <li><UiIcon name={hasText ? 'book' : 'play'} size={20} /><div><strong>{hasText ? 'Leitor unificado' : 'Player de vídeo'}</strong><span>{hasText ? 'texto direto da fonte pública' : 'reprodução direto do acervo de origem'}</span></div></li>
+                <li><UiIcon name="lock" size={20} /><div><strong>Acesso público</strong><span>sem cadastro e sem download</span></div></li>
+                <li><UiIcon name="loop" size={20} /><div><strong>Progresso lembrado</strong><span>página e minutagem neste navegador</span></div></li>
+              </ul>
+            </Panel>
+          </aside>
+        </div>
+      </section>
+
+      <section className="prancha prancha-media">
+        <SectionMark>{hasText ? 'LEITOR / TEXTO ORIGINAL' : 'TRANSMISSÃO / CÓPIA DE ACERVO'}</SectionMark>
+
+        {record.media?.length > 1 && (
+          <label className="episode-select">ESCOLHER CAPÍTULO <select value={selected} onChange={e => setSelected(Number(e.target.value))}>{record.media.map((m, i) => <option value={i} key={m.path}>{m.title}</option>)}</select></label>
+        )}
+
+        {record.article && <article className="original-story"><h2>{record.type === 'lost-media' ? 'DOSSIÊ DE PRESERVAÇÃO' : 'FICÇÃO ORIGINAL // SYSTEM 84'}</h2>{record.article.map((p, i) => <p key={i}>{p}</p>)}{record.puzzle && <ArgPuzzle key={record.id} record={record} />}</article>}
+
+        {media ? media.kind === 'text' ? <Reader key={media.path} media={media} /> : <Player key={media.path} media={media} /> : !record.article && <p role="status">Arquivo ainda não disponível.</p>}
+
+        <details className="record-provenance"><summary>Sobre esta cópia e preservação</summary><p>{record.rightsNote}</p><p>{media?.license}</p>{record.sources?.map(source => <p key={source.url}><a href={source.url} target="_blank" rel="noreferrer">{source.title} ↗</a></p>)}</details>
+      </section>
+
+      <DossierFooter page={12} total={13} title={`${record.code} — ${record.title.toUpperCase()}`} />
+    </div>
+  </Layout>
 }
