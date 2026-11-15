@@ -23,6 +23,10 @@
     "canva:kit": "node scripts/build-catalogo-visual.mjs ."
   },
   "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/space-grotesk": "^5.3.0",
+    "@fontsource/syncopate": "^5.3.0",
+    "@fontsource/vt323": "^5.3.0",
     "@vitejs/plugin-react": "^5.0.4",
     "mysql2": "^3.24.6",
     "react": "^19.1.1",

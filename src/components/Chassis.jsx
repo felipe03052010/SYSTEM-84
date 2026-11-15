@@ -2,6 +2,8 @@ import { Link, useLocation } from 'react-router-dom'
 import { records } from '../data/records'
 import { playClick } from '../utils/audio'
 import '../styles/dossie.css'
+import { ICONS, glyphKey } from './glyphs'
+import { Monogram } from './Logo'
 
 /**
  * Chassi do dossiê visual.
@@ -117,10 +119,7 @@ export function DossierMasthead() {
   return (
     <div className="dossier-masthead">
       <Link to="/" className="brand-block" onClick={playClick} aria-label="SYSTEM 84 — página inicial">
-        <span className="brand-bracket" aria-hidden="true">
-          <span className="brand-grid" />
-          <span className="brand-digits">84</span>
-        </span>
+        <Monogram className="brand-monogram" />
         <span className="brand-rule" aria-hidden="true" />
         <span className="brand-name">
           <strong>SYSTEM 84</strong>
@@ -230,239 +229,27 @@ export function MetaPills({ items }) {
 
 /* ── Glifos dos itens: formas geométricas, marcas, pistas ──────────────── */
 
-const EYE = (
-  <>
-    <path d="M56 9 96 32v48L56 103 16 80V32Z" />
-    <ellipse cx="56" cy="54" rx="22" ry="11" />
-    <circle cx="56" cy="54" r="6" />
-    <path d="M56 70v16M50 86l6 6 6-6" />
-  </>
-)
-
-const BOLT = (
-  <>
-    <path d="M44 14h30v70H44Z" />
-    <path d="M44 50h30M56 14v70" />
-    <path d="M14 84h90M14 96h90" />
-    <path d="m64 20-12 34h12l-8 32 24-44H68Z" fill="var(--fig-paper)" stroke="none" />
-  </>
-)
-
-const FACE = (
-  <>
-    <path d="M36 22h44v62H36Z" />
-    <path d="M28 40h-8v22h8M88 40h8v22h-8" />
-    <path d="M30 40h-14M96 40H82M30 62h-14M96 62H82" />
-    <path d="M48 38h7M61 38h7" />
-    <path d="M56 74h10" />
-  </>
-)
-
-const HOOD = (
-  <>
-    <circle cx="56" cy="56" r="34" />
-    <path d="M56 6v14M56 92v14M6 56h14M92 56h14" />
-    <path d="M56 30c14 0 22 11 22 24v30H34V54c0-13 8-24 22-24Z" />
-    <path d="M44 56h7M61 56h7" />
-  </>
-)
-
-const BAT = (
-  <>
-    <path d="M56 20c-14 0-22 8-22 16 0 8 6 12 12 12 4 0 7-3 10-8 3 5 6 8 10 8 6 0 12-4 12-12 0-8-8-16-22-16Z" />
-    <path d="M24 18 40 34M88 18 72 34" />
-    <path d="M20 26c-8 6-10 20-6 34l14-8M92 26c8 6 10 20 6 34l-14-8" />
-    <circle cx="56" cy="24" r="4" fill="var(--fig-paper)" stroke="none" />
-  </>
-)
-
-const KEYHOLE = (
-  <>
-    <path d="M32 30v52h48V30Z" />
-    <path d="M32 82c0 16 10 24 24 24s24-8 24-24" />
-    <circle cx="56" cy="50" r="12" />
-    <path d="M56 62v14" />
-    <path d="M24 30h-8M96 30h-8" />
-  </>
-)
-
-const ROCKET = (
-  <>
-    <path d="M56 10c16 14 24 34 24 54v26H32V64c0-20 8-40 24-54Z" />
-    <circle cx="56" cy="52" r="10" />
-    <path d="M32 72 18 90l14-4M80 72l14 18-14-4" />
-    <path d="M48 94l8 12 8-12" />
-    <path d="M40 24c-8-6-14-10-20-10M72 24c8-6 14-10 20-10" />
-  </>
-)
-
-const DOSSIER = (
-  <>
-    <path d="M18 32h28l8 12h44v60H18Z" />
-    <path d="M12 46h28l8 12h44v60H12Z" />
-    <path d="M30 76h8M82 76h-8" />
-    <rect x="46" y="66" width="20" height="24" />
-    <path d="M52 76h8" />
-  </>
-)
-
-const EYE84 = (
-  <>
-    <path d="M14 56c14-18 28-26 42-26s28 8 42 26c-14 18-28 26-42 26S28 74 14 56Z" />
-    <circle cx="56" cy="56" r="14" />
-    <circle cx="56" cy="56" r="5" fill="var(--fig-ember)" stroke="none" />
-  </>
-)
-
-const LOCK = (
-  <>
-    <rect x="34" y="50" width="44" height="36" />
-    <path d="M42 50V38c0-16 28-16 28 0v12" />
-    <circle cx="56" cy="66" r="4" />
-    <path d="M56 70v8" />
-  </>
-)
-
-const WHALE = (
-  <>
-    <path d="M20 64c14-14 30-18 46-12l30-8-12 20 12 20-30-8c-16 6-32 2-46-12Z" />
-    <path d="M20 64h-8l6-6-6-6h8" />
-    <circle cx="40" cy="58" r="2.5" fill="var(--fig-paper)" stroke="none" />
-  </>
-)
-
-const PIPE = (
-  <>
-    <path d="M56 18c14 0 24 10 24 24 0 12-6 18-6 30v10H38V72c0-12-6-18-6-30 0-14 10-24 24-24Z" />
-    <path d="M38 82h36" />
-    <path d="M34 40h-8M78 40h8" />
-    <circle cx="48" cy="46" r="2.5" fill="var(--fig-paper)" stroke="none" />
-    <circle cx="64" cy="46" r="2.5" fill="var(--fig-paper)" stroke="none" />
-  </>
-)
-
-const MIRROR = (
-  <>
-    <rect x="28" y="14" width="56" height="72" />
-    <rect x="38" y="24" width="36" height="52" />
-    <path d="M38 76h36" />
-    <path d="M22 92h68M30 98h52" />
-  </>
-)
-
-const CLOCK = (
-  <>
-    <circle cx="56" cy="56" r="30" />
-    <path d="M56 34v22l16 10" />
-    <path d="M12 56h-6M106 56h-6" />
-    <ellipse cx="56" cy="56" rx="46" ry="12" />
-  </>
-)
-
-const CROWN = (
-  <>
-    <path d="M30 78h52" />
-    <path d="M34 78V44M78 78V44" />
-    <path d="M30 44h52" />
-    <path d="M22 36c8-6 14-6 22 0M68 36c8-6 14-6 22 0" />
-    <path d="M56 30v-8" />
-  </>
-)
-
-const PIG = (
-  <>
-    <path d="M28 42h56v34H28Z" />
-    <path d="M34 42V26l14 12M78 42V26L64 38" />
-    <circle cx="44" cy="58" r="3" fill="var(--fig-paper)" stroke="none" />
-    <circle cx="68" cy="58" r="3" fill="var(--fig-paper)" stroke="none" />
-    <path d="M50 68h12" />
-  </>
-)
-
-const SKULL = (
-  <>
-    <path d="M26 52c0-20 14-32 30-32s30 12 30 32v18l-10 6v14H36V76l-10-6Z" />
-    <circle cx="44" cy="54" r="5" />
-    <circle cx="68" cy="54" r="5" />
-    <path d="M50 74h12M48 82h16" />
-  </>
-)
-
-const TOOLBOX = (
-  <>
-    <rect x="22" y="42" width="68" height="34" />
-    <path d="M22 54h68" />
-    <rect x="46" y="18" width="20" height="14" />
-    <path d="M34 42V30h44v12" />
-    <circle cx="36" cy="76" r="4" />
-    <circle cx="76" cy="76" r="4" />
-  </>
-)
-
-const TELESCOPE = (
-  <>
-    <path d="M26 66 74 22l16 14-44 44Z" />
-    <path d="M42 78 34 96M64 56l14 18M46 44l10 10" />
-    <path d="M78 18l10 10" />
-  </>
-)
-
-const SPIRAL = (
-  <>
-    <path d="M56 26c16 0 30 13 30 30S72 86 56 86 26 73 26 56s13-30 30-30" />
-    <path d="M56 40c9 0 16 7 16 16s-7 16-16 16-16-7-16-16" />
-    <circle cx="56" cy="56" r="4" fill="var(--fig-paper)" stroke="none" />
-    <path d="M56 14v8M56 90v8M14 56h8M90 56h8" />
-  </>
-)
-
-const GLYPHS = [
-  { match: /nosferatu|vampyr|orlok|drakula/i, id: 'rosto-olho', svg: EYE },
-  { match: /dr[aá]cula|drakula|vampira|vampir/i, id: 'morcego', svg: BAT },
-  { match: /metropolis|m[eé]tropole|metropole/i, id: 'raio-grade', svg: BOLT },
-  { match: /frankenstein|golem|mons?tro de? frankenstein/i, id: 'rosto-parafuso', svg: FACE },
-  { match: /phantom|fantasma|capuz|creeps/i, id: 'capuz', svg: HOOD },
-  { match: /alice|maravilhas|espelho|atrav[eé]s/i, id: 'fechadura', svg: KEYHOLE },
-  { match: /flash gordon|foguete|raio|vespa/i, id: 'foguete', svg: ROCKET },
-  { match: /lost|perdid|dossi[eê]|fragment/i, id: 'pasta', svg: DOSSIER },
-  { match: /1984|trevas|orwell|vigia/i, id: 'olho', svg: EYE84 },
-  { match: /m[eé]dico|jekyll|hyde|invis[ií]vel|moreau|ilha/i, id: 'cadeado', svg: LOCK },
-  { match: /moby|baleia|nemo|submarin|odisseia|ilha do tesouro/i, id: 'baleia', svg: WHALE },
-  { match: /sherlock|holmes|pipa|detetive|corvo|casa de usher/i, id: 'cachimbo', svg: PIPE },
-  { match: /dorian|retrato|orgulho|preconceito|jane|eyre|northanger|raz[aã]o|persuas[aã]o|emma|casmurro|br[aá]s/i, id: 'espelho-moldura', svg: MIRROR },
-  { match: /m[aá]quina do tempo|tempo|rel[oó]gio/i, id: 'relogio', svg: CLOCK },
-  { match: /pr[ií]ncipe|medita|odisseia|guerra e paz|dante|divina/i, id: 'coroa', svg: CROWN },
-  { match: /bichos|revolu[cç][aã]o dos|fazenda/i, id: 'porco', svg: PIG },
-  { match: /dickens|conto de nadal|contos|grimm|papa(i|i) noel|oz/i, id: 'caixa', svg: TOOLBOX },
-  { match: /marte|guerra dos mundos|princesa/i, id: 'telescopio', svg: TELESCOPE },
-  { match: /ulysses|volta do parafuso|morro dos ventos/i, id: 'espiral', svg: SPIRAL },
-  { match: /caligari|convention|ap[oó]stolo|garota de fogo|mountain eagle|white shadow|manoir|humpty|rodela|roda da fortuna/i, id: 'caveira', svg: SKULL },
-]
-
 export function glyphFor(record) {
-  const title = record?.title || ''
-  return GLYPHS.find((glyph) => glyph.match.test(title)) || { id: 'grade', svg: DOSSIER }
+  return { id: glyphKey(record) }
 }
 
 /** Ícone geométrico da obra, no sistem tipo de 112×112 do dossiê. */
 export function ItemGlyph({ record, size = 96, tone = 'acid' }) {
-  const glyph = glyphFor(record)
+  const key = glyphKey(record)
   return (
     <svg
-      className={`item-glyph tone-${tone}`}
+      className={`item-glyph ig tone-${tone}`}
       viewBox="0 0 112 112"
       width={size}
       height={size}
       fill="none"
-      stroke="currentColor"
-      strokeWidth="2.4"
+      strokeWidth="2.6"
       strokeLinejoin="miter"
       strokeLinecap="square"
       aria-hidden="true"
-      data-glyph={glyph.id}
-    >
-      {glyph.svg}
-    </svg>
+      data-glyph={key}
+      dangerouslySetInnerHTML={{ __html: ICONS[key] }}
+    />
   )
 }
 

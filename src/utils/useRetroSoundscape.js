@@ -29,7 +29,6 @@ export default function useRetroSoundscape() {
       if (now - lastClick < 55) return
       lastClick = now
       if (target.closest(INTERACTIVE)) uiClick()
-      else keyClack()
     }
 
     function onKeyDown(event) {

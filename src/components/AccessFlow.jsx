@@ -3,6 +3,7 @@ import { useLocation, Navigate } from 'react-router-dom'
 import { useAuth } from '../utils/auth'
 import { createBootAudio } from '../utils/bootAudio'
 import { soundEnabled, setSoundEnabled } from '../utils/audio'
+import { Monogram } from './Logo'
 
 const messages = [
   'SYSTEM 84 / MEMORY BIOS v2.84',
@@ -53,7 +54,7 @@ export function PcBoot({ onComplete }) {
   useEffect(() => { if (started && line>1) audio.current?.tick(line) },[line,started])
   useEffect(() => () => { audio.current?.stop() },[])
   return <main className="pc-boot" aria-label="Inicialização do computador">
-    <header><span className="bios-symbol">▦</span><div>ENERGY STAR COMPLIANT<br/><strong>SYSTEM 84 BIOS</strong></div><span className="bios-revision">REV. 02.84<br/>CMOS / POST</span></header>
+    <header><Monogram className="bios-mono" /><div>ENERGY STAR COMPLIANT<br/><strong>SYSTEM 84 BIOS</strong></div><span className="bios-revision">REV. 02.84<br/>CMOS / POST</span></header>
     <div className="bios-log" aria-live="polite">{messages.slice(0,line).map((message,i) => <p key={i}>{message}</p>)}<span className="bios-cursor">_</span></div>
     <div className="bios-bottom"><label htmlFor="bios-progress">BOOT SEQUENCE <span>{Math.round(line/messages.length*100)}%</span></label><progress id="bios-progress" max={messages.length} value={line}/><div className="bios-audio-controls">{!started ? <><button className="bios-power" onClick={() => begin(true)}>LIGAR COM SOM ▶</button><button onClick={() => begin(false)}>Iniciar sem som</button></> : <button className="bios-sound" aria-pressed={audible} onClick={() => begin(!audible)}>{audible ? 'Silenciar inicialização' : 'Ativar som'}</button>}<button onClick={finish}>Pular inicialização</button></div>{audioNotice && <p className="bios-audio-notice" role="status">{audioNotice}</p>}</div>
     <footer>{started ? 'Press ENTER to skip memory test' : 'Press ENTER to power on'}<span>84-001-CRT-MEMORY-SYSTEM</span></footer>

@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
-import { useEffect } from 'react'
 import RouteTransition from './components/RouteTransition'
-import { playClick } from './utils/audio'
+import CrtFilter from './components/CrtFilter'
+import useRetroSoundscape from './utils/useRetroSoundscape'
 import { AuthProvider } from './utils/auth'
 
 import Home from './pages/Station'
@@ -18,18 +18,11 @@ import Comunidade from './pages/Comunidade'
 import AdminFinanceiro from './pages/AdminFinanceiro'
 
 export default function App() {
-  useEffect(() => {
-    const click = event => {
-      const target = event.target
-      if (target && typeof target.closest === 'function' && target.closest('button:not(:disabled), a, summary, select')) playClick()
-    }
-    document.addEventListener('click', click)
-    return () => document.removeEventListener('click', click)
-  }, [])
+  useRetroSoundscape()
 
   return (
     <AuthProvider>
-      <div className="crt-overlay" aria-hidden="true" />
+      <CrtFilter />
 
       <AccessFlow renderEntrance={onEnter => <Entrance onEnter={onEnter}/>}><RouteTransition><Routes>
         <Route path="/" element={<Home />} />

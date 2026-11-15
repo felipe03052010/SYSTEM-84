@@ -8,7 +8,7 @@
  * Cada função é segura: se o navegador bloquear o áudio ou o som estiver
  * desligado, ela simplesmente não faz nada.
  */
-import { soundEnabled } from './audio'
+import { soundEnabled } from './audio.js'
 
 let context = null
 let master = null
@@ -22,8 +22,24 @@ function ensure() {
       if (!AudioCtx) return null
       context = new AudioCtx()
       master = context.createGain()
-      master.gain.value = 0.5
-      master.connect(context.destination)
+      master.gain.value = 0.55
+      // Alto-falante de gabinete: corta agudos e satura de leve.
+      const speaker = context.createBiquadFilter()
+      speaker.type = 'lowpass'
+      speaker.frequency.value = 7200
+      speaker.Q.value = 0.7
+      const body = context.createBiquadFilter()
+      body.type = 'peaking'
+      body.frequency.value = 1800
+      body.gain.value = 3
+      const drive = context.createWaveShaper()
+      const curve = new Float32Array(512)
+      for (let i = 0; i < 512; i += 1) { const x = i / 255.5 - 1; curve[i] = Math.tanh(x * 1.6) / Math.tanh(1.6) }
+      drive.curve = curve
+      master.connect(body)
+      body.connect(speaker)
+      speaker.connect(drive)
+      drive.connect(context.destination)
     }
     if (context.state === 'suspended') context.resume().catch(() => {})
     return context
@@ -66,7 +82,7 @@ function tone(ctx, { from, to = from, type = 'square', gain = 0.05, attack = 0.0
   return osc
 }
 
-function burst(ctx, { gain = 0.04, decay = 0.14, delay = 0, highpass = 800, lowpass = 6000 }) {
+function burst(ctx, { gain = 0.04, decay = 0.14, delay = 0, highpass = 800, lowpass = 6000, q = 0.7 }) {
   const start = ctx.currentTime + delay
   const src = noise(ctx)
   const hp = ctx.createBiquadFilter()
@@ -76,6 +92,7 @@ function burst(ctx, { gain = 0.04, decay = 0.14, delay = 0, highpass = 800, lowp
   hp.frequency.value = highpass
   lp.type = 'lowpass'
   lp.frequency.value = lowpass
+  lp.Q.value = q
   amp.gain.setValueAtTime(gain, start)
   amp.gain.exponentialRampToValueAtTime(0.0001, start + decay)
   src.connect(hp)
@@ -94,42 +111,73 @@ function burst(ctx, { gain = 0.04, decay = 0.14, delay = 0, highpass = 800, lowp
 
 /* ───────────────────────── teclado e mouse ───────────────────────── */
 
-/** Tecla de teclado mecânico de 8 bits. */
+const last = {}
+function throttle(name, ms) {
+  const now = performance.now()
+  if (now - (last[name] || 0) < ms) return true
+  last[name] = now
+  return false
+}
+const jitter = (value, amount) => value * (1 + (Math.random() * 2 - 1) * amount)
+
+/** Tecla de teclado mecânico (Model M): estalo da mola + batida da tecla no fundo. */
 export function keyClack() {
   const ctx = ensure()
-  if (!ctx) return
-  burst(ctx, { gain: 0.05, decay: 0.035, highpass: 1600, lowpass: 9000 })
-  tone(ctx, { from: 180, to: 120, type: 'square', gain: 0.03, decay: 0.03 })
+  if (!ctx || throttle('key', 28)) return
+  burst(ctx, { gain: jitter(0.09, 0.25), decay: 0.012, highpass: 2600, lowpass: jitter(5200, 0.15), q: 4 })
+  burst(ctx, { gain: jitter(0.05, 0.2), decay: 0.028, delay: 0.014, highpass: 400, lowpass: 2200, q: 1.2 })
+  tone(ctx, { from: jitter(190, 0.12), to: 90, type: 'sine', gain: 0.05, attack: 0.002, decay: 0.045, delay: 0.012 })
 }
 
-/** Clique curto de menu de terminal. */
+/** Clique de mouse de bolinha: micro-chave descendo e voltando. */
 export function uiClick() {
   const ctx = ensure()
-  if (!ctx) return
-  tone(ctx, { from: 880, to: 660, type: 'square', gain: 0.035, decay: 0.05 })
+  if (!ctx || throttle('click', 70)) return
+  burst(ctx, { gain: 0.08, decay: 0.008, highpass: 3200, lowpass: 9000, q: 3 })
+  burst(ctx, { gain: 0.04, decay: 0.008, delay: 0.055, highpass: 3600, lowpass: 9000, q: 3 })
+  tone(ctx, { from: 1046, to: 880, type: 'square', gain: 0.018, attack: 0.002, decay: 0.035, delay: 0.004 })
 }
 
-/** Confirmação: dois bipes ascendentes. */
+/** Confirmação: dois bipes de alto-falante de PC. */
 export function uiConfirm() {
   const ctx = ensure()
   if (!ctx) return
-  tone(ctx, { from: 660, type: 'square', gain: 0.04, decay: 0.06 })
-  tone(ctx, { from: 990, type: 'square', gain: 0.04, decay: 0.08, delay: 0.07 })
+  tone(ctx, { from: 784, type: 'square', gain: 0.035, decay: 0.06 })
+  tone(ctx, { from: 1175, type: 'square', gain: 0.035, decay: 0.09, delay: 0.075 })
 }
 
-/** Erro: buzz descendente curto. */
+/** Erro: buzz grave do alto-falante interno. */
 export function uiError() {
   const ctx = ensure()
   if (!ctx) return
-  tone(ctx, { from: 220, to: 90, type: 'sawtooth', gain: 0.055, decay: 0.22 })
+  tone(ctx, { from: 220, to: 110, type: 'sawtooth', gain: 0.05, decay: 0.24 })
   burst(ctx, { gain: 0.02, decay: 0.1, highpass: 300, lowpass: 1400 })
 }
 
-/** Hover sobre item de diretório. */
+/** Hover: blip curtíssimo de 8 bits. */
 export function uiHover() {
   const ctx = ensure()
+  if (!ctx || throttle('hover', 120)) return
+  tone(ctx, { from: 1568, to: 2093, type: 'triangle', gain: 0.01, attack: 0.002, decay: 0.025 })
+}
+
+/** Tubo ligando: estalo do relé, desmagnetização (degauss) e o chiado agudo do flyback. */
+export function crtPowerOn() {
+  const ctx = ensure()
   if (!ctx) return
-  tone(ctx, { from: 1320, type: 'triangle', gain: 0.012, decay: 0.03 })
+  burst(ctx, { gain: 0.08, decay: 0.04, highpass: 200, lowpass: 3000 })
+  tone(ctx, { from: 60, to: 48, type: 'sawtooth', gain: 0.06, attack: 0.01, decay: 0.7, delay: 0.03 })
+  tone(ctx, { from: 120, to: 90, type: 'sine', gain: 0.05, attack: 0.01, decay: 0.6, delay: 0.03 })
+  burst(ctx, { gain: 0.03, decay: 0.5, delay: 0.05, highpass: 900, lowpass: 4000 })
+  tone(ctx, { from: 7800, to: 7600, type: 'sine', gain: 0.004, attack: 0.08, decay: 0.9, delay: 0.1 })
+}
+
+/** Tubo desligando: o "zip" descendente do feixe colapsando. */
+export function crtPowerOff() {
+  const ctx = ensure()
+  if (!ctx) return
+  tone(ctx, { from: 2400, to: 80, type: 'sine', gain: 0.03, decay: 0.32 })
+  burst(ctx, { gain: 0.04, decay: 0.06, highpass: 300, lowpass: 2500 })
 }
 
 /* ───────────────────────── navegação e carregamento ───────────────────────── */

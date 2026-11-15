@@ -1,7 +1,6 @@
+import { uiClick, keyClack } from './retro-sounds.js'
 let audioContext = null
 let enabled = true
-let lastClick = 0
-let lastTyping = 0
 try { enabled = localStorage.getItem('system84-sound') !== 'off' } catch { /* Optional preference. */ }
 export const soundEnabled = () => enabled
 export function setSoundEnabled(value) {
@@ -54,19 +53,9 @@ export function beep(
   oscillator.onended = () => { oscillator.disconnect(); gain.disconnect() }
 }
 
-export function playClick() {
-  const now = performance.now()
-  if (now - lastClick < 60) return
-  lastClick = now
-  beep(600, 0.035, 0.012)
-}
+export function playClick() { uiClick() }
 
-export function playTyping() {
-  const now = performance.now()
-  if (now - lastTyping < 30) return
-  lastTyping = now
-  beep(420 + Math.random() * 120, 0.02, 0.006)
-}
+export function playTyping() { keyClack() }
 
 export function playStartup() {
   beep(110, 0.12, 0.03)
