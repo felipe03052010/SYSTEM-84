@@ -18,7 +18,9 @@
     "start:access": "node --env-file=server/.env.local server/index.mjs",
     "build:paid": "node scripts/build-paid.mjs",
     "build:pages": "node scripts/build-pages.mjs",
-    "build:hosted": "node scripts/build-hosted.mjs"
+    "build:hosted": "node scripts/build-hosted.mjs",
+    "split:pdf": "node scripts/split-pdf.mjs",
+    "canva:kit": "node scripts/build-catalogo-visual.mjs ."
   },
   "dependencies": {
     "@vitejs/plugin-react": "^5.0.4",
