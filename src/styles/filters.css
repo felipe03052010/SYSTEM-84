@@ -243,3 +243,98 @@
     animation: none;
   }
 }
+
+/* ───────────────────────── modo sinal extremo ───────────────────────── */
+
+.archive-browser.display-extremo {
+  --tint: rgba(255, 120, 60, 0.24);
+  filter: saturate(2.6) contrast(1.45) brightness(0.98) hue-rotate(-6deg);
+}
+
+.archive-browser.display-extremo .records-grid {
+  text-shadow:
+    -2px 0 rgba(255, 40, 80, 0.7),
+    2px 0 rgba(40, 230, 255, 0.6),
+    0 0 10px rgba(255, 140, 60, 0.45);
+}
+
+/* ───────────────────────── efeitos extremos ───────────────────────── */
+
+/* Sangramento de cor: aberração cromática nas bordas */
+.archive-browser.fx-bleed .records-grid {
+  filter: drop-shadow(3px 0 0 rgba(255, 40, 80, 0.55)) drop-shadow(-3px 0 0 rgba(40, 230, 255, 0.5));
+}
+
+.archive-browser.fx-bleed::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  border-radius: inherit;
+  box-shadow:
+    inset 10px 0 40px -14px rgba(255, 40, 80, 0.65),
+    inset -10px 0 40px -14px rgba(40, 230, 255, 0.6);
+}
+
+/* Rasgo de síncronia: uma faixa que desliza e desalinha */
+.archive-browser.fx-tear .records-grid {
+  animation: syncTear 4.4s steps(1, end) infinite;
+}
+
+@keyframes syncTear {
+  0%, 88%, 100% { transform: none; }
+  89% { transform: translateX(-6px) skewX(-1.2deg); }
+  90% { transform: translateX(5px) skewX(1deg); }
+  91% { transform: none; }
+  96% { transform: translateX(3px); }
+  97% { transform: none; }
+}
+
+/* Persiana: máscara horizontal grossa, mais dura que as scanlines */
+.archive-browser.fx-venetian::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  border-radius: inherit;
+  background: repeating-linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0 6px, transparent 6px 13px);
+}
+
+/* Extrema com tudo ligado: tubo a ponto de queimar */
+.archive-browser.display-extremo.fx-scan.fx-curvature.fx-noise.fx-flicker {
+  filter: saturate(3.1) contrast(1.6) brightness(0.94) hue-rotate(-10deg);
+  animation: extremePulse 2.4s steps(3, end) infinite;
+}
+
+@keyframes extremePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.004); }
+}
+
+/* Botão do filtro extra forte */
+.filter-chips button.boost-filter {
+  border-color: var(--fig-ember, #ff6332);
+  color: var(--fig-ember, #ff6332);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.filter-chips button.boost-filter:hover {
+  background: rgba(255, 99, 50, 0.14);
+}
+
+.filter-chips button.boost-filter.is-active {
+  background: var(--fig-ember, #ff6332);
+  border-color: var(--fig-ember, #ff6332);
+  color: var(--fig-void, #090d0b);
+  box-shadow: 0 0 22px -4px rgba(255, 99, 50, 0.9);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .archive-browser.fx-tear .records-grid,
+  .archive-browser.display-extremo.fx-scan.fx-curvature.fx-noise.fx-flicker {
+    animation: none;
+  }
+}

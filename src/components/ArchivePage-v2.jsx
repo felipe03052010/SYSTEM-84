@@ -3,7 +3,7 @@ import Layout from './Layout'
 import RecordCard from './RecordCard'
 import { records } from '../data/records'
 import { playTyping, playClick } from '../utils/audio'
-import { uiConfirm } from '../utils/retro-sounds'
+import { uiConfirm, diskError } from '../utils/retro-sounds'
 import '../styles/archive.css'
 import '../styles/filters.css'
 
@@ -17,13 +17,19 @@ const DISPLAY_MODES = [
   { id: 'ambar', label: 'ÂMBAR', hint: 'monitor P3' },
   { id: 'papel', label: 'PAPEL', hint: 'impressora matricial' },
   { id: 'vhs', label: 'VHS', hint: 'fita gasta' },
+  { id: 'extremo', label: 'SINAL EXTREMO', hint: 'tubo queimado, síncronia perdida' },
 ]
 
+const EXTREME_EFFECTS = ['scan', 'curvature', 'noise', 'flicker', 'bleed', 'tear', 'venetian']
+const DEFAULT_EFFECTS = ['scan', 'curvature']
 const SCREEN_EFFECTS = [
   { id: 'scan', label: 'SCANLINES' },
   { id: 'curvature', label: 'CURVATURA' },
   { id: 'noise', label: 'RUÍDO' },
   { id: 'flicker', label: 'CINTILAÇÃO' },
+  { id: 'bleed', label: 'SANGRAMENTO DE COR' },
+  { id: 'tear', label: 'RASGO DE SÍNCRONIA' },
+  { id: 'venetian', label: 'PERSIANA' },
 ]
 
 function normalize(value) {
@@ -45,8 +51,9 @@ export default function ArchivePage({ type, title, directory, command, descripti
   const [decade, setDecade] = useState('all')
   const [sort, setSort] = useState('year')
   const [display, setDisplay] = useState('fosforo')
-  const [effects, setEffects] = useState(['scan', 'curvature'])
+  const [effects, setEffects] = useState(DEFAULT_EFFECTS)
   const [onlyOpen, setOnlyOpen] = useState(false)
+  const [extreme, setExtreme] = useState(false)
 
   const all = useMemo(() => records.filter((record) => record.type === type), [type])
 
@@ -79,6 +86,16 @@ export default function ArchivePage({ type, title, directory, command, descripti
     setEffects((current) => (current.includes(id) ? current.filter((item) => item !== id) : [...current, id]))
   }
 
+  /* Botão de filtro extra forte: liga tudo de uma vez, no modo mais agressivo. */
+  function boostFilters() {
+    const next = !extreme
+    if (next) diskError()
+    else uiConfirm()
+    setExtreme(next)
+    setDisplay(next ? 'extremo' : 'fosforo')
+    setEffects(next ? EXTREME_EFFECTS : DEFAULT_EFFECTS)
+  }
+
   function resetFilters() {
     uiConfirm()
     setQuery('')
@@ -87,7 +104,7 @@ export default function ArchivePage({ type, title, directory, command, descripti
     setSort('year')
     setOnlyOpen(false)
     setDisplay('fosforo')
-    setEffects(['scan', 'curvature'])
+    setEffects(DEFAULT_EFFECTS)
   }
 
   const activeFilters = [query && 'busca', period !== 'all' && 'período', decade !== 'all' && 'década', onlyOpen && 'só disponíveis'].filter(Boolean)
@@ -219,6 +236,15 @@ export default function ArchivePage({ type, title, directory, command, descripti
                 aria-pressed={onlyOpen}
               >
                 SÓ DISPONÍVEIS
+              </button>
+              <button
+                type="button"
+                className={`boost-filter ${extreme ? 'is-active' : ''}`}
+                onClick={boostFilters}
+                aria-pressed={extreme}
+                title="Liga todos os efeitos de tubo queimado de uma vez"
+              >
+                ⚡ FILTRO EXTRA FORTE
               </button>
               <button type="button" onClick={resetFilters}>RESET</button>
             </div>
