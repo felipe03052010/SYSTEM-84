@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
+  <rect width="1000" height="1000" fill="#101813"/>
+  <defs>
+    <pattern id="rings" width="30" height="30" patternUnits="userSpaceOnUse">
+      <circle cx="15" cy="15" r="14.5" fill="none" stroke="#A8FF60" stroke-opacity="0.35" stroke-width="1"/>
+    </pattern>
+    <clipPath id="disc"><circle cx="500" cy="400" r="250"/></clipPath>
+  </defs>
+  <g clip-path="url(#disc)">
+    <rect x="250" y="150" width="500" height="500" fill="url(#rings)"/>
+  </g>
+  <path d="M250 400 A250 250 0 0 1 750 400" fill="none" stroke="#FF6332" stroke-width="9"/>
+  <circle cx="500" cy="400" r="250" fill="none" stroke="#A8FF60" stroke-width="2"/>
+  <rect x="690" y="232" width="19" height="19" fill="#FF6332"/>
+  <text x="80" y="80" font-family="'IBM Plex Mono', monospace" font-size="20" letter-spacing="3" fill="#A8FF60">CAPA / SYSTEM 84</text>
+  <text x="920" y="80" text-anchor="end" font-family="'IBM Plex Mono', monospace" font-size="20" letter-spacing="3" fill="#A8FF60">FIG. 138</text>
+  <text x="80" y="560" font-family="'Syncopate', 'Space Grotesk', sans-serif" font-weight="700" font-size="54" letter-spacing="1" fill="#EBEDDF"><tspan x="80" dy="0">O CORVO E</tspan><tspan x="80" dy="62">OUTROS POEMAS</tspan></text>
+  <text x="80" y="900" font-family="'IBM Plex Mono', monospace" font-size="22" letter-spacing="3" fill="#A8FF60">LIVRO / 1845</text>
+  <text x="920" y="900" text-anchor="end" font-family="'IBM Plex Mono', monospace" font-size="22" letter-spacing="3" fill="#9CAA9D">BOOK_1845_138</text>
+  <line x1="80" y1="860" x2="920" y2="860" stroke="#344638" stroke-width="1"/>
+</svg>
