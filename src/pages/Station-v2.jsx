@@ -29,7 +29,7 @@ const directories = [
 const count = (type) => records.filter((record) => record.type === type).length
 const total = records.length
 
-export default function StationV2() {
+function StationV2() {
   const [query, setQuery] = useState('')
   const [active, setActive] = useState('main')
   const navigate = useNavigate()
@@ -215,3 +215,5 @@ export default function StationV2() {
     </Layout>
   )
 }
+
+export default StationV2

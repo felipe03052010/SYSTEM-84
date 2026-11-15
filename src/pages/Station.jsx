@@ -35,4 +35,4 @@ function StationLegacy() {
   </Layout>
 }
 
-export { default } from './Station-v2.jsx'
+export { default } from './Station-figma.jsx'
