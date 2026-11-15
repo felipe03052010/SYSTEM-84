@@ -16,7 +16,9 @@ import { existsSync } from 'node:fs'
 import { join, basename } from 'node:path'
 
 const root = process.argv[2] || '.'
-const shotsDir = join(root, 'work/site-capture/clean')
+/* Capturas em escala reduzida (0,72×): o PDF sai menor sem reamostrar nem
+   recomprimir nada — o que entra é exatamente o PNG que o navegador gravou. */
+const shotsDir = process.argv[3] ? join(root, process.argv[3]) : join(root, 'work/site-capture/canva')
 const out = join(root, 'canva/system84-catalogo-visual.html')
 
 if (!existsSync(shotsDir)) {
