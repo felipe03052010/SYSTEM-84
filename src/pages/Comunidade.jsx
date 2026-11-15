@@ -30,7 +30,7 @@ const INITIAL_POSTS = [
   }
 ]
 
-export default function Comunidade() {
+function ComunidadeLegacy() {
   const { currentUser } = useAuth()
   const [posts, setPosts] = useState(() => {
     try {
@@ -149,3 +149,5 @@ export default function Comunidade() {
     </Layout>
   )
 }
+
+export { default } from './Comunidade-v2.jsx'

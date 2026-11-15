@@ -11,6 +11,20 @@ function localMedia(path) {
   return `${import.meta.env.BASE_URL}${path}`
 }
 
+/**
+ * Mídia que não está empacotada no site (fichas de expansão) é lida direto
+ * da fonte pública em https. Só endereços https são aceitos.
+ */
+function mediaSource(media) {
+  if (media.remoteUrl) return media.remoteUrl
+  if (media.sourceUrl && media.sourceUrl.startsWith('https://')) return media.sourceUrl
+  return localMedia(media.path)
+}
+
+function isExternal(media) {
+  return Boolean(media.remoteUrl) || Boolean(media.sourceUrl && media.sourceUrl.startsWith('https://'))
+}
+
 function Reader({ media }) {
   const [text, setText] = useState('')
   const [error, setError] = useState(false)
@@ -22,7 +36,7 @@ function Reader({ media }) {
     const controller = new AbortController()
     setText(''); setError(false)
     try { setPage(Number(localStorage.getItem(`sys84-page:${media.path}`)) || 0) } catch { setPage(0) }
-    fetch(localMedia(media.path), { signal: controller.signal })
+    fetch(mediaSource(media), { signal: controller.signal })
       .then(r => { if (!r.ok) throw new Error(); return r.text() })
       .then(t => { if (/^\s*<!doctype html/i.test(t)) throw new Error(); setText(t) })
       .catch(e => { if (e.name !== 'AbortError') setError(true) })
@@ -68,8 +82,8 @@ function Player({ media }) {
     try { localStorage.setItem(`sys84-video:${media.path}`, String(video.current.currentTime)) } catch { /* Optional progress. */ }
   }
   return <section className="video-player" aria-label="Player de vídeo">
-    <video ref={video} controls playsInline preload="none" src={media.remoteUrl || localMedia(media.path)} onLoadedMetadata={restore} onPause={save} onEnded={save} onError={() => setFailed(true)} />
-    {media.remoteUrl && <p>Reprodução direta do acervo de origem · requer conexão.</p>}
+    <video ref={video} controls playsInline preload="none" src={mediaSource(media)} onLoadedMetadata={restore} onPause={save} onEnded={save} onError={() => setFailed(true)} />
+    {isExternal(media) && <p>Reprodução direta do acervo de origem · requer conexão.</p>}
     {failed && <p role="alert">O vídeo não pôde ser carregado. <button onClick={() => { setFailed(false); video.current.load() }}>Tentar novamente</button></p>}
     <p>{media.title} · {media.language || 'Idioma original'}{media.silent ? ' · Filme mudo, sem trilha adicionada' : ''}</p>
   </section>

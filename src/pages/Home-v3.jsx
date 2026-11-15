@@ -263,7 +263,7 @@ export default function Home() {
               </button>
             ))}
 
-            <form className="wall-console" onSubmit={search}>
+            <form className="wall-console station-directories" onSubmit={search}>
               <label htmlFor="homeSearch">&gt; pesquisar no arquivo</label>
 
               <div className="wall-console-row">

@@ -11,7 +11,7 @@ const channels = [
   { title: 'Comunidade', path: '/comunidade', note: 'Toda memória precisa de alguém.', mark: '⌘' },
 ]
 
-export default function Station() {
+function StationLegacy() {
   const [query, setQuery] = useState('')
   const navigate = useNavigate()
 
@@ -34,3 +34,5 @@ export default function Station() {
     <section className="station-transmission"><span>02 / FREQUÊNCIA PERDIDA</span><div><h2>Você também<br />se lembra disso?</h2><p>Uma cena. Um ruído. Uma fita sem nome.<br />Investigue as histórias por trás dos arquivos perdidos.</p><Link to="/lost-media">SINTONIZAR LOST MEDIA ↗</Link></div><span className="transmission-orb" aria-hidden="true">◎</span></section>
   </Layout>
 }
+
+export { default } from './Station-v2.jsx'

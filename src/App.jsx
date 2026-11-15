@@ -19,7 +19,10 @@ import AdminFinanceiro from './pages/AdminFinanceiro'
 
 export default function App() {
   useEffect(() => {
-    const click = event => { if (event.target.closest('button:not(:disabled), a, summary, select')) playClick() }
+    const click = event => {
+      const target = event.target
+      if (target && typeof target.closest === 'function' && target.closest('button:not(:disabled), a, summary, select')) playClick()
+    }
     document.addEventListener('click', click)
     return () => document.removeEventListener('click', click)
   }, [])

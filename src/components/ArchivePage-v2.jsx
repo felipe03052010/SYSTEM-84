@@ -3,7 +3,32 @@ import Layout from './Layout'
 import RecordCard from './RecordCard'
 import { records } from '../data/records'
 import { playTyping, playClick } from '../utils/audio'
+import { uiConfirm } from '../utils/retro-sounds'
 import '../styles/archive.css'
+import '../styles/filters.css'
+
+/**
+ * Diretório com filtros de computador antigo: além de busca e período, o
+ * usuário pode pedir uma "correção" do sinal (fósforo, âmbar, papel de
+ * jornal, VHS) e ligar efeitos de tela que existiam nos monitores reais.
+ */
+const DISPLAY_MODES = [
+  { id: 'fosforo', label: 'FÓSFORO VERDE', hint: 'monitor P1' },
+  { id: 'ambar', label: 'ÂMBAR', hint: 'monitor P3' },
+  { id: 'papel', label: 'PAPEL', hint: 'impressora matricial' },
+  { id: 'vhs', label: 'VHS', hint: 'fita gasta' },
+]
+
+const SCREEN_EFFECTS = [
+  { id: 'scan', label: 'SCANLINES' },
+  { id: 'curvature', label: 'CURVATURA' },
+  { id: 'noise', label: 'RUÍDO' },
+  { id: 'flicker', label: 'CINTILAÇÃO' },
+]
+
+function normalize(value) {
+  return value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
+}
 
 function matchesPeriod(year, period) {
   if (period === 'all') return true
@@ -14,36 +39,58 @@ function matchesPeriod(year, period) {
   return true
 }
 
-export default function ArchivePage({
-  type,
-  title,
-  directory,
-  command,
-  description,
-}) {
+export default function ArchivePage({ type, title, directory, command, description }) {
   const [query, setQuery] = useState('')
   const [period, setPeriod] = useState('all')
+  const [decade, setDecade] = useState('all')
+  const [sort, setSort] = useState('year')
+  const [display, setDisplay] = useState('fosforo')
+  const [effects, setEffects] = useState(['scan', 'curvature'])
+  const [onlyOpen, setOnlyOpen] = useState(false)
+
+  const all = useMemo(() => records.filter((record) => record.type === type), [type])
+
+  const decades = useMemo(() => {
+    const set = new Set()
+    all.forEach((record) => {
+      if (record.year > 1000) set.add(Math.floor(record.year / 10) * 10)
+    })
+    return [...set].sort((a, b) => a - b)
+  }, [all])
 
   const filtered = useMemo(() => {
-    return records.filter((record) => {
-      if (record.type !== type) return false
-
-      const text = [
-        record.title,
-        record.author || '',
-        record.description,
-        record.tags.join(' '),
-        String(record.year),
-      ]
-        .join(' ')
-        .normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()
-
-      return (
-        text.includes(query.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase()) &&
-        matchesPeriod(record.year, period)
+    const needle = normalize(query)
+    const result = all.filter((record) => {
+      const text = normalize(
+        [record.title, record.author || '', record.description, record.tags.join(' '), String(record.year)].join(' '),
       )
+      const decadeOk = decade === 'all' || (record.year >= Number(decade) && record.year < Number(decade) + 10)
+      const openOk = !onlyOpen || record.availability === 'available'
+      return text.includes(needle) && matchesPeriod(record.year, period) && decadeOk && openOk
     })
-  }, [query, period, type])
+
+    if (sort === 'year') return result.sort((a, b) => a.year - b.year)
+    if (sort === 'recent') return result.sort((a, b) => b.year - a.year)
+    return result.sort((a, b) => a.title.localeCompare(b.title, 'pt-BR'))
+  }, [all, query, period, decade, sort, onlyOpen])
+
+  function toggleEffect(id) {
+    playClick()
+    setEffects((current) => (current.includes(id) ? current.filter((item) => item !== id) : [...current, id]))
+  }
+
+  function resetFilters() {
+    uiConfirm()
+    setQuery('')
+    setPeriod('all')
+    setDecade('all')
+    setSort('year')
+    setOnlyOpen(false)
+    setDisplay('fosforo')
+    setEffects(['scan', 'curvature'])
+  }
+
+  const activeFilters = [query && 'busca', period !== 'all' && 'período', decade !== 'all' && 'década', onlyOpen && 'só disponíveis'].filter(Boolean)
 
   return (
     <Layout>
@@ -62,12 +109,12 @@ export default function ArchivePage({
           <span>Status do diretório</span>
           <strong>ONLINE</strong>
           <p>Indexação: ativa</p>
-          <p>Acesso: público</p>
+          <p>Registros: {all.length}</p>
           <p>Protocolo: SYS84</p>
         </aside>
       </section>
 
-      <section className="archive-browser">
+      <section className={`archive-browser display-${display} ${effects.map((id) => `fx-${id}`).join(' ')}`}>
         <div className="filter-bar">
           <div>
             <label htmlFor={`${type}-query`}>&gt; Filtrar diretório</label>
@@ -88,10 +135,7 @@ export default function ArchivePage({
             <select
               id={`${type}-period`}
               value={period}
-              onChange={(event) => {
-                setPeriod(event.target.value)
-                playClick()
-              }}
+              onChange={(event) => { setPeriod(event.target.value); playClick() }}
             >
               <option value="all">TODOS</option>
               <option value="1800">1800–1899</option>
@@ -100,12 +144,95 @@ export default function ArchivePage({
               <option value="2000">2000+</option>
             </select>
           </div>
+
+          <div>
+            <label htmlFor={`${type}-decade`}>Década</label>
+            <select
+              id={`${type}-decade`}
+              value={decade}
+              onChange={(event) => { setDecade(event.target.value); playClick() }}
+            >
+              <option value="all">TODAS</option>
+              {decades.map((item) => (
+                <option key={item} value={item}>{item}</option>
+              ))}
+            </select>
+          </div>
+
+          <div>
+            <label htmlFor={`${type}-sort`}>Ordem</label>
+            <select
+              id={`${type}-sort`}
+              value={sort}
+              onChange={(event) => { setSort(event.target.value); playClick() }}
+            >
+              <option value="year">MAIS ANTIGO</option>
+              <option value="recent">MAIS RECENTE</option>
+              <option value="title">TÍTULO A–Z</option>
+            </select>
+          </div>
+        </div>
+
+        <div className="filter-console">
+          <div className="filter-console-group">
+            <span className="filter-console-label">MODO DE VÍDEO</span>
+            <div className="filter-chips">
+              {DISPLAY_MODES.map((mode) => (
+                <button
+                  key={mode.id}
+                  type="button"
+                  className={display === mode.id ? 'is-active' : ''}
+                  onClick={() => { setDisplay(mode.id); playClick() }}
+                  aria-pressed={display === mode.id}
+                  title={mode.hint}
+                >
+                  {mode.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="filter-console-group">
+            <span className="filter-console-label">EFEITOS DE TELA</span>
+            <div className="filter-chips">
+              {SCREEN_EFFECTS.map((effect) => (
+                <button
+                  key={effect.id}
+                  type="button"
+                  className={effects.includes(effect.id) ? 'is-active' : ''}
+                  onClick={() => toggleEffect(effect.id)}
+                  aria-pressed={effects.includes(effect.id)}
+                >
+                  {effect.label}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="filter-console-group">
+            <span className="filter-console-label">ACESSO</span>
+            <div className="filter-chips">
+              <button
+                type="button"
+                className={onlyOpen ? 'is-active' : ''}
+                onClick={() => { setOnlyOpen((value) => !value); playClick() }}
+                aria-pressed={onlyOpen}
+              >
+                SÓ DISPONÍVEIS
+              </button>
+              <button type="button" onClick={resetFilters}>RESET</button>
+            </div>
+          </div>
         </div>
 
         <div className="result-line">
           <span>{filtered.length} registro(s) encontrado(s)</span>
           <span>Diretório: /{type.toUpperCase()}</span>
         </div>
+
+        {activeFilters.length > 0 && (
+          <p className="filter-active-line">&gt; filtros ativos: {activeFilters.join(' · ')}</p>
+        )}
 
         {filtered.length > 0 ? (
           <div className="records-grid">
@@ -114,9 +241,7 @@ export default function ArchivePage({
             ))}
           </div>
         ) : (
-          <p className="empty-state">
-            &gt; NENHUM REGISTRO FOI ENCONTRADO.
-          </p>
+          <p className="empty-state">&gt; NENHUM REGISTRO FOI ENCONTRADO.</p>
         )}
       </section>
     </Layout>
