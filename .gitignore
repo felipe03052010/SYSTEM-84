@@ -23,3 +23,7 @@ Thumbs.db
 *.swp
 server/data/
 public/images/crt-monitor.png
+
+# Cloudflare Wrangler — artefatos e segredos locais
+.wrangler/
+.dev.vars*

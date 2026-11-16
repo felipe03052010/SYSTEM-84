@@ -87,3 +87,7 @@ Validações: `npm test`, `npm run test:access`, `npm run check`, `npm run build
 O monitor foi criado com ImageGen a partir de um briefing de fotografia frontal de CRT bege envelhecido; a imagem enviada pelo usuário foi referência estética. As fontes são Space Grotesk e IBM Plex Mono. Os formulários e o logotipo permanecem nativos do site.
 
 Atualização visual: as imagens e carcaças de computadores foram retiradas da interface. O tema global agora simula a própria tela CRT, com fósforo verde, tipografia monoespaçada, linhas de varredura estáticas e vinheta discreta. A BIOS mantém os sons de inicialização.
+
+## Cloudflare Free — frontend + backend
+
+A configuração alternativa para Cloudflare Workers Static Assets + D1 está em [docs/cloudflare-free.md](docs/cloudflare-free.md). O deploy exige criar o banco D1 na conta Cloudflare, preencher seu ID em `wrangler.jsonc`, executar as migrações e cadastrar secrets. A hospedagem atual permanece inalterada até a migração ser verificada.
