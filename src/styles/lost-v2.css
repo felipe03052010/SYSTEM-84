@@ -1,0 +1,389 @@
+@import "./theme.css";
+
+/* ==========================================================================
+   SYSTEM 84 — dossiês de lost media e página de registro
+   ========================================================================== */
+
+.lost-page {
+  background:
+    radial-gradient(ellipse 60% 40% at 10% 0%, rgba(255, 59, 78, 0.12), transparent 60%),
+    transparent;
+}
+
+.lost-hero {
+  width: min(1240px, 92%);
+  margin: clamp(36px, 6vw, 68px) auto clamp(48px, 7vw, 84px);
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 32px;
+  align-items: end;
+}
+
+.lost-warning {
+  grid-column: 1 / -1;
+  padding: 10px 14px;
+  color: var(--alarm-soft);
+  border: 1px solid var(--line-alarm);
+  border-radius: 4px;
+  background: rgba(40, 8, 12, 0.6);
+  font-family: var(--font-pixel);
+  font-size: 0.52rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.lost-hero h1 {
+  margin: 12px 0 20px;
+  color: var(--alarm-soft);
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 9vw, 6rem);
+  font-weight: 800;
+  line-height: 0.86;
+  letter-spacing: -0.05em;
+  text-shadow: 0 0 50px rgba(255, 59, 78, 0.45);
+}
+
+.lost-hero > div > p {
+  max-width: 70ch;
+  color: #c9a7a9;
+  font-size: 0.94rem;
+  line-height: 1.75;
+}
+
+.legal-note {
+  margin-top: 16px;
+  padding-left: 12px;
+  border-left: 2px solid var(--amber);
+  color: #d8b483 !important;
+  font-size: 0.78rem;
+}
+
+.recovery-monitor {
+  padding: 20px;
+  color: #d99aa0;
+  border: 1px solid var(--line-alarm);
+  border-radius: var(--radius-m);
+  background:
+    repeating-linear-gradient(180deg, rgba(255, 59, 78, 0.06) 0 1px, transparent 1px 4px),
+    rgba(24, 6, 9, 0.72);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  line-height: 1.7;
+}
+
+.recovery-monitor > div:first-child {
+  margin: -20px -20px 16px;
+  padding: 9px 12px;
+  color: #1a0407;
+  background: var(--alarm-soft);
+  font-family: var(--font-pixel);
+  font-size: 0.5rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.recovery-monitor p {
+  margin-bottom: 6px;
+}
+
+.signal-meter {
+  height: 14px;
+  margin: 18px 0 8px;
+  padding: 3px;
+  border: 1px solid var(--line-alarm);
+  border-radius: 2px;
+}
+
+.signal-meter span {
+  display: block;
+  width: 64%;
+  height: 100%;
+  background: var(--alarm);
+  box-shadow: 0 0 16px rgba(255, 59, 78, 0.8);
+  animation: signal 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes signal {
+  from { width: 28%; opacity: 0.6; }
+  to { width: 82%; opacity: 1; }
+}
+
+.lost-status,
+.case-section {
+  padding: clamp(40px, 6vw, 68px) clamp(16px, 5vw, 68px);
+}
+
+.status-grid {
+  width: min(1240px, 100%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.status-grid article {
+  min-height: 210px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  background: linear-gradient(170deg, rgba(10, 28, 34, 0.85), rgba(3, 10, 13, 0.95));
+}
+
+.status-grid article > span {
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.status-grid h3 {
+  margin: 16px 0 10px;
+  color: var(--phosphor);
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.status-grid p {
+  color: var(--text-dim);
+  font-size: 0.76rem;
+  line-height: 1.65;
+}
+
+.status-grid .danger h3 { color: var(--alarm-soft); }
+.status-grid .amber h3 { color: var(--amber); }
+.status-grid .success h3 { color: var(--phosphor-soft); }
+
+.case-list {
+  width: min(1240px, 100%);
+  margin: auto;
+  border-top: 1px solid var(--line-alarm);
+}
+
+.case-list article {
+  display: grid;
+  grid-template-columns: 170px 1fr auto;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 59, 78, 0.24);
+}
+
+.case-list article > span {
+  color: var(--alarm-soft);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.1em;
+}
+
+.case-list strong {
+  color: var(--text);
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.case-list p {
+  margin-top: 4px;
+  color: var(--text-dim);
+  font-size: 0.76rem;
+}
+
+.case-list button {
+  padding: 9px 14px;
+  color: var(--alarm-soft);
+  border: 1px solid var(--line-alarm);
+  border-radius: 4px;
+  background: rgba(255, 59, 78, 0.08);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.case-list button:hover {
+  color: #1a0407;
+  background: var(--alarm-soft);
+}
+
+/* --------------------------------------------------------------------------
+   Página de registro
+   -------------------------------------------------------------------------- */
+
+.record-detail {
+  max-width: 1100px;
+  margin: auto;
+  padding: clamp(28px, 5vw, 52px) clamp(16px, 5vw, 40px) clamp(56px, 8vw, 90px);
+}
+
+.back-link {
+  color: var(--phosphor);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.record-heading {
+  margin: 24px 0 30px;
+}
+
+.record-heading h1 {
+  margin: 10px 0;
+  color: var(--text);
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.1rem, 5.6vw, 3.8rem);
+  line-height: 0.98;
+  letter-spacing: -0.04em;
+}
+
+.record-heading p {
+  max-width: 72ch;
+  color: var(--text-dim);
+  font-size: 0.94rem;
+  line-height: 1.75;
+}
+
+.record-detail button,
+.record-detail select {
+  padding: 9px 12px;
+  color: var(--phosphor-soft);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: rgba(4, 14, 18, 0.9);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+}
+
+.record-detail button:hover {
+  color: var(--on-accent);
+  background: var(--phosphor);
+}
+
+.record-detail button:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.episode-select {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 22px 0;
+}
+
+.video-player video {
+  display: block;
+  width: 100%;
+  max-height: 75vh;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  background: #000;
+  box-shadow: 0 0 60px -30px rgba(125, 255, 196, 0.6);
+}
+
+.video-player p {
+  margin: 10px 0;
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+
+.book-reader {
+  scroll-margin-top: 90px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+
+.reader-tools,
+.reader-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+  background: rgba(4, 14, 18, 0.9);
+}
+
+.reader-tools {
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+}
+
+.book-paper {
+  min-height: 440px;
+  padding: clamp(20px, 5vw, 60px);
+  color: #1b241e;
+  background: #e8e3d3;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.85;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.reader-note {
+  padding: 12px;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+}
+
+.record-provenance {
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.record-provenance summary {
+  cursor: pointer;
+  color: var(--amber);
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.record-provenance p {
+  margin-top: 8px;
+}
+
+.recovery-note {
+  margin-bottom: 20px;
+  color: var(--amber);
+}
+
+.record-tags span {
+  color: var(--phosphor-dim);
+}
+
+@media (max-width: 1050px) {
+  .lost-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .status-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .status-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .case-list article {
+    grid-template-columns: 1fr;
+  }
+}

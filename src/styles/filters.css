@@ -1,0 +1,340 @@
+/* ==========================================================================
+   SYSTEM 84 — filtros de computador antigo (versão forte)
+   Modos de vídeo e efeitos de tela em intensidade alta: o diretório inteiro
+   passa a parecer visto através do vidro de um monitor velho.
+   ========================================================================== */
+
+.filter-console {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(12px, 2vw, 24px);
+  margin: 0 0 18px;
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  background: rgba(5, 16, 21, 0.85);
+}
+
+.filter-console-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.filter-console-label {
+  color: var(--phosphor-dim);
+  font-family: var(--font-pixel-title);
+  font-size: 0.5rem;
+  letter-spacing: 0.16em;
+}
+
+.filter-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.filter-chips button {
+  padding: 6px 10px;
+  border: 1px solid var(--line);
+  border-radius: 2px;
+  background: rgba(1, 6, 4, 0.8);
+  color: var(--text-dim);
+  font-family: var(--font-pixel-title);
+  font-size: 0.46rem;
+  letter-spacing: 0.1em;
+  transition: color 0.18s, border-color 0.18s, background 0.18s, box-shadow 0.18s;
+}
+
+.filter-chips button:hover {
+  color: var(--text);
+  border-color: var(--line-strong);
+}
+
+.filter-chips button.is-active {
+  color: var(--on-accent, #02110c);
+  border-color: var(--phosphor);
+  background: var(--phosphor);
+  box-shadow: 0 0 14px -2px rgba(125, 255, 196, 0.7);
+}
+
+.filter-active-line {
+  margin: 0 0 14px;
+  color: var(--amber);
+  font-family: var(--font-pixel-data);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+}
+
+/* --------------------------------------------------------------------------
+   O diretório como tela de CRT
+   -------------------------------------------------------------------------- */
+
+.archive-browser {
+  position: relative;
+  isolation: isolate;
+  border-radius: 10px;
+  padding: clamp(14px, 2vw, 26px);
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(125, 255, 196, 0.05), transparent 70%),
+    #020806;
+  box-shadow:
+    inset 0 0 0 2px rgba(0, 0, 0, 0.9),
+    inset 0 0 90px -20px rgba(0, 0, 0, 0.95);
+  transition: filter 0.25s ease, background 0.25s ease;
+}
+
+/* Brilho do fósforo atrás de tudo */
+.archive-browser::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(ellipse 70% 60% at 50% 45%, var(--tint, rgba(125, 255, 196, 0.08)), transparent 72%);
+}
+
+/* ───────────────────────── modos de vídeo ───────────────────────── */
+
+.archive-browser.display-fosforo {
+  --tint: rgba(125, 255, 196, 0.16);
+  filter: saturate(1.45) contrast(1.14) brightness(1.06);
+}
+
+.archive-browser.display-fosforo .records-grid {
+  text-shadow: 0 0 8px rgba(125, 255, 196, 0.4);
+}
+
+.archive-browser.display-ambar {
+  --tint: rgba(255, 180, 84, 0.2);
+  filter: sepia(0.85) hue-rotate(-20deg) saturate(2.1) contrast(1.18) brightness(1.05);
+}
+
+.archive-browser.display-ambar .records-grid {
+  text-shadow: 0 0 8px rgba(255, 180, 84, 0.45);
+}
+
+.archive-browser.display-papel {
+  --tint: rgba(240, 236, 220, 0.16);
+  filter: grayscale(1) contrast(1.6) brightness(1.18);
+}
+
+.archive-browser.display-papel .records-grid {
+  text-shadow: none;
+}
+
+.archive-browser.display-vhs {
+  --tint: rgba(255, 70, 110, 0.18);
+  filter: saturate(2.1) contrast(1.22) hue-rotate(-8deg) brightness(1.04);
+}
+
+.archive-browser.display-vhs .records-grid {
+  text-shadow:
+    -1px 0 rgba(255, 60, 90, 0.55),
+    1px 0 rgba(60, 220, 255, 0.45);
+}
+
+/* Faixa de tracking do VHS correndo pela tela */
+.archive-browser.display-vhs::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 26px;
+  z-index: 4;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.14), transparent);
+  animation: vhsTracking 6.5s linear infinite;
+}
+
+@keyframes vhsTracking {
+  from { top: -30px; }
+  to { top: 100%; }
+}
+
+/* ───────────────────────── efeitos de tela ───────────────────────── */
+
+/* Scanlines: linhas escuras bem visíveis + máscara RGB do fósforo */
+.archive-browser.fx-scan .records-grid,
+.archive-browser.fx-scan .filter-bar,
+.archive-browser.fx-scan .filter-console,
+.archive-browser.fx-scan .result-line {
+  position: relative;
+}
+
+.archive-browser.fx-scan::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  border-radius: inherit;
+  background:
+    repeating-linear-gradient(180deg, rgba(0, 0, 0, 0.42) 0 1px, transparent 1px 3px),
+    repeating-linear-gradient(90deg, rgba(255, 0, 60, 0.05) 0 1px, rgba(0, 255, 120, 0.05) 1px 2px, rgba(0, 90, 255, 0.05) 2px 3px);
+  mix-blend-mode: multiply;
+}
+
+/* Curvatura: cantos escuros fortes, como vidro grosso */
+.archive-browser.fx-curvature {
+  box-shadow:
+    inset 0 0 0 2px rgba(0, 0, 0, 0.9),
+    inset 0 0 120px 10px rgba(0, 0, 0, 0.85),
+    inset 0 0 240px 20px rgba(0, 0, 0, 0.55),
+    0 0 80px -30px var(--tint, rgba(125, 255, 196, 0.5));
+}
+
+.archive-browser.fx-curvature::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  border-radius: inherit;
+  background:
+    radial-gradient(ellipse 64% 60% at 50% 46%, transparent 55%, rgba(0, 0, 0, 0.72) 100%),
+    linear-gradient(115deg, rgba(255, 255, 255, 0.06) 0%, transparent 30%, transparent 72%, rgba(255, 255, 255, 0.04) 100%);
+}
+
+/* Ruído: granulação de fita gasta */
+.archive-browser.fx-noise .records-grid {
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-blend-mode: overlay;
+}
+
+.archive-browser.fx-noise {
+  animation: noiseJitter 0.42s steps(3, end) infinite;
+}
+
+@keyframes noiseJitter {
+  0%, 100% { background-position: 0 0; }
+  33% { background-position: 2px -2px; }
+  66% { background-position: -2px 1px; }
+}
+
+/* Cintilação: o tubo tremendo */
+.archive-browser.fx-flicker {
+  animation: crtFlicker 3.2s steps(2, end) infinite;
+}
+
+@keyframes crtFlicker {
+  0%, 90%, 100% { opacity: 1; }
+  91% { opacity: 0.88; }
+  92% { opacity: 1; }
+  94% { opacity: 0.92; }
+  95% { opacity: 1; }
+  97% { opacity: 0.9; }
+}
+
+/* Quando tudo está ligado, o conjunto fica bem mais agressivo */
+.archive-browser.display-ambar.fx-scan.fx-curvature.fx-noise.fx-flicker,
+.archive-browser.display-vhs.fx-scan.fx-curvature.fx-noise.fx-flicker {
+  filter: saturate(1.9) contrast(1.3) brightness(1.02);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .archive-browser.fx-flicker,
+  .archive-browser.fx-noise,
+  .archive-browser.display-vhs::after {
+    animation: none;
+  }
+}
+
+/* ───────────────────────── modo sinal extremo ───────────────────────── */
+
+.archive-browser.display-extremo {
+  --tint: rgba(255, 120, 60, 0.24);
+  filter: saturate(2.6) contrast(1.45) brightness(0.98) hue-rotate(-6deg);
+}
+
+.archive-browser.display-extremo .records-grid {
+  text-shadow:
+    -2px 0 rgba(255, 40, 80, 0.7),
+    2px 0 rgba(40, 230, 255, 0.6),
+    0 0 10px rgba(255, 140, 60, 0.45);
+}
+
+/* ───────────────────────── efeitos extremos ───────────────────────── */
+
+/* Sangramento de cor: aberração cromática nas bordas */
+.archive-browser.fx-bleed .records-grid {
+  filter: drop-shadow(3px 0 0 rgba(255, 40, 80, 0.55)) drop-shadow(-3px 0 0 rgba(40, 230, 255, 0.5));
+}
+
+.archive-browser.fx-bleed::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  border-radius: inherit;
+  box-shadow:
+    inset 10px 0 40px -14px rgba(255, 40, 80, 0.65),
+    inset -10px 0 40px -14px rgba(40, 230, 255, 0.6);
+}
+
+/* Rasgo de síncronia: uma faixa que desliza e desalinha */
+.archive-browser.fx-tear .records-grid {
+  animation: syncTear 4.4s steps(1, end) infinite;
+}
+
+@keyframes syncTear {
+  0%, 88%, 100% { transform: none; }
+  89% { transform: translateX(-6px) skewX(-1.2deg); }
+  90% { transform: translateX(5px) skewX(1deg); }
+  91% { transform: none; }
+  96% { transform: translateX(3px); }
+  97% { transform: none; }
+}
+
+/* Persiana: máscara horizontal grossa, mais dura que as scanlines */
+.archive-browser.fx-venetian::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  pointer-events: none;
+  border-radius: inherit;
+  background: repeating-linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0 6px, transparent 6px 13px);
+}
+
+/* Extrema com tudo ligado: tubo a ponto de queimar */
+.archive-browser.display-extremo.fx-scan.fx-curvature.fx-noise.fx-flicker {
+  filter: saturate(3.1) contrast(1.6) brightness(0.94) hue-rotate(-10deg);
+  animation: extremePulse 2.4s steps(3, end) infinite;
+}
+
+@keyframes extremePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.004); }
+}
+
+/* Botão do filtro extra forte */
+.filter-chips button.boost-filter {
+  border-color: var(--fig-ember, #ff6332);
+  color: var(--fig-ember, #ff6332);
+  font-weight: 600;
+  letter-spacing: 0.12em;
+}
+
+.filter-chips button.boost-filter:hover {
+  background: rgba(255, 99, 50, 0.14);
+}
+
+.filter-chips button.boost-filter.is-active {
+  background: var(--fig-ember, #ff6332);
+  border-color: var(--fig-ember, #ff6332);
+  color: var(--fig-void, #090d0b);
+  box-shadow: 0 0 22px -4px rgba(255, 99, 50, 0.9);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .archive-browser.fx-tear .records-grid,
+  .archive-browser.display-extremo.fx-scan.fx-curvature.fx-noise.fx-flicker {
+    animation: none;
+  }
+}

@@ -1,0 +1,231 @@
+/* ==========================================================================
+   SYSTEM 84 / DOSSIÊ VISUAL — LAYOUT UNIFICADO
+   Última camada de estilo. Fonte: 13 pranchas do dossiê do projeto.
+   A interface não usa cartões arredondados, sombras, vidros ou gradientes.
+   Mantém as funcionalidades e o tema editorial de todas as rotas.
+   ========================================================================== */
+:root {
+  --fig-void:#090d0b;
+  --fig-panel:#101813;
+  --fig-paper:#ebeddf;
+  --fig-acid:#a8ff60;
+  --fig-ember:#ff6332;
+  --fig-muted:#9caa9d;
+  --fig-line:#344638;
+  --page:#090d0b;
+  --background:#090d0b;
+  --background-light:#101813;
+  --panel:#101813;
+  --panel-card:#101813;
+  --panel-raised:#101813;
+  --text:#ebeddf;
+  --text-dim:#9caa9d;
+  --text-faint:#9caa9d;
+  --green:#a8ff60;
+  --green-bright:#a8ff60;
+  --green-dark:#344638;
+  --phosphor:#a8ff60;
+  --phosphor-soft:#ebeddf;
+  --amber:#ff6332;
+  --gold:#ff6332;
+  --muted:#9caa9d;
+  --line:#344638;
+  --line-strong:#5f7964;
+  --on-accent:#090d0b;
+  --radius-s:0;
+  --radius-m:0;
+  --radius-l:0;
+  --font-display:"Syncopate",sans-serif;
+  --font-body:"Space Grotesk",sans-serif;
+  --font-mono:"IBM Plex Mono",monospace;
+  --font-terminal:var(--font-mono);
+  --font-pixel-title:var(--font-display);
+  --font-pixel-data:var(--font-mono);
+}
+html,body,#root,.site-shell,.entrance-page {background:#090d0b !important;color:var(--fig-paper)}
+html {scroll-behavior:smooth}
+body {margin:0;font-family:var(--font-body);font-size:14px;background-image:none !important}
+body::before,body::after,.site-shell::before {display:none !important;content:none !important}
+.crt-overlay {display:none !important}
+*,*::before,*::after {box-sizing:border-box}
+img,iframe,video,svg {max-width:100%}
+button,input,textarea,select {border-radius:0 !important;font-family:var(--font-mono)}
+button, a { -webkit-tap-highlight-color:transparent }
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible {outline:2px solid var(--fig-ember);outline-offset:3px}
+h1,h2,h3,h4 {color:var(--fig-paper);text-shadow:none !important;font-family:var(--font-display);font-weight:700;letter-spacing:.012em;overflow-wrap:anywhere}
+p,li {overflow-wrap:anywhere}
+.dossie-page,.dossier-frame,.station-page,.dossie-page main {background:var(--fig-void) !important}
+.dossier-frame {max-width:1560px;width:100%;margin:auto;padding:18px clamp(18px,3.05vw,46px) 0;min-width:0}
+.prancha {border-bottom:1px solid rgba(235,237,223,.19);padding:clamp(25px,2.6vw,39px) 0}
+.dossier-masthead {border-color:rgba(235,237,223,.19);align-items:center;flex-wrap:wrap;gap:18px}
+.brand-name strong {font-family:var(--font-body);color:var(--fig-paper)}
+.dossier-mark {font:600 11px var(--font-mono);letter-spacing:.11em;color:var(--fig-acid);text-transform:uppercase}
+.dossier-panel,.record-card,.item-card,.recent-card,.theme-card,.signal-card,.dossier-browser,.notes-item,.dossier-compose,.dossier-post {border-radius:0 !important;box-shadow:none !important}
+.dossier-panel,.record-card,.item-card,.recent-card,.theme-card,.signal-card,.notes-item {background:transparent !important;background-image:none !important}
+.dossier-panel,.record-card,.item-card,.recent-card,.theme-card {border-color:rgba(235,237,223,.22)}
+.dossier-panel .panel-head {font-family:var(--font-mono);letter-spacing:.12em}
+.item-card .item-title,.record-card .rc-title,.daily-card strong {font-family:var(--font-display);letter-spacing:.012em;line-height:1.33;overflow-wrap:anywhere}
+.item-glyph {color:var(--fig-acid)}
+.item-glyph.tone-ember {color:var(--fig-ember)}
+.item-card:hover,.record-card:hover,.recent-card:hover,.theme-card:hover {border-color:var(--fig-acid);box-shadow:none !important;filter:none !important}
+.fig-btn,.terminal-action,.fig-link,.monitor-submit {border-radius:0 !important;box-shadow:none !important;text-transform:uppercase;font:700 11px var(--font-mono);letter-spacing:.08em}
+.fig-btn-primary,.monitor-submit {background:var(--fig-acid) !important;border:1px solid var(--fig-acid) !important;color:var(--fig-void) !important}
+.fig-btn-secondary,.fig-link,.terminal-action {background:transparent !important;border:1px solid var(--fig-line);color:var(--fig-acid) !important}
+.fig-btn:hover,.monitor-submit:not(:disabled):hover,.terminal-action:hover {border-color:var(--fig-paper) !important}
+.fig-btn-secondary:hover,.terminal-action:hover {color:var(--fig-paper) !important}
+.fig-btn:disabled,.monitor-submit:disabled {opacity:.55;cursor:not-allowed}
+.rc-new,.plan-flag {background:var(--fig-ember);color:var(--fig-void)}
+.glitch-title {text-shadow:none !important;filter:none !important}
+.glitch-title::before,.glitch-title::after {display:none !important}
+.prancha h1,.collection-copy h1,.record-copy h1,.search-copy h1 {font-size:clamp(34px,5.15vw,78px);line-height:1.08;max-width:100%}
+.hero-copy h1 {font-size:clamp(34px,5.15vw,78px)}
+.hero-lead,.collection-copy .hero-lead,.record-copy .hero-lead {font-family:var(--font-body);color:var(--fig-muted);line-height:1.68}
+.daily-art,.fig-lost,.fig-community,.fig-console,.recent-card,.theme-card,.signal-card,.status-counters,.panel-daily,.station-transmission,.dossier-browser {background-color:var(--fig-void) !important;background-image:none !important;box-shadow:none !important}
+.daily-art {border:1px solid var(--fig-line)}
+.category-tape.station-directories {background:var(--fig-acid) !important;border:0}
+.category-tape.station-directories a {color:var(--fig-void) !important;letter-spacing:.06em}
+.category-tape.station-directories a:hover {color:var(--fig-void) !important;text-decoration:underline}
+.dossier-counters .counter-cell,.status-counters div {background:transparent !important}
+.reader-tools,.reader-controls,.reader-find,.episode-select {min-width:0;max-width:100%}
+.reader-find input {min-width:0}
+.book-paper {background:#e9e7d8 !important;color:#1b241e !important;text-shadow:none;font-family:Georgia,serif;box-shadow:none !important;border-radius:0}
+.video-player video {background:#000;border:1px solid var(--fig-line)}
+.media-loading,.media-error {background:var(--fig-panel);border:1px solid var(--fig-line)}
+/* Um menu utilitário discreto acima da folha editorial: sem segunda marca. */
+.site-shell>.main-header {max-width:1560px;width:100%;margin:0 auto;background:var(--fig-void) !important;box-shadow:none !important;border-bottom:1px solid var(--fig-line);padding:10px clamp(18px,3.05vw,46px);min-height:52px;align-items:center}
+.site-shell>.main-header .logo {display:none}
+.main-header .main-navigation a {font:600 10px var(--font-mono);letter-spacing:.055em;text-transform:uppercase;color:var(--fig-muted);background:transparent}
+.main-header .main-navigation a.active {background:var(--fig-acid) !important;color:var(--fig-void) !important}
+.main-header .main-navigation a:hover {color:var(--fig-acid) !important}
+.main-header .main-navigation a.active:hover {color:var(--fig-void) !important}
+.main-header .menu-button {border:1px solid var(--fig-line);background:var(--fig-void);color:var(--fig-acid)}
+.main-header .header-tools {min-width:0}
+.site-shell>.main-footer {display:none}
+.dossier-footer {font-family:var(--font-mono);border-top:0;border-radius:0}
+.dossier-footer a {text-transform:uppercase}
+/* A sala de acesso também é uma prancha: sem computador fotográfico. */
+.entrance-page {max-width:1560px;margin:auto;min-height:100vh;background-image:none !important}
+.entrance-page .dossier-frame {padding-top:18px}
+.entrance-header {display:flex;align-items:center;justify-content:space-between;gap:18px;padding:0 0 14px;border-bottom:1px solid rgba(235,237,223,.19);background:transparent !important}
+.entrance-header>.dossier-masthead {flex:1;border:0;padding:0}
+.entrance-heading {width:100%;margin:0;padding:clamp(38px,5vw,76px) 0 34px;border-bottom:1px solid rgba(235,237,223,.19)}
+.entrance-heading h1 {font:700 clamp(38px,6vw,82px)/1.07 var(--font-display);letter-spacing:0;text-transform:uppercase;max-width:16ch}
+.entrance-heading h1 em {color:var(--fig-acid);font-style:normal}
+.entrance-heading>p {font:16px/1.6 var(--font-body);color:var(--fig-muted)}
+.entrance-page .station-kicker,.workbench-info .station-kicker {font:600 11px var(--font-mono);letter-spacing:.11em;color:var(--fig-acid)}
+.entrance-page .station-kicker::before {content:'■';color:var(--fig-acid);padding-right:8px;font-size:9px}
+.entrance-page .access-directory {width:100%;margin:0;padding-top:36px}
+.entrance-page .access-choices {grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;align-items:stretch}
+.entrance-page .access-choice {border:1px solid rgba(235,237,223,.24);background:transparent !important;color:var(--fig-paper);position:relative;min-width:0;transition:border-color .15s}
+.entrance-page .access-choice:hover,.entrance-page .access-choice.is-selected {border-color:var(--fig-acid);box-shadow:inset 3px 0 var(--fig-acid) !important}
+.entrance-page .terminal-panel {background:none}
+.entrance-page .access-choice .terminal-panel-content {padding:24px;min-height:220px}
+.entrance-page .monitor-channel {font:600 11px var(--font-mono);color:var(--fig-ember);letter-spacing:.14em}
+.entrance-page .terminal-panel-content>strong {font:700 clamp(16px,1.5vw,23px)/1.3 var(--font-display);color:var(--fig-paper);letter-spacing:0}
+.entrance-page .monitor-subtitle {font:14px/1.65 var(--font-body);color:var(--fig-muted)}
+.entrance-page .monitor-cta {font:600 10px var(--font-mono);color:var(--fig-acid);letter-spacing:.11em;border-top:1px solid var(--fig-line);margin-top:auto}
+.entrance-page .access-directory-caption {font:600 10px/1.6 var(--font-mono);color:var(--fig-muted);letter-spacing:.06em;border-color:var(--fig-line)}
+.entrance-page .access-workbench {width:100%;grid-template-columns:minmax(0,.72fr) minmax(0,1.28fr);gap:clamp(24px,4vw,60px);padding:36px 0;margin:0;border-bottom:1px solid rgba(235,237,223,.19)}
+.entrance-page .workbench-info h2 {font:700 clamp(26px,3vw,45px)/1.15 var(--font-display);letter-spacing:0;text-transform:uppercase}
+.entrance-page .workbench-info p {font:14px/1.75 var(--font-body);color:var(--fig-muted);max-width:48ch}
+.entrance-page .workbench-back {font:600 10px var(--font-mono);color:var(--fig-acid);border-color:var(--fig-line)}
+.entrance-page .access-form-panel {border:1px solid var(--fig-line);background:transparent !important}
+.entrance-page .access-form-panel::before {background:var(--fig-panel);color:var(--fig-ember);border-bottom:1px solid var(--fig-line);letter-spacing:.12em}
+.entrance-page .access-form-panel .terminal-panel-content {padding:24px}
+.entrance-page .monitor-form-heading {border-color:var(--fig-line)}
+.entrance-page .monitor-form-heading strong {font:700 clamp(16px,2vw,23px)/1.3 var(--font-display);letter-spacing:0}
+.entrance-page .monitor-form label {font:600 11px var(--font-mono);color:var(--fig-muted)}
+.entrance-page .monitor-form input,.entrance-page .pix-key-label input,.finance-content input {background:var(--fig-panel);border:1px solid var(--fig-line);color:var(--fig-paper);padding:12px;min-width:0}
+.entrance-page .monitor-form input::placeholder {color:var(--fig-muted)}
+.entrance-page .monitor-mode {font:600 11px var(--font-mono);color:var(--fig-acid);letter-spacing:.02em}
+.entrance-page .terminal-feedback {color:var(--fig-ember);font-size:12px}
+.entrance-page .entrance-footer {width:100%;padding:25px 0;margin:0;border-top:0;border-bottom:1px solid rgba(235,237,223,.19)}
+.entrance-page .entrance-footer button {background:transparent !important;border:1px solid var(--fig-acid) !important;color:var(--fig-acid) !important;box-shadow:none}
+/* Painel de administrador: fichas e tabelas retas, no mesmo papel. */
+.admin-dossier .archive-header {width:100%;margin:0;padding:38px 0 30px;border-bottom:1px solid var(--fig-line)}
+.admin-dossier .archive-header .directory {font:600 11px var(--font-mono);color:var(--fig-acid);letter-spacing:.12em}
+.admin-dossier .archive-header h1 {font:700 clamp(30px,5vw,70px)/1.08 var(--font-display);letter-spacing:0;margin:18px 0}
+.admin-dossier .archive-header p {font:15px/1.6 var(--font-body);color:var(--fig-muted)}
+.admin-dossier .finance-content {width:100%;max-width:100%;margin:0;padding:32px 0;border-bottom:1px solid var(--fig-line);min-width:0}
+.admin-dossier .finance-content h2 {font:700 clamp(18px,2.5vw,29px)/1.3 var(--font-display);color:var(--fig-paper)}
+.admin-dossier .finance-content>p {color:var(--fig-muted);line-height:1.65}
+.admin-dossier .finance-metrics {gap:12px}
+.admin-dossier .finance-metrics article,.admin-dossier .approval-list article {background:transparent;border:1px solid rgba(235,237,223,.22);border-radius:0;box-shadow:none}
+.admin-dossier .finance-metrics span {font:600 11px var(--font-mono);color:var(--fig-muted);letter-spacing:.08em}
+.admin-dossier .finance-metrics strong {font:700 clamp(23px,3vw,37px) var(--font-display);color:var(--fig-acid)}
+.admin-dossier .finance-table {max-width:100%;overflow-x:auto}
+.admin-dossier .finance-table th {font:600 10px var(--font-mono);color:var(--fig-acid);letter-spacing:.07em}
+.admin-dossier .finance-table td {font:13px/1.6 var(--font-body);color:var(--fig-paper)}
+.admin-dossier .finance-table th,.admin-dossier .finance-table td {border-color:var(--fig-line)}
+.admin-dossier .approval-list input {background:var(--fig-panel);border-color:var(--fig-line)}
+.admin-dossier .monitor-mode {color:var(--fig-ember)}
+/* Painel audiovisual. O iframe não altera os direitos dos criadores. */
+.youtube-embed {margin:20px 0 4px;color:var(--fig-paper)}
+.youtube-viewport {position:relative;width:100%;aspect-ratio:16/9;border:1px solid var(--fig-acid);background:#000;overflow:hidden}
+.youtube-viewport iframe {display:block;width:100%;height:100%;border:0}
+.youtube-standby {display:flex;flex-direction:column;justify-content:center;align-items:center;gap:clamp(6px,1.2vw,14px);width:100%;height:100%;min-height:180px;padding:14px;text-align:center;background:var(--fig-void)}
+.youtube-label {font:600 clamp(10px,1vw,13px) var(--font-mono);letter-spacing:.13em;color:var(--fig-ember)}
+.youtube-orbit {font:400 clamp(30px,4vw,60px) var(--font-mono);color:var(--fig-acid);line-height:1}
+.youtube-standby strong {font:700 clamp(12px,2vw,25px)/1.3 var(--font-display);color:var(--fig-paper);max-width:95%}
+.youtube-standby>span:not(.youtube-label):not(.youtube-orbit) {font:14px/1.5 var(--font-body);color:var(--fig-muted)}
+.youtube-standby button {border:1px solid var(--fig-acid);background:var(--fig-acid);color:var(--fig-void);padding:10px 18px;font:700 11px var(--font-mono);cursor:pointer}
+.youtube-standby button:hover {background:var(--fig-paper);border-color:var(--fig-paper)}
+.youtube-standby small {color:var(--fig-muted);font:11px var(--font-mono)}
+.youtube-credit {display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding:12px 0;border-bottom:1px solid var(--fig-line);font:600 11px var(--font-mono)}
+.youtube-credit span {color:var(--fig-ember)}
+.youtube-credit a {color:var(--fig-acid);text-decoration:underline;text-underline-offset:3px}
+.youtube-disclaimer {font:12px/1.6 var(--font-body);color:var(--fig-muted);margin:10px 0 22px}
+/* Falhas de layout para telas pequenas: todos os grids encolhem antes de transbordar. */
+.dossier-frame,.hero-grid,.collection-grid,.search-grid,.record-grid,.community-grid,.enviar-grid,.dossier-browser,.finance-content,.entrance-page {min-width:0}
+.dossier-frame input,.dossier-frame textarea,.dossier-frame select {max-width:100%}
+@media(max-width:1100px) {
+ .hero-grid,.home-hero-grid,.collection-grid,.record-grid,.search-grid {grid-template-columns:repeat(2,minmax(0,1fr))}
+ .hero-copy,.collection-copy,.search-copy {grid-column:1/-1}
+ .dossier-counters {grid-template-columns:repeat(3,minmax(0,1fr))}
+ .home-item-grid,.catalogue-grid {grid-template-columns:repeat(3,minmax(0,1fr))}
+ .main-header .main-navigation.open {background:var(--fig-void);border:1px solid var(--fig-line)}
+}
+@media(max-width:760px) {
+ html {scroll-behavior:auto}
+ .dossier-frame {padding:12px 18px 0}
+ .dossier-masthead {gap:10px;justify-content:flex-start}
+ .archive-lines {width:100%;text-align:left;justify-content:flex-start}
+ .archive-lines>div {min-width:0}
+ .brand-name strong {font-size:21px}
+ .hero-grid,.home-hero-grid,.collection-grid,.record-grid,.search-grid,.community-grid,.enviar-grid {grid-template-columns:minmax(0,1fr)}
+ .hero-copy,.collection-copy,.search-copy {grid-column:auto}
+ .hero-figure,.collection-figure-wrap,.record-figure {max-width:360px}
+ .home-item-grid,.catalogue-grid,.item-grid,.records-grid,.recent-strip,.theme-grid,.finance-metrics,.notes-grid,.status-counters {grid-template-columns:repeat(2,minmax(0,1fr))}
+ .dossier-counters {grid-template-columns:repeat(2,minmax(0,1fr))}
+ .category-tape.station-directories {gap:6px 15px;padding:15px 18px}
+ .category-tape.station-directories a {font-size:10px}
+ .entrance-page .access-choices {grid-template-columns:minmax(0,1fr)}
+ .entrance-page .access-choice .terminal-panel-content {min-height:135px}
+ .entrance-page .access-workbench {grid-template-columns:minmax(0,1fr)}
+ .entrance-page .entrance-header {align-items:flex-start}
+ .entrance-page .entrance-heading h1 {font-size:clamp(30px,8vw,55px)}
+ .admin-dossier .finance-metrics {grid-template-columns:minmax(0,1fr)}
+ .main-header .main-navigation.open {grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:480px) {
+ .dossier-frame {padding:10px 14px 0}
+ .dossier-mark {font-size:10px}
+ .prancha {padding:23px 0}
+ .prancha h1,.hero-copy h1,.collection-copy h1,.record-copy h1,.search-copy h1 {font-size:clamp(29px,9vw,45px)}
+ .brand-bracket {width:53px;height:43px}
+ .brand-digits {font-size:22px}
+ .brand-name strong {font-size:18px}
+ .archive-lines {display:none}
+ .home-item-grid,.catalogue-grid,.item-grid,.records-grid,.recent-strip,.theme-grid,.notes-grid,.status-counters {grid-template-columns:minmax(0,1fr)}
+ .entrance-page .access-form-panel .terminal-panel-content {padding:16px}
+ .entrance-page .monitor-form input {font-size:16px}
+ .youtube-viewport {aspect-ratio:4/3}
+ .youtube-standby {gap:5px}
+ .youtube-orbit {font-size:28px}
+ .youtube-standby>span:not(.youtube-label):not(.youtube-orbit) {font-size:11px}
+ .youtube-standby button {padding:8px 12px;font-size:10px}
+ .main-header .main-navigation.open {grid-template-columns:minmax(0,1fr)}
+}
+@media(prefers-reduced-motion:reduce) {
+ *,*::before,*::after {scroll-behavior:auto !important;animation-duration:.01ms !important;transition-duration:.01ms !important}
+}

@@ -1,0 +1,27 @@
+{
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "breakpoints": true,
+      "tag": "0000_access",
+      "when": 1794657600000,
+      "version": "6",
+      "idx": 0
+    },
+    {
+      "breakpoints": true,
+      "tag": "0001_submissions_mp",
+      "when": 1794830400000,
+      "version": "6",
+      "idx": 1
+    },
+    {
+      "breakpoints": true,
+      "tag": "0002_subscriptions",
+      "when": 1795000000000,
+      "version": "6",
+      "idx": 2
+    }
+  ],
+  "version": "7"
+}

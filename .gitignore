@@ -1,0 +1,29 @@
+# Dependências e arquivos gerados
+node_modules/
+dist/
+dist-ssr/
+.vite/
+coverage/
+.media-cache/
+public/media/
+work/
+
+# Configurações e registros locais
+.env
+.env.*
+!.env.example
+*.local
+*.log
+
+# Arquivos do sistema e do editor
+.DS_Store
+Thumbs.db
+.idea/
+*.suo
+*.swp
+server/data/
+public/images/crt-monitor.png
+
+# Pacotes redundantes do kit Canva (o .html/.pdf/.pptx já estão versionados)
+canva/system84-catalogo-visual.zip
+canva/system84-catalogo-visual.tar

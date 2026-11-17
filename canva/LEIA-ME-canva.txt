@@ -1,0 +1,42 @@
+SYSTEM 84 — pacote para o Canva
+================================
+
+ARQUIVO PRINCIPAL
+
+system84-acervo-completo.pdf
+  38 páginas em 1440x900 (16:10, formato de slide). É o catálogo inteiro num
+   arquivo só: capa, índice cronológico, números do acervo, fichas ilustradas
+   de Filmes/Séries/Livros/Lost media, listas completas e procedência das
+   fontes. No Canva: "Uploads" > enviar o PDF > abrir e escolher "Converter
+   em design". Cada página vira um slide editável.
+
+   Página a página:
+     1        capa (manifesto + objeto óptico)
+     2-5      índice cronológico (112 registros)
+     6        números do acervo por tipo
+     7-10     fichas ilustradas / FILMES (22 registros)
+     11-12    fichas ilustradas / SÉRIES (5 registros)
+     13-23    fichas ilustradas / LIVROS (63 registros)
+     24-27    fichas ilustradas / LOST MEDIA (22 registros)
+     28-34    listas completas por tipo (id, título, ano, código)
+     35       frequências perdidas
+     36-37    procedência: hosts das fontes e licenças
+     38       encerramento
+
+ARQUIVOS DE APOIO
+
+acervo-system84.csv — 112 linhas, 16 colunas (tabelas e gráficos no Canva).
+acervo-system84.txt — a mesma base em texto corrido, para caixas de texto.
+capas-system84/     — 112 capas SVG 1000x1000, uma por registro, para usar
+                      como miniatura avulsa (Uploads > enviar).
+LEIA-ME-canva.txt   — este arquivo.
+
+REFERÊNCIA
+Colunas do CSV: ID | Tipo | Título | Ano | Década | Código | Descrição |
+Tags | Disponibilidade | Idioma | Nota de direitos | Fonte | Link da fonte |
+Mídia principal | Link da mídia | Licença da mídia
+
+Nada aqui é dado inventado: tudo veio de src/data/catalog.json e
+src/data/expansion.js, com fonte e licença em cada registro.
+Para refazer depois de mudar o acervo: npm run export:canva e
+node scripts/build-canva-pdf.mjs .

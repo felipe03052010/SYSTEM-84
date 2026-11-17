@@ -1,0 +1,935 @@
+/* ==========================================================================
+   SYSTEM 84 — identidade do Figma
+   Fonte: arquivo "SYSTEM 84 — Identidade & Web" (node 2:28, Homepage Desktop).
+   Toda medida e cor abaixo vem do design_spec do Figma.
+
+   Paleta:
+     --fg-acid      #A8FF60  verde ácido (destaque, rótulos, CTAs)
+     --fg-paper     #EBEDDF  off-white (títulos e texto forte)
+     --fg-muted     #9CAA9D  cinza-esverdeado (texto corrido)
+     --bg-void      #090D0B  fundo
+     --bg-panel     #101813  painéis e capas
+     --line-slate   #344638  linhas de 1px
+     --accent-ember #FF6332  laranja de alerta / figura
+
+   Tipografia: Syncopate 700 (títulos), Space Grotesk (corpo), IBM Plex Mono
+   (rótulos), VT323 (número gigante).
+   ========================================================================== */
+
+:root {
+  --fig-acid: #a8ff60;
+  --fig-paper: #ebeddf;
+  --fig-muted: #9caa9d;
+  --fig-void: #090d0b;
+  --fig-panel: #101813;
+  --fig-line: #344638;
+  --fig-ember: #ff6332;
+
+  /* Ponte com os tokens do site */
+  --phosphor: var(--fig-acid);
+  --phosphor-soft: var(--fig-paper);
+  --phosphor-dim: var(--fig-muted);
+  --amber: var(--fig-acid);
+  --alarm: var(--fig-ember);
+  --alarm-soft: var(--fig-ember);
+  --text: var(--fig-paper);
+  --text-dim: var(--fig-muted);
+  --background: var(--fig-void);
+  --line: var(--fig-line);
+  --line-strong: #4a6152;
+  --radius-m: 0px;
+  --on-accent: var(--fig-void);
+
+  --font-display: "Syncopate", var(--font-pixel-title), monospace;
+  --font-body: "Space Grotesk", var(--font-pixel-text), sans-serif;
+  --font-mono: "IBM Plex Mono", var(--font-pixel-data), monospace;
+  --font-pixel-data: "IBM Plex Mono", monospace;
+  --font-pixel-title: "Syncopate", monospace;
+  --font-pixel-text: "Space Grotesk", sans-serif;
+}
+
+/* --------------------------------------------------------------------------
+   Base: fundo #090D0B, texto em papel, linhas de 1px
+   -------------------------------------------------------------------------- */
+
+body {
+  background: var(--fig-void);
+  color: var(--fig-paper);
+  font-family: var(--font-body);
+  letter-spacing: 0;
+  text-shadow: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+.logo-word,
+.index-heading h2,
+.station-title h1,
+.glass-title,
+.record-heading h1,
+.archive-hero h1,
+.lost-hero h1,
+.search-hero h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1.05;
+  text-shadow: none;
+}
+
+/* Rótulos: IBM Plex Mono 12/16.8, caixa alta, tracking largo */
+.directory,
+.hero-eyebrow,
+.station-kicker,
+.filter-console-label,
+.bbs-title,
+.loader-chrome b,
+.loader-detail,
+.result-line,
+.record-meta,
+.record-code,
+.monitor-label,
+.logo-caption,
+.index-number,
+.index-count,
+.diagnostic-panel,
+.main-footer,
+.main-navigation a,
+.terminal-action,
+.hero-primary,
+.hero-secondary,
+button,
+.filter-chips button,
+.wall-console label,
+.bbs-channels button,
+.bbs-compose label {
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
+/* Corpo de texto: Space Grotesk 20/29 */
+p,
+li,
+.station-title p,
+.hero-copy > p,
+.archive-hero > div > p:last-child,
+.record-content p,
+.directory-card p,
+.index-note,
+.bbs-post p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.7;
+  letter-spacing: 0;
+  color: var(--fig-muted);
+  text-shadow: none;
+}
+
+/* --------------------------------------------------------------------------
+   Botões do Figma: 51px de altura, pad 16/24, borda 1px #344638
+   -------------------------------------------------------------------------- */
+
+.hero-primary,
+.hero-secondary,
+.ghost-button,
+.pill-button,
+.wall-console-field button,
+.bbs-compose-foot button,
+.filter-chips button,
+button[type="submit"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 16px 24px;
+  border-radius: 0;
+  border: 1px solid var(--fig-line);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  line-height: 16.8px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+/* Primário: fundo ácido, texto no escuro */
+.hero-primary,
+.bbs-compose-foot button,
+.wall-console-field button {
+  background: var(--fig-acid);
+  border-color: var(--fig-line);
+  color: var(--fig-void);
+}
+
+.hero-primary:hover,
+.bbs-compose-foot button:hover,
+.wall-console-field button:hover {
+  background: var(--fig-paper);
+}
+
+/* Secundário: fundo escuro, borda, texto papel */
+.hero-secondary,
+.ghost-button,
+.pill-button,
+.filter-chips button {
+  background: var(--fig-void);
+  border-color: var(--fig-line);
+  color: var(--fig-paper);
+}
+
+.hero-secondary:hover,
+.ghost-button:hover,
+.pill-button:hover,
+.filter-chips button:hover {
+  border-color: var(--fig-acid);
+  color: var(--fig-acid);
+}
+
+/* Chip ativo: fundo papel (como "Filtro / Todos") */
+.filter-chips button.is-active {
+  background: var(--fig-paper);
+  border-color: var(--fig-paper);
+  color: var(--fig-void);
+  -webkit-text-fill-color: var(--fig-void);
+  box-shadow: none;
+}
+
+/* --------------------------------------------------------------------------
+   Cabeçalho: 110px, linhas de 1px, navegação em IBM Plex Mono 12
+   -------------------------------------------------------------------------- */
+
+.main-header {
+  height: auto;
+  min-height: 110px;
+  padding: 31px 32px;
+  background: var(--fig-void);
+  border-bottom: 1px solid var(--fig-line);
+  backdrop-filter: none;
+}
+
+.main-navigation a {
+  font-size: 12px;
+  line-height: 16.8px;
+  letter-spacing: 0.08em;
+  color: var(--fig-paper);
+}
+
+.main-navigation a:hover,
+.main-navigation a.active {
+  color: var(--fig-acid);
+}
+
+.sound-control {
+  border: 1px solid var(--fig-line);
+  border-radius: 0;
+  background: var(--fig-void);
+  color: var(--fig-paper);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.sound-control[aria-pressed="true"] {
+  color: var(--fig-acid);
+  border-color: var(--fig-acid);
+}
+
+/* --------------------------------------------------------------------------
+   Logo: monograma 64×48 ácido + SYSTEM / 84 em Syncopate
+   -------------------------------------------------------------------------- */
+
+.logo-mark {
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.logo-screen {
+  gap: 16px;
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.logo-pixels {
+  width: 64px;
+  height: 48px;
+}
+
+.logo-pixels svg {
+  fill: var(--fig-acid);
+  filter: none;
+}
+
+.logo-word {
+  color: var(--fig-paper);
+  font-family: var(--font-display);
+  font-size: 21px;
+  line-height: 22px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-shadow: none;
+}
+
+.logo-scan,
+.logo-glare {
+  display: none;
+}
+
+.logo-caption {
+  display: none;
+}
+
+/* --------------------------------------------------------------------------
+   Herói: manifesto Syncopate 78/81.9 + objeto óptico
+   -------------------------------------------------------------------------- */
+
+.station-title h1,
+.hero-copy h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 5.4vw, 4.875rem);
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  color: var(--fig-paper);
+}
+
+.station-title h1 em,
+.hero-copy h1 em {
+  color: var(--fig-acid);
+  font-style: normal;
+  text-shadow: none;
+}
+
+.station-kicker,
+.hero-eyebrow {
+  color: var(--fig-acid);
+  font-size: 12px;
+}
+
+.station-stats {
+  border-top: 1px solid var(--fig-line);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--fig-muted);
+}
+
+.station-stats strong {
+  color: var(--fig-acid);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.live-dot {
+  border-radius: 0;
+  background: var(--fig-acid);
+  box-shadow: none;
+}
+
+/* --------------------------------------------------------------------------
+   Parede de monitores: vira o "objeto óptico" do Figma
+   Plástico bege sai; entra painel #101813 com anéis ácidos e arco laranja.
+   -------------------------------------------------------------------------- */
+
+.crt-wall {
+  border-radius: 0;
+  background: var(--fig-void);
+  box-shadow: none;
+  padding: clamp(14px, 2vw, 24px);
+  border: 1px solid var(--fig-line);
+}
+
+.crt-wall::before,
+.crt-wall::after,
+.wall-cables,
+.wall-dust,
+.wall-lamp {
+  display: none;
+}
+
+.monitor {
+  filter: none;
+  transition: transform 0.25s ease;
+}
+
+.monitor:hover {
+  transform: none;
+}
+
+.monitor-bezel {
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  box-shadow: none;
+}
+
+.monitor-bezel::before,
+.monitor-stand,
+.monitor-foot {
+  display: none;
+}
+
+.monitor-glass {
+  border-radius: 0;
+  min-height: clamp(150px, 17vw, 220px);
+  padding: 16px;
+  background: var(--fig-panel);
+  border: 1px solid var(--fig-line);
+  color: var(--fig-paper);
+  box-shadow: none;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.6;
+  text-shadow: none;
+}
+
+/* Anéis concêntricos: o objeto de transmissão */
+.monitor-glass::before {
+  content: "";
+  position: absolute;
+  inset: 12%;
+  border-radius: 50%;
+  pointer-events: none;
+  background:
+    repeating-radial-gradient(circle at 50% 50%, transparent 0 14px, rgba(168, 255, 96, 0.22) 14px 15px);
+  opacity: 0.55;
+}
+
+/* Arco laranja de 9px */
+.monitor-glass::after {
+  content: "";
+  position: absolute;
+  inset: 8% 12%;
+  border-top: 9px solid var(--fig-ember);
+  border-radius: 50% 50% 0 0 / 60% 60% 0 0;
+  pointer-events: none;
+  opacity: 0.85;
+}
+
+.glass-scan,
+.glass-glare {
+  display: none;
+}
+
+.monitor-glass > * {
+  position: relative;
+  z-index: 1;
+}
+
+.glass-head {
+  border-bottom: 1px solid var(--fig-line);
+  color: var(--fig-acid);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+.glass-led {
+  color: var(--fig-ember);
+  animation: none;
+}
+
+.glass-ok {
+  color: var(--fig-acid);
+}
+
+.glass-title {
+  color: var(--fig-paper);
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.glass-title em {
+  color: var(--fig-acid);
+}
+
+.monitor-log .monitor-glass,
+.monitor-vhs .monitor-glass,
+.monitor-tower .monitor-glass {
+  background: var(--fig-panel);
+  color: var(--fig-paper);
+  text-shadow: none;
+}
+
+.monitor-tower .glass-head {
+  border-bottom-color: var(--fig-line);
+}
+
+.monitor-off .monitor-glass {
+  background: #060907;
+  color: rgba(156, 170, 157, 0.4);
+}
+
+.monitor-off .monitor-glass::before,
+.monitor-off .monitor-glass::after {
+  opacity: 0.18;
+}
+
+.vhs-bars {
+  border-radius: 0;
+  filter: none;
+  opacity: 0.9;
+}
+
+.monitor-brand {
+  display: none;
+}
+
+.monitor-label {
+  color: var(--fig-muted);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.monitor.is-active .monitor-label {
+  color: var(--fig-acid);
+}
+
+/* Console de pesquisa */
+.wall-console {
+  border-radius: 0;
+  border: 1px solid var(--fig-line);
+  background: var(--fig-panel);
+  box-shadow: none;
+}
+
+.wall-console label {
+  color: var(--fig-acid);
+  font-size: 10px;
+}
+
+.wall-console-field {
+  border-radius: 0;
+  border: 1px solid var(--fig-line);
+  background: var(--fig-void);
+}
+
+.wall-console-field input {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--fig-paper);
+}
+
+.wall-console-field > span {
+  color: var(--fig-acid);
+}
+
+/* --------------------------------------------------------------------------
+   Faixa de categorias: barra ácida de 70px (Fita de categorias)
+   -------------------------------------------------------------------------- */
+
+.category-tape {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  width: 100%;
+  padding: 24px;
+  background: var(--fig-acid);
+  color: var(--fig-void);
+}
+
+.category-tape a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--fig-void);
+  font-family: var(--font-mono);
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.category-tape a,
+.category-tape a:link,
+.category-tape a:visited,
+.category-tape a:hover,
+.category-tape a:focus {
+  color: var(--fig-void);
+  -webkit-text-fill-color: var(--fig-void);
+}
+
+.category-tape a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Chips de filtro: texto sempre legível sobre o próprio fundo */
+.filter-chips button.is-active,
+.filter-chips button.is-active:hover {
+  color: var(--fig-void);
+  -webkit-text-fill-color: var(--fig-void);
+}
+
+.filter-chips button.boost-filter.is-active,
+.filter-chips button.boost-filter.is-active:hover {
+  color: var(--fig-void);
+  -webkit-text-fill-color: var(--fig-void);
+}
+
+/* --------------------------------------------------------------------------
+   Cartões do acervo: capa 310×350 em #101813, título Syncopate 20/21
+   -------------------------------------------------------------------------- */
+
+.record-card {
+  border-radius: 0;
+  border: 1px solid var(--fig-line);
+  background: var(--fig-void);
+  box-shadow: none;
+  transition: border-color 0.2s ease;
+}
+
+.record-card:hover {
+  border-color: var(--fig-acid);
+  transform: none;
+  box-shadow: none;
+}
+
+.record-card .cover,
+.record-card .record-cover,
+.cover-placeholder {
+  border-radius: 0;
+  background: var(--fig-panel);
+}
+
+.cover-placeholder span {
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 21px;
+  letter-spacing: 0.04em;
+  color: var(--fig-paper);
+}
+
+.cover-placeholder small {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--fig-acid);
+}
+
+.record-card strong,
+.record-card h3 {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 33.4px;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--fig-paper);
+}
+
+.record-meta,
+.record-code {
+  color: var(--fig-acid);
+  font-size: 12px;
+}
+
+.record-tags span {
+  border-radius: 0;
+  border: 1px solid var(--fig-line);
+  color: var(--fig-muted);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+/* --------------------------------------------------------------------------
+   Seções: faixas de 64px de padding, títulos 48/52.8
+   -------------------------------------------------------------------------- */
+
+.station-index,
+.archive-hero,
+.archive-section,
+.home-directories,
+.home-lost,
+.lost-hero,
+.search-hero {
+  padding-left: clamp(16px, 4vw, 64px);
+  padding-right: clamp(16px, 4vw, 64px);
+}
+
+.index-heading h2,
+.section-heading h2,
+.station-transmission h2,
+.home-directories h2,
+.lost-band h2 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: clamp(1.8rem, 3.4vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  color: var(--fig-paper);
+}
+
+.section-heading .directory,
+.index-heading .station-kicker {
+  color: var(--fig-acid);
+}
+
+/* Faixa de lost media: fundo #101813, rótulo laranja, "[ ? ]" gigante */
+.station-transmission,
+.home-lost,
+.lost-band {
+  border-radius: 0;
+  border: 0;
+  border-top: 1px solid var(--fig-line);
+  border-bottom: 1px solid var(--fig-line);
+  background: var(--fig-panel);
+  box-shadow: none;
+}
+
+.station-transmission > span:first-child,
+.lost-band .directory,
+.lost-hero .directory {
+  color: var(--fig-ember);
+  writing-mode: horizontal-tb;
+}
+
+.station-transmission h2,
+.lost-band h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.875rem);
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+}
+
+.station-transmission a,
+.lost-band a {
+  border: 0;
+  padding: 0;
+  color: var(--fig-acid);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+.transmission-orb {
+  color: var(--fig-ember);
+  font-family: var(--font-pixel-data);
+  font-size: 7rem;
+  line-height: 1;
+  animation: none;
+}
+
+/* --------------------------------------------------------------------------
+   Diretórios da capa
+   -------------------------------------------------------------------------- */
+
+.station-directory-grid a,
+.directory-card {
+  border-radius: 0;
+  border: 1px solid var(--fig-line);
+  background: var(--fig-void);
+  box-shadow: none;
+}
+
+.station-directory-grid a:hover,
+.directory-card:hover {
+  border-color: var(--fig-acid);
+  transform: none;
+  box-shadow: none;
+}
+
+.station-directory-grid strong,
+.directory-card strong {
+  font-family: var(--font-display);
+  font-size: 16px;
+  letter-spacing: 0.06em;
+  color: var(--fig-paper);
+}
+
+.index-count,
+.directory-card em {
+  color: var(--fig-acid);
+}
+
+/* --------------------------------------------------------------------------
+   Rodapé: 130px, #101813, linhas mono
+   -------------------------------------------------------------------------- */
+
+.main-footer {
+  background: var(--fig-panel);
+  border-top: 1px solid var(--fig-line);
+  padding: 32px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--fig-muted);
+}
+
+.main-footer strong {
+  color: var(--fig-paper);
+}
+
+.footer-badge {
+  border-radius: 0;
+  border: 1px solid var(--fig-line);
+  color: var(--fig-acid);
+  font-family: var(--font-mono);
+  font-size: 10px;
+}
+
+/* --------------------------------------------------------------------------
+   Telas de carregamento no idioma do Figma
+   -------------------------------------------------------------------------- */
+
+.loader-frame {
+  border-radius: 0;
+  border: 1px solid var(--fig-line);
+  background: var(--fig-panel);
+  box-shadow: none;
+}
+
+.loader-frame::after {
+  display: none;
+}
+
+.loader-chrome {
+  border-bottom: 1px solid var(--fig-line);
+}
+
+.loader-chrome i {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.loader-chrome i:nth-child(1) { background: var(--fig-ember); }
+.loader-chrome i:nth-child(2) { background: var(--fig-acid); }
+.loader-chrome i:nth-child(3) { background: var(--fig-muted); }
+
+.loader-chrome b {
+  color: var(--fig-acid);
+  font-size: 11px;
+}
+
+.loader-detail {
+  color: var(--fig-muted);
+  font-size: 11px;
+}
+
+.loader-progress {
+  border: 1px solid var(--fig-line);
+  background: var(--fig-void);
+}
+
+.loader-progress i {
+  background: var(--fig-acid);
+}
+
+.route-loader {
+  background: rgba(9, 13, 11, 0.96);
+}
+
+.loader-art {
+  color: var(--fig-paper);
+}
+
+/* --------------------------------------------------------------------------
+   Comunidade, obra e painéis
+   -------------------------------------------------------------------------- */
+
+.bbs-panel,
+.bbs-compose,
+.bbs-post,
+.envios-table,
+.bbs-channels button,
+.diagnostic-panel,
+.auth-card,
+.filter-bar,
+.global-search,
+.search-workspace,
+.status-grid article {
+  border-radius: 0;
+  border-color: var(--fig-line);
+  background: var(--fig-panel);
+  box-shadow: none;
+}
+
+.bbs-panel,
+.diagnostic-panel {
+  color: var(--fig-muted);
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.bbs-title,
+.bbs-compose label {
+  color: var(--fig-acid);
+}
+
+.bbs-channels button.is-active {
+  color: var(--fig-acid);
+  border-color: var(--fig-acid);
+  background: rgba(168, 255, 96, 0.06);
+  box-shadow: inset 2px 0 0 var(--fig-acid);
+}
+
+.bbs-badge {
+  border-radius: 0;
+  border-color: var(--fig-ember);
+  color: var(--fig-ember);
+}
+
+.bbs-post header button {
+  border-radius: 0;
+  border-color: var(--fig-ember);
+  color: var(--fig-ember);
+}
+
+.diagnostic-panel strong,
+.record-provenance a,
+.terminal-action {
+  color: var(--fig-acid);
+}
+
+/* O overlay de CRT do site antigo sai: no Figma não há tubo */
+.crt-overlay {
+  display: none;
+}
+
+/* Selo de status: quadrado 7×7 + rótulo ácido */
+.status-badge,
+.live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 0;
+}
+
+/* Número gigante (VT323) usado no sinal perdido */
+.lost-figure span:first-child,
+.lost-figure strong {
+  font-family: var(--font-pixel-data);
+  color: var(--fig-ember);
+}
+
+/* --------------------------------------------------------------------------
+   Responsivo: o design é desktop 1440; abaixo disso tudo empilha
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .main-header {
+    min-height: 88px;
+    padding: 20px;
+  }
+
+  .station-title h1,
+  .hero-copy h1 {
+    font-size: clamp(2rem, 9vw, 3rem);
+  }
+
+  .category-tape {
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    padding: 16px;
+  }
+}

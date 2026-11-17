@@ -1,0 +1,820 @@
+/* ==========================================================================
+   SYSTEM 84 — comunidade (BBS) e envios
+   ========================================================================== */
+
+.community-hero {
+  align-items: end;
+}
+
+.bbs-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  background: linear-gradient(180deg, rgba(9, 26, 20, 0.9), rgba(3, 10, 7, 0.96));
+  box-shadow: inset 0 0 40px -20px rgba(125, 255, 196, 0.5);
+  color: var(--phosphor-dim);
+  font-family: var(--font-pixel-data);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+}
+
+.bbs-title {
+  margin-bottom: 6px;
+  color: var(--amber);
+  font-family: var(--font-pixel-title);
+  font-size: 0.56rem;
+  letter-spacing: 0.18em;
+}
+
+.bbs-online {
+  color: var(--phosphor);
+  animation: ledPulse 2.2s ease-in-out infinite;
+}
+
+.bbs-body {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: clamp(16px, 3vw, 32px);
+  width: min(1240px, 92%);
+  margin: clamp(24px, 4vw, 44px) auto clamp(48px, 7vw, 80px);
+}
+
+/* Canais, como um menu de BBS */
+.bbs-channels {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-self: start;
+  position: sticky;
+  top: 96px;
+}
+
+.bbs-channels button {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: rgba(5, 16, 21, 0.8);
+  color: var(--text-dim);
+  font-family: var(--font-pixel-title);
+  font-size: 0.56rem;
+  letter-spacing: 0.12em;
+  text-align: left;
+  transition: border-color 0.2s, color 0.2s, transform 0.2s;
+}
+
+.bbs-channels button span {
+  color: var(--phosphor-dim);
+  font-size: 0.5rem;
+}
+
+.bbs-channels button em {
+  color: var(--amber);
+  font-style: normal;
+}
+
+.bbs-channels button:hover {
+  color: var(--text);
+  border-color: var(--line-strong);
+  transform: translateX(2px);
+}
+
+.bbs-channels button.is-active {
+  color: var(--phosphor-soft);
+  border-color: rgba(125, 255, 196, 0.5);
+  background: rgba(125, 255, 196, 0.08);
+  box-shadow: inset 3px 0 0 var(--phosphor);
+}
+
+/* Composer */
+.bbs-stream {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  min-width: 0;
+}
+
+.bbs-compose {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  background: rgba(5, 16, 21, 0.85);
+}
+
+.bbs-compose label {
+  color: var(--amber);
+  font-family: var(--font-pixel-title);
+  font-size: 0.54rem;
+  letter-spacing: 0.14em;
+}
+
+.bbs-compose textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: 3px;
+  background: rgba(1, 6, 4, 0.9);
+  color: var(--phosphor-soft);
+  font-family: var(--font-pixel-data);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.bbs-compose textarea:focus {
+  outline: 1px solid var(--phosphor);
+  outline-offset: 1px;
+}
+
+.bbs-compose-foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--phosphor-dim);
+  font-family: var(--font-pixel-data);
+  font-size: 0.62rem;
+}
+
+.bbs-compose-foot button {
+  padding: 8px 16px;
+  border-radius: 2px;
+  background: var(--phosphor);
+  color: var(--on-accent, #02110c);
+  font-family: var(--font-pixel-title);
+  font-size: 0.54rem;
+  letter-spacing: 0.14em;
+}
+
+.bbs-compose-foot button:hover {
+  background: var(--phosphor-soft);
+}
+
+/* Mensagens */
+.bbs-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bbs-empty {
+  color: var(--phosphor-dim);
+  font-family: var(--font-pixel-data);
+  font-size: 0.72rem;
+}
+
+.bbs-post {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-left: 3px solid rgba(125, 255, 196, 0.4);
+  border-radius: 4px;
+  background: linear-gradient(180deg, rgba(8, 22, 17, 0.9), rgba(3, 10, 7, 0.95));
+}
+
+.bbs-post header {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 6px;
+  font-family: var(--font-pixel-data);
+  font-size: 0.62rem;
+  color: var(--phosphor-dim);
+}
+
+.bbs-post header strong {
+  color: var(--phosphor-soft);
+  font-family: var(--font-pixel-title);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+}
+
+.bbs-badge {
+  padding: 1px 6px;
+  border: 1px solid rgba(255, 180, 84, 0.5);
+  color: var(--amber);
+  font-size: 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+.bbs-post header time {
+  margin-left: auto;
+  color: var(--text-dim);
+}
+
+.bbs-post header button {
+  padding: 2px 6px;
+  border: 1px solid rgba(255, 59, 78, 0.5);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--alarm-soft);
+  font-family: var(--font-pixel-title);
+  font-size: 0.46rem;
+  letter-spacing: 0.1em;
+}
+
+.bbs-post header button:hover {
+  background: rgba(255, 59, 78, 0.16);
+}
+
+.bbs-post p {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-pixel-data);
+  font-size: 0.78rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+}
+
+/* Tabela de envios */
+.envios-table {
+  width: min(1240px, 92%);
+  margin: 0 auto clamp(48px, 7vw, 80px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+}
+
+.envios-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 0.8fr 0.8fr;
+  gap: 10px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-pixel-data);
+  font-size: 0.68rem;
+  color: var(--text-dim);
+}
+
+.envios-row:last-child {
+  border-bottom: 0;
+}
+
+.envios-head {
+  color: var(--phosphor-dim);
+  background: rgba(125, 255, 196, 0.06);
+  font-family: var(--font-pixel-title);
+  font-size: 0.5rem;
+  letter-spacing: 0.14em;
+}
+
+.envio-status {
+  font-family: var(--font-pixel-title);
+  font-size: 0.5rem;
+  letter-spacing: 0.1em;
+}
+
+.envio-status.is-emana { color: var(--amber); }
+.envio-status.is-aprovado { color: var(--phosphor); }
+.envio-status.is-recusado { color: var(--alarm-soft); }
+
+@media (max-width: 860px) {
+  .bbs-body {
+    grid-template-columns: 1fr;
+  }
+
+  .bbs-channels {
+    position: static;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .bbs-channels button {
+    flex: 1 0 auto;
+  }
+
+  .envios-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .envios-head {
+    display: none;
+  }
+}
+
+/* ── Enviar ao acervo ─────────────────────────────────────────── */
+.enviar-form {
+  display: grid;
+  gap: 18px;
+}
+
+.enviar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+}
+
+.enviar-side {
+  display: grid;
+  gap: 18px;
+  align-content: start;
+}
+
+.enviar-form label {
+  display: grid;
+  gap: 8px;
+  font-family: var(--font-pixel-data, monospace);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--fig-ember, #ff8a3d);
+}
+
+.enviar-form input,
+.enviar-form select,
+.enviar-form textarea {
+  background: transparent;
+  border: 1px solid currentColor;
+  color: inherit;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+}
+
+.enviar-form textarea {
+  resize: vertical;
+  min-height: 90px;
+}
+
+.enviar-form input:focus,
+.enviar-form select:focus,
+.enviar-form textarea:focus {
+  outline: 2px solid var(--fig-ember, #ff8a3d);
+  outline-offset: 1px;
+}
+
+/* ── Reações e fixados do mural ───────────────────────────────── */
+.bbs-reactions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.bbs-reactions button {
+  font-family: var(--font-pixel-data, monospace);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  padding: 4px 10px;
+  border: 1px solid currentColor;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  opacity: 0.65;
+}
+
+.bbs-reactions button:hover,
+.bbs-reactions button.is-active {
+  opacity: 1;
+  background: var(--fig-ember, #ff8a3d);
+  color: #000;
+}
+
+.bbs-pin {
+  border-color: var(--fig-ember, #ff8a3d);
+  color: var(--fig-ember, #ff8a3d);
+}
+
+.dossier-post.is-pinned {
+  outline: 1px dashed var(--fig-ember, #ff8a3d);
+  outline-offset: 3px;
+}
+
+.community-cta {
+  display: inline-block;
+  margin-top: 14px;
+  text-decoration: none;
+}
+
+/* ── Estante em leitura (Livros) ──────────────────────────────── */
+.reading-shelf {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.reading-card {
+  display: grid;
+  gap: 8px;
+  padding: 14px 16px;
+  border: 1px solid currentColor;
+  text-decoration: none;
+  color: inherit;
+}
+
+.reading-card:hover {
+  background: var(--fig-ember, #ff8a3d);
+  color: #000;
+}
+
+.reading-title {
+  font-family: var(--font-pixel-title, monospace);
+  font-size: 14px;
+  letter-spacing: 0.06em;
+}
+
+.reading-bar {
+  display: block;
+  height: 6px;
+  border: 1px solid currentColor;
+}
+
+.reading-bar i {
+  display: block;
+  height: 100%;
+  background: var(--fig-ember, #ff8a3d);
+}
+
+.reading-pct {
+  font-family: var(--font-pixel-data, monospace);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  opacity: 0.8;
+}
+
+/* ==========================================================================
+   Vitrine de logos: uma marca única por ficha do catálogo
+   ========================================================================== */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.prancha-glyphs .glyph-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  margin: 18px 0 14px;
+  border: 1px solid rgba(235, 237, 223, 0.18);
+}
+
+.glyph-stats span {
+  flex: 1 1 140px;
+  padding: 10px 14px;
+  border-right: 1px solid rgba(235, 237, 223, 0.18);
+  color: var(--fig-muted);
+  font-family: var(--font-mono, "IBM Plex Mono", monospace);
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+}
+
+.glyph-stats span:last-child {
+  border-right: 0;
+}
+
+.glyph-stats strong {
+  margin-right: 6px;
+  color: var(--fig-acid);
+  font-family: var(--font-display, "Syncopate", monospace);
+  font-size: 18px;
+  letter-spacing: 0.04em;
+}
+
+.glyph-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: stretch;
+  margin-bottom: 16px;
+}
+
+.glyph-filters {
+  display: flex;
+  flex: 1 1 520px;
+  flex-wrap: wrap;
+  border: 1px solid rgba(235, 237, 223, 0.18);
+}
+
+.glyph-filters button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 auto;
+  padding: 10px 12px;
+  border: 0;
+  border-right: 1px solid rgba(235, 237, 223, 0.18);
+  background: transparent;
+  color: var(--fig-paper);
+  -webkit-text-fill-color: var(--fig-paper);
+  font-family: var(--font-mono, "IBM Plex Mono", monospace);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.glyph-filters button:last-child {
+  border-right: 0;
+}
+
+.glyph-filters button em {
+  color: var(--fig-muted);
+  font-style: normal;
+  font-size: 9.5px;
+}
+
+.glyph-filters button.is-active {
+  background: var(--fig-acid);
+  color: var(--fig-void);
+  -webkit-text-fill-color: var(--fig-void);
+}
+
+.glyph-filters button.is-active em {
+  color: var(--fig-void);
+}
+
+.glyph-filters button:focus-visible,
+.glyph-tile:focus-visible,
+.glyph-more:focus-visible,
+.glyph-picked button:focus-visible,
+.glyph-search input:focus-visible {
+  outline: 2px solid var(--fig-ember);
+  outline-offset: 2px;
+}
+
+.glyph-search {
+  display: flex;
+  flex: 1 1 240px;
+  align-items: center;
+  gap: 10px;
+  padding: 0 12px;
+  border: 1px solid rgba(235, 237, 223, 0.18);
+  color: var(--fig-acid);
+}
+
+.glyph-search input {
+  flex: 1;
+  min-width: 0;
+  padding: 11px 0;
+  border: 0;
+  background: transparent;
+  color: var(--fig-paper);
+  font-family: var(--font-mono, "IBM Plex Mono", monospace);
+  font-size: 12px;
+}
+
+.glyph-search input::placeholder {
+  color: var(--fig-muted);
+}
+
+.glyph-picked {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+  padding: 12px 14px;
+  border: 1px solid var(--fig-ember);
+  background: rgba(255, 99, 50, 0.06);
+}
+
+.glyph-picked > div {
+  flex: 1 1 220px;
+  min-width: 0;
+}
+
+.glyph-picked span {
+  display: block;
+  color: var(--fig-ember);
+  font-family: var(--font-mono, "IBM Plex Mono", monospace);
+  font-size: 9.5px;
+  letter-spacing: 0.14em;
+}
+
+.glyph-picked strong {
+  display: block;
+  color: var(--fig-paper);
+  font-family: var(--font-body, "Space Grotesk", sans-serif);
+  font-size: 15px;
+}
+
+.glyph-picked button,
+.glyph-picked a {
+  padding: 9px 12px;
+  border: 1px solid var(--fig-acid);
+  background: var(--fig-acid);
+  color: var(--fig-void);
+  -webkit-text-fill-color: var(--fig-void);
+  font-family: var(--font-mono, "IBM Plex Mono", monospace);
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.glyph-picked a,
+.glyph-picked .glyph-clear {
+  background: transparent;
+  color: var(--fig-paper);
+  -webkit-text-fill-color: var(--fig-paper);
+  border-color: rgba(235, 237, 223, 0.3);
+}
+
+.glyph-wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.glyph-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  width: 100%;
+  height: 100%;
+  padding: 12px;
+  border: 1px solid rgba(235, 237, 223, 0.18);
+  background: rgba(16, 24, 19, 0.7);
+  color: var(--fig-paper);
+  -webkit-text-fill-color: var(--fig-paper);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.glyph-tile:hover {
+  border-color: var(--fig-acid);
+  background: rgba(168, 255, 96, 0.05);
+}
+
+.glyph-tile.is-picked {
+  border-color: var(--fig-ember);
+  background: rgba(255, 99, 50, 0.08);
+}
+
+.glyph-tile .glyph-art {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 78px;
+  color: var(--fig-acid);
+}
+
+.glyph-wall li:nth-child(5n) .glyph-art,
+.glyph-tile.is-picked .glyph-art {
+  color: var(--fig-ember);
+}
+
+.glyph-wall li:nth-child(5n + 3) .glyph-art {
+  color: var(--fig-paper);
+}
+
+.glyph-tile strong {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-family: var(--font-body, "Space Grotesk", sans-serif);
+  font-size: 13px;
+  line-height: 1.25;
+}
+
+.glyph-tile .glyph-meta {
+  color: var(--fig-muted);
+  font-family: var(--font-mono, "IBM Plex Mono", monospace);
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+}
+
+.glyph-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 12px;
+  padding: 12px;
+  border: 1px dashed rgba(235, 237, 223, 0.3);
+  background: transparent;
+  color: var(--fig-acid);
+  -webkit-text-fill-color: var(--fig-acid);
+  font-family: var(--font-mono, "IBM Plex Mono", monospace);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+}
+
+.glyph-more em {
+  color: var(--fig-muted);
+  font-style: normal;
+}
+
+/* Ficha anexada ao compor, e ficha citada nas postagens */
+.compose-ref,
+.post-ref {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  border: 1px solid rgba(235, 237, 223, 0.22);
+  background: rgba(168, 255, 96, 0.04);
+  color: var(--fig-paper);
+  font-family: var(--font-mono, "IBM Plex Mono", monospace);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+}
+
+.compose-ref {
+  margin-bottom: 8px;
+}
+
+.compose-ref span {
+  flex: 1;
+  min-width: 0;
+  color: var(--fig-muted);
+}
+
+.compose-ref strong {
+  color: var(--fig-paper);
+}
+
+.compose-ref button {
+  border: 0;
+  background: transparent;
+  color: var(--fig-muted);
+  -webkit-text-fill-color: var(--fig-muted);
+  cursor: pointer;
+}
+
+.compose-ref .item-glyph,
+.post-ref .item-glyph,
+.glyph-picked .item-glyph,
+.envio-title .item-glyph {
+  flex: none;
+  color: var(--fig-acid);
+}
+
+.post-ref {
+  margin: 8px 0 4px;
+}
+
+.post-ref:hover {
+  border-color: var(--fig-acid);
+}
+
+.post-ref span {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--font-body, "Space Grotesk", sans-serif);
+  font-size: 13px;
+  letter-spacing: 0;
+}
+
+.post-ref em {
+  display: block;
+  color: var(--fig-muted);
+  font-family: var(--font-mono, "IBM Plex Mono", monospace);
+  font-size: 9.5px;
+  font-style: normal;
+  letter-spacing: 0.12em;
+}
+
+.post-ref i {
+  color: var(--fig-acid);
+  font-style: normal;
+}
+
+.envio-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 640px) {
+  .glyph-wall {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .glyph-filters button {
+    flex: 1 1 45%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glyph-tile {
+    transition: none;
+  }
+}
