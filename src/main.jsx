@@ -19,3 +19,5 @@ import './styles/crt-screen.css'
 import './styles/figma.css'
 import './styles/dossie.css'
 import './styles/dossie-universal.css'
+// Ajustes para aparelhos pequenos (BIOS e acesso): sempre por último.
+import './styles/mobile-entrada.css'
