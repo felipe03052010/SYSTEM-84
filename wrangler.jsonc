@@ -13,7 +13,7 @@
     {
       "binding": "DB",
       "database_name": "system84-db",
-      "database_id": "00000000-0000-0000-0000-000000000000",
+      "database_id": "1060e1f5-e8ce-48f5-aba9-6c34ff8072d5",
       "migrations_dir": "drizzle"
     }
   ]
