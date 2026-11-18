@@ -1,0 +1,51 @@
+/* Correções para aparelhos pequenos na tela inicial (BIOS + acesso).
+   Carregado por último em main.jsx para vencer as regras anteriores. */
+
+/* ── BIOS (PcBoot) ─────────────────────────────────────────────────────────
+   Antes, só rolava em telas de até 760px. Em celular deitado (844×390,
+   915×412, 932×430...) o conteúdo passava da altura e os botões
+   "Ativar som" / "Pular inicialização" ficavam cortados e inalcançáveis. */
+.pc-boot {
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+.pc-boot .bios-log { flex: 1 0 auto; }
+
+/* O espaçamento por vw (até 75px) come a altura em tela deitada. */
+@media (max-height: 520px) {
+  .pc-boot { padding: 14px 24px; }
+  .pc-boot header { gap: 14px; padding-bottom: 10px; }
+  .pc-boot .bios-symbol { font-size: 40px; }
+  .pc-boot header strong { font-size: 17px; }
+  .pc-boot .bios-log { padding-top: 12px; }
+  .pc-boot .bios-bottom { margin-block: 12px; }
+  .pc-boot .bios-bottom progress { margin: 8px 0; }
+  .pc-boot footer { padding-top: 8px; }
+}
+
+/* ── Tela de acesso (Entrance) ─────────────────────────────────────────── */
+/* Barra de endereço dinâmica dos celulares: usa a altura visível real. */
+.entrance-page { min-height: 100vh; min-height: 100dvh; }
+
+/* Alvos de toque de pelo menos 44px nos botões pequenos de texto. */
+@media (pointer: coarse) {
+  .pc-boot button,
+  .entrance-page .monitor-mode,
+  .entrance-page .workbench-back {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+  .entrance-page .monitor-form input,
+  .entrance-page .monitor-submit { min-height: 44px; }
+}
+
+/* ── Desempenho em celulares ───────────────────────────────────────────────
+   A película de linhas de varredura é uma camada fixa de tela cheia; com
+   mix-blend-mode ela força composição extra a cada rolagem. Linhas pretas a
+   5,5% de opacidade ficam praticamente iguais sem a mistura. */
+@media (max-width: 760px) {
+  body::before { mix-blend-mode: normal; }
+}
