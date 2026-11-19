@@ -293,3 +293,345 @@
 .typing-line { overflow: hidden; white-space: nowrap; width: fit-content; max-width: 100%; border-right: 2px solid var(--fig-acid); animation: typing 1.4s steps(30, end) 0.2s both, caret 0.8s steps(1, end) infinite; }
 @keyframes typing { from { width: 0; } }
 @keyframes caret { 50% { border-color: transparent; } }
+
+/* ==========================================================================
+   PATCH — fidelidade maior ao dossiê visual + CRT forte
+   ========================================================================== */
+
+:root {
+  --crt-vignette: rgba(0, 0, 0, 0.82);
+  --crt-line: rgba(0, 0, 0, 0.42);
+  --crt-phosphor: rgba(168, 255, 96, 0.075);
+}
+
+body {
+  background:
+    radial-gradient(circle at 50% 46%, rgba(9, 24, 18, 0.72) 0%, rgba(5, 14, 9, 0.94) 48%, #050907 78%, #020302 100%) !important;
+}
+
+body::before {
+  background-image:
+    linear-gradient(rgba(168, 255, 96, 0.032) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(168, 255, 96, 0.024) 1px, transparent 1px),
+    radial-gradient(circle at 50% 40%, transparent 30%, rgba(0, 0, 0, 0.58) 100%);
+  background-size: 28px 28px, 28px 28px, auto;
+  opacity: 1;
+}
+
+.crt-overlay {
+  opacity: 1;
+  background:
+    radial-gradient(circle at center, transparent 22%, rgba(0, 0, 0, 0.28) 54%, var(--crt-vignette) 100%);
+  mix-blend-mode: screen;
+}
+
+.crt-overlay::before {
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.012) 0, rgba(255, 255, 255, 0.012) 1px, transparent 1px, transparent 2px),
+    linear-gradient(180deg, transparent 0 50%, var(--crt-line) 50% 100%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.045), rgba(0, 255, 0, 0.018), rgba(0, 0, 255, 0.045));
+  background-size: 100% 2px, 100% 4px, 3px 100%;
+  opacity: 1;
+}
+
+.crt-overlay::after {
+  background:
+    linear-gradient(to bottom, transparent 0%, rgba(168, 255, 96, 0.05) 20%, rgba(168, 255, 96, 0.12) 50%, rgba(168, 255, 96, 0.05) 80%, transparent 100%);
+  opacity: 1;
+  animation: crtScanline 5.6s linear infinite;
+}
+
+.site-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  box-shadow: inset 0 0 110px rgba(0, 0, 0, 0.96), inset 0 0 24px rgba(168, 255, 96, 0.06);
+}
+
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 120;
+  min-height: 86px;
+  gap: 18px;
+  padding: 14px clamp(20px, 3vw, 46px);
+  border-bottom: 1px solid rgba(235, 237, 223, 0.18);
+  background: rgba(9, 13, 11, 0.92);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.main-header::before {
+  content: "";
+  position: absolute;
+  left: clamp(20px, 3vw, 46px);
+  right: clamp(20px, 3vw, 46px);
+  bottom: -1px;
+  height: 1px;
+  background: rgba(168, 255, 96, 0.28);
+}
+
+.logo .identity,
+.logo .identity * { text-shadow: none !important; }
+
+.identity {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.identity-symbol {
+  width: 48px;
+  height: 48px;
+  color: #abff60;
+}
+
+.identity-word {
+  font-family: "Syncopate", sans-serif;
+  font-size: clamp(1.1rem, 1.55vw, 1.45rem);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #ebeddf;
+  text-transform: uppercase;
+}
+
+.identity-word span { color: #ebeddf; }
+.identity-word .identity-dot { color: #abff60; }
+
+.identity-caption {
+  display: none;
+}
+
+.main-navigation {
+  gap: clamp(10px, 1.2vw, 18px);
+  flex-wrap: wrap;
+}
+
+.main-navigation a,
+.main-header .main-navigation a {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #d9ddcf;
+}
+
+.main-navigation a:hover,
+.main-navigation a.active {
+  color: #abff60;
+}
+
+.main-navigation a::after {
+  height: 1px;
+  background: #abff60;
+  box-shadow: none;
+}
+
+.menu-button {
+  display: none;
+  border: 1px solid rgba(235, 237, 223, 0.24);
+  padding: 8px 12px;
+  align-items: center;
+  gap: 8px;
+  color: #ebeddf;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.menu-button-kicker {
+  color: #abff60;
+}
+
+.header-tools {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.pill-button,
+.ghost-button,
+.header-user span {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.pill-button,
+.ghost-button {
+  border: 1px solid rgba(235, 237, 223, 0.22);
+  padding: 8px 12px;
+  color: #ebeddf;
+}
+
+.pill-button:hover,
+.ghost-button:hover {
+  border-color: #abff60;
+  color: #abff60;
+}
+
+.dossier-frame {
+  max-width: 1600px;
+}
+
+.prancha,
+.dossier-panel,
+.item-card,
+.recent-card,
+.theme-card,
+.record-card,
+.collection-card,
+.timeline-era,
+.signal-card,
+.about-plans article,
+.about-steps li,
+.notes-item {
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+.item-card,
+.record-card,
+.recent-card,
+.theme-card,
+.collection-card,
+.dossier-panel,
+.hero-figure {
+  background:
+    linear-gradient(180deg, rgba(14, 19, 16, 0.78), rgba(8, 11, 9, 0.88)) !important;
+  border-color: rgba(235, 237, 223, 0.18) !important;
+}
+
+.item-card:hover,
+.record-card:hover,
+.recent-card:hover,
+.theme-card:hover,
+.collection-card:hover,
+.dossier-panel:hover,
+.hero-figure:hover {
+  border-color: rgba(168, 255, 96, 0.42) !important;
+  background:
+    linear-gradient(180deg, rgba(16, 22, 18, 0.9), rgba(8, 11, 9, 0.96)) !important;
+}
+
+.hero-copy h1,
+.glitch-title,
+.prancha-title,
+.item-title,
+.daily-card strong {
+  text-shadow: none !important;
+}
+
+.hero-copy h1,
+.glitch-title {
+  letter-spacing: 0.01em;
+}
+
+.item-kicker,
+.rc-new,
+.panel-head,
+.footer-vol,
+.footer-page,
+.footer-nav,
+.footer-title {
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.dossier-site-footer {
+  display: grid;
+  grid-template-columns: auto auto minmax(180px, 1fr) auto auto auto;
+  align-items: center;
+  gap: 18px;
+  margin: 0 auto;
+  padding: 18px clamp(20px, 3vw, 46px) 24px;
+  border-top: 1px solid rgba(235, 237, 223, 0.18);
+  color: #ebeddf;
+  background: rgba(7, 10, 8, 0.96);
+}
+
+.footer-vol,
+.footer-page {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: #abff60;
+  text-transform: uppercase;
+}
+
+.footer-title {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(235, 237, 223, 0.86);
+}
+
+.footer-rule {
+  width: 1px;
+  height: 22px;
+  background: rgba(235, 237, 223, 0.2);
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(235, 237, 223, 0.84);
+}
+
+.footer-nav span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-nav i {
+  color: rgba(235, 237, 223, 0.46);
+  font-style: normal;
+}
+
+.footer-nav a:hover {
+  color: #abff60;
+}
+
+@media (max-width: 1360px) {
+  .menu-button {
+    display: inline-flex;
+  }
+
+  .main-header {
+    position: sticky;
+    align-items: center;
+  }
+
+  .main-header .main-navigation {
+    top: calc(100% + 1px);
+    padding: 10px clamp(20px, 3vw, 46px) 16px;
+    background: rgba(7, 10, 8, 0.98);
+    border-bottom: 1px solid rgba(235, 237, 223, 0.16);
+  }
+}
+
+@media (max-width: 980px) {
+  .dossier-site-footer {
+    grid-template-columns: 1fr;
+    justify-items: start;
+    gap: 10px;
+  }
+
+  .footer-rule {
+    width: 100%;
+    height: 1px;
+  }
+
+  .footer-nav {
+    justify-content: flex-start;
+  }
+}
