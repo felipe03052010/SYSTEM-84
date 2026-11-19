@@ -1,4 +1,5 @@
 import DossierArchive from '../components/DossierArchive'
+import AnalogCatalogo from '../components/AnalogCatalogo'
 
 export default function AnalogHorror() {
   return (
@@ -21,6 +22,7 @@ export default function AnalogHorror() {
       ]}
       recordPage={11}
       recordTotal={13}
+      extra={<AnalogCatalogo />}
     />
   )
 }

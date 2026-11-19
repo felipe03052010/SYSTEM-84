@@ -27,3 +27,5 @@ public/images/crt-monitor.png
 # Pacotes redundantes do kit Canva (o .html/.pdf/.pptx já estão versionados)
 canva/system84-catalogo-visual.zip
 canva/system84-catalogo-visual.tar
+
+/backups/

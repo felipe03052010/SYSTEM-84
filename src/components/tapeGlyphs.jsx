@@ -410,6 +410,55 @@ export const TAPE_GLYPHS = {
       <path d="M20 90h72" />
     </>
   ),
+  /* ── Catálogo de criadores: glifos 41–46 ─────────────────────── */
+  'fita-olho': base(
+    <>
+      <path d="M12 56c14-22 28-30 44-30s30 8 44 30c-14 22-28 30-44 30S26 78 12 56Z" />
+      <circle cx="56" cy="56" r="14" />
+      <circle cx="56" cy="56" r="5" stroke="var(--fig-ember)" strokeWidth="3" />
+      <path d="M56 12v8M20 22l6 6M92 22l-6 6" />
+    </>
+  ),
+  'fita-mapa': base(
+    <>
+      <path d="M16 28l26-10 28 10 26-10v66l-26 10-28-10-26 10Z" />
+      <path d="M42 18v66M70 28v66" />
+      <path d="M50 50l12 12M62 50 50 62" stroke="var(--fig-ember)" strokeWidth="3" />
+    </>
+  ),
+  'fita-antena': base(
+    <>
+      <path d="M42 94 56 40l14 54" />
+      <path d="M36 94h40M46 76h20" />
+      <path d="M40 28c8-8 24-8 32 0M30 18c14-14 38-14 52 0" />
+      <circle cx="56" cy="34" r="4" stroke="var(--fig-ember)" strokeWidth="3" />
+    </>
+  ),
+  'fita-sinal': base(
+    <>
+      <path d="M12 66h16l8-28 12 48 12-60 10 40h30" />
+      <path d="M12 98h88" stroke="var(--fig-ember)" strokeWidth="3" />
+      <path d="M12 18h16M12 18v14" />
+    </>
+  ),
+  'fita-casa': base(
+    <>
+      <path d="M18 56 56 22l38 34" />
+      <path d="M26 50v42h60V50" />
+      <rect x="48" y="64" width="16" height="28" />
+      <path d="M32 62h10M72 62h10" stroke="var(--fig-ember)" strokeWidth="3" />
+      <path d="M76 26v14" />
+    </>
+  ),
+  'fita-cogumelo': base(
+    <>
+      <path d="M16 54c0-22 18-36 40-36s40 14 40 36Z" />
+      <path d="M44 54v22c0 10 6 16 12 16s12-6 12-16V54" />
+      <circle cx="38" cy="40" r="5" />
+      <circle cx="72" cy="36" r="4" stroke="var(--fig-ember)" strokeWidth="3" />
+      <path d="M20 98h72" />
+    </>
+  ),
 }
 
 /** Glifo da fita pelo id numérico do registro (fitas 01–06). */

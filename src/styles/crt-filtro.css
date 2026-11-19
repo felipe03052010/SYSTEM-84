@@ -1,0 +1,148 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   SYSTEM 84 — Filtro CRT v2
+   Só CSS, sem imagens. Carregado por último em main.jsx para vencer
+   crt-screen.css e mobile-entrada.css.
+
+   Camadas (de baixo para cima):
+   1. body::before  → linhas de varredura + máscara RGB + brilho de fósforo
+   2. body::after   → vinheta de tubo + moldura + contorno verde
+   3. .crt-overlay  → faixa de sinal rolando + tremida de brilho (animadas)
+
+   Cores do Dossiê Visual Unificado: vazio #090D0B, verde ácido #A8FF60,
+   laranja-sinal #FF6332.
+
+   Desligar para teste:  document.documentElement.dataset.crt = 'off'
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root {
+  --crt-void: #090d0b;
+  --crt-green: 168, 255, 96;
+  --crt-orange: 255, 99, 50;
+  --crt-scan: .15;     /* opacidade das linhas de varredura */
+  --crt-mask: .03;     /* opacidade da máscara RGB */
+  --crt-glow: .05;     /* brilho de fósforo no centro */
+  --crt-edge: .48;     /* escuridão nos cantos */
+}
+
+/* 1 ── Linhas de varredura, máscara RGB e brilho ─────────────────────────── */
+html body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 1500;
+  pointer-events: none;
+  opacity: 1;
+  mix-blend-mode: normal;
+  background:
+    repeating-linear-gradient(0deg,
+      rgba(0, 0, 0, var(--crt-scan)) 0 1px,
+      transparent 1px 3px),
+    repeating-linear-gradient(90deg,
+      rgba(255, 40, 40, var(--crt-mask)) 0 1px,
+      rgba(40, 255, 40, var(--crt-mask)) 1px 2px,
+      rgba(40, 40, 255, var(--crt-mask)) 2px 3px),
+    radial-gradient(ellipse at 50% 38%,
+      rgba(var(--crt-green), var(--crt-glow)) 0%,
+      transparent 68%);
+}
+
+/* 2 ── Vinheta de tubo e moldura ─────────────────────────────────────────── */
+html body::after {
+  display: block;
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 1501;
+  pointer-events: none;
+  border: 6px solid var(--crt-void);
+  border-radius: 18px;
+  background: radial-gradient(ellipse at 50% 50%,
+    transparent 62%,
+    rgba(0, 0, 0, calc(var(--crt-edge) * .5)) 82%,
+    rgba(0, 0, 0, var(--crt-edge)) 100%);
+  box-shadow:
+    inset 0 0 110px rgba(0, 0, 0, .45),
+    inset 0 0 24px rgba(var(--crt-green), .06),
+    inset 0 0 0 1px rgba(var(--crt-green), .18);
+}
+
+/* 3 ── Sinal rolando e tremida de brilho ─────────────────────────────────── */
+html .crt-overlay {
+  display: block;
+  position: fixed;
+  inset: 0;
+  z-index: 1502;
+  overflow: hidden;
+  pointer-events: none;
+}
+.crt-overlay::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -24vh;
+  height: 24vh;
+  background: linear-gradient(to bottom,
+    transparent 0%,
+    rgba(var(--crt-green), .03) 40%,
+    rgba(var(--crt-green), .065) 50%,
+    rgba(var(--crt-green), .03) 60%,
+    transparent 100%);
+  animation: crt-roll 11s linear infinite;
+  will-change: transform;
+}
+.crt-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(var(--crt-green), .014);
+  animation: crt-flicker 7s steps(1, end) infinite;
+}
+@keyframes crt-roll {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(0, 130vh, 0); }
+}
+@keyframes crt-flicker {
+  0%, 100% { opacity: 1; }
+  6%   { opacity: .35; }
+  7%   { opacity: 1; }
+  41%  { opacity: .7; }
+  42%  { opacity: 1; }
+  78%  { opacity: .5; }
+  79%  { opacity: 1; }
+}
+
+/* ── Celulares: mais leve, sem máscara RGB (evita moiré) nem animação ───── */
+@media (max-width: 760px) {
+  :root { --crt-scan: .12; --crt-mask: 0; --crt-glow: .035; --crt-edge: .45; }
+  html body::after {
+    border-width: 3px;
+    border-radius: 9px;
+    box-shadow:
+      inset 0 0 36px rgba(0, 0, 0, .35),
+      inset 0 0 0 1px rgba(var(--crt-green), .18);
+  }
+  .crt-overlay::before,
+  .crt-overlay::after { display: none; }
+}
+
+/* ── Acessibilidade ─────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  .crt-overlay::before,
+  .crt-overlay::after { animation: none; display: none; }
+}
+@media (prefers-contrast: more) {
+  :root { --crt-scan: .05; --crt-mask: 0; --crt-glow: 0; --crt-edge: .25; }
+  .crt-overlay::before,
+  .crt-overlay::after { display: none; }
+}
+
+/* ── Desligar (teste) e impressão ───────────────────────────────────────── */
+html[data-crt='off'] body::before,
+html[data-crt='off'] body::after,
+html[data-crt='off'] .crt-overlay { display: none; }
+@media print {
+  html body::before,
+  html body::after,
+  html .crt-overlay { display: none; }
+}

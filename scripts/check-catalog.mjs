@@ -64,5 +64,25 @@ for (const item of analogYoutube) {
 }
 console.log('Analog horror externo validado: '+analogYoutube.length+' registros independentes.')
 
+// Catálogo de criadores de analog horror: só links oficiais, um glifo único por título.
+const catalogoAH = JSON.parse(await fs.readFile(new URL('../src/data/analog-catalogo.json', import.meta.url), 'utf8'))
+const { ANALOG_CATALOGO_GLYPHS } = await import(new URL('../src/data/analog-catalogo-glifos.js', import.meta.url))
+const tapeSource = await fs.readFile(new URL('../src/components/tapeGlyphs.jsx', import.meta.url), 'utf8')
+const tapeKeys = new Set([...tapeSource.matchAll(/^  '(fita-[a-z0-9-]+)': base\(/gm)].map((match) => match[1]))
+const glyphsInUse = new Set([...analogYoutube.map((item) => item.glyph), 'fita-01', 'fita-02', 'fita-03', 'fita-04', 'fita-05', 'fita-06'])
+const slugsAH = new Set(), glyphsAH = new Set()
+assert(catalogoAH.items.length === Object.keys(ANALOG_CATALOGO_GLYPHS).length, 'Mapa de glifos do catálogo não confere com os itens')
+for (const item of catalogoAH.items) {
+  assert(item.slug && !slugsAH.has(item.slug), `Slug duplicado no catálogo de analog horror: ${item.slug}`); slugsAH.add(item.slug)
+  assert(item.title && item.creator && item.description, `Item incompleto no catálogo: ${item.slug}`)
+  assert(['channel', 'playlist', 'search'].includes(item.urlType), `urlType inválido: ${item.slug}`)
+  assert(new URL(item.url).protocol === 'https:' && new URL(item.url).hostname === 'www.youtube.com', `Link fora do YouTube: ${item.slug}`)
+  assert(item.embed === false, `Item do catálogo não deve ser incorporado: ${item.slug}`)
+  const glyph = ANALOG_CATALOGO_GLYPHS[item.slug]
+  assert(glyph && tapeKeys.has(glyph), `Glifo inexistente: ${item.slug}`)
+  assert(!glyphsAH.has(glyph) && !glyphsInUse.has(glyph), `Glifo repetido: ${glyph}`); glyphsAH.add(glyph)
+}
+console.log('Catálogo de analog horror validado: ' + catalogoAH.items.length + ' títulos, ' + glyphsAH.size + ' glifos únicos.')
+
 console.log(`${expansion.length + ampliado.length} fichas extras verificadas; ${ids.size} registros no total.`)
 console.log(`${catalog.length} obras verificadas; ${files.size} arquivos; ${(bytes / 1024 / 1024).toFixed(1)} MiB locais.`)

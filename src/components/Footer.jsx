@@ -1,26 +1,30 @@
-import Logo from './Logo'
+import { Link } from 'react-router-dom'
+
+const FOOTER_LINKS = [
+  ['IDENTIDADE', '/sobre'],
+  ['CATÁLOGO', '/pesquisa'],
+  ['ACERVO', '/filmes'],
+  ['COMUNIDADE', '/comunidade'],
+]
+
 export default function Footer() {
   return (
-    <footer className="main-footer">
-      <div>
-        <strong>
-          <Logo compact />
-        </strong>
-        <span>Arquivo de memória cultural</span>
-        <span>Preservando cultura · conectando memórias</span>
-      </div>
+    <footer className="main-footer dossier-site-footer" aria-label="Rodapé do SYSTEM 84">
+      <span className="footer-vol">VOL. 084</span>
+      <span className="footer-rule" aria-hidden="true" />
+      <span className="footer-title">SYSTEM 84 — REDESIGN UNIFICADO</span>
 
-      <div>
-        <span className="footer-badge">Sys.status: online</span>
-        <span>Build 1.0.84</span>
-        <span>© 2026 SYSTEM 84</span>
-      </div>
+      <nav className="footer-nav" aria-label="Atalhos do rodapé">
+        {FOOTER_LINKS.map(([label, to], index) => (
+          <span key={label}>
+            {index > 0 && <i aria-hidden="true">/</i>}
+            <Link to={to}>{label}</Link>
+          </span>
+        ))}
+      </nav>
 
-      <p>
-        Domínio público, Creative Commons e ficções originais CC0.
-        <br />
-        Cada registro traz <em>fonte, licença e histórico de preservação</em>.
-      </p>
+      <span className="footer-rule" aria-hidden="true" />
+      <span className="footer-page">ONLINE</span>
     </footer>
   )
 }
