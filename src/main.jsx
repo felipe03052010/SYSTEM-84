@@ -21,3 +21,5 @@ import './styles/dossie.css'
 import './styles/dossie-universal.css'
 // Ajustes para aparelhos pequenos (BIOS e acesso): sempre por último.
 import './styles/mobile-entrada.css'
+// Filtro CRT v2 (dossiê): depois de tudo, para vencer as regras anteriores.
+import './styles/crt-filtro.css'

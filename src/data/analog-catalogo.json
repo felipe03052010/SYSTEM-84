@@ -1,0 +1,691 @@
+{
+  "meta": {
+    "name": "Analog horror - catálogo",
+    "count": 40,
+    "compiledOn": "2026-11-18",
+    "note": "Apenas links para os canais oficiais dos criadores. Não hospede nem reenvie os vídeos. Títulos, criadores e links vieram de guias de terceiros (Wikipédia, MacMyths, The Ghost In My Machine) e não foram abertos um a um: confira cada link antes de publicar. Itens com urlType 'search' não têm link de canal confirmado."
+  },
+  "items": [
+    {
+      "slug": "local-58",
+      "title": "Local 58",
+      "creator": "Kris Straub",
+      "year": 2015,
+      "kind": "analog-horror",
+      "description": "Interrupções de uma emissora de TV local que parece ter sido sequestrada por décadas: alertas de tempo, avisos e programas com mensagens perturbadoras.",
+      "url": "https://www.youtube.com/@LOCAL58TV",
+      "urlType": "channel",
+      "status": "Arquivo irregular; maratona curta",
+      "warnings": [
+        "imagens perturbadoras",
+        "pavor existencial"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "gemini-home-entertainment",
+      "title": "Gemini Home Entertainment",
+      "creator": "Remy Abode",
+      "year": 2019,
+      "kind": "analog-horror",
+      "description": "Fitas de segurança doméstica, documentários e vídeos institucionais que aos poucos revelam uma ameaça biológica e cósmica muito maior.",
+      "url": "https://www.youtube.com/@GeminiHomeEntertainment",
+      "urlType": "channel",
+      "status": "Em andamento",
+      "warnings": [
+        "criaturas",
+        "body horror",
+        "tema apocalíptico"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "the-mandela-catalogue",
+      "title": "The Mandela Catalogue",
+      "creator": "Alex Kister",
+      "year": 2021,
+      "kind": "analog-horror",
+      "description": "Transmissões de emergência e gravações sobre os Alternates, criaturas que imitam pessoas, no condado fictício de Mandela, em Wisconsin.",
+      "url": "https://www.youtube.com/@AlexxKister",
+      "urlType": "channel",
+      "status": "Em andamento",
+      "warnings": [
+        "temas de suicídio e automutilação",
+        "trauma religioso",
+        "rostos perturbadores"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "backrooms-found-footage",
+      "title": "Backrooms (Found Footage)",
+      "creator": "Kane Parsons (Kane Pixels)",
+      "year": 2022,
+      "kind": "found-footage",
+      "description": "Fita VHS de um cineasta que entra nos Backrooms nos anos 90, depois expandida em uma série sobre uma empresa que investiga o lugar.",
+      "url": "https://www.youtube.com/playlist?list=PLVAh-MgDVqvDUEq6qDXqORBioE4Yhol_z",
+      "urlType": "playlist",
+      "status": "Em andamento, de forma esporádica",
+      "warnings": [
+        "perseguição",
+        "isolamento",
+        "criaturas"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "the-oldest-view",
+      "title": "The Oldest View",
+      "creator": "Kane Parsons",
+      "year": null,
+      "kind": "found-footage",
+      "description": "Um cinegrafista descobre um shopping enorme aparentemente enterrado; série curta e melancólica sobre espaços liminares.",
+      "url": "https://www.youtube.com/playlist?list=PLVAh-MgDVqvAwoFF5hJmtRrx86Yw-pdN1",
+      "urlType": "playlist",
+      "status": "Em andamento",
+      "warnings": [
+        "perseguição",
+        "isolamento"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "the-walten-files",
+      "title": "The Walten Files",
+      "creator": "Martin Walls",
+      "year": 2020,
+      "kind": "analog-horror",
+      "description": "Animação sobre fitas de uma rede de restaurantes com animatrônicos e a família Walten, inspirada em Five Nights at Freddy's.",
+      "url": "https://www.youtube.com/playlist?list=PLS2QQK4hEK511TJjrkH8L12UYsVnOfgQs",
+      "urlType": "playlist",
+      "status": "Em andamento",
+      "warnings": [
+        "perigo infantil",
+        "luto",
+        "violência de animatrônicos"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "the-monument-mythos",
+      "title": "The Monument Mythos",
+      "creator": "Alex Kansas",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "Documentários falsos que reescrevem a história dos EUA em torno de monumentos nacionais e eventos impossíveis.",
+      "url": "https://www.youtube.com/@AlexKansas",
+      "urlType": "channel",
+      "status": "Projeto principal apresentado como concluído",
+      "warnings": [
+        "violência política",
+        "desastres",
+        "horror existencial"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "the-nixonverse",
+      "title": "The Nixonverse",
+      "creator": "Alex Kansas",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "Projeto companheiro do Monument Mythos, com história alternativa e mitologia política surreal.",
+      "url": "https://www.youtube.com/@AlexKansas",
+      "urlType": "channel",
+      "status": "Confirme a ordem atual no canal",
+      "warnings": [
+        "violência política",
+        "desastres",
+        "horror existencial"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "vita-carnis",
+      "title": "Vita Carnis",
+      "creator": "Darian Quilloy",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "Documentários e programas educativos falsos sobre um organismo carnoso e ramificado, feitos com efeitos práticos.",
+      "url": "https://www.youtube.com/@darian_quilloy",
+      "urlType": "channel",
+      "status": "Em andamento",
+      "warnings": [
+        "body horror gráfico",
+        "gore",
+        "não recomendado para público jovem"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "petscop",
+      "title": "Petscop",
+      "creator": "Tony Domenico",
+      "year": 2017,
+      "kind": "game-horror",
+      "description": "Gravações de um suposto jogo perdido de PlayStation, com áreas ocultas e um mistério que vai além do jogo.",
+      "url": "https://www.youtube.com/@Petscop",
+      "urlType": "channel",
+      "status": "Concluída",
+      "warnings": [
+        "trauma infantil",
+        "abuso implícito"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "marble-hornets",
+      "title": "Marble Hornets",
+      "creator": "Troy Wagner e Joseph DeLage",
+      "year": 2009,
+      "kind": "found-footage",
+      "description": "Pioneira da web: fitas de um filme estudantil revelam uma figura chamada The Operator, ligada ao mito do Slender Man.",
+      "url": "https://www.youtube.com/@MarbleHornets",
+      "urlType": "channel",
+      "status": "Concluída",
+      "warnings": [
+        "perseguição",
+        "desaparecimento",
+        "violência"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "greylock",
+      "title": "Greylock",
+      "creator": "Canal Greylock Horror",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "Fitas e registros sobre o monte Greylock, com fenômenos sobrenaturais cada vez mais grotescos; terror lento e psicológico.",
+      "url": "https://www.youtube.com/@greylockhorror",
+      "urlType": "channel",
+      "status": "Em andamento",
+      "warnings": [
+        "body horror gráfico",
+        "morte"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "midwest-angelica",
+      "title": "Midwest Angelica",
+      "creator": "Team AQ (Aidan Chick e Quarks and Rec)",
+      "year": 2025,
+      "kind": "analog-horror",
+      "description": "Uma organização da NASA documenta um corpo alienígena que cai no Meio-Oeste dos EUA em 1999 e passa a infectar a fauna.",
+      "url": "https://www.youtube.com/@midwestangelica",
+      "urlType": "channel",
+      "status": "Em andamento",
+      "warnings": [
+        "desastres",
+        "morte"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "no-through-road",
+      "title": "No Through Road",
+      "creator": "Steven Chamberlain",
+      "year": 2009,
+      "kind": "found-footage",
+      "description": "Quatro adolescentes ficam presos em um loop de tempo numa estrada rural inglesa; found footage minimalista.",
+      "url": "https://www.youtube.com/playlist?list=PLE49CA97A2AA397C3",
+      "urlType": "playlist",
+      "status": "Concluída",
+      "warnings": [
+        "perseguição",
+        "desaparecimento"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "the-tangi-virus",
+      "title": "The Tangi Virus",
+      "creator": "Vintage Eight (Paul Catalanotto)",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "Documentários falsos e material de saúde pública sobre uma infecção ligada à água contaminada.",
+      "url": "https://www.youtube.com/@vintageeight",
+      "urlType": "channel",
+      "status": "Universo conectado; confirme a ordem no canal",
+      "warnings": [
+        "doença",
+        "imagens médicas",
+        "pânico de surto"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "the-children-under-the-house",
+      "title": "The Children Under the House",
+      "creator": "Vintage Eight",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "Registros em estilo documental sobre um mistério de desaparecimento e os espaços sob uma casa.",
+      "url": "https://www.youtube.com/@vintageeight",
+      "urlType": "channel",
+      "status": "Universo conectado; confirme a ordem no canal",
+      "warnings": [
+        "perigo infantil",
+        "desaparecimento",
+        "espaços fechados"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "ch-ss",
+      "title": "CH/SS",
+      "creator": "Canal oficial CH/SS",
+      "year": null,
+      "kind": "arg",
+      "description": "Vídeos institucionais e de saúde mental no estilo da Guerra Fria, com sugestões de espionagem e forças sobrenaturais.",
+      "url": "https://www.youtube.com/@chssgov",
+      "urlType": "channel",
+      "status": "Status incerto; confira o canal",
+      "warnings": [
+        "temas de saúde mental",
+        "material institucional coercitivo"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "angel-hare",
+      "title": "Angel Hare",
+      "creator": "East Patch Productions (Hannah e Rachel Mangan)",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "Desenho animado cristão infantil cuja fita VHS difere da cópia achada num brechó; mistura nostalgia e mistério.",
+      "url": "https://www.youtube.com/@TheEastPatch",
+      "urlType": "channel",
+      "status": "Confirme a lista atual no canal",
+      "warnings": [
+        "medo infantil",
+        "desaparecimento"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "the-minerva-alliance",
+      "title": "The Minerva Alliance",
+      "creator": "Quarks and Rec",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "Antologia de comerciais, alertas e fitas reunidos por uma organização fictícia.",
+      "url": "https://www.youtube.com/@theminervaalliance8338",
+      "urlType": "channel",
+      "status": "Em andamento",
+      "warnings": [
+        "ameaça institucional",
+        "morte"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "harmony-and-horror",
+      "title": "Harmony & Horror",
+      "creator": "Battington",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "Arquivo longo sobre mídia familiar corrompida e horror de mascotes e animatrônicos.",
+      "url": "https://www.youtube.com/@Battington",
+      "urlType": "channel",
+      "status": "Arquivo longo; confirme a ordem no canal",
+      "warnings": [
+        "perigo infantil",
+        "trauma familiar",
+        "violência de animatrônicos"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "winter-of-83",
+      "title": "Winter of '83",
+      "creator": "Lewis Lovhaug",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "O desaparecimento de toda a população de uma cidade pequena no inverno de 1983, contado por fitas de vídeo e áudio.",
+      "url": "https://www.youtube.com/@AT4W",
+      "urlType": "channel",
+      "status": "Confirme a playlist no canal",
+      "warnings": [
+        "isolamento",
+        "desaparecimento"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "the-west-records",
+      "title": "The West Records",
+      "creator": "Dalton Cahill",
+      "year": null,
+      "kind": "found-footage",
+      "description": "Uma equipe explora uma base naval abandonada e um lojista restaura o HD com as imagens; duas histórias correm em paralelo.",
+      "url": "https://www.youtube.com/@TheWestRecords",
+      "urlType": "channel",
+      "status": "Concluída (3 capítulos)",
+      "warnings": [
+        "criatura",
+        "desorientação"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "kosmic-korners",
+      "title": "Kosmic Korners",
+      "creator": "Canal Kosmic Korners",
+      "year": null,
+      "kind": "found-footage",
+      "description": "Rolos de intervalo de um drive-in fictício do Colorado, recuperados num leilão, trazem instruções ameaçadoras.",
+      "url": "https://www.youtube.com/@KosmicKorners",
+      "urlType": "channel",
+      "status": "Em andamento",
+      "warnings": [
+        "morte"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "in-the-dark",
+      "title": "In The Dark (Louise Is Missing)",
+      "creator": "Canal Louise Paxton",
+      "year": null,
+      "kind": "found-footage",
+      "description": "Diários em vídeo de Louise Paxton, desaparecida em Londres em 2007, sugerem uma presença no apartamento dela.",
+      "url": "https://www.youtube.com/@LouisePaxton",
+      "urlType": "channel",
+      "status": "Concluída",
+      "warnings": [
+        "desaparecimento",
+        "perseguição"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "doors-analog-horror",
+      "title": "DOORS [Analog Horror]",
+      "creator": "High Strange TV (crédito da fonte)",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "Trilogia curta (cerca de 35 minutos) sobre uma porta que não deveria existir na sua casa.",
+      "url": "https://www.youtube.com/playlist?list=PLigin1KJB84IPXa6HKu_CKzBuBgWU9aIh",
+      "urlType": "playlist",
+      "status": "Concluída",
+      "warnings": [
+        "invasão domiciliar",
+        "ameaça à família"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "daisy-brown",
+      "title": "Daisy Brown",
+      "creator": "Julia Dapper",
+      "year": 2017,
+      "kind": "found-footage",
+      "description": "Vlogs de uma jovem que cuida de Alan, um monstro que mora na casa dela e não para de crescer.",
+      "url": "https://www.youtube.com/@daisybrown6516",
+      "urlType": "channel",
+      "status": "Concluída (ative as legendas)",
+      "warnings": [
+        "abuso",
+        "depressão e saúde mental",
+        "morte de animal"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "fake-documentary-q",
+      "title": "Fake Documentary \"Q\"",
+      "creator": "Canal pro9ramQ (Japão)",
+      "year": null,
+      "kind": "found-footage",
+      "description": "Mini-documentários japoneses sobre fenômenos estranhos que, vistos com atenção, estão todos conectados.",
+      "url": "https://www.youtube.com/@pro9ramQ",
+      "urlType": "channel",
+      "status": "Em andamento",
+      "warnings": [
+        "fenômenos paranormais"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "nettlebrook",
+      "title": "Nettlebrook",
+      "creator": "Lela Lucia e Julia Dapper",
+      "year": null,
+      "kind": "arg",
+      "description": "ARG sobre uma cidadezinha com mortes misteriosas e uma escola de elite construída perto de um pântano.",
+      "url": "https://www.youtube.com/playlist?list=PL4l4pnItMvsfMWkmCKGJMRVWzSVuwxfAP",
+      "urlType": "playlist",
+      "status": "Em hiato",
+      "warnings": [
+        "mortes",
+        "desaparecimentos de adolescentes"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "school-rumors",
+      "title": "School Rumors",
+      "creator": "Beckett Wagner",
+      "year": null,
+      "kind": "found-footage",
+      "description": "Em cada vídeo, alguém encontra um elevador 'fora de serviço' na escola e desce a um porão que não deveria existir.",
+      "url": "https://www.youtube.com/@beckettwagner",
+      "urlType": "channel",
+      "status": "Concluída (janeiro de 2025)",
+      "warnings": [
+        "desaparecimentos"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "hi-im-mary-mary",
+      "title": "Hi I'm Mary Mary",
+      "creator": "K",
+      "year": 2016,
+      "kind": "found-footage",
+      "description": "Mary acorda sozinha numa casa da qual não consegue sair e documenta as noites em que 'os outros' aparecem.",
+      "url": "https://www.youtube.com/@hiimmarymary923",
+      "urlType": "channel",
+      "status": "Concluída (2020)",
+      "warnings": [
+        "saúde mental e depressão"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "coffin-tree",
+      "title": "Coffin Tree (Viral Dimensions)",
+      "creator": "Canal Viral Dimensions",
+      "year": null,
+      "kind": "game-horror",
+      "description": "Uma tecnologia de realidade virtual dos anos 90 e um jogo de terror que parece ser mais do que entretenimento.",
+      "url": "https://www.youtube.com/@viraldimensions",
+      "urlType": "channel",
+      "status": "Em andamento",
+      "warnings": [
+        "violência",
+        "tecnologia corporativa abusiva"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "paranormal-paranoids",
+      "title": "Paranormal Paranoids",
+      "creator": "Chris Stuckmann",
+      "year": 2021,
+      "kind": "found-footage",
+      "description": "Um grupo de caça-fantasmas de Ohio desaparece após investigar Shelby Oaks; as imagens 'recuperadas' ficam num canal.",
+      "url": "https://www.youtube.com/@jesstheparanoid6180",
+      "urlType": "channel",
+      "status": "Concluída na forma atual",
+      "warnings": [
+        "desaparecimento",
+        "sobrenatural"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "catastrophe-crow",
+      "title": "Catastrophe Crow (Crow64)",
+      "creator": "Adam Butcher",
+      "year": null,
+      "kind": "game-horror",
+      "description": "Um jogo de Nintendo 64 que nunca existiu e um ARG enorme que ficou sem solução completa.",
+      "url": "https://www.youtube.com/playlist?list=PLtVj3PkAEtzYxeIlkN7QHpbMrvOkAGZae",
+      "urlType": "playlist",
+      "status": "Concluída (ARG não totalmente resolvido)",
+      "warnings": [
+        "trauma"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "well-be-right-back",
+      "title": "WE'LL BE RIGHT BACK",
+      "creator": "Canal da série",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "Anomalias em créditos e intervalos de programas infantis, exibidos por uma operadora de cabo fictícia chamada TeleBlue.",
+      "url": "https://www.youtube.com/playlist?list=PLDowS0m7mqDk9LutC07V9xPCY5BD_d1ct",
+      "urlType": "playlist",
+      "status": "Em andamento",
+      "warnings": [
+        "luzes piscantes (fotossensibilidade)"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "rapid-eyes",
+      "title": "Rapid Eyes",
+      "creator": "Canal Rapid Eyes",
+      "year": null,
+      "kind": "game-horror",
+      "description": "Um programa que não pode ser desinstalado revela um jogo de caminhada em primeira pessoa.",
+      "url": "https://www.youtube.com/@Rapid_Eyes",
+      "urlType": "channel",
+      "status": "Em andamento",
+      "warnings": [
+        "tensão psicológica"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "basswood-county",
+      "title": "Basswood County",
+      "creator": "Dark Mind",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "Vídeos informativos de um condado onde circulam pessoas que não parecem humanas; estilo próximo ao de The Mandela Catalogue.",
+      "url": "https://www.youtube.com/@DarkMind1",
+      "urlType": "channel",
+      "status": "Em andamento",
+      "warnings": [
+        "rostos perturbadores",
+        "privação de sono"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "eventide-media-center",
+      "title": "Eventide Media Center",
+      "creator": "Aidan Chick",
+      "year": 2020,
+      "kind": "analog-horror",
+      "description": "Antologia do acervo de uma biblioteca fictícia em Eventide Valley, Massachusetts, com monstros e humor negro.",
+      "url": "https://www.youtube.com/results?search_query=Eventide+Media+Center+analog+horror",
+      "urlType": "search",
+      "status": "Disponibilidade incerta; confirme o uploader",
+      "warnings": [
+        "morte"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "final-transmissions",
+      "title": "Final Transmissions",
+      "creator": "Steven Hugh e Erica Nelson (arte de Trevor Henderson)",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "Um apresentador de TV de uma cidadezinha de Illinois nos anos 90 exibe sinais estranhos de fontes desconhecidas.",
+      "url": "https://www.youtube.com/results?search_query=Final+Transmissions+analog+horror",
+      "urlType": "search",
+      "status": "Confirme o canal oficial",
+      "warnings": [
+        "criaturas"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "welcome-home",
+      "title": "Welcome Home",
+      "creator": "Clown Illustration",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "Uma equipe anônima tenta restaurar um programa de fantoches dos anos 70 com oito bonecos e uma casa consciente.",
+      "url": "https://www.youtube.com/results?search_query=Welcome+Home+Clown+analog+horror",
+      "urlType": "search",
+      "status": "Confirme o canal oficial",
+      "warnings": [
+        "violência"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    },
+    {
+      "slug": "kraina-grzybow-tv",
+      "title": "Kraina Grzybów TV",
+      "creator": "Wiktor Stribog",
+      "year": null,
+      "kind": "analog-horror",
+      "description": "Série polonesa no estilo da TV da era comunista: uma transmissão pirata apresentada por Agatka e a esquilo Małgosia.",
+      "url": "https://www.youtube.com/results?search_query=Kraina+Grzyb%C3%B3w+TV+Wiktor+Stribog",
+      "urlType": "search",
+      "status": "Confirme o canal oficial",
+      "warnings": [
+        "classificação não verificada"
+      ],
+      "genre": "analog-horror",
+      "embed": false
+    }
+  ]
+}

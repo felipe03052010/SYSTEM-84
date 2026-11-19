@@ -161,6 +161,7 @@ export default function ArchivePage({
   panelItems,
   recordPage = 1,
   recordTotal = 1,
+  extra = null,
 }) {
   const [query, setQuery] = useState('')
   const [period, setPeriod] = useState('all')
@@ -456,6 +457,8 @@ export default function ArchivePage({
             )}
           </div>
         </section>
+
+        {extra}
 
         {/* ── Painel de orientação de preservação ─────────────────── */}
         <section className="prancha prancha-notes">
