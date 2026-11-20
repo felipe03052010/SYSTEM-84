@@ -8,28 +8,18 @@
  * Cada função é segura: se o navegador bloquear o áudio ou o som estiver
  * desligado, ela simplesmente não faz nada.
  */
-import { soundEnabled } from './audio'
+import { getAudioContext, soundEnabled, soundOutput } from './audioDevice.js'
 
-let context = null
 let master = null
 let noiseBuffer = null
 
 function ensure() {
   if (!soundEnabled()) return null
   try {
-    if (!context) {
-      const AudioCtx = window.AudioContext || window.webkitAudioContext
-      if (!AudioCtx) return null
-      context = new AudioCtx()
-      master = context.createGain()
-      master.gain.value = 0.5
-      master.connect(context.destination)
-    }
-    if (context.state === 'suspended') context.resume().catch(() => {})
+    const context = getAudioContext()
+    if (context) master = soundOutput(context)
     return context
-  } catch {
-    return null
-  }
+  } catch { return null }
 }
 
 /** Ruído branco reaproveitado para chiados de fita, estática e motores. */
@@ -98,15 +88,18 @@ function burst(ctx, { gain = 0.04, decay = 0.14, delay = 0, highpass = 800, lowp
 export function keyClack() {
   const ctx = ensure()
   if (!ctx) return
-  burst(ctx, { gain: 0.05, decay: 0.035, highpass: 1600, lowpass: 9000 })
-  tone(ctx, { from: 180, to: 120, type: 'square', gain: 0.03, decay: 0.03 })
+  const pitch = 165 + Math.random() * 55
+  burst(ctx, { gain: 0.024, decay: 0.022, highpass: 1300, lowpass: 4200 })
+  tone(ctx, { from: pitch, to: 95, type: 'triangle', gain: 0.034, decay: 0.045 })
+  burst(ctx, { gain: 0.009, delay: 0.032, decay: 0.025, highpass: 580, lowpass: 2200 })
 }
 
 /** Clique curto de menu de terminal. */
 export function uiClick() {
   const ctx = ensure()
   if (!ctx) return
-  tone(ctx, { from: 880, to: 660, type: 'square', gain: 0.035, decay: 0.05 })
+  burst(ctx, { gain: 0.025, decay: 0.018, highpass: 640, lowpass: 3200 })
+  tone(ctx, { from: 515, to: 285, type: 'triangle', gain: 0.042, decay: 0.065 })
 }
 
 /** Confirmação: dois bipes ascendentes. */

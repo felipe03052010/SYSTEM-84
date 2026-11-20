@@ -19,6 +19,12 @@ import fabula84018 from './fabulas/84018.json'
 import fabula84019 from './fabulas/84019.json'
 import fabula84020 from './fabulas/84020.json'
 import catalog from './catalog.json'
+import { cinema } from './cinema.js'
+import { livrosPerdidos } from './livros-perdidos.js'
+import { fitasArg } from './fitas-arg.js'
+import { enigmas } from './enigmas.js'
+
+const novasFichas = [...cinema, ...livrosPerdidos, ...fitasArg, ...enigmas]
 import { expansion } from './expansion.js'
 import { ampliado } from './acervo-ampliado.js'
 import { autores } from './autores.js'
@@ -32,7 +38,7 @@ import { analogYoutube } from './analog-youtube.js'
  */
 const withAuthor = (record) => (record.author || !autores[record.id] ? record : { ...record, author: autores[record.id] })
 
-const newIds = new Set([...ampliado, ...analogYoutube].map((record) => record.id))
+const newIds = new Set([...ampliado, ...analogYoutube, ...novasFichas].map((record) => record.id))
 
 const fabulas = [
   fabula84020,
@@ -57,7 +63,7 @@ const fabulas = [
   fabula84001,
 ]
 
-export const records = [...catalog, ...expansion, ...ampliado, ...analogYoutube, ...fabulas].map((record) => ({
+export const records = [...catalog, ...expansion, ...ampliado, ...analogYoutube, ...fabulas, ...novasFichas].map((record) => ({
   ...withAuthor(record),
   isNew: newIds.has(record.id),
 }))

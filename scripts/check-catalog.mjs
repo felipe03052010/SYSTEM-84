@@ -34,9 +34,19 @@ assert(bytes < 950_000_000, 'Arquivos excedem a margem de tamanho para GitHub Pa
 // Fichas de expansão e acervo ampliado: mesma forma do catálogo, mídia remota.
 const { expansion } = await import(new URL('../src/data/expansion.js', import.meta.url))
 const { ampliado } = await import(new URL('../src/data/acervo-ampliado.js', import.meta.url))
+const { cinema } = await import('../src/data/cinema.js')
+const { livrosPerdidos } = await import('../src/data/livros-perdidos.js')
+const { fitasArg } = await import('../src/data/fitas-arg.js')
+const { enigmas } = await import('../src/data/enigmas.js')
+const novas = [...cinema, ...livrosPerdidos, ...fitasArg, ...enigmas]
+const tiposEsperados = { filme: 20, 'série': 20, livro: 20, 'lost-media': 20, 'analog-horror': 20, arg: 40 }
+assert.equal(novas.length, 140)
+for (const [tipo, total] of Object.entries(tiposEsperados)) {
+  assert.equal(novas.filter(ficha => ficha.type === tipo).length, total, tipo)
+}
 const TYPES = ['filme', 'série', 'livro', 'lost-media', 'analog-horror', 'arg']
 const titles = new Set(catalog.map(r => `${r.type}:${r.title.toLowerCase()}`))
-for (const record of [...expansion, ...ampliado]) {
+for (const record of [...expansion, ...ampliado, ...novas]) {
   assert(!ids.has(record.id), `ID duplicado: ${record.id}`); ids.add(record.id)
   assert(TYPES.includes(record.type), `Tipo inválido: ${record.id}`)
   assert(record.title && record.code && Number.isFinite(record.year) && record.description, `Ficha incompleta: ${record.id}`)
@@ -45,6 +55,10 @@ for (const record of [...expansion, ...ampliado]) {
   assert((record.media || []).length || record.article?.length, `Obra sem conteúdo: ${record.id}`)
   assert(record.sources?.length && record.sources.every(source => source.url.startsWith('https://')), `Fonte ausente: ${record.id}`)
   for (const media of record.media || []) {
+    if (media.kind === 'youtube') {
+      assert(/^[a-zA-Z0-9_-]{11}$/.test(media.youtubeId) && media.link === 'https://www.youtube.com/watch?v=' + media.youtubeId && media.title, 'Vídeo sem identificação')
+      continue
+    }
     assert(/^media\/[a-z0-9_.-]+\.(mp4|txt)$/.test(media.path), `Caminho inválido: ${media.path}`)
     assert(media.license && media.sourceUrl?.startsWith('https://'), `Mídia sem procedência: ${record.id}`)
     if (media.kind === 'video') assert(media.remoteUrl?.startsWith('https://archive.org/'), `Vídeo remoto fora do Internet Archive: ${record.id}`)
@@ -84,5 +98,5 @@ for (const item of catalogoAH.items) {
 }
 console.log('Catálogo de analog horror validado: ' + catalogoAH.items.length + ' títulos, ' + glyphsAH.size + ' glifos únicos.')
 
-console.log(`${expansion.length + ampliado.length} fichas extras verificadas; ${ids.size} registros no total.`)
+console.log(`Atualização conferida: ${novas.length} fichas novas, incluindo 40 enigmas ARG.`)
 console.log(`${catalog.length} obras verificadas; ${files.size} arquivos; ${(bytes / 1024 / 1024).toFixed(1)} MiB locais.`)

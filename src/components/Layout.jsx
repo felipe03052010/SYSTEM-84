@@ -1,7 +1,6 @@
 import { useEffect, useRef } from 'react'
 import Header from './Header'
 import Footer from './Footer'
-import useRetroSoundscape from '../utils/useRetroSoundscape'
 
 /* Blocos que entram em cena ao rolar a página. */
 const REVEAL = '.prancha, .item-card, .record-card, .theme-card, .timeline-era, .counter-cell, .dossier-post, .recent-card, .signal-card, .about-steps li, .about-plans article, .fig-lost, .fig-community, .notes-item'
@@ -44,7 +43,6 @@ function useReveal(root) {
 
 export default function Layout({ children, className = '' }) {
   const main = useRef(null)
-  useRetroSoundscape()
   useReveal(main)
 
   return (

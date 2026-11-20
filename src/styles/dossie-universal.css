@@ -45,8 +45,8 @@
 html,body,#root,.site-shell,.entrance-page {background:#090d0b !important;color:var(--fig-paper)}
 html {scroll-behavior:smooth}
 body {margin:0;font-family:var(--font-body);font-size:14px;background-image:none !important}
-body::before,body::after,.site-shell::before {display:none !important;content:none !important}
-.crt-overlay {display:none !important}
+.site-shell::before {display:none;content:none}
+
 *,*::before,*::after {box-sizing:border-box}
 img,iframe,video,svg {max-width:100%}
 button,input,textarea,select {border-radius:0 !important;font-family:var(--font-mono)}

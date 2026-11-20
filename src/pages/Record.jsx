@@ -204,12 +204,14 @@ function storyHeading(record) {
   if (record.type === 'lost-media') return 'DOSSIÊ DE PRESERVAÇÃO'
   if (record.type === 'analog-horror') return 'TRANSCRIÇÃO DA FITA // FICÇÃO ORIGINAL'
   if (record.type === 'arg') return 'ARQUIVO DO ENIGMA // FICÇÃO ORIGINAL'
+  if (record.externalAccess) return 'NOTAS DA CURADORIA'
   return 'FICÇÃO ORIGINAL // SYSTEM 84'
 }
 
 function isExternalVideo(record) { return (record.media || []).some((media) => media.kind === 'youtube') }
 
 function rightsLabel(record) {
+  if (record.externalAccess) return 'Consultar na fonte'
   if (isExternalVideo(record)) return 'YouTube / direitos do criador'
   if (record.type === 'analog-horror' || record.type === 'arg') return 'CC0 1.0 (original)'
   if (/creative commons|cc by/i.test(record.media?.[0]?.license || '')) return 'Creative Commons'
@@ -271,9 +273,9 @@ export default function Record() {
 
             <Panel title="ACESSO" tone="ember" className="panel-access">
               <ul className="system-list">
-                <li><UiIcon name={hasText || record.article ? 'book' : 'play'} size={20} /><div><strong>{record.puzzle ? 'Enigma interativo' : hasText || record.article ? 'Leitor unificado' : 'Player de vídeo'}</strong><span>{record.puzzle ? 'resposta conferida no navegador' : hasText ? 'texto integral dentro do site' : record.article ? 'texto original do arquivo' : 'reprodução dentro do site'}</span></div></li>
+                <li><UiIcon name={hasText || record.article ? 'book' : 'play'} size={20} /><div><strong>{record.externalAccess ? 'Acesso na fonte' : record.puzzle ? 'Enigma interativo' : hasText || record.article ? 'Leitor unificado' : 'Player de vídeo'}</strong><span>{record.externalAccess ? 'link para a página da instituição' : record.puzzle ? 'resposta conferida no navegador' : hasText ? 'texto integral dentro do site' : record.article ? 'texto original do arquivo' : 'reprodução dentro do site'}</span></div></li>
                 <li><UiIcon name="lock" size={20} /><div><strong>Fonte e licença</strong><span>{record.sources?.length || 0} fonte(s) registrada(s)</span></div></li>
-                <li><UiIcon name="loop" size={20} /><div><strong>{isExternalVideo(record) ? 'Reprodução externa' : 'Progresso lembrado'}</strong><span>{isExternalVideo(record) ? 'disponibilidade administrada pelo YouTube' : 'página, minutagem ou enigma neste navegador'}</span></div></li>
+                {!record.externalAccess && <li><UiIcon name="loop" size={20} /><div><strong>{isExternalVideo(record) ? 'Reprodução externa' : 'Progresso lembrado'}</strong><span>{isExternalVideo(record) ? 'disponibilidade administrada pelo YouTube' : 'página, minutagem ou enigma neste navegador'}</span></div></li>}
               </ul>
             </Panel>
           </aside>
@@ -287,6 +289,7 @@ export default function Record() {
           <label className="episode-select">ESCOLHER CAPÍTULO <select value={selected} onChange={(event) => setSelected(Number(event.target.value))}>{record.media.map((item, index) => <option value={index} key={item.path + index}>{item.title}</option>)}</select></label>
         )}
 
+        {record.externalAccess && <p className="external-access"><a href={record.externalAccess.url} target="_blank" rel="noreferrer">{record.externalAccess.label} ↗</a></p>}
         {record.article && (
           <article className={`original-story story-${record.type}`}>
             <h2>{storyHeading(record)}</h2>
@@ -295,7 +298,7 @@ export default function Record() {
           </article>
         )}
 
-        {media ? media.kind === 'text' ? <Reader key={media.path} media={media} /> : media.kind === 'youtube' ? <YouTubeEmbed key={media.youtubeId} media={media} /> : <Player key={media.path + selected} media={media} record={record} /> : !record.article && <p role="status">Arquivo ainda não disponível.</p>}
+        {media ? media.kind === 'text' ? <Reader key={media.path} media={media} /> : media.kind === 'youtube' ? <div key={media.youtubeId}><h3>{media.title}</h3><YouTubeEmbed media={media} /></div> : <Player key={media.path + selected} media={media} record={record} /> : !record.article && !record.externalAccess && <p role="status">Arquivo ainda não disponível.</p>}
 
         <details className="record-provenance">
           <summary>Sobre esta cópia e preservação</summary>

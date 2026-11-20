@@ -16,41 +16,20 @@ html body{background:#090d0b;color:#ebeddf}
 .s84-evidence+header{display:none}.s84-evidence>div{display:grid;grid-template-columns:minmax(220px,1fr) 2fr;gap:3.5vw;margin:38px 0}.s84-evidence figure,.s84-upload{background:#111913;padding:32px}.s84-evidence figure{margin:0;color:#a8ff60}.s84-evidence figcaption{font:24px VT323,monospace}.s84-evidence a,.s84-evidence small{color:#ff6332}.s84-evidence h2{font-size:clamp(28px,3vw,48px)}.s84-evidence p{font-size:20px;line-height:1.55}.s84-upload{border:1px dashed #a8ff60;text-align:center;margin-bottom:24px}.s84-upload b{font:76px VT323,monospace;color:#a8ff60}.s84-upload input{max-width:100%}.site-shell .enviar-form{display:flow-root}.site-shell .s84-upload{float:left;width:40%;margin-right:4%;min-height:340px}.site-shell .enviar-form>label,.site-shell .enviar-form>.enviar-grid{overflow:hidden}.site-shell .enviar-form>.compose-foot{clear:both}.site-shell .search-copy>small{color:#a8ff60}
 @media(max-width:780px){.s84-evidence>div{grid-template-columns:1fr}.site-shell .s84-upload{float:none;width:100%;min-height:0}}
 
-/* The tuning deck houses the archive channels on the home page. */
-.s84-home .s84-section:first-child {
-  background: radial-gradient(ellipse at 78% 45%, #283223 0, transparent 48%), #090d0b;
+
+.s84-home .s84-hero {align-items:end; gap:clamp(24px,6vw,100px)}
+.s84-hero-intro {border-top:1px solid #53684d; padding:0 0 .4rem}
+.s84-home .s84-hero-intro p {max-width:34ch; margin:1.2em 0; color:#bdcaba}
+.s84-home .s84-hero-intro .s84-btn {margin:0 .5rem .5rem 0}
+@media (max-width:780px) {
+  .s84-home .s84-hero {gap:1.5rem}
 }
-.archive-tuner {
-  width: min(100%, 490px); justify-self: center; padding: clamp(14px,2vw,27px);
-  border: 1px solid #7e8371; border-radius: 22px 22px 38px 22px;
-  background: linear-gradient(155deg,#565a4e,#30362f 38%,#1b211d 80%);
-  box-shadow: inset 2px 3px 2px #90938466,inset -4px -6px 2px #111710,0 18px 30px #0007;
-}
-.tuner-screen {
-  position: relative; isolation: isolate; overflow: hidden; border: 7px solid #121811;
-  border-radius: 11% / 8%; background: radial-gradient(ellipse,#243a20,#091308 73%);
-  box-shadow: 0 1px 1px #959786,0 -2px 5px #070a07;
-}
-.tuner-screen::after {
-  content: ''; position: absolute; inset: 0; pointer-events: none;
-  background: repeating-linear-gradient(0deg,#01050155 0 1px,transparent 1px 4px);
-  box-shadow: inset 0 0 32px 8px #010501aa; border-radius: inherit;
-}
-.tuner-readout,.tuner-deck {display:flex; align-items:center; justify-content:space-between; gap:12px}
-.tuner-readout {margin:6% 8% 0; font:13px 'IBM Plex Mono',monospace; color:#c7ff9d}
-.tuner-picture {width:86%; aspect-ratio:1.24; margin:0 auto 4%; display:grid; place-items:center}
-.tuner-picture>svg,.tuner-picture .s84-card {height:100%; width:100%; min-height:0}
-.tuner-picture .s84-poster {display:flex; height:100%; padding:4%; background:transparent; aspect-ratio:auto}
-.tuner-picture .s84-card {display:block}
-.tuner-picture .s84-card :is(small,strong,span){position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
-.tuner-deck {margin-top:18px}
-.tuner-label {color:#e6e8d6; font:12px/1.3 'IBM Plex Mono',monospace; flex:1}
-.tuner-keys {display:flex;gap:6px}
-.tuner-keys button {cursor:pointer; min-width:44px; min-height:44px; border:1px solid #969b86; border-radius:5px;
-  background:linear-gradient(#454c40,#252d25); color:#c3ff8b; box-shadow:0 3px 0 #10150f}
-.tuner-keys button:active {transform:translateY(2px);box-shadow:none}
-.archive-tuner :focus-visible {outline:2px solid #ff946b;outline-offset:2px}
-.tuner-vents {width:13%;height:20px;background:repeating-linear-gradient(105deg,transparent 0 4px,#101510 4px 7px)}
 .s84-strip a + a {border-left:1px solid #415a31}
 .s84-shelf .s84-poster,.prancha-results .s84-poster {border:1px solid #506149; background:radial-gradient(ellipse at center,#1b281a,#0b100d 78%)}
 .s84-card:hover .s84-poster,.s84-card:focus-visible .s84-poster {border-color:#a8ff60}
+.s84-controls {display:flex; flex-wrap:wrap; gap:10px}
+.s84-controls button,.external-access a {
+  display:inline-block; padding:.75rem 1rem; border:1px solid #53684d;
+  background:#101a14; color:#c0e4af; font: .875rem/1.4 'IBM Plex Mono',monospace; cursor:pointer;
+}
+.external-access a:hover,.s84-controls button:hover {border-color:#a8ff60}

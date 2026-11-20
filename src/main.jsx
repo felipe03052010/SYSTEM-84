@@ -5,6 +5,8 @@ import App from './App'
 import './styles/global.css'
 import './styles/site.css'
 
+try { if (localStorage.getItem('system84-crt') === 'off') document.documentElement.dataset.crt = 'off' } catch { /* Use the default CRT. */ }
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <HashRouter>

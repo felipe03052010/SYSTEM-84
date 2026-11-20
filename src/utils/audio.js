@@ -1,27 +1,9 @@
-let audioContext = null
-let enabled = true
-let lastClick = 0
-let lastTyping = 0
-try { enabled = localStorage.getItem('system84-sound') !== 'off' } catch { /* Optional preference. */ }
-export const soundEnabled = () => enabled
-export function setSoundEnabled(value) {
-  enabled = value
-  try { localStorage.setItem('system84-sound', value ? 'on' : 'off') } catch { /* Optional preference. */ }
-}
+import { getAudioContext, soundEnabled, soundOutput } from './audioDevice.js'
+import { keyClack, uiClick, uiConfirm } from './retro-sounds.js'
+export { resumeAudio, setSoundEnabled, soundEnabled } from './audioDevice.js'
 
-function getAudioContext() {
-  if (!audioContext) {
-    const AudioContext = window.AudioContext || window.webkitAudioContext
-    if (!AudioContext) return null
-    audioContext = new AudioContext()
-  }
-
-  if (audioContext.state === 'suspended') {
-    audioContext.resume().catch(() => {})
-  }
-
-  return audioContext
-}
+let lastClick = -Infinity
+let lastTyping = -Infinity
 
 export function beep(
   frequency = 520,
@@ -29,7 +11,7 @@ export function beep(
   volume = 0.012,
   type = 'square',
 ) {
-  if (!enabled) return
+  if (!soundEnabled()) return
   let context
   try { context = getAudioContext() } catch { return }
   if (!context) return
@@ -47,7 +29,7 @@ export function beep(
   )
 
   oscillator.connect(gain)
-  gain.connect(context.destination)
+  gain.connect(soundOutput(context))
 
   oscillator.start()
   oscillator.stop(context.currentTime + duration)
@@ -58,14 +40,14 @@ export function playClick() {
   const now = performance.now()
   if (now - lastClick < 60) return
   lastClick = now
-  beep(600, 0.035, 0.012)
+  uiClick()
 }
 
 export function playTyping() {
   const now = performance.now()
   if (now - lastTyping < 30) return
   lastTyping = now
-  beep(420 + Math.random() * 120, 0.02, 0.006)
+  keyClack()
 }
 
 export function playStartup() {
@@ -76,19 +58,4 @@ export function playStartup() {
   setTimeout(() => beep(880, 0.18, 0.02), 400)
 }
 
-export function playSuccess() {
-  beep(520, 0.07, 0.02)
-  setTimeout(() => beep(720, 0.07, 0.02), 90)
-  setTimeout(() => beep(960, 0.13, 0.02), 180)
-}
-
-// Call from a user gesture: browsers may deny sound before the first interaction.
-export async function resumeAudio() {
-  if (!enabled) return null
-  try {
-    const context = getAudioContext()
-    if (!context) return null
-    if (context.state === 'suspended') await context.resume()
-    return context.state === 'running' ? context : null
-  } catch { return null }
-}
+export const playSuccess = uiConfirm

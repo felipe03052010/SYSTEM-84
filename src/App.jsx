@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom'
-import { Suspense, lazy, useEffect } from 'react'
+import { Suspense, lazy } from 'react'
 import RouteTransition from './components/RouteTransition'
-import { playClick } from './utils/audio'
+import useRetroSoundscape from './utils/useRetroSoundscape'
 import { AuthProvider } from './utils/auth'
 
 import Home from './pages/Home'
@@ -23,14 +23,7 @@ const Sobre = lazy(() => import('./pages/Sobre'))
 const Enviar = lazy(() => import('./pages/Enviar'))
 
 export default function App() {
-  useEffect(() => {
-    const click = event => {
-      const target = event.target
-      if (target && typeof target.closest === 'function' && target.closest('button:not(:disabled), a, summary, select')) playClick()
-    }
-    document.addEventListener('click', click)
-    return () => document.removeEventListener('click', click)
-  }, [])
+  useRetroSoundscape()
 
   return (
     <AuthProvider>
