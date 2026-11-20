@@ -14,7 +14,10 @@ const withAuthor = (record) => (record.author || !autores[record.id] ? record : 
 
 const newIds = new Set([...ampliado, ...analogYoutube].map((record) => record.id))
 
-export const records = [...catalog, ...expansion, ...ampliado, ...analogYoutube].map((record) => ({
+const fabulas = [
+]
+
+export const records = [...catalog, ...expansion, ...ampliado, ...analogYoutube, ...fabulas].map((record) => ({
   ...withAuthor(record),
   isNew: newIds.has(record.id),
 }))
