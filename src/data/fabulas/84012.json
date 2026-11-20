@@ -1,0 +1,25 @@
+{
+  "id": 84012,
+  "title": "A raposa e a cegonha",
+  "code": "FAB_84012",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "A raposa serviu caldo num prato raso. A cegonha tentou apanhar o jantar com a ponta do bico enquanto a anfitriã lambia o prato. No dia seguinte a cegonha ofereceu sopa numa jarra de gargalo fino. A raposa sentiu o cheiro até o fim da refeição."
+  ]
+}
