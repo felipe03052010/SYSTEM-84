@@ -1,0 +1,25 @@
+{
+  "id": 84005,
+  "title": "O corvo e o jarro",
+  "code": "FAB_84005",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "O corvo encontrou água no fundo de um jarro estreito. Seu bico alcançava apenas a parede seca. Ao tentar derrubá-lo, deslocou uma pedrinha. Apanhou-a e a deixou cair na água. Depois veio outra pedra, e outra. Antes que o sol baixasse, a água tinha subido até o bico."
+  ]
+}
