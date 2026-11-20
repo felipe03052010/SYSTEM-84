@@ -48,6 +48,16 @@ export default function Enviar() {
     return (event) => { setForm((current) => ({ ...current, [key]: event.target.value })); playTyping() }
   }
 
+  async function importText(file) {
+    if (!file) return
+    if (!/\.txt$/i.test(file.name) || file.size > 12000) { setStatus('Selecione um arquivo .txt de até 12 KB.'); return }
+    try {
+      const article = await file.text()
+      setForm(previous => ({ ...previous, article }))
+      setStatus('Texto importado. Confira o conteúdo antes de enviar.')
+    } catch { setStatus('Não foi possível ler o arquivo.') }
+  }
+
   async function submit(event) {
     event.preventDefault()
     if (!authed) { uiError(); setStatus('Entre na sua conta para publicar no catálogo.'); return }
@@ -88,42 +98,7 @@ export default function Enviar() {
         <DossierMasthead />
 
         <section className="prancha prancha-collection">
-          <div className="collection-grid">
-            <div className="collection-copy">
-              <h1>ENVIE<br />AO<br />ACERVO</h1>
-              <p className="collection-kicker">ARQUIVO / CONTRIBUIÇÃO DA COMUNIDADE</p>
-              <p className="hero-lead">
-                Encontrou uma obra que merece entrar no catálogo? Publique aqui:
-                cada envio passa pela moderação e, aprovado, vira registro com
-                ficha, fonte e marca própria no acervo.
-              </p>
-              <p className="terminal-line typing-line">AGUARDANDO CONTRIBUIÇÃO...</p>
-            </div>
-
-            <figure className="collection-figure-wrap">
-              <FrameMarks />
-              <svg className="collection-figure" viewBox="0 0 320 320" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="miter" strokeLinecap="square" role="img" aria-label="Figura 084 — envio ao acervo">
-                <rect x="90" y="60" width="140" height="180" />
-                <path d="M120 110h80M120 140h80M120 170h56" />
-                <path d="M120 210h80" stroke="var(--fig-ember)" strokeWidth="4" />
-                <path d="M140 230l30 30 60-70" stroke="var(--fig-ember)" strokeWidth="4" />
-                <path d="M30 30h26M30 30v26M290 30h-26M290 30v26" stroke="var(--fig-ember)" strokeWidth="3" />
-              </svg>
-              <figcaption>FIG. 084 — CONTRIBUIÇÃO</figcaption>
-            </figure>
-
-            <div className="collection-side">
-              <Panel title="COMO FUNCIONA" tone="acid">
-                <ul className="system-list">
-                  <li><UiIcon name="upload" size={20} /><div><strong>Envie</strong><span>título, tipo, ano, descrição e conteúdo</span></div></li>
-                  <li><UiIcon name="eye" size={20} /><div><strong>Moderação</strong><span>a equipe confere fonte e licença</span></div></li>
-                  <li><UiIcon name="archive" size={20} /><div><strong>Catálogo</strong><span>aprovado, vira ficha com marca única</span></div></li>
-                  <li><UiIcon name="lock" size={20} /><div><strong>Direitos</strong><span>só publique o que tem direito de compartilhar</span></div></li>
-                </ul>
-              </Panel>
-            </div>
-          </div>
-        </section>
+          <div className="search-copy"><small>CONTRIBUIR / NOVO REGISTRO</small><h1>Não deixe<br/>o sinal morrer.</h1><p className="hero-lead">Indique uma fonte ou envie um texto. Sua contribuição passa pela curadoria antes de entrar no acervo.</p></div></section>
 
         <section className="prancha prancha-bbs">
           <SectionMark tone="acid">FORMULÁRIO / NOVO REGISTRO</SectionMark>
@@ -134,7 +109,7 @@ export default function Enviar() {
             </div>
           ) : (
             <form className="dossier-compose enviar-form" onSubmit={submit}>
-              <div className="enviar-grid">
+              <div className="s84-upload" onDragOver={e=>e.preventDefault()} onDrop={e=>{e.preventDefault();importText(e.dataTransfer.files[0])}}><b>[ ↑ ]</b><p>Traga um fragmento.</p><label>Selecionar texto (.txt)<input type="file" accept=".txt,text/plain" onChange={e=>importText(e.target.files[0])}/></label></div><div className="enviar-grid">
                 <label>TÍTULO *<input value={form.title} onChange={set('title')} maxLength={200} required placeholder="Nome da obra ou fita" /></label>
                 <label>TIPO *
                   <select value={form.type} onChange={set('type')}>

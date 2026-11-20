@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useSearchParams } from 'react-router-dom'
 import Layout from '../components/Layout'
-import RecordCard from '../components/RecordCard'
+import {Cover} from '../components/ReferenceArt'
 import { records } from '../data/records'
 import { useCommunityRecords } from '../utils/communityRecords'
 import { playClick, playTyping } from '../utils/audio'
@@ -104,16 +104,12 @@ export default function Pesquisa() {
         <section className="prancha prancha-search">
           <div className="search-grid">
             <div className="search-copy">
-              <h1>PESQUISAR<br />NO ARQUIVO<span className="blink">_</span></h1>
-              <p className="hero-lead">
-                Consulte simultaneamente os registros de filmes, séries, livros e
-                dossiês de preservação armazenados no SYSTEM 84.
-              </p>
+              <small>DIRETÓRIO / EXPLORAR</small><h1>Encontre<br/>sua frequência.</h1>
 
               <form className="dossier-search" onSubmit={submit}>
                 <label htmlFor="globalSearch">
                   <UiIcon name="search" size={16} />
-                  INSIRA UMA CONSULTA
+                  BUSCAR NO ACERVO
                 </label>
                 <div className="dossier-search-field">
                   <span aria-hidden="true">C:\SYSTEM84\SEARCH&gt;</span>
@@ -177,11 +173,7 @@ export default function Pesquisa() {
               </div>
             </div>
 
-            <figure className="search-figure">
-              <FrameMarks />
-              <WireGlobe />
-              <figcaption>FIG. 084 — BUSCA NO ACERVO</figcaption>
-            </figure>
+            
           </div>
         </section>
 
@@ -196,13 +188,11 @@ export default function Pesquisa() {
           {filtered.length > 0 ? (
             <div className="records-grid">
               {filtered.map((record) => (
-                <RecordCard key={record.id} record={record} />
+                <Cover key={record.id} record={record} />
               ))}
             </div>
           ) : (
-            <p className="empty-state">
-              &gt; NENHUM REGISTRO COMPATÍVEL FOI LOCALIZADO.
-            </p>
+            <div className="empty-state"><h2>Nenhum sinal por aqui.</h2><p>Tente outro título, remova o período ou procure pelo autor.</p><button onClick={clear}>Limpar filtros ↗</button></div>
           )}
         </section>
 

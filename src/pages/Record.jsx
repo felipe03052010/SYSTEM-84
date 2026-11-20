@@ -44,6 +44,7 @@ function read(key) {
 
 function Reader({ media }) {
   const [state, setState] = useState({ status: 'loading', text: '', origin: '' })
+  const [dark,setDark] = useState(()=>read('sys84-reader-dark')==='1')
   const [size, setSize] = useState(() => Number(read('sys84-font')) || 19)
   const [page, setPage] = useState(() => Number(read(`sys84-page:${media.path}`)) || 0)
   const [retry, setRetry] = useState(0)
@@ -113,7 +114,7 @@ function Reader({ media }) {
   )
 
   return (
-    <section className="book-reader" aria-label="Leitor de livro" ref={top}>
+    <section data-dark={dark} className="book-reader" aria-label="Leitor de livro" ref={top}>
       <div className="reader-tools">
         <span>LEITOR // {media.language || 'Idioma original'} · {progress}% LIDO</span>
         <form className="reader-find" onSubmit={searchBook}>
@@ -121,6 +122,7 @@ function Reader({ media }) {
           <button type="submit">ACHAR</button>
         </form>
         <div>
+          <button type="button" aria-pressed={dark} onClick={()=>{setDark(!dark);store('sys84-reader-dark',dark?'0':'1')}}>{dark?'Tema escuro':'Tema claro'} ◐</button>
           <button type="button" aria-label="Diminuir fonte" disabled={size <= 15} onClick={() => resize(size - 2)}>A−</button>
           <button type="button" aria-label="Aumentar fonte" disabled={size >= 29} onClick={() => resize(size + 2)}>A+</button>
         </div>
@@ -134,7 +136,8 @@ function Reader({ media }) {
   )
 }
 
-function Player({ media }) {
+function Player({ media, record }) {
+  const [started,setStarted] = useState(false)
   const candidates = useMemo(() => mediaCandidates(media), [media])
   const [index, setIndex] = useState(0)
   const [failed, setFailed] = useState(false)
@@ -156,11 +159,13 @@ function Player({ media }) {
   const current = candidates[index]
   return (
     <section className="video-player" aria-label="Player de vídeo">
-      {current && !failed && (
+      {!started && current && <div className="s84-cinema"><ItemGlyph record={record} size={260}/><button className="s84-btn" onClick={()=>setStarted(true)}>PLAY &gt; REPRODUZIR</button><small>CAPA CONCEITUAL / NÃO É UM FOTOGRAMA</small></div>}
+      {started && current && !failed && (
         <video
           key={current.url}
           ref={video}
           controls
+          autoPlay
           playsInline
           preload="metadata"
           src={current.url}
@@ -251,39 +256,8 @@ export default function Record() {
       <section className="prancha prancha-record">
         <Link className="back-link" to={backTo} onClick={playClick}>← VOLTAR AO CATÁLOGO</Link>
 
-        <div className="record-grid">
-          <header className="record-copy">
-            <SectionMark>{`${record.code} / ${typeLabel(record)} DE ${yearOf(record)}`}</SectionMark>
-            <h1>{record.title}</h1>
-            {record.author && <p className="record-author">{record.author}</p>}
-            <p className="hero-lead">{record.description}</p>
-
-            <MetaPills items={[
-              ['TIPO', typeLabel(record)],
-              ['ANO', yearOf(record)],
-              chapters > 1 && ['PARTES', String(chapters)],
-              record.puzzle && ['ENIGMA', 'INTERATIVO'],
-              ['ESTADO', record.recoveryStatus ? record.recoveryStatus.split('—')[0].trim() : 'DISPONÍVEL'],
-            ]} />
-
-            {record.tags?.length > 0 && (
-              <div className="record-tags">
-                {record.tags.map((tag) => <Link key={tag} to={`/pesquisa?q=${encodeURIComponent(tag)}`} onClick={playClick}>{tag}</Link>)}
-              </div>
-            )}
-
-            {record.recoveryStatus && (
-              <p className="recovery-note"><StatusSeal status={record.recoveryStatus}>PRESERVAÇÃO</StatusSeal> {record.recoveryStatus}</p>
-            )}
-          </header>
-
-          <figure className="record-figure">
-            <FrameMarks />
-            <ItemGlyph record={record} size={190} tone={record.type === 'lost-media' || record.type === 'analog-horror' ? 'ember' : 'acid'} />
-            <figcaption>FIG. 084 — {String(glyphLabel(record)).toUpperCase()}</figcaption>
-          </figure>
-
-          <aside className="record-aside">
+        {record.type === 'lost-media' && <div className="s84-evidence"><small>LOST MEDIA / {record.code}</small><h1>{/frankenstein/i.test(record.title) ? <>Uma cópia.<br/>Um século<br/>de memória.</> : record.title}</h1><div><figure><ItemGlyph record={record} size={196}/><figcaption>{record.recoveryStatus}</figcaption></figure><section><h2>{record.title}</h2><p>{record.description}</p><small>PROCEDÊNCIA E EVIDÊNCIAS</small>{record.sources?.map(s=><p key={s.url}><a href={s.url} target="_blank" rel="noreferrer">{s.title} ↗</a></p>)}</section></div></div>}<header className="s84-work"><small>{typeLabel(record)} / {record.code}</small><h1>{record.title}</h1>{record.recoveryStatus && <StatusSeal status={record.recoveryStatus}/>}</header>
+        <details className="s84-details"><summary>Ficha e procedência</summary><p>{record.description}</p><aside className="record-aside">
             <Panel title="FICHA DO REGISTRO" tone="acid">
               <div className="ficha-rows">
                 <div><span>CÓDIGO</span><b>{record.code}</b></div>
@@ -303,7 +277,7 @@ export default function Record() {
               </ul>
             </Panel>
           </aside>
-        </div>
+        </details>
       </section>
 
       <section className="prancha prancha-media">
@@ -321,7 +295,7 @@ export default function Record() {
           </article>
         )}
 
-        {media ? media.kind === 'text' ? <Reader key={media.path} media={media} /> : media.kind === 'youtube' ? <YouTubeEmbed key={media.youtubeId} media={media} /> : <Player key={media.path + selected} media={media} /> : !record.article && <p role="status">Arquivo ainda não disponível.</p>}
+        {media ? media.kind === 'text' ? <Reader key={media.path} media={media} /> : media.kind === 'youtube' ? <YouTubeEmbed key={media.youtubeId} media={media} /> : <Player key={media.path + selected} media={media} record={record} /> : !record.article && <p role="status">Arquivo ainda não disponível.</p>}
 
         <details className="record-provenance">
           <summary>Sobre esta cópia e preservação</summary>

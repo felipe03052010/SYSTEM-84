@@ -23,3 +23,4 @@ import './styles/dossie-universal.css'
 import './styles/mobile-entrada.css'
 // Filtro CRT v2 (dossiê): depois de tudo, para vencer as regras anteriores.
 import './styles/crt-filtro.css'
+import './styles/referencia.css'
