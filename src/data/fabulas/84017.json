@@ -1,0 +1,25 @@
+{
+  "id": 84017,
+  "title": "O lobo e a garça",
+  "code": "FAB_84017",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "Um osso ficou preso na garganta do lobo. Ele prometeu pagar a quem o removesse. A garça introduziu o bico e retirou o osso inteiro. Ao cobrar, ouviu do lobo que já saíra recompensada por tirar a cabeça de sua boca com vida."
+  ]
+}

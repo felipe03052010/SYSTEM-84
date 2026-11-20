@@ -14,6 +14,7 @@ import fabula84013 from './fabulas/84013.json'
 import fabula84014 from './fabulas/84014.json'
 import fabula84015 from './fabulas/84015.json'
 import fabula84016 from './fabulas/84016.json'
+import fabula84017 from './fabulas/84017.json'
 import catalog from './catalog.json'
 import { expansion } from './expansion.js'
 import { ampliado } from './acervo-ampliado.js'
@@ -31,6 +32,7 @@ const withAuthor = (record) => (record.author || !autores[record.id] ? record : 
 const newIds = new Set([...ampliado, ...analogYoutube].map((record) => record.id))
 
 const fabulas = [
+  fabula84017,
   fabula84016,
   fabula84015,
   fabula84014,
