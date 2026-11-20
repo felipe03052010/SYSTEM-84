@@ -543,7 +543,21 @@ function sigilFor(record) {
   return { id, svg }
 }
 
+const paper = '#ebeddf'
+const orange = '#ff6332'
+const dossierArt = [
+  [/nosferatu/i, <><path d="M56 5 94 27v58l-38 22-38-22V27Z" stroke={orange}/><path d="m56 16 29 17v46L56 96 27 79V33Z"/><path d="M32 49q24-24 48 0-24 23-48 0Z" fill={paper} stroke="none"/><circle cx="56" cy="49" r="9" fill="#090d0b" stroke="none"/><path d="M56 60v24m-10-12 10-11 10 11"/></>],
+  [/metr[oó]polis/i, <><path d="M4 99h104M10 98V57h17v41m1 0V37h17v61m4 0V12h19v86m5 0V30h14v68m4 0V49h12v49" stroke={orange}/><circle cx="56" cy="57" r="37" strokeWidth="0.8"/><path d="M51 17h18L59 44h23L42 97l11-38H32Z" fill={paper} stroke="none"/></>],
+  [/frankenstein/i, <><rect x="12" y="12" width="88" height="88" strokeWidth="1"/><path d="M29 86V41q0-23 27-23t27 23v45M29 49h54m-45-7h7m22 0h7M52 57l-5 13h17m-21 10h28" stroke={paper}/><path d="M56 5v18m0 65v19M6 56h28m44 0h28" stroke={orange}/></>],
+  [/phantom creeps/i, <>{[25,36,46].map(r=><circle key={r} cx="56" cy="56" r={r} strokeWidth="0.8"/>)}<path d="M2 56h108M56 2v108" strokeWidth="0.8"/><path d="m35 44 21-17 21 17v40L56 73 35 84Z" fill={orange} stroke="none"/><path d="M42 52h8m12 0h8" stroke="#090d0b" strokeWidth="4"/></>],
+  [/dr[aá]cula/i, <><path d="M5 51Q27 24 54 30q33-7 53 21-32-3-51 50Q35 59 5 51Z" stroke={orange}/><path d="M42 28q9-20 26-11v37l-8 12H48l-3-13-6-5 5-3Z" fill={paper}/></>],
+  [/alice.*maravilhas/i, <><path d="M29 99V60a27 27 0 0154 0v39M56 6v14M21 20l9 12M5 50l15 4m72 0 15-4M82 32l9-12"/><circle cx="56" cy="54" r="10" fill={paper} stroke="none"/><path d="m52 61-7 27h22l-7-27Z" fill={paper} stroke="none"/></>],
+  [/flash gordon/i, <><ellipse cx="55" cy="61" rx="50" ry="16" transform="rotate(-24 55 61)"/><path d="M40 73q8-41 39-66 8 39-14 74l-10-10Z" fill={orange} stroke="none"/><circle cx="70" cy="29" r="4" fill="#090d0b" stroke="none"/><path d="m45 78-9 24m16-22-7 20" stroke={orange}/></>],
+]
+
 export function glyphFor(record) {
+  const artwork = dossierArt.find(([title]) => title.test(record?.title || ''))
+  if (artwork) return { id: 'dossier-' + record.id, svg: artwork[1] }
   if (record?.glyph && ANALOG_YOUTUBE_GLYPHS[record.glyph]) return { id: record.glyph, svg: ANALOG_YOUTUBE_GLYPHS[record.glyph] }
   if (record?.glyph && TAPE_GLYPHS[record.glyph]) return { id: record.glyph, svg: TAPE_GLYPHS[record.glyph] }
   if (record?.type === 'analog-horror') {
@@ -571,6 +585,13 @@ export function ItemGlyph({ record, size = 96, tone = 'acid' }) {
       data-glyph={glyph.id}
     >
       {glyph.svg}
+      {Number.isSafeInteger(record?.id) && (
+        <path stroke="#a8ff60" strokeWidth="2" opacity=".85"
+          d={record.id.toString(2).split('').map((bit, i) =>
+            `M${9 + i * 4} 110v${bit === '1' ? -5 : -2}`
+          ).join(' ')}
+        />
+      )}
     </svg>
   )
 }
