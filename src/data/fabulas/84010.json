@@ -1,0 +1,25 @@
+{
+  "id": 84010,
+  "title": "A galinha dos ovos de ouro",
+  "code": "FAB_84010",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "Todas as manhãs o casal encontrava um ovo de ouro no ninho. Cansados de esperar, imaginaram que dentro da ave haveria um tesouro inteiro. Mataram a galinha e encontraram o mesmo que em qualquer outra. Na manhã seguinte, pela primeira vez, o ninho permaneceu vazio."
+  ]
+}
