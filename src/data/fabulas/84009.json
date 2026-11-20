@@ -1,0 +1,25 @@
+{
+  "id": 84009,
+  "title": "O vento e o sol",
+  "code": "FAB_84009",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "Vento e Sol disputaram quem faria um viajante tirar a capa. O Vento soprou até dobrar as árvores. O homem apertou os braços contra o peito. O Sol esperou a poeira baixar e aqueceu a estrada aos poucos. O viajante procurou sombra, tirou a capa e a dobrou sobre o braço."
+  ]
+}
