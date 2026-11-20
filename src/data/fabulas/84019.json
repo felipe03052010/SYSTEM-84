@@ -1,0 +1,25 @@
+{
+  "id": 84019,
+  "title": "Os viajantes e o urso",
+  "code": "FAB_84019",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "Ao ver o urso, um viajante subiu na árvore. O companheiro ficou no chão e se fez de morto. O urso cheirou sua orelha e partiu. Já em segurança, o primeiro perguntou o que a fera lhe dissera. “Que eu escolha melhor com quem viajo.”"
+  ]
+}
