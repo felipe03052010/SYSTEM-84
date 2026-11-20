@@ -1,0 +1,25 @@
+{
+  "id": 84007,
+  "title": "O menino e o lobo",
+  "code": "FAB_84007",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "O pastor gritou por socorro duas vezes para ver a aldeia correr. Nas duas, recebeu os vizinhos às gargalhadas. Na terceira tarde, um lobo de verdade atravessou a cerca. O menino gritou até perder a voz. Os vizinhos ouviram, lembraram das duas corridas e continuaram a trabalhar."
+  ]
+}
