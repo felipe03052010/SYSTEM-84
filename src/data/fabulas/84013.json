@@ -1,0 +1,25 @@
+{
+  "id": 84013,
+  "title": "O feixe de varas",
+  "code": "FAB_84013",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "Um pai entregou aos filhos um feixe amarrado e pediu que o partissem. Cada um tentou sozinho. Nenhuma vara cedeu. Ele desatou o cordão e distribuiu as varas. Até o menor quebrou a sua. Os irmãos, que haviam discutido a manhã inteira, olharam para os gravetos no chão."
+  ]
+}
