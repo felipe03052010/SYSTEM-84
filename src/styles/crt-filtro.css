@@ -18,8 +18,8 @@
   --crt-void: #090d0b;
   --crt-green: 168, 255, 96;
   --crt-orange: 255, 99, 50;
-  --crt-scan: .15;     /* opacidade das linhas de varredura */
-  --crt-mask: .03;     /* opacidade da máscara RGB */
+  --crt-scan: .28;     /* opacidade das linhas de varredura */
+  --crt-mask: .055;     /* opacidade da máscara RGB */
   --crt-glow: .05;     /* brilho de fósforo no centro */
   --crt-edge: .48;     /* escuridão nos cantos */
 }
@@ -114,7 +114,7 @@ html .crt-overlay {
 
 /* ── Celulares: mais leve, sem máscara RGB (evita moiré) nem animação ───── */
 @media (max-width: 760px) {
-  :root { --crt-scan: .12; --crt-mask: 0; --crt-glow: .035; --crt-edge: .45; }
+  :root { --crt-scan: .19; --crt-mask: 0; --crt-glow: .035; --crt-edge: .45; }
   html body::after {
     border-width: 3px;
     border-radius: 9px;
