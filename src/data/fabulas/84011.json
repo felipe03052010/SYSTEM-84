@@ -1,0 +1,25 @@
+{
+  "id": 84011,
+  "title": "O rato do campo e o rato da cidade",
+  "code": "FAB_84011",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "Na cidade havia pão branco, queijo e doce. O rato do campo acabava de escolher a primeira migalha quando uma porta bateu. Os primos se esconderam. Voltaram à mesa e ouviram um gato. O visitante pegou o caminho da roça. Preferia terminar sua pouca comida sentado."
+  ]
+}
