@@ -1,0 +1,25 @@
+{
+  "id": 84003,
+  "title": "O leão e o rato",
+  "code": "FAB_84003",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "Um rato acordou o leão ao correr sobre sua juba. Preso sob a pata, prometeu retribuir a liberdade. O leão riu e o soltou. Dias depois, os rugidos trouxeram o rato até uma rede de caça. Roendo um nó por vez, ele abriu uma passagem larga o bastante para o amigo."
+  ]
+}
