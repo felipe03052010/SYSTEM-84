@@ -1,0 +1,25 @@
+{
+  "id": 84014,
+  "title": "O lobo e o cordeiro",
+  "code": "FAB_84014",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "O lobo acusou o cordeiro de sujar a água. O cordeiro mostrou que bebia mais abaixo no riacho. O lobo então o acusou de uma ofensa no inverno anterior. O cordeiro ainda nem havia nascido. “Deve ter sido alguém da sua família”, disse o lobo, avançando mesmo assim."
+  ]
+}
