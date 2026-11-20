@@ -1,0 +1,25 @@
+{
+  "id": 84016,
+  "title": "O carvalho e os juncos",
+  "code": "FAB_84016",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "O carvalho zombava dos juncos que se curvavam a qualquer brisa. Na noite da tempestade eles se dobraram até tocar a água. O carvalho ficou de pé enquanto pôde. De manhã, os juncos se ergueram entre as raízes expostas da árvore caída."
+  ]
+}
