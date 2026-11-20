@@ -1,0 +1,25 @@
+{
+  "id": 84001,
+  "title": "A raposa e as uvas",
+  "code": "FAB_84001",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "A raposa viu o cacho mais escuro da parreira e tomou distância. Saltou três vezes. Na quarta, uma folha lhe roçou o focinho, mas as uvas continuaram no alto. Um pardal perguntou se já ia embora. Ela limpou a poeira das patas. “Estão verdes”, respondeu, sem ter provado uma só."
+  ]
+}

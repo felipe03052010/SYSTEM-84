@@ -1,3 +1,4 @@
+import fabula84001 from './fabulas/84001.json'
 import catalog from './catalog.json'
 import { expansion } from './expansion.js'
 import { ampliado } from './acervo-ampliado.js'
@@ -15,6 +16,7 @@ const withAuthor = (record) => (record.author || !autores[record.id] ? record : 
 const newIds = new Set([...ampliado, ...analogYoutube].map((record) => record.id))
 
 const fabulas = [
+  fabula84001,
 ]
 
 export const records = [...catalog, ...expansion, ...ampliado, ...analogYoutube, ...fabulas].map((record) => ({
