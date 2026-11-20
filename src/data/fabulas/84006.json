@@ -1,0 +1,25 @@
+{
+  "id": 84006,
+  "title": "O cão e seu reflexo",
+  "code": "FAB_84006",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "Levando um pedaço de carne, um cão atravessou a ponte. Lá embaixo, outro cão parecia levar um pedaço maior. O primeiro abriu a boca para tomar os dois. A carne caiu, a corrente a levou e o rival desapareceu quando a água se agitou."
+  ]
+}
