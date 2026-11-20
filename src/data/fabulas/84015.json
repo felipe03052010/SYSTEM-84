@@ -1,0 +1,25 @@
+{
+  "id": 84015,
+  "title": "A rã e o boi",
+  "code": "FAB_84015",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "Uma rã ouviu dos filhos que um boi pisara o brejo. Encheu o peito. “Era deste tamanho?” Os pequenos negaram. Ela respirou mais fundo. Ainda faltava muito. Na última tentativa, empenhada em alcançar o tamanho do boi, a rã inchou até arrebentar."
+  ]
+}
