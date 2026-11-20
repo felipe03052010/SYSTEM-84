@@ -1,0 +1,25 @@
+{
+  "id": 84002,
+  "title": "A lebre e a tartaruga",
+  "code": "FAB_84002",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "A lebre deixou a tartaruga partir primeiro. Alcançou-a na primeira curva e resolveu dormir debaixo de uma árvore, certa de que ouviria seus passos. A tartaruga passou sem fazer barulho. Quando a lebre acordou, correu tão depressa que levantou uma nuvem de pó. A rival já descansava do outro lado da chegada."
+  ]
+}
