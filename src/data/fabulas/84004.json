@@ -1,0 +1,25 @@
+{
+  "id": 84004,
+  "title": "A cigarra e a formiga",
+  "code": "FAB_84004",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "Durante o verão a formiga carregava grãos enquanto a cigarra enchia a tarde de música. Chegou o frio. A cigarra bateu à porta da vizinha e pediu alimento. “Que fazia no tempo da colheita?” “Cantava.” A formiga recolheu o último saco para dentro. “Então dance agora”, respondeu, fechando a porta."
+  ]
+}
