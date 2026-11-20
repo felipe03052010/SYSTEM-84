@@ -1,0 +1,25 @@
+{
+  "id": 84008,
+  "title": "A raposa e o corvo",
+  "code": "FAB_84008",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "O corvo pousou com queijo no bico. A raposa elogiou o brilho de suas penas e o porte de rei. “Se sua voz for igualmente bela, quem poderá superá-lo?” O corvo ergueu a cabeça para cantar. O queijo caiu. A raposa o apanhou antes que a primeira nota terminasse."
+  ]
+}
