@@ -1,0 +1,25 @@
+{
+  "id": 84018,
+  "title": "A raposa e o bode",
+  "code": "FAB_84018",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "A raposa caiu no poço. Ao ver um bode na borda, elogiou o frescor da água. O bode saltou. A raposa subiu em suas costas, apoiou a pata nos chifres e alcançou a borda. Só então o bode percebeu que, antes de descer, devia ter procurado a saída."
+  ]
+}
