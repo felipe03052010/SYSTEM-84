@@ -1,0 +1,25 @@
+{
+  "id": 84020,
+  "title": "Os ratos e o sino",
+  "code": "FAB_84020",
+  "type": "livro",
+  "author": "Tradição esópica",
+  "description": "Fábula em reconto breve em português.",
+  "tags": [
+    "fábula",
+    "conto"
+  ],
+  "availability": "available",
+  "language": "Português",
+  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "sources": [
+    {
+      "title": "The Aesop for Children — Library of Congress",
+      "url": "https://read.gov/aesop/001.html"
+    }
+  ],
+  "media": [],
+  "article": [
+    "Os ratos decidiram pendurar um sino no pescoço do gato. Assim ouviriam sua chegada antes que ele alcançasse a despensa. Houve aplausos até que o rato mais velho pôs o sino no meio da roda e perguntou quem o levaria. A reunião acabou com o sino no chão."
+  ]
+}
