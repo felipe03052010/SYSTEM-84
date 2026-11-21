@@ -1,3 +1,4 @@
+import { copiaPreservada } from './copias-preservadas.js'
 /** Notas de curadoria e fontes institucionais das coleções de cinema e televisão. */
 const entradas = [
   {
@@ -363,6 +364,18 @@ const entradas = [
 ]
 
 const videosOficiais = {
+  85004: ["KndYeQ9ZZYg","A Perilous Proceeding","Library of Congress"],
+  85017: ["ed1RzYqgwqM","Curta – The Street","NFB"],
+  85021: ["j-uldPC8iTg","Episódio da coleção Castelo Rá-Tim-Bum","TV Cultura"],
+  85022: ["ALFSifNl2nM","Chamada da nova temporada de Mundo da Lua","TV Cultura"],
+  85025: ["-Qx48K7VNDI","Programa sobre a série – Sem Censura: Confissões de Adolescente","TV Brasil"],
+  85026: ["FQs8-6HZvak","Histórias da Natureza 1","TV Cultura"],
+  85027: ["T3fJIjwzMJo","X-Tudo (1992) – Especial Cultura 45 Anos","TV Cultura"],
+  85028: ["fNVjvf7IMFU","Episódio – Cultura Brasileira","Vila Sésamo"],
+  85029: ["PHG8NS9ScW8","Trecho musical – Tema de Zabumba","TV Cultura"],
+  85031: ["8Yr2Dud_ZLg","Episódio – The Gift (1917–1924)","Ken Burns: Jazz"],
+  85032: ["t-nlvOQSNdI","Chamada oficial – Baseball","Ken Burns"],
+  85038: ["KAgg_1DApkc","Trecho de Round Four – Muhammad Ali’s Devotion to Others","PBS"],
   85001: ["PI9_7M0WHEY","Filme de acervo — desembarque em Ellis Island","Library of Congress"],
   85002: ["haKhhVCqr-o","Filme de acervo — mercado de peixes","Library of Congress"],
   85003: ["G535zKtc5_Q","Filme de acervo — Lower Broadway","Library of Congress"],
@@ -391,7 +404,9 @@ const videosOficiais = {
 
 export const cinema = entradas.map(({ source, url, linkLabel, ...obra }) => {
   const sources = [{ title: source, url }]
-  const media = []
+  const copia = copiaPreservada(obra.id, obra.title)
+  const media = copia ? [copia] : []
+  if (copia) sources.push({ title: 'Ficha da cópia no Wikimedia Commons', url: copia.sourceUrl })
   const video = videosOficiais[obra.id]
   if (video) {
     const [youtubeId, title, canal] = video

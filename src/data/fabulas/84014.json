@@ -3,23 +3,35 @@
   "title": "O lobo e o cordeiro",
   "code": "FAB_84014",
   "type": "livro",
-  "author": "Tradição esópica",
-  "description": "Fábula em reconto breve em português.",
+  "author": "Esopo",
+  "description": "The Wolf And The Lamb — fábula da coletânea The Aesop for Children (Chicago, 1919), com ilustrações de Milo Winter. Texto integral em inglês.",
   "tags": [
     "fábula",
     "conto"
   ],
   "availability": "available",
-  "language": "Português",
-  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "language": "Inglês",
+  "rightsNote": "Edição de 1919 de Rand McNally & Company. Transcrição da edição digital 19994 do Project Gutenberg. Preservamos a redação em inglês.",
   "sources": [
     {
-      "title": "The Aesop for Children — Library of Congress",
-      "url": "https://read.gov/aesop/001.html"
+      "url": "https://www.gutenberg.org/files/19994/19994-h/19994-h.htm#Page_42",
+      "title": "The Aesop for Children, p. 42"
     }
   ],
   "media": [],
   "article": [
-    "O lobo acusou o cordeiro de sujar a água. O cordeiro mostrou que bebia mais abaixo no riacho. O lobo então o acusou de uma ofensa no inverno anterior. O cordeiro ainda nem havia nascido. “Deve ter sido alguém da sua família”, disse o lobo, avançando mesmo assim."
-  ]
+    "A stray Lamb stood drinking early one morning on the bank of a woodland stream. That very same morning a hungry Wolf came by farther up the stream, hunting for something to eat. He soon got his eyes on the Lamb. As a rule Mr. Wolf snapped up such delicious morsels without making any bones about it, but this Lamb looked so very helpless and innocent that the Wolf felt he ought to have some kind of an excuse for taking its life.",
+    "\"How dare you paddle around in my stream and stir up all the mud!\" he shouted fiercely. \"You deserve to be punished severely for your rashness!\"",
+    "\"But, your highness,\" replied the trembling Lamb, \"do not be angry! I cannot possibly muddy the water you are drinking up there. Remember, you are upstream and I am downstream.\"",
+    "\"You do muddy it!\" retorted the Wolf savagely. \"And besides, I have heard that you told lies about me last year!\"",
+    "\"How could I have done so?\" pleaded the Lamb. \"I wasn't born until this year.\"",
+    "\"If it wasn't you, it was your brother!\"",
+    "\"I have no brothers.\"",
+    "\"Well, then,\" snarled the Wolf, \"It was someone in your family anyway. But no matter who it was, I do not intend to be talked out of my breakfast.\"",
+    "And without more words the Wolf seized the poor Lamb and carried her off to the forest.",
+    "The tyrant can always find an excuse for his tyranny.",
+    "The unjust will not listen to the reasoning of the innocent."
+  ],
+  "year": 1919,
+  "editionTitle": "The Wolf And The Lamb"
 }

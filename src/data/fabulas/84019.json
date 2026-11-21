@@ -3,23 +3,32 @@
   "title": "Os viajantes e o urso",
   "code": "FAB_84019",
   "type": "livro",
-  "author": "Tradição esópica",
-  "description": "Fábula em reconto breve em português.",
+  "author": "Esopo",
+  "description": "Two Travelers And A Bear — fábula da coletânea The Aesop for Children (Chicago, 1919), com ilustrações de Milo Winter. Texto integral em inglês.",
   "tags": [
     "fábula",
     "conto"
   ],
   "availability": "available",
-  "language": "Português",
-  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "language": "Inglês",
+  "rightsNote": "Edição de 1919 de Rand McNally & Company. Transcrição da edição digital 19994 do Project Gutenberg. Preservamos a redação em inglês.",
   "sources": [
     {
-      "title": "The Aesop for Children — Library of Congress",
-      "url": "https://read.gov/aesop/001.html"
+      "url": "https://www.gutenberg.org/files/19994/19994-h/19994-h.htm#Page_90",
+      "title": "The Aesop for Children, p. 90"
     }
   ],
   "media": [],
   "article": [
-    "Ao ver o urso, um viajante subiu na árvore. O companheiro ficou no chão e se fez de morto. O urso cheirou sua orelha e partiu. Já em segurança, o primeiro perguntou o que a fera lhe dissera. “Que eu escolha melhor com quem viajo.”"
-  ]
+    "Two Men were traveling in company through a forest, when, all at once, a huge Bear crashed out of the brush near them.",
+    "One of the Men, thinking of his own safety, climbed a tree.",
+    "The other, unable to fight the savage beast alone, threw himself on the ground and lay still, as if he were dead. He had heard that a Bear will not touch a dead body.",
+    "It must have been true, for the Bear snuffed at the Man's head awhile, and then, seeming to be satisfied that he was dead, walked away.",
+    "The Man in the tree climbed down.",
+    "\"It looked just as if that Bear whispered in your ear,\" he said. \"What did he tell you?\"",
+    "\"He said,\" answered the other, \"that it was not at all wise to keep company with a fellow who would desert his friend in a moment of danger.\"",
+    "Misfortune is the test of true friendship."
+  ],
+  "year": 1919,
+  "editionTitle": "Two Travelers And A Bear"
 }

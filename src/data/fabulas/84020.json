@@ -3,23 +3,30 @@
   "title": "Os ratos e o sino",
   "code": "FAB_84020",
   "type": "livro",
-  "author": "Tradição esópica",
-  "description": "Fábula em reconto breve em português.",
+  "author": "Esopo",
+  "description": "Belling The Cat — fábula da coletânea The Aesop for Children (Chicago, 1919), com ilustrações de Milo Winter. Texto integral em inglês.",
   "tags": [
     "fábula",
     "conto"
   ],
   "availability": "available",
-  "language": "Português",
-  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "language": "Inglês",
+  "rightsNote": "Edição de 1919 de Rand McNally & Company. Transcrição da edição digital 19994 do Project Gutenberg. Preservamos a redação em inglês.",
   "sources": [
     {
-      "title": "The Aesop for Children — Library of Congress",
-      "url": "https://read.gov/aesop/001.html"
+      "url": "https://www.gutenberg.org/files/19994/19994-h/19994-h.htm#Page_15",
+      "title": "The Aesop for Children, p. 15"
     }
   ],
   "media": [],
   "article": [
-    "Os ratos decidiram pendurar um sino no pescoço do gato. Assim ouviriam sua chegada antes que ele alcançasse a despensa. Houve aplausos até que o rato mais velho pôs o sino no meio da roda e perguntou quem o levaria. A reunião acabou com o sino no chão."
-  ]
+    "The Mice once called a meeting to decide on a plan to free themselves of their enemy, the Cat. At least they wished to find some way of knowing when she was coming, so they might have time to run away. Indeed, something had to be done, for they lived in such constant fear of her claws that they hardly dared stir from their dens by night or day.",
+    "Many plans were discussed, but none of them was thought good enough. At last a very young Mouse got up and said:",
+    "\"I have a plan that seems very simple, but I know it will be successful. All we have to do is to hang a bell about the Cat's neck. When we hear the bell ringing we will know immediately that our enemy is coming.\"",
+    "All the Mice were much surprised that they had not thought of such a plan before. But in the midst of the rejoicing over their good fortune, an old Mouse arose and said:",
+    "\"I will say that the plan of the young Mouse is very good. But let me ask one question: Who will bell the Cat?\"",
+    "It is one thing to say that something should be done, but quite a different matter to do it."
+  ],
+  "year": 1919,
+  "editionTitle": "Belling The Cat"
 }

@@ -3,23 +3,31 @@
   "title": "A lebre e a tartaruga",
   "code": "FAB_84002",
   "type": "livro",
-  "author": "Tradição esópica",
-  "description": "Fábula em reconto breve em português.",
+  "author": "Esopo",
+  "description": "The Hare And The Tortoise — fábula da coletânea The Aesop for Children (Chicago, 1919), com ilustrações de Milo Winter. Texto integral em inglês.",
   "tags": [
     "fábula",
     "conto"
   ],
   "availability": "available",
-  "language": "Português",
-  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "language": "Inglês",
+  "rightsNote": "Edição de 1919 de Rand McNally & Company. Transcrição da edição digital 19994 do Project Gutenberg. Preservamos a redação em inglês.",
   "sources": [
     {
-      "title": "The Aesop for Children — Library of Congress",
-      "url": "https://read.gov/aesop/001.html"
+      "url": "https://www.gutenberg.org/files/19994/19994-h/19994-h.htm#Page_96",
+      "title": "The Aesop for Children, p. 96"
     }
   ],
   "media": [],
   "article": [
-    "A lebre deixou a tartaruga partir primeiro. Alcançou-a na primeira curva e resolveu dormir debaixo de uma árvore, certa de que ouviria seus passos. A tartaruga passou sem fazer barulho. Quando a lebre acordou, correu tão depressa que levantou uma nuvem de pó. A rival já descansava do outro lado da chegada."
-  ]
+    "A Hare was making fun of the Tortoise one day for being so slow.",
+    "\"Do you ever get anywhere?\" he asked with a mocking laugh.",
+    "\"Yes,\" replied the Tortoise, \"and I get there sooner than you think. I'll run you a race and prove it.\"",
+    "The Hare was much amused at the idea of running a race with the Tortoise, but for the fun of the thing he agreed. So the Fox, who had consented to act as judge, marked the distance and started the runners off.",
+    "The Hare was soon far out of sight, and to make the Tortoise feel very deeply how ridiculous it was for him to try a race with a Hare, he lay down beside the course to take a nap until the Tortoise should catch up.",
+    "The Tortoise meanwhile kept going slowly but steadily, and, after a time, passed the place where the Hare was sleeping. But the Hare slept on very peacefully; and when at last he did wake up, the Tortoise was near the goal. The Hare now ran his swiftest, but he could not overtake the Tortoise in time.",
+    "The race is not always to the swift."
+  ],
+  "year": 1919,
+  "editionTitle": "The Hare And The Tortoise"
 }

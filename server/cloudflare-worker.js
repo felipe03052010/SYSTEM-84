@@ -29,6 +29,20 @@ export default {
       }
 
       const headers = new Headers({ 'Accept-Encoding': 'identity' })
+      const book = url.pathname.match(/^\/media\/gutenberg\/(\d{1,6})\.txt$/)
+      if (book) {
+        const text = await fetch(`https://www.gutenberg.org/cache/epub/${book[1]}/pg${book[1]}.txt`, {
+          method: request.method, redirect: 'error',
+        })
+        if (!text.ok) return new Response(null, { status: text.status })
+        if (!text.headers.get('Content-Type')?.toLowerCase().startsWith('text/plain')) {
+          return new Response(null, { status: 502 })
+        }
+        return new Response(text.body, { headers: {
+          'Content-Type': 'text/plain; charset=utf-8', 'Cache-Control': 'private, no-store',
+          'X-Content-Type-Options': 'nosniff',
+        } })
+      }
       if (request.headers.has('Range') && !url.pathname.endsWith('.txt')) {
         headers.set('Range', request.headers.get('Range'))
       }

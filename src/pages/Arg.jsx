@@ -5,19 +5,17 @@ export default function Arg() {
     <DossierArchive
       type="arg"
       title="ARG"
-      titleLines={['ENIGMAS', 'ARG']}
+      titleLines={['ARQUIVOS', 'ARG']}
       kicker="ARQUIVO / JOGO DE REALIDADE ALTERNATIVA"
-      directory="DIRETÓRIO / ENIGMAS"
+      directory="DIRETÓRIO / EPISÓDIOS"
       command="DESCRIPTOGRAFANDO SINAL..."
-      description="Decifre mensagens, reconstrua sequências e cruze pistas do acervo. Cada ficha traz um desafio e uma dica opcional. O progresso fica salvo no seu navegador."
+      description="Acompanhe narrativas de realidade alternativa pelos episódios publicados por seus criadores. Abra a ficha para assistir e consultar os créditos."
       figure="arg"
-      panelTitle="SISTEMA DE ENIGMAS"
+      panelTitle="GUIA DE EXIBIÇÃO"
       panelItems={[
-        ['lock', 'Cofres', 'resposta conferida na hora'],
-        ['search', 'Pistas', 'dicas opcionais em cada enigma'],
-        ['archive', 'Acervo', 'respostas escondidas nas fichas'],
-        ['loop', 'Progresso', 'enigmas resolvidos ficam salvos'],
-        ['star', 'Final', 'descubra o desfecho de cada ficha'],
+        ['play', 'Episódios', 'reprodução na ficha'],
+        ['archive', 'Procedência', 'canal e autoria identificados'],
+        ['search', 'Pesquisa', 'localize um episódio pelo título'],
       ]}
       recordPage={11}
       recordTotal={13}

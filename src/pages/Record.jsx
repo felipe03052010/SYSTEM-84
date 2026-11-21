@@ -9,9 +9,7 @@ import { fetchText, mediaCandidates, paginate } from '../utils/media'
 import {
   DossierFooter,
   DossierMasthead,
-  FrameMarks,
   ItemGlyph,
-  MetaPills,
   Panel,
   SectionMark,
   StatusSeal,
@@ -23,17 +21,7 @@ import {
 import '../styles/figma.css'
 import '../styles/dossie.css'
 import '../styles/record.css'
-import ArgPuzzle from '../components/ArgPuzzle'
 import YouTubeEmbed from '../components/YouTubeEmbed'
-
-function glyphLabel(record) {
-  if (record.type === 'lost-media') return 'dossiê de preservação'
-  if (record.type === 'livro') return 'sistema de leitura'
-  if (record.type === 'série') return 'sistema de séries'
-  if (record.type === 'analog-horror') return 'fita recuperada'
-  if (record.type === 'arg') return 'enigma em aberto'
-  return 'sistema de cinema'
-}
 
 function store(key, value) {
   try { localStorage.setItem(key, String(value)) } catch { /* preferência opcional */ }
@@ -202,21 +190,16 @@ function StoryLine({ text, tape }) {
 
 function storyHeading(record) {
   if (record.type === 'lost-media') return 'DOSSIÊ DE PRESERVAÇÃO'
-  if (record.type === 'analog-horror') return 'TRANSCRIÇÃO DA FITA // FICÇÃO ORIGINAL'
-  if (record.type === 'arg') return 'ARQUIVO DO ENIGMA // FICÇÃO ORIGINAL'
-  if (record.externalAccess) return 'NOTAS DA CURADORIA'
-  return 'FICÇÃO ORIGINAL // SYSTEM 84'
+  return record.type === 'livro' ? 'TEXTO DA EDIÇÃO' : 'NOTAS DA CURADORIA'
 }
 
 function isExternalVideo(record) { return (record.media || []).some((media) => media.kind === 'youtube') }
 
 function rightsLabel(record) {
-  if (record.externalAccess) return 'Consultar na fonte'
   if (isExternalVideo(record)) return 'YouTube / direitos do criador'
-  if (record.type === 'analog-horror' || record.type === 'arg') return 'CC0 1.0 (original)'
   if (/creative commons|cc by/i.test(record.media?.[0]?.license || '')) return 'Creative Commons'
-  if (record.type === 'lost-media') return 'Resumo original'
-  return 'Domínio público'
+  if (record.type === 'lost-media' && !record.media?.length) return 'Dossiê documental'
+  return record.media?.[0]?.license || 'Ver procedência'
 }
 
 export default function Record() {
@@ -247,9 +230,7 @@ export default function Record() {
   if (!record) return <NotFound />
   const media = record.media?.[selected] || record.media?.[0]
   const backTo = collectionOf(record)
-  const chapters = record.media?.length || 0
-  const hasText = (record.media || []).some((item) => item.kind === 'text')
-  const isFiction = record.type === 'arg' || (record.type === 'analog-horror' && !isExternalVideo(record))
+  const hasText = media?.kind === 'text' || (record.type === 'livro' && Boolean(record.article?.length))
 
   return <Layout className={`dossie-page record-type-${record.type}`}>
     <div className="dossier-frame">
@@ -273,9 +254,9 @@ export default function Record() {
 
             <Panel title="ACESSO" tone="ember" className="panel-access">
               <ul className="system-list">
-                <li><UiIcon name={hasText || record.article ? 'book' : 'play'} size={20} /><div><strong>{record.externalAccess ? 'Acesso na fonte' : record.puzzle ? 'Enigma interativo' : hasText || record.article ? 'Leitor unificado' : 'Player de vídeo'}</strong><span>{record.externalAccess ? 'link para a página da instituição' : record.puzzle ? 'resposta conferida no navegador' : hasText ? 'texto integral dentro do site' : record.article ? 'texto original do arquivo' : 'reprodução dentro do site'}</span></div></li>
+                <li><UiIcon name={hasText || !media ? 'book' : 'play'} size={20} /><div><strong>{hasText ? 'Leitor' : media ? 'Player de vídeo' : 'Dossiê'}</strong><span>{hasText ? 'texto integral dentro do site' : media ? 'reprodução dentro da ficha' : 'documentação da obra'}</span></div></li>
                 <li><UiIcon name="lock" size={20} /><div><strong>Fonte e licença</strong><span>{record.sources?.length || 0} fonte(s) registrada(s)</span></div></li>
-                {!record.externalAccess && <li><UiIcon name="loop" size={20} /><div><strong>{isExternalVideo(record) ? 'Reprodução externa' : 'Progresso lembrado'}</strong><span>{isExternalVideo(record) ? 'disponibilidade administrada pelo YouTube' : 'página, minutagem ou enigma neste navegador'}</span></div></li>}
+                {media && <li><UiIcon name="loop" size={20} /><div><strong>{isExternalVideo(record) ? 'Canal de origem' : 'Progresso de leitura ou reprodução'}</strong><span>{isExternalVideo(record) ? 'vídeo incorporado do YouTube' : 'salvo neste navegador'}</span></div></li>}
               </ul>
             </Panel>
           </aside>
@@ -283,18 +264,17 @@ export default function Record() {
       </section>
 
       <section className="prancha prancha-media">
-        <SectionMark>{media?.kind === 'youtube' ? 'YOUTUBE / PUBLICAÇÃO DO CRIADOR ORIGINAL' : record.article && !media ? (isFiction ? 'ARQUIVO / FICÇÃO ORIGINAL' : 'DOSSIÊ / PESQUISA DOCUMENTAL') : hasText ? 'LEITOR / TEXTO ORIGINAL' : 'TRANSMISSÃO / CÓPIA DE ACERVO'}</SectionMark>
+        <SectionMark>{media?.kind === 'youtube' ? 'YOUTUBE / PUBLICAÇÃO DO CRIADOR ORIGINAL' : hasText ? 'LEITOR / TEXTO DA EDIÇÃO' : record.article && !media ? 'DOCUMENTAÇÃO DO ACERVO' : 'TRANSMISSÃO / CÓPIA DE ACERVO'}</SectionMark>
 
         {record.media?.length > 1 && (
-          <label className="episode-select">ESCOLHER CAPÍTULO <select value={selected} onChange={(event) => setSelected(Number(event.target.value))}>{record.media.map((item, index) => <option value={index} key={item.path + index}>{item.title}</option>)}</select></label>
+          <label className="episode-select">ESCOLHER CAPÍTULO <select value={selected} onChange={(event) => setSelected(Number(event.target.value))}>{record.media.map((item, index) => <option value={index} key={item.path || item.youtubeId || index}>{item.title}</option>)}</select></label>
         )}
 
-        {record.externalAccess && <p className="external-access"><a href={record.externalAccess.url} target="_blank" rel="noreferrer">{record.externalAccess.label} ↗</a></p>}
         {record.article && (
           <article className={`original-story story-${record.type}`}>
             <h2>{storyHeading(record)}</h2>
+            {record.editionTitle && <p>{record.editionTitle}</p>}
             {record.article.map((paragraph, index) => <StoryLine key={index} text={paragraph} tape={record.type === 'analog-horror'} />)}
-            {record.puzzle && <ArgPuzzle key={record.id} record={record} />}
           </article>
         )}
 

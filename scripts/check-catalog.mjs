@@ -8,7 +8,7 @@ for (const record of catalog) {
   assert(!ids.has(record.id), 'ID duplicado'); ids.add(record.id)
   assert(record.title && record.code && (record.media.length || record.article?.length), 'Obra sem arquivo')
   for (const media of record.media) {
-    assert(/^media\/[a-z0-9_.-]+\.(mp4|txt)$/.test(media.path), 'A mídia deve estar no site')
+    assert(/^media\/[a-z0-9_.-]+\.(mp4|webm|ogv|txt)$/.test(media.path), 'A mídia deve estar no site')
     assert(['video', 'text'].includes(media.kind))
     assert(media.license && media.sourceUrl.startsWith('https://'), 'Mídia sem procedência')
     if (media.remoteUrl) {
@@ -59,11 +59,20 @@ for (const record of [...expansion, ...ampliado, ...novas]) {
       assert(/^[a-zA-Z0-9_-]{11}$/.test(media.youtubeId) && media.link === 'https://www.youtube.com/watch?v=' + media.youtubeId && media.title, 'Vídeo sem identificação')
       continue
     }
-    assert(/^media\/[a-z0-9_.-]+\.(mp4|txt)$/.test(media.path), `Caminho inválido: ${media.path}`)
+    assert(/^media\/[a-z0-9_.-]+\.(mp4|webm|ogv|txt)$/.test(media.path), `Caminho inválido: ${media.path}`)
     assert(media.license && media.sourceUrl?.startsWith('https://'), `Mídia sem procedência: ${record.id}`)
-    if (media.kind === 'video') assert(media.remoteUrl?.startsWith('https://archive.org/'), `Vídeo remoto fora do Internet Archive: ${record.id}`)
+    if (media.kind === 'video') {
+      const source = new URL(media.remoteUrl)
+      assert.equal(source.protocol, 'https:')
+      assert(['archive.org', 'upload.wikimedia.org', 'download.blender.org'].includes(source.hostname), 'Origem de vídeo inesperada: ' + source.hostname)
+    }
   }
-  if (record.type === 'arg') assert(record.puzzle?.question && record.puzzle.answer && record.puzzle.hint && record.puzzle.ending, `Enigma incompleto: ${record.id}`)
+  if (['filme','série','arg','analog-horror'].includes(record.type)) {
+    assert(record.media.some(item => ['video','youtube','archive'].includes(item.kind)), 'Reprodução interna ausente: ' + record.id)
+  }
+  if (record.type === 'arg' || record.type === 'analog-horror') {
+    assert(!record.puzzle && record.author && !/^SYSTEM\s*84$/i.test(record.author), 'Ficção própria no catálogo: ' + record.id)
+  }
 }
 // Arquivos externos: IDs verificados, licença própria e glifo exclusivo.
 const { analogYoutube } = await import(new URL('../src/data/analog-youtube.js', import.meta.url))
@@ -78,25 +87,5 @@ for (const item of analogYoutube) {
 }
 console.log('Analog horror externo validado: '+analogYoutube.length+' registros independentes.')
 
-// Catálogo de criadores de analog horror: só links oficiais, um glifo único por título.
-const catalogoAH = JSON.parse(await fs.readFile(new URL('../src/data/analog-catalogo.json', import.meta.url), 'utf8'))
-const { ANALOG_CATALOGO_GLYPHS } = await import(new URL('../src/data/analog-catalogo-glifos.js', import.meta.url))
-const tapeSource = await fs.readFile(new URL('../src/components/tapeGlyphs.jsx', import.meta.url), 'utf8')
-const tapeKeys = new Set([...tapeSource.matchAll(/^  '(fita-[a-z0-9-]+)': base\(/gm)].map((match) => match[1]))
-const glyphsInUse = new Set([...analogYoutube.map((item) => item.glyph), 'fita-01', 'fita-02', 'fita-03', 'fita-04', 'fita-05', 'fita-06'])
-const slugsAH = new Set(), glyphsAH = new Set()
-assert(catalogoAH.items.length === Object.keys(ANALOG_CATALOGO_GLYPHS).length, 'Mapa de glifos do catálogo não confere com os itens')
-for (const item of catalogoAH.items) {
-  assert(item.slug && !slugsAH.has(item.slug), `Slug duplicado no catálogo de analog horror: ${item.slug}`); slugsAH.add(item.slug)
-  assert(item.title && item.creator && item.description, `Item incompleto no catálogo: ${item.slug}`)
-  assert(['channel', 'playlist', 'search'].includes(item.urlType), `urlType inválido: ${item.slug}`)
-  assert(new URL(item.url).protocol === 'https:' && new URL(item.url).hostname === 'www.youtube.com', `Link fora do YouTube: ${item.slug}`)
-  assert(item.embed === false, `Item do catálogo não deve ser incorporado: ${item.slug}`)
-  const glyph = ANALOG_CATALOGO_GLYPHS[item.slug]
-  assert(glyph && tapeKeys.has(glyph), `Glifo inexistente: ${item.slug}`)
-  assert(!glyphsAH.has(glyph) && !glyphsInUse.has(glyph), `Glifo repetido: ${glyph}`); glyphsAH.add(glyph)
-}
-console.log('Catálogo de analog horror validado: ' + catalogoAH.items.length + ' títulos, ' + glyphsAH.size + ' glifos únicos.')
-
-console.log(`Atualização conferida: ${novas.length} fichas novas, incluindo 40 enigmas ARG.`)
+console.log(`Atualização conferida: ${novas.length} fichas novas, incluindo 40 registros de ARG.`)
 console.log(`${catalog.length} obras verificadas; ${files.size} arquivos; ${(bytes / 1024 / 1024).toFixed(1)} MiB locais.`)

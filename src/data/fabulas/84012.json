@@ -3,23 +3,29 @@
   "title": "A raposa e a cegonha",
   "code": "FAB_84012",
   "type": "livro",
-  "author": "Tradição esópica",
-  "description": "Fábula em reconto breve em português.",
+  "author": "Esopo",
+  "description": "The Fox And The Stork — fábula da coletânea The Aesop for Children (Chicago, 1919), com ilustrações de Milo Winter. Texto integral em inglês.",
   "tags": [
     "fábula",
     "conto"
   ],
   "availability": "available",
-  "language": "Português",
-  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "language": "Inglês",
+  "rightsNote": "Edição de 1919 de Rand McNally & Company. Transcrição da edição digital 19994 do Project Gutenberg. Preservamos a redação em inglês.",
   "sources": [
     {
-      "title": "The Aesop for Children — Library of Congress",
-      "url": "https://read.gov/aesop/001.html"
+      "url": "https://www.gutenberg.org/files/19994/19994-h/19994-h.htm#Page_44",
+      "title": "The Aesop for Children, p. 44"
     }
   ],
   "media": [],
   "article": [
-    "A raposa serviu caldo num prato raso. A cegonha tentou apanhar o jantar com a ponta do bico enquanto a anfitriã lambia o prato. No dia seguinte a cegonha ofereceu sopa numa jarra de gargalo fino. A raposa sentiu o cheiro até o fim da refeição."
-  ]
+    "The Fox one day thought of a plan to amuse himself at the expense of the Stork, at whose odd appearance he was always laughing.",
+    "\"You must come and dine with me today,\" he said to the Stork, smiling to himself at the trick he was going to play. The Stork gladly accepted the invitation and arrived in good time and with a very good appetite.",
+    "For dinner the Fox served soup. But it was set out in a very shallow dish, and all the Stork could do was to wet the very tip of his bill. Not a drop of soup could he get. But the Fox lapped it up easily, and, to increase the disappointment of the Stork, made a great show of enjoyment.",
+    "The hungry Stork was much displeased at the trick, but he was a calm, even-tempered fellow and saw no good in flying into a rage. Instead, not long afterward, he invited the Fox to dine with him in turn. The Fox arrived promptly at the time that had been set, and the Stork served a fish dinner that had a very appetizing smell. But it was served in a tall jar with a very narrow neck. The Stork could easily get at the food with his long bill, but all the Fox could do was to lick the outside of the jar, and sniff at the delicious odor. And when the Fox lost his temper, the Stork said calmly:",
+    "Do not play tricks on your neighbors unless you can stand the same treatment yourself."
+  ],
+  "year": 1919,
+  "editionTitle": "The Fox And The Stork"
 }

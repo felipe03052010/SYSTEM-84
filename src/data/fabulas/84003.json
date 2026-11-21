@@ -3,23 +3,30 @@
   "title": "O leão e o rato",
   "code": "FAB_84003",
   "type": "livro",
-  "author": "Tradição esópica",
-  "description": "Fábula em reconto breve em português.",
+  "author": "Esopo",
+  "description": "The Lion And The Mouse — fábula da coletânea The Aesop for Children (Chicago, 1919), com ilustrações de Milo Winter. Texto integral em inglês.",
   "tags": [
     "fábula",
     "conto"
   ],
   "availability": "available",
-  "language": "Português",
-  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "language": "Inglês",
+  "rightsNote": "Edição de 1919 de Rand McNally & Company. Transcrição da edição digital 19994 do Project Gutenberg. Preservamos a redação em inglês.",
   "sources": [
     {
-      "title": "The Aesop for Children — Library of Congress",
-      "url": "https://read.gov/aesop/001.html"
+      "url": "https://www.gutenberg.org/files/19994/19994-h/19994-h.htm#Page_23",
+      "title": "The Aesop for Children, p. 23"
     }
   ],
   "media": [],
   "article": [
-    "Um rato acordou o leão ao correr sobre sua juba. Preso sob a pata, prometeu retribuir a liberdade. O leão riu e o soltou. Dias depois, os rugidos trouxeram o rato até uma rede de caça. Roendo um nó por vez, ele abriu uma passagem larga o bastante para o amigo."
-  ]
+    "A Lion lay asleep in the forest, his great head resting on his paws. A timid little Mouse came upon him unexpectedly, and in her fright and haste to get away, ran across the Lion's nose. Roused from his nap, the Lion laid his huge paw angrily on the tiny creature to kill her.",
+    "\"Spare me!\" begged the poor Mouse. \"Please let me go and some day I will surely repay you.\"",
+    "The Lion was much amused to think that a Mouse could ever help him. But he was generous and finally let the Mouse go.",
+    "Some days later, while stalking his prey in the forest, the Lion was caught in the toils of a hunter's net. Unable to free himself, he filled the forest with his angry roaring. The Mouse knew the voice and quickly found the Lion struggling in the net. Running to one of the great ropes that bound him, she gnawed it until it parted, and soon the Lion was free.",
+    "\"You laughed when I said I would repay you,\" said the Mouse. \"Now you see that even a Mouse can help a Lion.\"",
+    "A kindness is never wasted."
+  ],
+  "year": 1919,
+  "editionTitle": "The Lion And The Mouse"
 }

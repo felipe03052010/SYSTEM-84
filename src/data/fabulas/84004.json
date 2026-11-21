@@ -3,23 +3,30 @@
   "title": "A cigarra e a formiga",
   "code": "FAB_84004",
   "type": "livro",
-  "author": "Tradição esópica",
-  "description": "Fábula em reconto breve em português.",
+  "author": "Esopo",
+  "description": "The Ants And The Grasshopper — fábula da coletânea The Aesop for Children (Chicago, 1919), com ilustrações de Milo Winter. Texto integral em inglês.",
   "tags": [
     "fábula",
     "conto"
   ],
   "availability": "available",
-  "language": "Português",
-  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "language": "Inglês",
+  "rightsNote": "Edição de 1919 de Rand McNally & Company. Transcrição da edição digital 19994 do Project Gutenberg. Preservamos a redação em inglês.",
   "sources": [
     {
-      "title": "The Aesop for Children — Library of Congress",
-      "url": "https://read.gov/aesop/001.html"
+      "url": "https://www.gutenberg.org/files/19994/19994-h/19994-h.htm#Page_34",
+      "title": "The Aesop for Children, p. 34"
     }
   ],
   "media": [],
   "article": [
-    "Durante o verão a formiga carregava grãos enquanto a cigarra enchia a tarde de música. Chegou o frio. A cigarra bateu à porta da vizinha e pediu alimento. “Que fazia no tempo da colheita?” “Cantava.” A formiga recolheu o último saco para dentro. “Então dance agora”, respondeu, fechando a porta."
-  ]
+    "One bright day in late autumn a family of Ants were bustling about in the warm sunshine, drying out the grain they had stored up during the summer, when a starving Grasshopper, his fiddle under his arm, came up and humbly begged for a bite to eat.",
+    "\"What!\" cried the Ants in surprise, \"haven't you stored anything away for the winter? What in the world were you doing all last summer?\"",
+    "\"I didn't have time to store up any food,\" whined the Grasshopper; \"I was so busy making music that before I knew it the summer was gone.\"",
+    "The Ants shrugged their shoulders in disgust.",
+    "\"Making music, were you?\" they cried. \"Very well; now dance!\" And they turned their backs on the Grasshopper and went on with their work.",
+    "There's a time for work and a time for play."
+  ],
+  "year": 1919,
+  "editionTitle": "The Ants And The Grasshopper"
 }

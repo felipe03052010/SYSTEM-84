@@ -3,23 +3,32 @@
   "title": "O lobo e a garça",
   "code": "FAB_84017",
   "type": "livro",
-  "author": "Tradição esópica",
-  "description": "Fábula em reconto breve em português.",
+  "author": "Esopo",
+  "description": "The Wolf And The Crane — fábula da coletânea The Aesop for Children (Chicago, 1919), com ilustrações de Milo Winter. Texto integral em inglês.",
   "tags": [
     "fábula",
     "conto"
   ],
   "availability": "available",
-  "language": "Português",
-  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "language": "Inglês",
+  "rightsNote": "Edição de 1919 de Rand McNally & Company. Transcrição da edição digital 19994 do Project Gutenberg. Preservamos a redação em inglês.",
   "sources": [
     {
-      "title": "The Aesop for Children — Library of Congress",
-      "url": "https://read.gov/aesop/001.html"
+      "url": "https://www.gutenberg.org/files/19994/19994-h/19994-h.htm#Page_21",
+      "title": "The Aesop for Children, p. 21"
     }
   ],
   "media": [],
   "article": [
-    "Um osso ficou preso na garganta do lobo. Ele prometeu pagar a quem o removesse. A garça introduziu o bico e retirou o osso inteiro. Ao cobrar, ouviu do lobo que já saíra recompensada por tirar a cabeça de sua boca com vida."
-  ]
+    "A Wolf had been feasting too greedily, and a bone had stuck crosswise in his throat. He could get it neither up nor down, and of course he could not eat a thing. Naturally that was an awful state of affairs for a greedy Wolf.",
+    "So away he hurried to the Crane. He was sure that she, with her long neck and bill, would easily be able to reach the bone and pull it out.",
+    "\"I will reward you very handsomely,\" said the Wolf, \"if you pull that bone out for me.\"",
+    "The Crane, as you can imagine, was very uneasy about putting her head in a Wolf's throat. But she was grasping in nature, so she did what the Wolf asked her to do.",
+    "When the Wolf felt that the bone was gone, he started to walk away.",
+    "\"But what about my reward!\" called the Crane anxiously.",
+    "\"What!\" snarled the Wolf, whirling around. \"Haven't you got it? Isn't it enough that I let you take your head out of my mouth without snapping it off?\"",
+    "Expect no reward for serving the wicked."
+  ],
+  "year": 1919,
+  "editionTitle": "The Wolf And The Crane"
 }

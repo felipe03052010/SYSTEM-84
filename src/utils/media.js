@@ -30,6 +30,8 @@ export function mediaCandidates(media) {
   const safe = media.path && SAFE_PATH.test(media.path) && !media.path.includes('..')
   if (media.remoteUrl?.startsWith('https://')) {
     list.push({ url: media.remoteUrl, origin: 'remote' })
+    const book = media.kind === 'text' && media.remoteUrl.match(/^https:\/\/www\.gutenberg\.org\/cache\/epub\/(\d+)\/pg\1\.txt$/)
+    if (book) list.push({ url: `${base()}media/gutenberg/${book[1]}.txt`, origin: 'local' })
     return list
   }
   if (safe) {

@@ -1,3 +1,4 @@
+import { copiaPreservada } from './copias-preservadas.js'
 // Edições integrais em português. O ano se refere à obra, não à digitalização.
 function livro(id, gutenbergId, title, year, author, description, tags) {
   const edition = `https://www.gutenberg.org/ebooks/${gutenbergId}`
@@ -34,7 +35,7 @@ function dossie(id, title, year, slug, archive, genre, description, note, recove
       title: 'National Film Preservation Foundation — cópia e documentação',
       url: `https://www.filmpreservation.org/preserved-films/screening-room/${slug}`,
     }],
-    media: [],
+    media: [copiaPreservada(id, title)],
     article: [description, note, `Instituição responsável pela preservação desta cópia: ${archive}.`],
   }
 }
@@ -100,11 +101,7 @@ export const livrosPerdidos = [
     "Um sapateiro veste um uniforme e convence uma cidade de que é oficial. O veterano dos palcos Frank Daniels interpreta o falso capitão.",
     "Poucas comédias de Daniels sobreviveram. Uma cópia neozelandesa em nitrato preto e branco permitiu preservar este episódio da série Captain Jinks em 2013.",
     "CÓPIA RECUPERADA"),
-  dossie(85065, "Charming Display at Perfect Back Contest", 1928, "perfect-back-contest",
-    "Library of Congress", "cinejornal",
-    "Um cinejornal de apenas um minuto registra um concurso de postura em Los Angeles. A câmera de atualidades transformava eventos planejados em notícias para a sala de cinema.",
-    "A cópia tingida foi identificada na Nova Zelândia em 2011. A nota de preservação ajuda a reconhecer como unidade documental um trecho de cinejornal que poderia ter circulado isolado.",
-    "SEGMENTO PRESERVADO"),
+  dossie(85065, "The Sergeant", 1910, "the-sergeant-1910-full", "Academy Film Archive e New Zealand Film Archive", "faroeste", "Um sargento atravessa o vale de Yosemite neste faroeste da Selig Polyscope Company.", "Uma cópia encontrada na Nova Zelândia permitiu preservar o filme após cerca de um século. Os intertítulos também identificam paisagens onde a equipe filmou.", "Recuperada"),
   dossie(85066, "China and the Chinese, Part 2", 1917, "china-and-the-chinese-1917",
     "Museum of Modern Art", "documentário",
     "Vendedores, cozinheiros e trabalhadores de rua aparecem neste episódio de uma série educativa sobre a China. Há também vistas de Hankou e Chongqing feitas a partir da água.",

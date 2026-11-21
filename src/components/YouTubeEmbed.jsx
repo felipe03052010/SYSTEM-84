@@ -6,10 +6,10 @@ export default function YouTubeEmbed({media}) {
  const id=String(media.youtubeId||'')
  const valid=/^[a-zA-Z0-9_-]{11}$/.test(id)
  const url=valid?'https://www.youtube.com/watch?v='+id:''
- const src=valid?'https://www.youtube-nocookie.com/embed/'+encodeURIComponent(id)+'?rel=0':''
+ const src=valid?'https://www.youtube-nocookie.com/embed/'+encodeURIComponent(id)+'?rel=0&autoplay=1':''
  return <section className="youtube-embed" aria-label="Vídeo de criador externo">
    <div className="youtube-viewport">
-     {started&&valid?<iframe title={media.title||'Vídeo do YouTube'} src={src} loading="lazy" referrerPolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen/>:
+     {started&&valid?<iframe title={media.title||'Vídeo do YouTube'} src={src} referrerPolicy="strict-origin-when-cross-origin" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen/>:
        <div className="youtube-standby">
         <span className="youtube-label">SYS84 / SINAL EXTERNO</span>
         <span className="youtube-orbit" aria-hidden="true">◎</span>

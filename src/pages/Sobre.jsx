@@ -8,9 +8,9 @@ import '../styles/dossie.css'
 
 const STEPS = [
   { icon: 'power', title: 'Ligue o terminal', text: 'A inicialização BIOS abre o arquivo. Você pode entrar com som ou em silêncio.' },
-  { icon: 'search', title: 'Escolha uma coleção', text: 'Filmes, séries, livros, lost media, fitas de Analog Horror e enigmas ARG.' },
+  { icon: 'search', title: 'Escolha uma coleção', text: 'Filmes, séries, livros, lost media, Analog Horror e episódios de ARG.' },
   { icon: 'eye', title: 'Abra a ficha', text: 'Cada obra tem código, ano, autoria, fonte, licença e histórico de preservação.' },
-  { icon: 'play', title: 'Assista ou leia aqui', text: 'Player e leitor internos lembram onde você parou, sem baixar nada.' },
+  { icon: 'play', title: 'Assista ou leia aqui', text: 'A ficha reúne o player ou o texto de leitura e as fontes da obra.' },
 ]
 
 const PLANS = [
@@ -18,7 +18,7 @@ const PLANS = [
     name: 'Visitante',
     price: 'R$ 0',
     note: 'para conhecer o arquivo',
-    items: ['Prévia do acervo', 'Busca e linha do tempo', 'Dossiês de lost media', 'Enigmas ARG'],
+    items: ['Prévia do acervo', 'Busca e linha do tempo', 'Dossiês de lost media', 'Episódios de ARG'],
   },
   {
     name: 'Assinante',
@@ -36,10 +36,10 @@ const PLANS = [
 ]
 
 const FAQ = [
-  ['Os filmes e livros são legais?', 'Sim. O acervo usa obras em domínio público, obras sob licença Creative Commons (como os filmes da Blender) e textos originais do SYSTEM 84 em CC0. No Brasil, a Lei 9.610/98 protege livros até 70 anos após a morte do autor (art. 41) e obras audiovisuais até 70 anos após a divulgação (art. 44). Cada ficha mostra a fonte e a licença.'],
-  ['Preciso baixar alguma coisa?', 'Não. Os livros abrem no leitor interno e os vídeos tocam no player do próprio site. Página e minutagem ficam salvas no seu navegador.'],
+  ['Onde encontro os créditos e as condições de uso?', 'Abra a ficha e consulte a seção de procedência. Ela identifica a fonte da edição ou o canal que publicou o vídeo. As condições variam conforme a obra.'],
+  ['Preciso baixar alguma coisa?', 'Não. Os livros abrem no leitor interno e os vídeos tocam no player do próprio site. O leitor lembra a página neste navegador.'],
   ['O que é lost media?', 'São obras perdidas ou incompletas: filmes destruídos em incêndios, episódios apagados para reaproveitar fita, curtas que nunca foram lançados. O SYSTEM 84 reúne as pistas e o estado atual de cada caso.'],
-  ['As fitas de Analog Horror são reais?', 'Não. São ficções originais escritas para o arquivo, no formato de transcrição de fita, e estão livres em CC0 para quem quiser adaptar.'],
+  ['Quem criou os vídeos de Analog Horror?', 'Os episódios são obras de ficção publicadas por seus respectivos criadores. Cada ficha identifica a autoria e inclui o vídeo para assistir aqui.'],
   ['Como funciona o pagamento?', 'A assinatura custa R$ 15 por mês via Pix. O administrador confere o crédito e libera um mês de acesso; o mesmo comprovante não pode ser usado duas vezes.'],
   ['Posso sugerir uma obra?', 'Pode. Use o canal ENVIOS da comunidade. Toda sugestão passa por moderação e só entra no acervo com fonte e licença verificadas.'],
 ]
@@ -59,8 +59,8 @@ export default function Sobre() {
               <h1>O TEMPO<br />PASSA.<br />O SINAL<br />FICA.</h1>
               <p className="hero-lead">
                 O SYSTEM 84 é um arquivo digital de memória cultural com cara de terminal dos anos 80.
-                Reunimos filmes, séries, livros e obras perdidas que já são de todos, explicamos de onde
-                cada cópia veio e deixamos tudo pronto para assistir e ler no navegador.
+                Reunimos filmes, séries, livros e dossiês de obras perdidas. Identificamos de onde
+                cada registro veio e como consultar o material preservado.
               </p>
               <div className="hero-actions">
                 <Link to="/filmes" className="fig-btn fig-btn-primary" onClick={playClick}>EXPLORAR O ACERVO ↗</Link>
@@ -82,7 +82,7 @@ export default function Sobre() {
             {counts.map((item) => (
               <Link key={item.type} to={item.path} onClick={playClick}><strong>{pad2(item.total)}</strong><span>{item.label.toUpperCase()}</span></Link>
             ))}
-            <div><strong>{pad2(sources)}</strong><span>FONTES INSTITUCIONAIS</span></div>
+            <div><strong>{pad2(sources)}</strong><span>DOMÍNIOS DE ORIGEM</span></div>
           </div>
         </section>
 
@@ -118,7 +118,7 @@ export default function Sobre() {
         <section className="prancha about-split">
           <Panel title="PRINCÍPIOS DO ARQUIVO" tone="acid">
             <ul className="system-list">
-              <li><UiIcon name="lock" size={20} /><div><strong>Só obras livres</strong><span>domínio público, Creative Commons ou CC0</span></div></li>
+              <li><UiIcon name="lock" size={20} /><div><strong>Direitos por obra</strong><span>créditos e condições de uso na ficha</span></div></li>
               <li><UiIcon name="archive" size={20} /><div><strong>Procedência sempre visível</strong><span>fonte, licença e histórico em cada ficha</span></div></li>
               <li><UiIcon name="eye" size={20} /><div><strong>Sem rastreadores</strong><span>preferências ficam só no seu navegador</span></div></li>
               <li><UiIcon name="people" size={20} /><div><strong>Curadoria com moderação</strong><span>envios entram só com fonte verificada</span></div></li>

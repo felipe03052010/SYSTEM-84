@@ -3,23 +3,30 @@
   "title": "A raposa e as uvas",
   "code": "FAB_84001",
   "type": "livro",
-  "author": "Tradição esópica",
-  "description": "Fábula em reconto breve em português.",
+  "author": "Esopo",
+  "description": "The Fox And The Grapes — fábula da coletânea The Aesop for Children (Chicago, 1919), com ilustrações de Milo Winter. Texto integral em inglês.",
   "tags": [
     "fábula",
     "conto"
   ],
   "availability": "available",
-  "language": "Português",
-  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "language": "Inglês",
+  "rightsNote": "Edição de 1919 de Rand McNally & Company. Transcrição da edição digital 19994 do Project Gutenberg. Preservamos a redação em inglês.",
   "sources": [
     {
-      "title": "The Aesop for Children — Library of Congress",
-      "url": "https://read.gov/aesop/001.html"
+      "url": "https://www.gutenberg.org/files/19994/19994-h/19994-h.htm#Page_20",
+      "title": "The Aesop for Children, p. 20"
     }
   ],
   "media": [],
   "article": [
-    "A raposa viu o cacho mais escuro da parreira e tomou distância. Saltou três vezes. Na quarta, uma folha lhe roçou o focinho, mas as uvas continuaram no alto. Um pardal perguntou se já ia embora. Ela limpou a poeira das patas. “Estão verdes”, respondeu, sem ter provado uma só."
-  ]
+    "A Fox one day spied a beautiful bunch of ripe grapes hanging from a vine trained along the branches of a tree. The grapes seemed ready to burst with juice, and the Fox's mouth watered as he gazed longingly at them.",
+    "The bunch hung from a high branch, and the Fox had to jump for it. The first time he jumped he missed it by a long way. So he walked off a short distance and took a running leap at it, only to fall short once more. Again and again he tried, but in vain.",
+    "Now he sat down and looked at the grapes in disgust.",
+    "\"What a fool I am,\" he said. \"Here I am wearing myself out to get a bunch of sour grapes that are not worth gaping for.\"",
+    "And off he walked very, very scornfully.",
+    "There are many who pretend to despise and belittle that which is beyond their reach."
+  ],
+  "year": 1919,
+  "editionTitle": "The Fox And The Grapes"
 }

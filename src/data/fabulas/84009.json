@@ -3,23 +3,30 @@
   "title": "O vento e o sol",
   "code": "FAB_84009",
   "type": "livro",
-  "author": "Tradição esópica",
-  "description": "Fábula em reconto breve em português.",
+  "author": "Esopo",
+  "description": "The North Wind And The Sun — fábula da coletânea The Aesop for Children (Chicago, 1919), com ilustrações de Milo Winter. Texto integral em inglês.",
   "tags": [
     "fábula",
     "conto"
   ],
   "availability": "available",
-  "language": "Português",
-  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "language": "Inglês",
+  "rightsNote": "Edição de 1919 de Rand McNally & Company. Transcrição da edição digital 19994 do Project Gutenberg. Preservamos a redação em inglês.",
   "sources": [
     {
-      "title": "The Aesop for Children — Library of Congress",
-      "url": "https://read.gov/aesop/001.html"
+      "url": "https://www.gutenberg.org/files/19994/19994-h/19994-h.htm#Page_109",
+      "title": "The Aesop for Children, p. 109"
     }
   ],
   "media": [],
   "article": [
-    "Vento e Sol disputaram quem faria um viajante tirar a capa. O Vento soprou até dobrar as árvores. O homem apertou os braços contra o peito. O Sol esperou a poeira baixar e aqueceu a estrada aos poucos. O viajante procurou sombra, tirou a capa e a dobrou sobre o braço."
-  ]
+    "The North Wind and the Sun had a quarrel about which of them was the stronger. While they were disputing with much heat and bluster, a Traveler passed along the road wrapped in a cloak.",
+    "\"Let us agree,\" said the Sun, \"that he is the stronger who can strip that Traveler of his cloak.\"",
+    "\"Very well,\" growled the North Wind, and at once sent a cold, howling blast against the Traveler.",
+    "With the first gust of wind the ends of the cloak whipped about the Traveler's body. But he immediately wrapped it closely around him, and the harder the Wind blew, the tighter he held it to him. The North Wind tore angrily at the cloak, but all his efforts were in vain.",
+    "Then the Sun began to shine. At first his beams were gentle, and in the pleasant warmth after the bitter cold of the North Wind, the Traveler unfastened his cloak and let it hang loosely from his shoulders. The Sun's rays grew warmer and warmer. The man took off his cap and mopped his brow. At last he became so heated that he pulled off his cloak, and, to escape the blazing sunshine, threw himself down in the welcome shade of a tree by the roadside.",
+    "Gentleness and kind persuasion win where force and bluster fail."
+  ],
+  "year": 1919,
+  "editionTitle": "The North Wind And The Sun"
 }

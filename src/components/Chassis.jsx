@@ -117,13 +117,13 @@ export function FrameMarks() {
 /* ── Abertura: monograma, título e as três linhas de arquivo ────────────── */
 
 const ARCHIVE_LINES = {
-  '/': ['ARQUIVO CULTURAL / ACERVO + CATÁLOGO', 'DOMÍNIO PÚBLICO + LICENÇAS LIVRES', 'SINAL ONLINE'],
+  '/': ['ARQUIVO CULTURAL / ACERVO + CATÁLOGO', 'CINEMA + LITERATURA + TV', 'SINAL ONLINE'],
   '/filmes': ['ARQUIVO CULTURAL / CINEMA', 'DO MUDO AO DIGITAL', 'PLAYER INTERNO'],
   '/series': ['ARQUIVO CULTURAL / SÉRIES', 'SERIADOS E CAPÍTULOS', 'PLAYER INTERNO'],
   '/livros': ['ARQUIVO CULTURAL / LITERATURA', 'TEXTO INTEGRAL', 'LEITOR INTERNO'],
   '/lost-media': ['ARQUIVO CULTURAL / PRESERVAÇÃO', 'DOSSIÊS + RECUPERAÇÃO', 'INVESTIGAÇÃO ABERTA'],
-  '/analog-horror': ['ARQUIVO CULTURAL / FITAS', 'FICÇÃO ORIGINAL CC0', 'NÃO OLHE PELA JANELA'],
-  '/arg': ['ARQUIVO CULTURAL / ENIGMAS', 'JOGO DE REALIDADE ALTERNATIVA', 'PROGRESSO SALVO'],
+  '/analog-horror': ['ARQUIVO CULTURAL / FITAS', 'EPISÓDIOS DOS CRIADORES', 'NÃO OLHE PELA JANELA'],
+  '/arg': ['ARQUIVO CULTURAL / ENIGMAS', 'JOGO DE REALIDADE ALTERNATIVA', 'EPISÓDIOS PUBLICADOS'],
   '/linha-do-tempo': ['ARQUIVO CULTURAL / CRONOLOGIA', 'DA ANTIGUIDADE A HOJE', 'ACERVO ORDENADO'],
   '/sobre': ['ARQUIVO CULTURAL / O PROJETO', 'MISSÃO + PLANOS', 'TRANSPARÊNCIA'],
   '/pesquisa': ['ARQUIVO CULTURAL / BUSCA', 'ACERVO + CATÁLOGO', 'CONSULTA EM TEMPO REAL'],
@@ -657,7 +657,7 @@ const COUNTERS = [
   { kind: 'livro', label: 'LIVROS', type: 'livro', to: '/livros' },
   { kind: 'lost', label: 'LOST MEDIA', type: 'lost-media', to: '/lost-media' },
   { kind: 'tape', label: 'ANALOG HORROR', type: 'analog-horror', to: '/analog-horror' },
-  { kind: 'arg', label: 'ENIGMAS ARG', type: 'arg', to: '/arg' },
+  { kind: 'arg', label: 'ARQUIVOS ARG', type: 'arg', to: '/arg' },
 ]
 
 export function DossierCounters() {

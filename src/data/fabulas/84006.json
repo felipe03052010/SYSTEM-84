@@ -3,23 +3,27 @@
   "title": "O cão e seu reflexo",
   "code": "FAB_84006",
   "type": "livro",
-  "author": "Tradição esópica",
-  "description": "Fábula em reconto breve em português.",
+  "author": "Esopo",
+  "description": "The Dog And His Reflection — fábula da coletânea The Aesop for Children (Chicago, 1919), com ilustrações de Milo Winter. Texto integral em inglês.",
   "tags": [
     "fábula",
     "conto"
   ],
   "availability": "available",
-  "language": "Português",
-  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "language": "Inglês",
+  "rightsNote": "Edição de 1919 de Rand McNally & Company. Transcrição da edição digital 19994 do Project Gutenberg. Preservamos a redação em inglês.",
   "sources": [
     {
-      "title": "The Aesop for Children — Library of Congress",
-      "url": "https://read.gov/aesop/001.html"
+      "url": "https://www.gutenberg.org/files/19994/19994-h/19994-h.htm#Page_96",
+      "title": "The Aesop for Children, p. 96"
     }
   ],
   "media": [],
   "article": [
-    "Levando um pedaço de carne, um cão atravessou a ponte. Lá embaixo, outro cão parecia levar um pedaço maior. O primeiro abriu a boca para tomar os dois. A carne caiu, a corrente a levou e o rival desapareceu quando a água se agitou."
-  ]
+    "A Dog, to whom the butcher had thrown a bone, was hurrying home with his prize as fast as he could go. As he crossed a narrow footbridge, he happened to look down and saw himself reflected in the quiet water as if in a mirror. But the greedy Dog thought he saw a real Dog carrying a bone much bigger than his own.",
+    "If he had stopped to think he would have known better. But instead of thinking, he dropped his bone and sprang at the Dog in the river, only to find himself swimming for dear life to reach the shore. At last he managed to scramble out, and as he stood sadly thinking about the good bone he had lost, he realized what a stupid Dog he had been.",
+    "It is very foolish to be greedy."
+  ],
+  "year": 1919,
+  "editionTitle": "The Dog And His Reflection"
 }

@@ -3,23 +3,27 @@
   "title": "O corvo e o jarro",
   "code": "FAB_84005",
   "type": "livro",
-  "author": "Tradição esópica",
-  "description": "Fábula em reconto breve em português.",
+  "author": "Esopo",
+  "description": "The Crow And The Pitcher — fábula da coletânea The Aesop for Children (Chicago, 1919), com ilustrações de Milo Winter. Texto integral em inglês.",
   "tags": [
     "fábula",
     "conto"
   ],
   "availability": "available",
-  "language": "Português",
-  "rightsNote": "Reconto contemporâneo preparado para esta edição.",
+  "language": "Inglês",
+  "rightsNote": "Edição de 1919 de Rand McNally & Company. Transcrição da edição digital 19994 do Project Gutenberg. Preservamos a redação em inglês.",
   "sources": [
     {
-      "title": "The Aesop for Children — Library of Congress",
-      "url": "https://read.gov/aesop/001.html"
+      "url": "https://www.gutenberg.org/files/19994/19994-h/19994-h.htm#Page_34",
+      "title": "The Aesop for Children, p. 34"
     }
   ],
   "media": [],
   "article": [
-    "O corvo encontrou água no fundo de um jarro estreito. Seu bico alcançava apenas a parede seca. Ao tentar derrubá-lo, deslocou uma pedrinha. Apanhou-a e a deixou cair na água. Depois veio outra pedra, e outra. Antes que o sol baixasse, a água tinha subido até o bico."
-  ]
+    "In a spell of dry weather, when the Birds could find very little to drink, a thirsty Crow found a pitcher with a little water in it. But the pitcher was high and had a narrow neck, and no matter how he tried, the Crow could not reach the water. The poor thing felt as if he must die of thirst.",
+    "Then an idea came to him. Picking up some small pebbles, he dropped them into the pitcher one by one. With each pebble the water rose a little higher until at last it was near enough so he could drink.",
+    "In a pinch a good use of our wits may help us out."
+  ],
+  "year": 1919,
+  "editionTitle": "The Crow And The Pitcher"
 }
